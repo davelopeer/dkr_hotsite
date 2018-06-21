@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Goudy+Bookletter+1911');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+body {
+  width: 100%;
+  background-attachment: fixed;
+  background-size: cover;
+  background-image: url('/static/images/bg-5.jpg');
+}
+
+.container {
+  background-color: #ebebeb;
+  margin: 100px auto;
+  padding-bottom: 30px;
+  padding-top: 10px;
+  width: 60%;
+  border-radius: 5px;
+  font-family: 'Lato', sans-serif;
+}
+
+/* HEADER */
+.header-title {
+  font-family: 'Goudy Bookletter 1911', serif;
+}
+
+.header-subtitle {
+  text-transform: uppercase;
+  font-size: 0.7em;
+}
+
+.idioms .nav-link {
+  border-radius: 5px;
+  padding: 3px 8px;
+  margin-left: 6px;
+  border: 1px solid #36382e;
+}
+
+.idioms {
+  font-size: 0.7em;
+  margin-top: 25px;
+}
+
+.idioms .nav-link:hover {
+  background-color: #36382e;
+  color: #fff;
+}
+
+/* MAIN */
+.tab-content {
+  margin-top: 7%;
+}
+
+.nav-link {
+  color: #36382e;
+}
+
+.nav-tabs .nav-link.active {
+  background-color: #36382e;
+  color: #fff;
+}
+
+
+
+
+
+/* HOME */
+
+
+
+
+
+/* ACCOMMODATIONS */
+
+
+
+
+
+/* INSCRIPTION */
