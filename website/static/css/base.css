@@ -5,7 +5,8 @@ body {
   width: 100%;
   background-attachment: fixed;
   background-size: cover;
-  background-image: url('/static/images/bg-5.jpg');
+
+  background-image: url('/static/images/bg-3.png');
 }
 
 .container {
@@ -21,6 +22,7 @@ body {
 /* HEADER */
 .header-title {
   font-family: 'Goudy Bookletter 1911', serif;
+  font-size: 3em;
 }
 
 .header-subtitle {
@@ -59,6 +61,11 @@ body {
   color: #fff;
 }
 
+.section_title {
+  color: #36382e;
+  margin-bottom: 50px;
+  font-size: 2.5em;
+}
 
 
 
@@ -76,3 +83,47 @@ body {
 
 
 /* INSCRIPTION */
+
+.form {
+  padding: 0 3%;
+}
+
+.custom-controls-stacked * {
+  display: inline;
+}
+
+.form-check-boxes {
+  margin-left: 15px;
+}
+
+.form_text_area {
+  height: 150px;
+}
+
+.form_section_title {
+  margin: 30px auto 20px;
+}
+
+.list-group-item {
+  background-color: #f2f2f2;
+}
+
+.payment_form {
+  margin: 30px auto 50px;
+}
+
+.payment_section {
+  display: none;
+}
+
+.cielo_img {
+  margin: 25px 0 15px;
+}
+
+.cancel_terms {
+  margin-top: 43px;
+}
+
+.btn-holder {
+  margin-top: 30px;
+}

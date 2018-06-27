@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 {% load static %}
-  <head>
+{% load i18n %}
+  <head lang="{{ LANGUAGE_CODE }}">
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title></title>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.css'%}">
+    <link rel="stylesheet" href="{% static 'bootstrap/js/bootstrap.js'%}">
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
   </head>
   <body>
@@ -60,20 +64,207 @@
 
           <!-- INSCRIPTION -->
           <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-            <form role="form" action="" method="post">
+            <h2 id="teste"  class="text-center section_title">Formulário de inscrição</h2>
+            <form class="form" role="form" action="" method="post" enctype="multipart/form-data">
               {% csrf_token %}
-              <div class="form-group">
-                <label class="col-form-label" for="formGroupExampleInput">Seu nome</label>
-                {{form.name}}
+              <div class="row">
+                <div class="form-group col-md-8">
+                  <label class="col-form-label" for="formGroupExampleInput">Seu nome</label>
+                  {{form.name}}
+                  <small id="nameHelp" class="form-text text-muted">Nome completo sem abreviações.</small>
+                </div>
+                <div class="form-group col-md-4">
+                  <label class="col-form-label" for="formGroupExampleInput">Data de nascimento</label>
+                  {{form.birthday}}
+                </div>
               </div>
-              <div class="form-group">
-                <label class="col-form-label" for="formGroupExampleInput">E-mail</label>
-                {{form.email}}
+              <div class="row">
+                <div class="form-group col-md-7">
+                  <label class="col-form-label" for="formGroupExampleInput">Endereço</label>
+                  {{form.adress}}
+                </div>
+                <div class="form-group col-md-2">
+                  <label class="col-form-label" for="formGroupExampleInput">Número</label>
+                  {{form.adress_num}}
+                </div>
+                <div class="form-group col-md-3">
+                  <label class="col-form-label" for="formGroupExampleInput">Complemento</label>
+                  {{form.adress_comp}}
+                </div>
               </div>
-              <div class="form-group">
-                <label class="col-form-label" for="formGroupExampleInput">Número de telefone</label>
-                {{form.phone}}
+              <div class="row">
+                <div class="form-group col-md-7">
+                  <label class="col-form-label" for="formGroupExampleInput">Cidade</label>
+                  {{form.city}}
+                </div>
+                <div class="form-group col-md-2">
+                  <label class="col-form-label" for="formGroupExampleInput">Estado</label>
+                  {{form.state}}
+                </div>
+                <div class="form-group col-md-3">
+                  <label class="col-form-label" for="formGroupExampleInput">CEP</label>
+                  {{form.zip_code}}
+                </div>
               </div>
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <label class="col-form-label" for="formGroupExampleInput">E-mail</label>
+                  {{form.email}}
+                </div>
+                <div class="form-group col-md-6">
+                  <label class="col-form-label" for="formGroupExampleInput">Número de telefone</label>
+                  {{form.phone}}
+                  <small id="phoneHelp" class="form-text text-muted">Apenas números</small>
+                </div>
+              </div>
+              <div class="row">
+                <div class="custom-controls-stacked col-md-6">
+                  <p>Gênero:</p>
+                  {% for radio in form.gender %}
+                    <div class="form-check-boxes">
+                      {{radio.tag}}
+                      <label class="form-check-label" for="radio_{{ radio.index}}">{{ radio.choice_label }}</label>
+                    </div>
+                  {% endfor %}
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <label class="col-form-label" for="formGroupExampleInput">Descreva as últimas iniciações das quais você tomou:</label>
+                  {{form.initiations}}
+                </div>
+                <div class="form-group col-md-6">
+                  <label class="col-form-label" for="formGroupExampleInput">De qual professor você tomou a iniciação:</label>
+                  {{form.initiations_lama}}
+                </div>
+              </div>
+              <div class="row">
+                <div class="custom-controls-stacked col-md-12">
+                  <p>Praticante com ordenação? (monástica ou outra):</p>
+                  {% for radio in form.monastic_ordenation %}
+                    <div class="form-check-boxes">
+                      {{radio.tag}}
+                      <label class="form-check-label" for="radio_{{ radio.index}}">{{ radio.choice_label }}</label>
+                    </div>
+                  {% endfor %}
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-group col-md-8">
+                  <label class="col-form-label" for="formGroupExampleInput">Observações gerais:</label>
+                  {{form.observations}}
+                </div>
+              </div>
+
+              <h3 class="form_section_title">Alimentação</h3>
+              <div class="row">
+                <div class="custom-controls-stacked col-md-12">
+                  <p>Preferência alimentar:</p>
+                  {% for radio in form.food_preferency %}
+                    <div class="form-check-boxes">
+                      {{radio.tag}}
+                      <label class="form-check-label" for="radio_{{ radio.index}}">{{ radio.choice_label }}</label>
+                    </div>
+                  {% endfor %}
+                </div>
+              </div>
+              <small id="phoneHelp" class="form-text text-muted">O Chagdud Gonpa Khadro Ling  não dispõe de dietas especiais com restrições a ingredientes.</small>
+
+              <h3 class="form_section_title">Assentos</h3>
+              <div class="row">
+                <div class="custom-controls-stacked col-md-12">
+                  <p>Necessita de cadeira?</p>
+                  {% for radio in form.seat %}
+                    <div class="form-check-boxes">
+                      {{radio.tag}}
+                      <label class="form-check-label" for="radio_{{ radio.index}}">{{ radio.choice_label }}</label>
+                    </div>
+                  {% endfor %}
+                </div>
+              </div>
+              <small id="phoneHelp" class="form-text text-muted">Apenas para pessoas com limitações físicas.</small>
+
+              <h3 class="form_section_title">Opção de evento:</h3>
+              <p>Evento completo com as três refeições incluídas e sem hospedagens: R$0,00</p>
+              <small id="phoneHelp" class="form-text text-muted">Não é possível a participação parcial neste retiro.</small>
+
+              <h3 class="form_section_title">Forma de pagamento:</h3>
+
+              <div class="row">
+                <div class="custom-controls-stacked col-md-12">
+                  <p>Forma de pagamento</p>
+                  {% for radio in form.payment %}
+                    <div class="form-check-boxes">
+                      {{radio.tag}}
+                      <label class="form-check-label" for="radio_{{ radio.index}}">{{ radio.choice_label }}</label>
+                    </div>
+                  {% endfor %}
+                </div>
+              </div>
+              <div class="row payment_form">
+                <div class="col-md-6 payment_section" id="payment1">
+                  <h4 class="font-weight-light">Pagamento via Cielo</h4>
+                  <a target="_blank" href="https://cieloecommerce.cielo.com.br/TransactionalVNext/Checkout/Index/f0111d24-26ca-47a5-9f69-c77335892ff5">
+                    <img class="cielo_img" alt="Comprar" src="https://cieloecommerce.cielo.com.br/backoffice/Content/img/buttons/button-5-1.png"/>
+                  </a>
+                  <div class="form-group">
+                    <label class="col-form-label" for="formGroupExampleInput">Nome do titular igual ao que está no cartão:</label>
+                    {{form.credit_card_name}}
+                  </div>
+                </div>
+                <div class="col-md-6 payment_section" id="payment2">
+                  <h4 class="font-weight-light">Pagamento via Banco do Brasil:</h4>
+                  <p>
+                    <span class="font-weight-bold">Depósito ou transferência:</span><br>
+                    Banco do Brasil<br>
+                    Titular: Chagdud Gonpa Brasil<br>
+                    CNPJ: 00.990.708/0001-37<br>
+                    Agência: 1380-3<br>
+                    Conta: 5454-2<br>
+                  </p>
+                  <div class="form-group">
+                    <label class="col-form-label" for="formGroupExampleInput">Selecione o comprovante do seu pagamento:</label>
+                    {{form.deposit_voucher}}
+                  </div>
+                  <div class="form-group">
+                    <label class="col-form-label" for="formGroupExampleInput">Data da transferência/depósito</label>
+                    {{form.deposit_day}}
+                  </div>
+                  <div class="form-group">
+                    <label class="col-form-label" for="formGroupExampleInput">Nome do titular da conta</label>
+                    {{form.deposit_name}}
+                  </div>
+                  <div class="form-group">
+                    <label class="col-form-label" for="formGroupExampleInput">Número da agência</label>
+                    {{form.deposit_agency}}
+                  </div>
+                  <p class="text-center">ou</p>
+                  <div class="form-group">
+                    <label class="col-form-label" for="formGroupExampleInput">Número do envelope ou da envelope</label>
+                    {{form.deposit_envelop}}
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="custom-controls-stacked col-md-12">
+                  {% for checkbox in form.cancel_terms %}
+                    <div class="form-check-boxes">
+                      {{checkbox.tag}}
+                      <label class="form-check-label" for="checkbox{{ checkbox.index}}">{{ checkbox.choice_label }}</label>
+                    </div>
+                  {% endfor %}
+                  <p class="cancel_terms">
+                    Li e aceito a <a target="_blank" href="https://chagdud.com.br/politica-de-cancelamento-de-participacao-em-eventos/">política de cancelamento de
+                    participação em eventos no Khadro Ling.</a>
+                  </p>
+                  br
+                  <small >Antes de clicar em enviar, certifique-se que preencheu todos os dados corretamente e concluiu o pagamento.</small>
+                </div>
+              </div>
+
+
               <div class="btn-holder">
                 <button type="submit" class="btn btn-outline-primary">Enviar</button>
               </div>
@@ -82,5 +273,6 @@
         </div>
       </main>
     </div>
+    <script type="text/javascript" src="{% static 'js/base.js' %}"></script>
   </body>
 </html>
