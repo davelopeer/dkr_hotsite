@@ -37,7 +37,7 @@ def index(request):
             deposit_agency = request.POST.get('deposit_agency', '')
             deposit_envelop = request.POST.get('deposit_envelop', '')
             credit_card_name = request.POST.get('credit_card_name', '')
-            deposit_voucher = request.FILES['deposit_voucher']
+            # deposit_voucher = request.FILES['deposit_voucher']
 
             #Make the date in the br format dd/mm/yyyy
             def dateBR(date):
@@ -78,7 +78,7 @@ def index(request):
                     seat,
                     payment,
                     payment_info,
-                    deposit_voucher,
+                    # deposit_voucher,
                     )
             return redirect('index')
         else:

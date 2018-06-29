@@ -15,7 +15,7 @@ It also uses:
 
 Django version 2.0.6 is used. For instalation, type:
 
-`pip install django `
+`pip install -U django==2.0.6 `
 
 ### Sendgrid
 
