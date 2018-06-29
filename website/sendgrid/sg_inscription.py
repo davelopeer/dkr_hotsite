@@ -3,7 +3,7 @@ import os
 from sendgrid.helpers.mail import *
 
 
-def sendMail(name,birthday_br,adress,adress_num,adress_comp,city,state,zip_code,email,phone,gender,initiations,initiations_lama,monastic_ordenation,observations,food_preferency,seat,payment,payment_info,deposit_voucher):
+def sendMail(name,birthday_br,adress,adress_num,adress_comp,city,state,zip_code,email,phone,gender,initiations,initiations_lama,monastic_ordenation,observations,food_preferency,seat,payment,payment_info):
         sg = sendgrid.SendGridAPIClient(apikey=os.environ.get('DKR_SG_API_KEY'))
         from_email = Email(email)
         to_email = Email("davidbarenco@gmail.com")
@@ -32,7 +32,7 @@ def sendMail(name,birthday_br,adress,adress_num,adress_comp,city,state,zip_code,
 
 
         mail = Mail(from_email, subject, to_email, sendgrid_content)
-        mail.add_attachment(deposit_voucher)
+        # mail.add_attachment(deposit_voucher)
 
         response = sg.client.mail.send.post(request_body=mail.get())
         print("success")
