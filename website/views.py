@@ -10,7 +10,7 @@ def index(request):
     form_class = InscriptionForm
 
     if request.method == 'POST':
-        form = form_class(request.POST, request.FILES)
+        form = form_class(request.POST)
 
         if form.is_valid():
             name = request.POST.get('name', '')
