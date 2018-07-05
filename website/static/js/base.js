@@ -10,16 +10,15 @@ $("#id_payment_1").on("click", function(){
 
 
 
-
-
+// CHANGING THE PAYMENT SECTION DISPLAY ACCORDING TO THE EVENT CHOSED - ADULT OR KID
 $("#id_event_option_0").on("click", function(){
       $('#cielo_link').prop('href', 'https://cieloecommerce.cielo.com.br/TransactionalVNext/Checkout/Index/f0111d24-26ca-47a5-9f69-c77335892ff5')
-      $('.payment_form').css('display', 'block-level')
+      $('.payment_form').css('display', 'block')
       $('.payment').css('display', 'block')
 });
 $("#id_event_option_1").on("click", function(){
       $('#cielo_link').prop('href', '')
-      $('.payment_form').css('display', 'block-level')
+      $('.payment_form').css('display', 'block')
       $('.payment').css('display', 'block')
 });
 $("#id_event_option_2").on("click", function(){
