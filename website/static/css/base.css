@@ -127,6 +127,7 @@ body {
 
 .payment_form {
   margin: 30px auto 50px;
+  display: run-in;
 }
 
 .payment_section {
