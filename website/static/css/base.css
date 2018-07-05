@@ -113,6 +113,10 @@ body {
   background-color: #f2f2f2;
 }
 
+.checkbox{
+  margin-bottom: 30px;
+}
+
 .payment_form {
   margin: 30px auto 50px;
 }

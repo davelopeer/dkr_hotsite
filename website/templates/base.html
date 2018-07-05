@@ -107,8 +107,8 @@
                   <small id="phoneHelp" class="form-text text-muted">Apenas números</small>
                 </div>
               </div>
-              <div class="row">
-                <div class="custom-controls-stacked col-md-6">
+              <div class="row checkbox">
+                <div class="custom-controls-stacked col-md-12">
                   <p>Gênero:</p>
                   {% for radio in form.gender %}
                     <div class="form-check-boxes">
@@ -128,7 +128,7 @@
                   {{form.initiations_lama}}
                 </div>
               </div>
-              <div class="row">
+              <div class="row checkbox">
                 <div class="custom-controls-stacked col-md-12">
                   <p>Praticante com ordenação? (monástica ou outra):</p>
                   {% for radio in form.monastic_ordenation %}
