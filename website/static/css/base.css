@@ -42,9 +42,14 @@ body {
   margin-top: 25px;
 }
 
-.idioms .nav-link:hover {
+.idioms .nav-link {
   background-color: #36382e;
   color: #fff;
+}
+
+.idioms .nav-link:hover {
+  background-color: #ebebeb;
+  color: #36382e;
 }
 
 /* MAIN */
