@@ -4,9 +4,14 @@ from django.core.mail import EmailMessage
 from django.shortcuts import redirect
 from django.template.loader import get_template
 from website.sendgrid.sg_inscription import sendMail
+from django.utils import translation
 
 # Create your views here.
 def index(request):
+
+    # Discovering the user langugage
+    user_language = translation.get_language_from_request(request, check_path=True)
+
     form_class = InscriptionForm
 
     if request.method == 'POST':
@@ -37,7 +42,6 @@ def index(request):
             deposit_agency = request.POST.get('deposit_agency', '')
             deposit_envelop = request.POST.get('deposit_envelop', '')
             credit_card_name = request.POST.get('credit_card_name', '')
-            # deposit_voucher = request.FILES['deposit_voucher']
 
             #Make the date in the br format dd/mm/yyyy
             def dateBR(date):
@@ -47,15 +51,12 @@ def index(request):
             birthday_br = dateBR(birthday)
             deposit_day_br = dateBR(deposit_day)
 
-            # birthday_br = str(str(birthday[8:10]) + '/' +  str(birthday[5:7]) + '/' + str(birthday[0:4]))
-            # deposit_day_br = str(str(deposit_day[8:10]) + '/' +  str(deposit_day[5:7]) + '/' + str(deposit_day[0:4]))
 
             # See if it wa paid with credit card or deposit
             if payment == 'Cartão de crédito':
                 payment_info = 'Nome do titular do cartão: ' + credit_card_name
             else:
                 payment_info = "Depositado no dia " + deposit_day_br + " por " + deposit_name + " com os dados:" + deposit_agency + deposit_envelop
-
 
 
             sendMail(
@@ -78,12 +79,12 @@ def index(request):
                     seat,
                     payment,
                     payment_info,
-                    # deposit_voucher,
                     )
             return redirect('index')
         else:
             return redirect('https://docs.djangoproject.com/en/2.0/topics/i18n/translation/ ') #PAGINA QUALQUER DE TESTE
 
-    return render(request, 'base.html', {
+    return render(request, 'base.html',  {
         'form': form_class,
+        'user_language':user_language,
     })
