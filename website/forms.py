@@ -31,6 +31,11 @@ class InscriptionForm(forms.Form):
         ('Sim','Sim'),
         ('Não','Não'),
     ))
+    event_option = forms.ChoiceField(required=True, widget=forms.RadioSelect(attrs={'type':'radio', 'class':'form-check inline checkbox-option'}), choices=(
+        ('Adulto','Evento completo com as três refeições incluídas e sem hospedagens: R$2,00'),
+        ('Criança 3-13 anos','Participação infantil (de 3 a 12 anos) com alimentação: R$1,00'),
+        ('Criança 0-2 anos','Crianças de 0 a 2 anos: R$0,00'),
+    ))
     payment = forms.ChoiceField(required=True, widget=forms.RadioSelect(attrs={'type':'radio', 'class':'form-check'}), choices=(
         ('Cartão de crédito','Cartão de crédito'),
         ('Depósito bancário','Depósito bancário'),

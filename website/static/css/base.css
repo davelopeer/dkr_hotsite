@@ -93,8 +93,16 @@ body {
   padding: 0 3%;
 }
 
-.custom-controls-stacked * {
+.checkbox-inline * {
   display: inline;
+}
+
+.inline {
+  display: inline;
+}
+
+.checkbox-option {
+  margin-bottom: 15px;
 }
 
 .form-check-boxes {
@@ -113,16 +121,22 @@ body {
   background-color: #f2f2f2;
 }
 
+.checkbox{
+  margin-bottom: 30px;
+}
+
 .payment_form {
   margin: 30px auto 50px;
 }
 
 .payment_section {
   display: none;
+  border: 1px dashed grey;
+  padding: 20px;
 }
 
 .cielo_img {
-  margin: 25px 0 15px;
+  margin: 10px 0 15px;
 }
 
 .cancel_terms {
