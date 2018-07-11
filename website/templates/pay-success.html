@@ -11,7 +11,8 @@
 
   {% block body_block %}
 
-  {% trans "The form was successfully send. Expect a response in your e-mail in the next few days" %}
+  <p>{% trans "The form was sent successfully. Wait for an answer in your email in the next few days" %}</p>
 
+  <a href="{% url "index" %}">{% trans "Voltar" %}</a>
 
   {% endblock %}

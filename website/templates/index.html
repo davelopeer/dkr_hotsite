@@ -167,13 +167,30 @@
                 <p>Preferência alimentar:</p>
                 {% for radio in form.food_preferency %}
                   <div class="form-check-boxes">
-                    {{radio.tag}}
+                      {{radio.tag}}
                     <label class="form-check-label inline" for="radio_{{ radio.index}}">{{ radio.choice_label }}</label>
                   </div>
                 {% endfor %}
               </div>
             </div>
             <small id="phoneHelp" class="form-text text-muted">O Chagdud Gonpa Khadro Ling  não dispõe de dietas especiais com restrições a ingredientes.</small>
+
+            <!-- ALERT FOR THE INALTERABILITY OF THE FOOD PREFERENCY AND SEAT -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">ATENÇÃO</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    Ao escolher essa opção, você não poderá mudá-la durante o evento.
+                  </div>
+                </div>
+              </div>
+            </div>
 
             <h3 class="form_section_title">Assentos</h3>
             <div class="row">

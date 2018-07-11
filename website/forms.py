@@ -23,11 +23,11 @@ class InscriptionForm(forms.Form):
         ('Não','Não'),
     ))
     observations = forms.CharField(required=False,max_length=4000, widget=forms.Textarea(attrs={'class': 'form-control form_text_area', 'id': 'formGroupExampleInput'}))
-    food_preferency = forms.ChoiceField(required=True, widget=forms.RadioSelect(attrs={'type':'radio', 'class':'form-check inline'}), choices=(
+    food_preferency = forms.ChoiceField(required=True, widget=forms.RadioSelect(attrs={'type':'radio', 'class':'form-check inline food-preferency', 'data-toggle':'modal', 'data-target':'#exampleModal'}), choices=(
         ('Não-vegetariana','Não-vegetariana'),
         ('Vegetariana','Vegetariana'),
     ))
-    seat = forms.ChoiceField(required=True, widget=forms.RadioSelect(attrs={'type':'radio', 'class':'form-check'}), choices=(
+    seat = forms.ChoiceField(required=True, widget=forms.RadioSelect(attrs={'type':'radio', 'class':'form-check seat-preferency', 'data-toggle':'modal', 'data-target':'#exampleModal'}), choices=(
         ('Sim','Sim'),
         ('Não','Não'),
     ))
@@ -36,7 +36,7 @@ class InscriptionForm(forms.Form):
         ('Criança 4-13 anos','Participação infantil (de 4 a 12 anos) com as três refeições incluídas e sem hospedagem: R$1,00'),
         ('Criança 0-3 anos','Crianças (de 0 a 3 anos) com as três refeições incluídas e sem hospedagem: R$0,00'),
     ))
-    payment = forms.ChoiceField(required=True, widget=forms.RadioSelect(attrs={'type':'radio', 'class':'form-check'}), choices=(
+    payment = forms.ChoiceField(required=False, widget=forms.RadioSelect(attrs={'type':'radio', 'class':'form-check'}), choices=(
         ('Cartão de crédito','Cartão de crédito'),
         ('Depósito bancário','Depósito bancário'),
     ))
