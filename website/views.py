@@ -36,7 +36,7 @@ def index(request):
             food_preferency = request.POST.get('food_preferency', '')
             seat = request.POST.get('seat', '')
             payment = request.POST.get('payment', '')
-            cancel_terms = request.POST.get('cancel_terms', '')
+            # cancel_terms = request.POST.get('cancel_terms', '')
             deposit_day = request.POST.get('deposit_day', '')
             deposit_name = request.POST.get('deposit_name', '')
             deposit_agency = request.POST.get('deposit_agency', '')
