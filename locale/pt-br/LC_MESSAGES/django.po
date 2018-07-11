@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-10 16:21-0300\n"
+"POT-Creation-Date: 2018-07-10 16:46-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,7 +16,6 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: .\website\templates\base.html:28
 msgid "Khandro Sangdu Drubchen"
@@ -24,7 +23,7 @@ msgstr "Drubchen de Khandro Sangdu"
 
 #: .\website\templates\base.html:29
 msgid "<em>with</em> Dzongsar Khyentse Rinpoche"
-msgstr "<em>con</em> Dzongsar Khyentse Rinpoche"
+msgstr "<em>com</em> Dzongsar Khyentse Rinpoche"
 
 #: .\website\templates\base.html:30
 msgid "Chagdud Gonpa Khadro Ling, Brazil"
@@ -32,13 +31,11 @@ msgstr "Chagdud Gonpa Khadro Ling, Brasil"
 
 #: .\website\templates\base.html:31
 msgid "December 27th, 2018-January 4th, 2019"
-msgstr "27 de diciembre a 4 de enero de 2019"
+msgstr "De 27 de dezembro a 04 de janeiro"
 
 #: .\website\templates\index.html:19
-#, fuzzy
-#| msgid "Acomodations/Transportation"
 msgid "Accommodations/Transportation"
-msgstr "Acomodaciones/Transporte"
+msgstr ""
 
 #: .\website\templates\index.html:22
 msgid "General information"
@@ -53,20 +50,18 @@ msgid ""
 "Emanations of the body, speech, mind, qualities and activity of all the "
 "sugatas"
 msgstr ""
-"Emanaciones de cuerpo, habla, mente, cualidades y actividades de todos los "
-"sugatas"
 
 #: .\website\templates\index.html:34
 msgid "Pervasively appear in the three levels of the world,"
-msgstr "Omnipresentes en los tres niveles del mundo"
+msgstr ""
 
 #: .\website\templates\index.html:35
 msgid "Unobstructedly granting accomplishments of action and wisdom—"
-msgstr "Conceden libremente la consumación de la acción y de la sabiduría"
+msgstr ""
 
 #: .\website\templates\index.html:36
 msgid "I praise the deities of the maṇḍala of gathered ḍākinīs."
-msgstr "Alabo a las deidades del mandala de la Reunión de Dākinīs"
+msgstr ""
 
 #: .\website\templates\index.html:40
 msgid ""
@@ -75,10 +70,6 @@ msgid ""
 "Kündü, the Gathering of the Dakini’s Secrets</em>. Through its practice, in "
 "the year 1283, she achieved the rainbow body at the age of 36."
 msgstr ""
-"A la edad de 13 años, la terton Jomo Menmo, una encarnación de Yeshe "
-"Tsogyal, descubrió la enseñanza del tesoro escondido de <em>Khandro Sangwa "
-"Kündü, Reunión de los Secretos de la Dakini</em>. En el año 1283, a los 36 "
-"años, Jonmo Menmo alcanzó el cuerpo de arco iris a través de esta práctica."
 
 #: .\website\templates\index.html:43
 msgid ""
@@ -94,17 +85,6 @@ msgid ""
 "Menmo had been his secret friend, and also due to his being blessed by the "
 "ḍākinīs of pristine cognition...”"
 msgstr ""
-"Luego, según el recuento de Su Santidad Dudjom Rinpoche en <em>Historia de la "
-"Escuela Nyigma del Budismo Tibetano</em>, “Este gran secreto, tan maravilloso, "
-"se mantuvo en posesión de las ḍākinīs por algún tiempo, y estuvo más allá del "
-"alcance y posibilidad de personas comunes. El momento de entrenar a seres por "
-"medio de este tesoro vino más tarde, en esta edad de contienda, cuando, por el "
-"poder de la compasión y aspiraciones iluminadas, la transmisión de las "
-"palabras y significado le correspondió al descubridor de tesoros Padma Ösel "
-"Do-ngak Lingpa (Jamyang Khyentse Wangpo, 1820-1892). Esto porque, primero y "
-"ante todo, durante su vida pasada como Guru Chökyi Wangchuk, uno de los cinco "
-"grandes reyes terton, Jomo Menmo había sido su consorte, y también debido a "
-"que había recibido las bendiciones de las ḍākinīs de cognición primordial…”"
 
 #: .\website\templates\index.html:46
 msgid ""
@@ -116,16 +96,10 @@ msgid ""
 "fresh and potent. Dzongsar Khyentse Rinpoche will bestow the ripening "
 "empowerment."
 msgstr ""
-"Esta práctica de Vajravārāhī es una de las más bellas y elaboradas sadhanas "
-"de ḍākinī, y es renombrada por su poder de restaurar la degeneración de los "
-"elementos – tierra, agua, aire y otros - y de aplacar los estragos de la "
-"enfermedad, hambruna y guerra. Debido a su linaje de transmisión corto, en "
-"nuestro tiempo presente las bendiciones de esta práctica se mantienen vívidas "
-"y potentes. Dzongsar Khyentse Rinpoche concederá la iniciación maduradora."
 
 #: .\website\templates\index.html:48
 msgid "Requirements for participation"
-msgstr "Requisitos para la participación"
+msgstr ""
 
 #: .\website\templates\index.html:50
 msgid ""
@@ -139,24 +113,12 @@ msgid ""
 "requirement to attend. Empowerment into Guru Rinpoche, especially from a "
 "Treasure Teaching, is particularly auspicious."
 msgstr ""
-"Para asistir al Drubchen de Khandro Sangdü es necesario estar comprometido "
-"con el budismo Vajrayana. Pese a que hay numerosas medidas y compromisos que "
-"establecen la fundación para el Vajrayana, quizás lo más claro sea las "
-"cuatro autorizaciones de práctica recibidas en las cuatro iniciaciones"
-"<sup>1</sup> otorgadas en una iniciación del tantra interno<sup>2</sup>. Si "
-"Usted ha recibido tal iniciación y ha mantenido respeto y devoción hacia el "
-"sostenedor-vajra calificado del linaje que otorgó la transmisión, Usted "
-"cumple con el requisito para asistir. Haber recibido la iniciación de Guru "
-"Rinpoché, especialmente de una enseñanza de tesoro, es particularmente "
-"auspicioso para esta ocasión."
 
 #: .\website\templates\index.html:53
 msgid ""
 "At the time of the registration, please indicate the name of at least one "
 "empowerment you have received and the lama who bestowed it. "
 msgstr ""
-"Al momento de la inscripción, por favor indique el nombre de al menos "
-"una iniciación que haya recibido y el nombre del lama que la otorgó. "
 
 #: .\website\templates\index.html:56
 msgid ""
@@ -164,18 +126,12 @@ msgid ""
 "sadhana. So please take your time and consider if you are ready to uphold "
 "and practice the Vajrayana, according to the requirements set forth above."
 msgstr ""
-"Este programa es principalmente para estudiantes que tienen inclinaciones "
-"hacia la práctica de sadhana. Así que por favor tómese su tiempo y considere "
-"si está preparado para sostener y practicar el Vajrayana, de acuerdo con los "
-"requisitos enunciados más arriba."
 
 #: .\website\templates\index.html:60
 msgid ""
 "Vase, secret, mind, and precious word initiations, each of which have a "
 "corresponding practice authorization."
 msgstr ""
-"Las iniciaciones del vaso, secreta, de la mente y de la palabra preciosa, "
-"cada una de las cuales tiene una autorización de práctica correspondiente."
 
 #: .\website\templates\index.html:62
 msgid ""
@@ -186,18 +142,9 @@ msgid ""
 "wish to attend, you should receive a inner tantra empowerment before "
 "December."
 msgstr ""
-"Los tres vehículos internos del Vajrayana son Maha, Anu y Ati Yoga, y todas "
-"las iniciaciones otorgadas en Chagdud Gonpa son de tantras internos. Los tres "
-"vehículos externos del Vajrayana - Kriya, Charya y Yoga Tantras - también "
-"involucran iniciación, pero no cumplen los requisitos para este drubchen. Si "
-"Usted desea asistir, debe recibir una iniciación de tantra interno antes "
-"de Diciembre."
 
 #: .\website\templates\pay-success.html:14
 msgid ""
 "The form was successfully send. Expect a response in your e-mail in the next "
 "few days"
 msgstr ""
-
-#~ msgid "Inscription"
-#~ msgstr "Inscripción"

@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+
+{% extends "base.html"%}
+  {% load static %}
+  {% load i18n %}
+
+  {% block extra-head %}
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+  {% endblock %}
+
+  {% block body_block %}
+
+    <main>
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="profile-tab" data-toggle="tab" href="#accommodation" role="tab" aria-controls="accommodation" aria-selected="false">{% trans "Accommodations/Transportation" %}</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="profile-tab" data-toggle="tab" href="#information" role="tab" aria-controls="information" aria-selected="false">{% trans "General information" %}</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="contact-tab" data-toggle="tab" href="#form" role="tab" aria-controls="form" aria-selected="false">{% trans "Registration" %}</a>
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+
+        <!-- HOME -->
+        <div class="tab-pane fade show active padding-sides" id="home" role="tabpanel" aria-labelledby="home-tab">
+          <div class="quote">
+            <p class="quote-line font-italic">{% trans "Emanations of the body, speech, mind, qualities and activity of all the sugatas" %}</p>
+            <p class="quote-line font-italic">{% trans "Pervasively appear in the three levels of the world," %}</p>
+            <p class="quote-line font-italic">{% trans "Unobstructedly granting accomplishments of action and wisdom—" %}</p>
+            <p class="quote-line font-italic">{% trans "I praise the deities of the maṇḍala of gathered ḍākinīs." %}</p>
+          </div>
+
+          <p class="indent">
+            {% trans "At the age of 13, the female terton Jomo Menmo, an incarnation of Yeshe Tsogyal, discovered the hidden treasure teaching of the <em>Khandro Sangwa Kündü, the Gathering of the Dakini’s Secrets</em>. Through its practice, in the year 1283, she achieved the rainbow body at the age of 36." %}
+          </p>
+          <p class="indent">
+            {% trans "Then, as recounted by His Holiness Dudjom Rinpoche in his <em>History of the Nyingma School of Tibetan Buddhism</em>: “This great secret which is so amazing, remained in the possession of the ḍākinīs for some time, and was beyond the reach and range of ordinary persons. The time to train beings by means of it came later in this age of strife, when, by the power of compassion and enlightened aspirations, the transmission of its words and meaning fell to the treasure finder Padma Ösel Do-ngak Lingpa (Jamyang Khyentse Wangpo, 1820-1892). This is because, first and foremost, during his past life as Guru Chökyi Wangchuk, one of the five great terton kings, Jomo Menmo had been his secret friend, and also due to his being blessed by the ḍākinīs of pristine cognition...”" %}
+          </p>
+          <p class="indent">
+            {% trans "This practice of Vajravārāhī is one of the most beautiful and elaborated among ḍākinī sādhanas and is renowned for it’s power to restore the degeneration of the elements—earth, water, air and the others, and to quell the ravages of disease, famine and war. Due to its short lineage of transmission, in our present times the blessings of this practice remain fresh and potent. Dzongsar Khyentse Rinpoche will bestow the ripening empowerment." %}
+          </p>
+          <h5 class="home-subtitle font-weight-bold">{% trans "Requirements for participation" %}</h5>
+          <p class="indent">
+            {% trans "One must be engaged in Vajrayana Buddhist practice to attend the Khandro Sangdü Drubchen. Although numerous measures and commitments establish the foundation for Vajrayana, perhaps the clearest are the four practice authorizations one receives through the four initiations<sup>1</sup> given in an inner tantra<sup>2</sup> empowerment. If you have received such an empowerment and have maintained your respect and devotion to the qualified Vajra lineage holder who bestowed the transmission, you have fulfilled the requirement to attend. Empowerment into Guru Rinpoche, especially from a Treasure Teaching, is particularly auspicious." %}
+          </p>
+          <p class="indent">
+            {% trans "At the time of the registration, please indicate the name of at least one empowerment you have received and the lama who bestowed it. " %}
+          </p>
+          <p class="indent">
+            {% trans "This program is mainly for students who are inclined to practice the sadhana. So please take your time and consider if you are ready to uphold and practice the Vajrayana, according to the requirements set forth above." %}
+          </p>
+          <hr>
+          <ol class="text-reference">
+            <li>{% trans "Vase, secret, mind, and precious word initiations, each of which have a corresponding practice authorization." %}</li>
+            <li>
+              {% trans "The three inner vehicles of Vajrayana are Maha, Anu, and Ati Yoga, and all empowerments given in Chagdud Gonpa are inner tantras. The three outer Vajrayana vehicles of Kriya, Charya, and Yoga Tantra also involve empowerment, but do not fulfill the requirement for this Drubchen. If you wish to attend, you should receive a inner tantra empowerment before December." %}
+            </li>
+          </ol>
+        </div>
+
+        <!-- ACCOMMODATIONS -->
+        <div class="tab-pane fade" id="accommodation" role="tabpanel" aria-labelledby="profile-tab">
+
+        </div>
+
+        <!-- ACCOMMODATIONS -->
+        <div class="tab-pane fade" id="information" role="tabpanel" aria-labelledby="profile-tab">
+
+        </div>
+
+        <!-- INSCRIPTION -->
+        <div class="tab-pane fade" id="form" role="tabpanel" aria-labelledby="contact-tab">
+          <h2 id="teste"  class="text-center section_title">Formulário de inscrição</h2>
+          <form class="form" role="form" action="" method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div class="row">
+              <div class="form-group col-md-8">
+                <label class="col-form-label" for="formGroupExampleInput">Seu nome</label>
+                {{form.name}}
+                <small id="nameHelp" class="form-text text-muted">Nome completo sem abreviações.</small>
+              </div>
+              <div class="form-group col-md-4">
+                <label class="col-form-label" for="formGroupExampleInput">Data de nascimento</label>
+                {{form.birthday}}
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-group col-md-7">
+                <label class="col-form-label" for="formGroupExampleInput">Endereço</label>
+                {{form.adress}}
+              </div>
+              <div class="form-group col-md-2">
+                <label class="col-form-label" for="formGroupExampleInput">Número</label>
+                {{form.adress_num}}
+              </div>
+              <div class="form-group col-md-3">
+                <label class="col-form-label" for="formGroupExampleInput">Complemento</label>
+                {{form.adress_comp}}
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-group col-md-7">
+                <label class="col-form-label" for="formGroupExampleInput">Cidade</label>
+                {{form.city}}
+              </div>
+              <div class="form-group col-md-2">
+                <label class="col-form-label" for="formGroupExampleInput">Estado</label>
+                {{form.state}}
+              </div>
+              <div class="form-group col-md-3">
+                <label class="col-form-label" for="formGroupExampleInput">CEP</label>
+                {{form.zip_code}}
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-group col-md-6">
+                <label class="col-form-label" for="formGroupExampleInput">E-mail</label>
+                {{form.email}}
+              </div>
+              <div class="form-group col-md-6">
+                <label class="col-form-label" for="formGroupExampleInput">Número de telefone</label>
+                {{form.phone}}
+              </div>
+            </div>
+            <div class="row checkbox">
+              <div class="custom-controls-stacked col-md-12 checkbox-inline">
+                <p>Gênero:</p>
+                {% for radio in form.gender %}
+                  <div class="form-check-boxes">
+                    {{radio.tag}}
+                    <label class="form-check-label" for="radio_{{ radio.index}}">{{ radio.choice_label }}</label>
+                  </div>
+                {% endfor %}
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-group col-md-6">
+                <label class="col-form-label" for="formGroupExampleInput">Descreva as últimas iniciações que você recebeu:</label>
+                {{form.initiations}}
+              </div>
+              <div class="form-group col-md-6">
+                <label class="col-form-label" for="formGroupExampleInput">De qual professor?</label>
+                {{form.initiations_lama}}
+              </div>
+            </div>
+            <div class="row checkbox">
+              <div class="custom-controls-stacked col-md-12 checkbox-inline">
+                <p>Praticante com ordenação? (monástica ou outra):</p>
+                {% for radio in form.monastic_ordenation %}
+                  <div class="form-check-boxes">
+                    {{radio.tag}}
+                    <label class="form-check-label inline" for="radio_{{ radio.index}}">{{ radio.choice_label }}</label>
+                  </div>
+                {% endfor %}
+              </div>
+            </div>
+
+            <h3 class="form_section_title">Alimentação</h3>
+            <div class="row">
+              <div class="custom-controls-stacked col-md-12 checkbox-inline">
+                <p>Preferência alimentar:</p>
+                {% for radio in form.food_preferency %}
+                  <div class="form-check-boxes">
+                    {{radio.tag}}
+                    <label class="form-check-label inline" for="radio_{{ radio.index}}">{{ radio.choice_label }}</label>
+                  </div>
+                {% endfor %}
+              </div>
+            </div>
+            <small id="phoneHelp" class="form-text text-muted">O Chagdud Gonpa Khadro Ling  não dispõe de dietas especiais com restrições a ingredientes.</small>
+
+            <h3 class="form_section_title">Assentos</h3>
+            <div class="row">
+              <div class="custom-controls-stacked col-md-12 checkbox-inline">
+                <p>Necessita de cadeira?</p>
+                {% for radio in form.seat %}
+                  <div class="form-check-boxes">
+                    {{radio.tag}}
+                    <label class="form-check-label" for="radio_{{ radio.index}}">{{ radio.choice_label }}</label>
+                  </div>
+                {% endfor %}
+              </div>
+            </div>
+            <small id="phoneHelp" class="form-text text-muted">Apenas para pessoas com limitações para sentar no chão.</small>
+
+            <h3 class="form_section_title">Opção de evento:</h3>
+            <div class="row">
+              <div class="custom-controls-stacked col-md-12">
+                {% for radio in form.event_option %}
+                  <div class="form-check-boxes">
+                    {{radio.tag}}
+                    <label class="form-check-label inline" for="radio_{{ radio.index}}">{{ radio.choice_label }}</label>
+                  </div>
+                {% endfor %}
+              </div>
+            </div>
+            <small id="phoneHelp" class="form-text text-muted margin-bottom-js">Não é possível a participação parcial neste retiro.</small>
+            <small id="phoneHelp" class="form-text text-muted margin-bottom-js">
+              Em caso de participação de crianças, informe no campo 'Observações' o nome dos responsáveis que estarão participando do evento.
+            </small>
+
+            <div class="row">
+              <div class="form-group col-md-8">
+                <label class="col-form-label" for="formGroupExampleInput">Observações:</label>
+                {{form.observations}}
+              </div>
+            </div>
+
+            <h3 class="form_section_title payment">Forma de pagamento:</h3>
+
+            {% if user_language == 'pt-br' %}
+
+            <div class="row payment">
+              <div class="custom-controls-stacked col-md-12 checkbox-inline">
+                <p>Forma de pagamento</p>
+                {% for radio in form.payment %}
+                  <div class="form-check-boxes">
+                    {{radio.tag}}
+                    <label class="form-check-label" for="radio_{{ radio.index}}">{{ radio.choice_label }}</label>
+                  </div>
+                {% endfor %}
+              </div>
+            </div>
+            <div class="row payment_form">
+              <div class="col-md-8 payment_section" id="payment1">
+                <h4 class="font-weight-light">Pagamento via Cielo</h4>
+                <p>Pague com seu cartão de crédito ou débito. Clique na imagem abaixo:</p>
+                <div class="form-group">
+                  <label class="col-form-label" for="formGroupExampleInput">Nome do titular igual ao que está no cartão:</label>
+                  {{form.credit_card_name}}
+                </div>
+                <a id="cielo_link" target="_blank" href="https://cieloecommerce.cielo.com.br/TransactionalVNext/Checkout/Index/f0111d24-26ca-47a5-9f69-c77335892ff5">
+                  <img class="cielo-img" alt="Comprar" src="https://cieloecommerce.cielo.com.br/backoffice/Content/img/buttons/button-5-1.png"/>
+                </a>
+              </div>
+              <div class="col-md-8 payment_section" id="payment2">
+                <h4 class="font-weight-light">Pagamento via Banco do Brasil:</h4>
+                <p>Dados para depósito ou transferência:<br>
+                  <a target="_blank" href="http://www.bb.com.br/pbb/pagina-inicial#/">Banco do Brasil</a><br>
+                  Titular: Chagdud Gonpa Brasil<br>
+                  CNPJ: 00.990.708/0001-37<br>
+                  Agência: 1380-3<br>
+                  Conta: 5454-2<br>
+                </p>
+                <div class="form-group">
+                  <label class="col-form-label" for="formGroupExampleInput">Data da transferência/depósito</label>
+                  {{form.deposit_day}}
+                </div>
+                <div class="form-group">
+                  <label class="col-form-label" for="formGroupExampleInput">Nome do titular da conta</label>
+                  {{form.deposit_name}}
+                </div>
+                <div class="form-group">
+                  <label class="col-form-label" for="formGroupExampleInput">Número da agência</label>
+                  {{form.deposit_agency}}
+                </div>
+                <p class="text-center">ou</p>
+                <div class="form-group">
+                  <label class="col-form-label" for="formGroupExampleInput">Número do envelope ou DOC </label>
+                  {{form.deposit_envelop}}
+                </div>
+                <small id="phoneHelp" class="form-text text-muted margin-bottom-js">
+                  Caso você efetue mais de um pagamento no mesmo depósito, por favor, informe no campo 'Observações'.
+                </small>
+              </div>
+            </div>
+
+            {% else %}
+            <p>{% trans "For PayPal donation/payment, please inform the e-mail <strong>adm@chagdud.org</strong> as donation’s identifier. Also, it is necessary describe what donation for. In this case, please inform Khadro Sangdu Drubchen." %}</p>
+              <a href="https://www.paypal.com/"><img class="logo-paypal" src="http://idgnow.com.br/idgimages/imagefolder.2016-10-03.9951796355/paypallogo_625.jpg" alt="Paypal"></a>
+            {% endif %}
+
+
+            <div class="row cancel_terms_area">
+              <div class="custom-controls-stacked col-md-12 checkbox-inline">
+                {% for checkbox in form.cancel_terms %}
+                  <div class="form-check-boxes">
+                    {{checkbox.tag}}
+                    <label class="form-check-label" for="checkbox{{ checkbox.index}}">{{ checkbox.choice_label }}</label>
+                  </div>
+                {% endfor %}
+                <p class="cancel_terms">
+                  Li e aceito a <a target="_blank" href="https://chagdud.com.br/politica-de-cancelamento-de-participacao-em-eventos/">política de cancelamento de
+                  participação em eventos no Khadro Ling.</a>
+                </p>
+                <br>
+                <small >Antes de clicar em enviar, certifique-se que preencheu todos os dados corretamente e concluiu o pagamento.</small>
+              </div>
+            </div>
+
+
+            <div class="btn-holder">
+              <button type="submit" class="btn btn-outline-primary">Enviar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+    <script type="text/javascript" src="{% static 'js/base.js' %}"></script>
+  {% endblock %}
