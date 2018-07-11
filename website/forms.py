@@ -1,29 +1,29 @@
 from django import forms
 
 class InscriptionForm(forms.Form):
-    name = forms.CharField(required=True, max_length=150, widget=forms.TextInput(attrs={'placeholder': 'Pema João da Silva ', 'class': 'form-control', 'id': 'formGroupExampleInput'}))
+    name = forms.CharField(required=True, max_length=150, widget=forms.TextInput(attrs={'placeholder': 'Nome completo', 'class': 'form-control', 'id': 'formGroupExampleInput'}))
     birthday = forms.DateField(required=True, widget=forms.DateInput(attrs={'placeholder':'01/01/1980','type':'date', 'class': 'form-control', 'id': 'formGroupExampleInput'}))
-    adress = forms.CharField(required=True, max_length=200, widget=forms.TextInput(attrs={'placeholder': 'Estr. Linha Águas Brancas', 'class': 'form-control', 'id': 'formGroupExampleInput'}))
-    adress_num = forms.IntegerField(required=True, widget=forms.NumberInput(attrs={'placeholder':'1211', 'class': 'form-control', 'id': 'formGroupExampleInput'}))
+    adress = forms.CharField(required=True, max_length=200, widget=forms.TextInput(attrs={'placeholder': 'Endereço', 'class': 'form-control', 'id': 'formGroupExampleInput'}))
+    adress_num = forms.IntegerField(required=True, widget=forms.NumberInput(attrs={'placeholder':'Número', 'class': 'form-control', 'id': 'formGroupExampleInput'}))
     adress_comp = forms.CharField(required=False, max_length=200, widget=forms.TextInput(attrs={'placeholder': 'casa 1', 'class': 'form-control', 'id': 'formGroupExampleInput'}))
-    city = forms.CharField(required=True, max_length=150, widget=forms.TextInput(attrs={'placeholder': 'Três Coroas', 'class': 'form-control', 'id': 'formGroupExampleInput'}))
-    state = forms.CharField(required=True, max_length=2, widget=forms.TextInput(attrs={'placeholder': 'RS', 'class': 'form-control', 'id': 'formGroupExampleInput'}))
-    zip_code = forms.CharField(required=True, min_length=9, max_length=9, widget=forms.TextInput(attrs={'placeholder': '95660-000', 'class': 'form-control', 'id': 'formGroupExampleInput'}))
+    city = forms.CharField(required=True, max_length=150, widget=forms.TextInput(attrs={'placeholder': 'Cidade', 'class': 'form-control', 'id': 'formGroupExampleInput'}))
+    state = forms.CharField(required=True, max_length=2, widget=forms.TextInput(attrs={'placeholder': 'Estado', 'class': 'form-control', 'id': 'formGroupExampleInput'}))
+    zip_code = forms.CharField(required=True, min_length=9, max_length=9, widget=forms.TextInput(attrs={'placeholder': 'CEP', 'class': 'form-control', 'id': 'formGroupExampleInput'}))
     email = forms.EmailField(required=True, max_length=100, widget=forms.EmailInput(attrs={'placeholder':'exemplo@email.com', 'type':'email', 'class':'form-control', 'id':'formGroupExampleInput'}))
-    phone = forms.IntegerField(required=True, widget=forms.NumberInput(attrs={'type':'number','placeholder': '51 998765432', 'class': 'form-control', 'id': 'formGroupExampleInput'}))
+    phone = forms.IntegerField(required=True, widget=forms.NumberInput(attrs={'type':'number','placeholder': 'Somente números', 'class': 'form-control', 'id': 'formGroupExampleInput'}))
     gender = forms.ChoiceField(required=True, widget=forms.RadioSelect(attrs={'type':'radio', 'class':'form-check'}), choices=(
         ('Masculino','Masculino'),
         ('Feminino','Feminino'),
         ('Outro','Outro'),
     ))
-    initiations = forms.CharField(required=True,max_length=2000, widget=forms.Textarea(attrs={'placeholder': 'Iniciação de Tara Vermelha, Guru Rinpoche...', 'class': 'form-control form_text_area', 'id': 'formGroupExampleInput'}))
-    initiations_lama = forms.CharField(required=True,max_length=2000, widget=forms.Textarea(attrs={'placeholder': 'S. E. Chagdud Tulku Rinpoche, S. E. Dzongsar Khyentse Rinpoche...', 'class': 'form-control form_text_area', 'id': 'formGroupExampleInput'}))
-    monastic_ordenation = forms.ChoiceField(required=True, widget=forms.RadioSelect(attrs={'value':'1','type':'radio', 'class':'form-check'}), choices=(
+    initiations = forms.CharField(required=True,max_length=2000, widget=forms.Textarea(attrs={'placeholder': 'Ex: Iniciação de Guru Rinpoche...', 'class': 'form-control form_text_area', 'id': 'formGroupExampleInput'}))
+    initiations_lama = forms.CharField(required=True,max_length=2000, widget=forms.Textarea(attrs={'placeholder': 'Ex: S. E. Dzongsar Khyentse Rinpoche...', 'class': 'form-control form_text_area', 'id': 'formGroupExampleInput'}))
+    monastic_ordenation = forms.ChoiceField(required=True, widget=forms.RadioSelect(attrs={'value':'1','type':'radio', 'class':'form-check inline'}), choices=(
         ('Sim','Sim'),
         ('Não','Não'),
     ))
     observations = forms.CharField(required=False,max_length=4000, widget=forms.Textarea(attrs={'class': 'form-control form_text_area', 'id': 'formGroupExampleInput'}))
-    food_preferency = forms.ChoiceField(required=True, widget=forms.RadioSelect(attrs={'type':'radio', 'class':'form-check'}), choices=(
+    food_preferency = forms.ChoiceField(required=True, widget=forms.RadioSelect(attrs={'type':'radio', 'class':'form-check inline'}), choices=(
         ('Não-vegetariana','Não-vegetariana'),
         ('Vegetariana','Vegetariana'),
     ))
@@ -32,9 +32,9 @@ class InscriptionForm(forms.Form):
         ('Não','Não'),
     ))
     event_option = forms.ChoiceField(required=True, widget=forms.RadioSelect(attrs={'type':'radio', 'class':'form-check inline checkbox-option'}), choices=(
-        ('Adulto','Evento completo com as três refeições incluídas e sem hospedagens: R$2,00'),
-        ('Criança 3-13 anos','Participação infantil (de 3 a 12 anos) com alimentação: R$1,00'),
-        ('Criança 0-2 anos','Crianças de 0 a 2 anos: R$0,00'),
+        ('Adulto','Evento completo com as três refeições incluídas e sem hospedagem: R$2,00'),
+        ('Criança 4-13 anos','Participação infantil (de 4 a 12 anos) com as três refeições incluídas e sem hospedagem: R$1,00'),
+        ('Criança 0-3 anos','Crianças (de 0 a 3 anos) com as três refeições incluídas e sem hospedagem: R$0,00'),
     ))
     payment = forms.ChoiceField(required=True, widget=forms.RadioSelect(attrs={'type':'radio', 'class':'form-check'}), choices=(
         ('Cartão de crédito','Cartão de crédito'),

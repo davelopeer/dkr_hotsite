@@ -42,6 +42,7 @@ def index(request):
             deposit_agency = request.POST.get('deposit_agency', '')
             deposit_envelop = request.POST.get('deposit_envelop', '')
             credit_card_name = request.POST.get('credit_card_name', '')
+            event_option = request.POST.get('event_option', '')
 
             #Make the date in the br format dd/mm/yyyy
             def dateBR(date):
@@ -79,12 +80,16 @@ def index(request):
                     seat,
                     payment,
                     payment_info,
+                    event_option,
                     )
-            return redirect('index')
+            return redirect('pay-success')
         else:
             return redirect('https://docs.djangoproject.com/en/2.0/topics/i18n/translation/ ') #PAGINA QUALQUER DE TESTE
 
-    return render(request, 'base.html',  {
+    return render(request, 'index.html',  {
         'form': form_class,
         'user_language':user_language,
     })
+
+def pay_success(request):
+    return render(request, 'pay-success.html')
