@@ -12,6 +12,7 @@ def index(request):
     # Discovering the user langugage
     user_language = translation.get_language_from_request(request, check_path=True)
 
+    
     form_class = InscriptionForm
 
     if request.method == 'POST':
