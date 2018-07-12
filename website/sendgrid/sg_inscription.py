@@ -27,16 +27,14 @@ def sendMail(name,birthday_br,adress,adress_num,adress_comp,city,state,zip_code,
                                     'Preferência alimentar: ' + food_preferency + '\n' + '\n' +
                                     'Necessidade de cadeira: ' + seat + '\n' + '\n' +
                                     'Opção de evento: ' + event_option + '\n' + '\n' +
-                                    'Forma de pagamento: ' + payment + '\n' + '\n'
+                                    'Forma de pagamento: ' + payment + '\n' + '\n' +
                                     'Dados do pagamento: ' + payment_info + '\n' + '\n'
                                     )
 
 
         mail = Mail(from_email, subject, to_email, sendgrid_content)
-        # mail.add_attachment(deposit_voucher)
 
         response = sg.client.mail.send.post(request_body=mail.get())
-        print("success")
         print(response.status_code)
         print(response.body)
         print(response.headers)

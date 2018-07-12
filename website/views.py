@@ -53,7 +53,7 @@ def index(request):
             deposit_day_br = dateBR(deposit_day)
 
 
-            # See if it wa paid with credit card or deposit
+            # See if it was paid with credit card or deposit
             if payment == 'Cartão de crédito':
                 payment_info = 'Nome do titular do cartão: ' + credit_card_name
             else:
