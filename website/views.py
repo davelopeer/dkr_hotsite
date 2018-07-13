@@ -17,6 +17,13 @@ def index(request):
     if request.method == 'POST':
         form = form_class(request.POST)
 
+
+
+        if user_language == 'pt-br':
+            form.fields['observations'].required = True
+
+
+
         if form.is_valid():
             name = request.POST.get('name', '')
             birthday = request.POST.get('birthday', '')
@@ -36,6 +43,7 @@ def index(request):
             food_preferency = request.POST.get('food_preferency', '')
             seat = request.POST.get('seat', '')
             payment = request.POST.get('payment', '')
+            payment_international = request.POST.get('payment_international', '')
             # cancel_terms = request.POST.get('cancel_terms', '')
             deposit_day = request.POST.get('deposit_day', '')
             deposit_name = request.POST.get('deposit_name', '')
@@ -79,6 +87,7 @@ def index(request):
                     food_preferency,
                     seat,
                     payment,
+                    payment_international,
                     payment_info,
                     event_option,
                     )

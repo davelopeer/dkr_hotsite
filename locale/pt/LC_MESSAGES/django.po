@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-10 16:48-0300\n"
+"POT-Creation-Date: 2018-07-12 15:30-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -55,18 +55,15 @@ msgstr ""
 
 #: .\website\templates\index.html:34
 msgid "Pervasively appear in the three levels of the world,"
-msgstr ""
-"Onipresentes nos três níveis do mundo,"
+msgstr "Onipresentes nos três níveis do mundo,"
 
 #: .\website\templates\index.html:35
 msgid "Unobstructedly granting accomplishments of action and wisdom—"
-msgstr ""
-"Concedem livremente a consumação da ação e da sabedoria."
+msgstr "Concedem livremente a consumação da ação e da sabedoria."
 
 #: .\website\templates\index.html:36
 msgid "I praise the deities of the maṇḍala of gathered ḍākinīs."
-msgstr ""
-"Louvo as deidades da mandala da Reunião de Dakinis."
+msgstr "Louvo as deidades da mandala da Reunião de Dakinis."
 
 #: .\website\templates\index.html:40
 msgid ""
@@ -99,8 +96,8 @@ msgstr ""
 "permaneceu em posse das dakinis por algum tempo, e estava além do alcance e "
 "do âmbito das pessoas comuns. O momento de treinar os seres por meio desse "
 "tesouro chegou posteriormente, nesta era de conflitos, quando, pelo poder da "
-"compaixão e de aspirações iluminadas, a transmissão de suas palavras e de seu "
-"significado coube ao descobridor de tesouros Padma Ösel Do-ngak Lingpa "
+"compaixão e de aspirações iluminadas, a transmissão de suas palavras e de "
+"seu significado coube ao descobridor de tesouros Padma Ösel Do-ngak Lingpa "
 "(Jamyang Khyentse Wangpo, 1820-1892). Isso porque, acima de tudo, durante a "
 "sua vida como Guru Chökyi Wangchuk, um dos cinco grandes reis-tertons, Jomo "
 "Menmo tinha sido sua consorte, e também porque ele foi abençoado pelas "
@@ -117,10 +114,10 @@ msgid ""
 "empowerment."
 msgstr ""
 "Esta prática de Vajravarahi é uma das mais belas e elaboradas sadhanas de "
-"dakini, e é conhecida pelo seu poder de restaurar a degeneração dos elementos "
-"— terra, água, ar e os outros — e de aplacar a destruição causada por "
-"doenças, fome e guerra. Por ter uma linhagem de transmissão curta, hoje as "
-"bênçãos desta prática permanecem vívidas e potentes. Dzongsar Khyentse "
+"dakini, e é conhecida pelo seu poder de restaurar a degeneração dos "
+"elementos — terra, água, ar e os outros — e de aplacar a destruição causada "
+"por doenças, fome e guerra. Por ter uma linhagem de transmissão curta, hoje "
+"as bênçãos desta prática permanecem vívidas e potentes. Dzongsar Khyentse "
 "Rinpoche concederá a iniciação amadurecedora. "
 
 #: .\website\templates\index.html:48
@@ -184,15 +181,98 @@ msgid ""
 "wish to attend, you should receive a inner tantra empowerment before "
 "December."
 msgstr ""
-"Os três veículos internos do Vajrayana são o Mahayoga, o Anuyoga e o Atiyoga, "
-"e todas as iniciações concedidas no Chagdud Gonpa são de tantras internos. Os "
-"três veículos externos do Vajrayana — o Kriya, Charya e o Yoga tantras — "
-"também possuem iniciações, mas não cumprem os requisitos para este drubchen. "
-"Caso tenha interesse em participar, você precisa receber uma iniciação de "
-"tantra interno antes de dezembro."
+"Os três veículos internos do Vajrayana são o Mahayoga, o Anuyoga e o "
+"Atiyoga, e todas as iniciações concedidas no Chagdud Gonpa são de tantras "
+"internos. Os três veículos externos do Vajrayana — o Kriya, Charya e o Yoga "
+"tantras — também possuem iniciações, mas não cumprem os requisitos para este "
+"drubchen. Caso tenha interesse em participar, você precisa receber uma "
+"iniciação de tantra interno antes de dezembro."
+
+#: .\website\templates\index.html:75
+msgid "li-1"
+msgstr "Lembre-se de trazer medicamentos, objetos de higiene e cuidados pessoais."
+
+#: .\website\templates\index.html:76
+msgid "li-2"
+msgstr "O evento inclui as três refeições diárias."
+
+#: .\website\templates\index.html:77
+msgid "li-3"
+msgstr "A água em todas as pias é potável."
+
+#: .\website\templates\index.html:79
+msgid "li-4"
+msgstr ""
+"Traga sua almofada para meditação (identificada com o seu nome), lanterna, aparatos "
+"para chuva, protetor solar, chapéu, repelente de insetos, calçado fechado e confortável "
+"para caminhar, agasalhos."
+
+#: .\website\templates\index.html:81
+msgid "li-5"
+msgstr "Por favor, traga dinheiro trocado para transações comerciais."
+
+#: .\website\templates\index.html:83
+msgid "li-6"
+msgstr "O clima no Khadro Ling é muito instável. Sugerimos que todos confiram a previsão do tempo previamente."
+
+#: .\website\templates\index.html:85
+msgid "li-7"
+msgstr "Não dispomos de computadores para os particpantes em eventos no Khadro Ling."
+
+#: .\website\templates\index.html:87
+msgid "li-8"
+msgstr "Medicamentos podem ser encomendados por tele entrega nas farmácias de Três Coroas. Os números estão divulgados no mural de nossa recepção."
+
+#: .\website\templates\index.html:89
+msgid "li-9"
+msgstr "Os bancos mais próximos estão localizados em Três Coroas, Taquara e Gramado."
+
+#: .\website\templates\index.html:90
+msgid "li-10"
+msgstr "Nossa loja aceita cartões com bandeiras Visa, Master e Cielo, débito e crédito."
+
+#: .\website\templates\index.html:91
+msgid "li-11"
+msgstr "Por favor, não utilizem a louça do refeitório no local da cerimônia. "
+
+#: .\website\templates\index.html:92
+msgid "li-12"
+msgstr "Sugerimos trazer sua própria garrafa de água para evitarmos lixo plástico."
+
+#: .\website\templates\index.html:93
+msgid "li-13"
+msgstr "É proibido fumar em qualquer área do Khadro Ling."
+
+#: .\website\templates\index.html:95
+msgid "li-14"
+msgstr ""
+"Mantenha objetos pessoais e itens de valor guardados consigo e/ou de forma "
+"adequada. O Khadro Ling não se responsabiliza pela perda de objetos dos participantes em eventos."
+
+#: .\website\templates\index.html:98
+msgid "li-15"
+msgstr "Não alimente os animais. Alguns deles ficam muito doentes por receberem alimentos que não sejam parte de sua dieta."
+
+
+#: .\website\templates\index.html:101
+msgid "li-16"
+msgstr ""
+"<strong>Brechó</strong>: o Khadro Ling possui um brechó para angariar fundos "
+"para seus projetos. Doações em bom estado são bem-vindas."
+
+#: .\website\templates\index.html:323
+msgid ""
+"For PayPal donation/payment, please inform the e-mail <strong>adm@chagdud."
+"org</strong> as donation’s identifier. Also, it is necessary describe what "
+"donation for. In this case, please inform Khadro Sangdu Drubchen."
+msgstr ""
 
 #: .\website\templates\pay-success.html:14
 msgid ""
-"The form was successfully send. Expect a response in your e-mail in the next "
+"The form was sent successfully. Wait for an answer in your email in the next "
 "few days"
+msgstr ""
+
+#: .\website\templates\pay-success.html:16
+msgid "Voltar"
 msgstr ""

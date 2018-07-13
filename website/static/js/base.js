@@ -26,3 +26,9 @@ $("#id_event_option_2").on("click", function(){
       $('.payment').css('display', 'none')
       $('.cancel_terms_area').css('margin-top', '50px')
 });
+
+
+// PAYPAL INPUT OPENING THE SITE
+$("#id_payment_international_0").on("click", function () {
+  window.open("https://www.paypal.com/");
+})

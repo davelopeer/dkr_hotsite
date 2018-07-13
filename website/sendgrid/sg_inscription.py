@@ -3,7 +3,7 @@ import os
 from sendgrid.helpers.mail import *
 
 
-def sendMail(name,birthday_br,adress,adress_num,adress_comp,city,state,zip_code,email,phone,gender,initiations,initiations_lama,monastic_ordenation,observations,food_preferency,seat,payment,payment_info,event_option):
+def sendMail(name,birthday_br,adress,adress_num,adress_comp,city,state,zip_code,email,phone,gender,initiations,initiations_lama,monastic_ordenation,observations,food_preferency,seat,payment, payment_international,payment_info,event_option):
         sg = sendgrid.SendGridAPIClient(apikey=os.environ.get('DKR_SG_API_KEY'))
         from_email = Email(email)
         to_email = Email("davidbarenco@gmail.com")
@@ -27,7 +27,7 @@ def sendMail(name,birthday_br,adress,adress_num,adress_comp,city,state,zip_code,
                                     'Preferência alimentar: ' + food_preferency + '\n' + '\n' +
                                     'Necessidade de cadeira: ' + seat + '\n' + '\n' +
                                     'Opção de evento: ' + event_option + '\n' + '\n' +
-                                    'Forma de pagamento: ' + payment + '\n' + '\n' +
+                                    'Forma de pagamento: ' + payment + payment_international + '\n' + '\n' +
                                     'Dados do pagamento: ' + payment_info + '\n' + '\n'
                                     )
 
