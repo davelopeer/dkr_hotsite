@@ -123,14 +123,3 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     STATIC_DIR,
 ]
-
-
-# Sendgrid settings
-
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-DEFAULT_FROM_EMAIL = 'davidbarenco@gmail.com'
-EMAIL_HOST = 'smtp.sendgrid.net'
-EMAIL_HOST_USER = 'sendgrid_username'
-EMAIL_HOST_PASSWORD = 'sendgrid_password'
-EMAIL_USE_TLS = True
-EMAIL_PORT = 587

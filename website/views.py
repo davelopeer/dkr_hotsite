@@ -12,17 +12,11 @@ def index(request):
     # Discovering the user langugage
     user_language = translation.get_language_from_request(request, check_path=True)
 
-    form_class = InscriptionForm
-
     if request.method == 'POST':
-        form = form_class(request.POST)
-
-
+        form = InscriptionForm(request.POST)
 
         if user_language == 'pt-br':
             form.fields['observations'].required = True
-
-
 
         if form.is_valid():
             name = request.POST.get('name', '')
@@ -92,11 +86,11 @@ def index(request):
                     event_option,
                     )
             return redirect('pay-success')
-        else:
-            return redirect('https://docs.djangoproject.com/en/2.0/topics/i18n/translation/ ') #PAGINA QUALQUER DE TESTE
+    else:
+        form = InscriptionForm()
 
     return render(request, 'index.html',  {
-        'form': form_class,
+        'form': form,
         'user_language':user_language,
     })
 
