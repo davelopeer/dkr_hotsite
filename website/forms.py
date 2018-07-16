@@ -22,7 +22,7 @@ class InscriptionForm(forms.Form):
         ('Sim','Sim'),
         ('Não','Não'),
     ))
-    observations = forms.CharField(required=False,max_length=4000, widget=forms.Textarea(attrs={'class': 'form-control form_text_area', 'id': 'formGroupExampleInput'}))
+    observations = forms.CharField(required=False,max_length=4000, widget=forms.Textarea(attrs={'name':'observations','class': 'form-control form_text_area', 'id': 'formGroupExampleInput'}))
     food_preferency = forms.ChoiceField(required=True, widget=forms.RadioSelect(attrs={'type':'radio', 'class':'form-check inline food-preferency', 'data-toggle':'modal', 'data-target':'#exampleModal'}), choices=(
         ('Não-vegetariana','Não-vegetariana'),
         ('Vegetariana','Vegetariana'),
@@ -39,6 +39,9 @@ class InscriptionForm(forms.Form):
     payment = forms.ChoiceField(required=False, widget=forms.RadioSelect(attrs={'type':'radio', 'class':'form-check'}), choices=(
         ('Cartão de crédito','Cartão de crédito'),
         ('Depósito bancário','Depósito bancário'),
+    ))
+    payment_international = forms.ChoiceField(required=False, widget=forms.RadioSelect(attrs={'type':'radio', 'class':'form-check inline'}), choices=(
+        ('PayPal',''),
     ))
     credit_card_name = forms.CharField(required=False,max_length=200, widget=forms.TextInput(attrs={'placeholder': 'JOSÉ M R SILVA', 'class': 'form-control', 'id': 'formGroupExampleInput'}))
     deposit_day = forms.DateField(required=False, widget=forms.DateInput(attrs={'placeholder':'20/09/2018','type':'date', 'class': 'form-control', 'id': 'formGroupExampleInput'}))

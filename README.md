@@ -5,20 +5,16 @@
 Dzongsar Khyentse Rinpoche is a great buddhist master that will come in dezember to Chagdud Gonpa Khadro Ling, in Três Coroas, Brazil.
 For this event is expected hundreds of people to come and their subscription will need a particulary website.
 
-## Instalation
+## Requirements
 
-This project was created with **Python 3.6.4**, which you can downlond in this link: [Python v3.6.4](https://www.python.org/downloads/release/python-364/)
+* Python 3.6.4
+* Pip
 
-It also uses:
+## Quick start
 
-### Django
+1. Install all the project dependencies by running:
 
-Django version 2.0.6 is used. For instalation, type:
+`pip install -r requirements.txt`
 
-`pip install -U django==2.0.6 `
-
-### Sendgrid
-
-For the backend mailing, is used the Sendgrid API. You must install it first with:
-
-`pip install sendgrid`
+2. Open the file `env.example` and export all the required _ENVs_ with the proper values.
+   **IMPORTANT:** don't edit the values of this file, but use it as a guide only.

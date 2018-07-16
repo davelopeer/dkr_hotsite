@@ -22,7 +22,9 @@
   padding: 0 3%;
 }
 
-
+.underline {
+   text-decoration: underline;
+}
 
 /* HOME */
 
@@ -58,8 +60,21 @@
 
 /* ACCOMMODATIONS */
 
+.accommodation-li {
+  margin-bottom: 20px;
+}
 
 
+/* GENERAL INFORMATION */
+
+.list-group{
+  margin: 0 auto 50px;
+  width: 90%;
+}
+
+.list-group-item-warning {
+  background-color: grey;
+}
 
 
 /* INSCRIPTION */
@@ -92,10 +107,6 @@
   margin: 30px auto 20px;
 }
 
-.list-group-item {
-  background-color: #f2f2f2;
-}
-
 .checkbox{
   margin-bottom: 30px;
 }
@@ -120,8 +131,9 @@
 }
 
 .logo-paypal{
-  max-width: 250px;
-  margin-bottom: 30px;
+  max-width: 150px;
+  margin: 20px 0 30px 15px;
+  display: inline;
 }
 
 .btn-holder {

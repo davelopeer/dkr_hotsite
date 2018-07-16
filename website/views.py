@@ -12,10 +12,11 @@ def index(request):
     # Discovering the user langugage
     user_language = translation.get_language_from_request(request, check_path=True)
 
-    form_class = InscriptionForm
-
     if request.method == 'POST':
-        form = form_class(request.POST)
+        form = InscriptionForm(request.POST)
+
+        if user_language == 'pt-br':
+            form.fields['observations'].required = True
 
         if form.is_valid():
             name = request.POST.get('name', '')
@@ -36,6 +37,7 @@ def index(request):
             food_preferency = request.POST.get('food_preferency', '')
             seat = request.POST.get('seat', '')
             payment = request.POST.get('payment', '')
+            payment_international = request.POST.get('payment_international', '')
             # cancel_terms = request.POST.get('cancel_terms', '')
             deposit_day = request.POST.get('deposit_day', '')
             deposit_name = request.POST.get('deposit_name', '')
@@ -53,7 +55,7 @@ def index(request):
             deposit_day_br = dateBR(deposit_day)
 
 
-            # See if it wa paid with credit card or deposit
+            # See if it was paid with credit card or deposit
             if payment == 'Cartão de crédito':
                 payment_info = 'Nome do titular do cartão: ' + credit_card_name
             else:
@@ -79,15 +81,16 @@ def index(request):
                     food_preferency,
                     seat,
                     payment,
+                    payment_international,
                     payment_info,
                     event_option,
                     )
             return redirect('pay-success')
-        else:
-            return redirect('https://docs.djangoproject.com/en/2.0/topics/i18n/translation/ ') #PAGINA QUALQUER DE TESTE
+    else:
+        form = InscriptionForm()
 
     return render(request, 'index.html',  {
-        'form': form_class,
+        'form': form,
         'user_language':user_language,
     })
 
