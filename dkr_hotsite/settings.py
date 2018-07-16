@@ -13,7 +13,7 @@ STATIC_DIR = os.path.join(BASE_DIR,'static')
 SECRET_KEY = os.environ.get('SK_DKR_HOTSITE')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['127.0.0.1', 'dkr.pythonanywhere.com', 'www.ks-drubchen.com', 'ks-drubchen.com']
 
