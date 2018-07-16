@@ -467,7 +467,7 @@
             {% else %}
             <p>{% trans "For PayPal donation/payment, please inform the e-mail <strong>adm@chagdud.org</strong> as donation’s identifier. Also, it is necessary describe what donation for. In this case, please inform Khadro Sangdu Drubchen." %}</p>
               {% for radio in form.payment_international %}
-                <div class="form-check-boxes">
+                <div class="form-check-boxes payment">
                   {{radio.tag}}
                   <label class="form-check-label " for="radio_{{ radio.index}}">{{ radio.choice_label }}</label>
                   <a target="_blank" href="https://www.paypal.com/"><img class="logo-paypal" src="{% static 'images/paypal-logo.png' %}" alt="Paypal"></a>

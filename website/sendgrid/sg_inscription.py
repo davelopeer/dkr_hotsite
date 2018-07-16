@@ -1,6 +1,8 @@
 import sendgrid
 import os
 from sendgrid.helpers.mail import *
+# import pdb; pdb.set_trace()
+
 
 
 def sendMail(name,birthday_br,adress,adress_num,adress_comp,city,state,zip_code,email,phone,gender,initiations,initiations_lama,monastic_ordenation,observations,food_preferency,seat,payment, payment_international,payment_info,event_option):
