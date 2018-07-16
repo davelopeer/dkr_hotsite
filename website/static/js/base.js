@@ -1,3 +1,11 @@
+// SET THE CHILD OPTIONS IN THE EVENT SECTION TO LINK TO THE MODAL POP-UP ALERT
+$(document).ready(function(){
+      $('#id_event_option_1, #id_event_option_2, #id_payment_0').attr('data-toggle', 'modal')
+      $('#id_event_option_1, #id_event_option_2').attr('data-target', '#childModal')
+      $('#id_payment_0').attr('data-target', '#paymentModal')
+});
+
+
 // CHANGING THE PAYMENT SECTION DISPLAY - CREDIT CARD OR DEPOSIT
 $("#id_payment_0").on("click", function(){
       $('#payment1').css('display', 'block')
@@ -9,14 +17,15 @@ $("#id_payment_1").on("click", function(){
 });
 
 
-
 // CHANGING THE PAYMENT SECTION DISPLAY ACCORDING TO THE EVENT CHOSED - ADULT OR KID
 $("#id_event_option_0").on("click", function(){
-      $('#cielo_link').prop('href', 'https://cieloecommerce.cielo.com.br/TransactionalVNext/Checkout/Index/f0111d24-26ca-47a5-9f69-c77335892ff5')
+      $('#payment-adult').css('display', 'block')
+      $('#payment-child').css('display', 'none')
       $('.payment_form, .payment').css('display', 'block')
 });
 $("#id_event_option_1").on("click", function(){
-      $('#cielo_link').prop('href', '')
+      $('#payment-adult').css('display', 'none')
+      $('#payment-child').css('display', 'block')
       $('.payment_form, .payment').css('display', 'block')
 });
 $("#id_event_option_2").on("click", function(){
@@ -29,12 +38,3 @@ $("#id_event_option_2").on("click", function(){
 $("#id_payment_international_0").on("click", function () {
   window.open("https://www.paypal.com/");
 })
-
-
-$(document).ready(function(){
-
-      $('#id_event_option_1, #id_event_option_2').attr('data-toggle', 'modal')
-      $('#id_event_option_1, #id_event_option_2').attr('data-target', '#childModal')
-      $('h1').css('color', 'red')
-      // $('.payment').css('display', 'block')
-});

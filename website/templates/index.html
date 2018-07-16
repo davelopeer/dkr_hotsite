@@ -387,7 +387,7 @@
               <div class="modal-dialog" role="document">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Atenção, responsáveis</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Atenção, responsáveis!</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                       <span aria-hidden="true">&times;</span>
                     </button>
@@ -431,9 +431,6 @@
                   <label class="col-form-label" for="formGroupExampleInput">Nome do titular igual ao que está no cartão:</label>
                   {{form.credit_card_name}}
                 </div>
-                <a id="cielo_link" target="_blank" href="https://cieloecommerce.cielo.com.br/TransactionalVNext/Checkout/Index/f0111d24-26ca-47a5-9f69-c77335892ff5">
-                  <img class="cielo-img" alt="Comprar" src="https://cieloecommerce.cielo.com.br/backoffice/Content/img/buttons/button-5-1.png"/>
-                </a>
               </div>
               <div class="col-md-8 payment_section" id="payment2">
                 <h4 class="font-weight-light">Pagamento via Banco do Brasil:</h4>
@@ -503,26 +500,28 @@
             </div>
           </form>
 
-          <div class="modal fade" id="paymentModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <!-- CIELO PAYMENT MODAL (REQUIREDLY OUTSIDE THE FORM) -->
+          <div class="modal fade" id="paymentModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                  <h5 class="modal-title" id="exampleModalCenterTitle">Pagamento com Cielo</h5>
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
                 </div>
                 <div class="modal-body">
-                  ...
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Save changes</button>
+                  <p>Clique na imagem a baixo e seja redirecionado para efetuar o pagamente.</p>
+                  <div id="payment-adult">
+                    <form method='post' action='https://cieloecommerce.cielo.com.br/transactionalvnext/order/buynow' target='blank'><input type='hidden' name='id' value='e5c8f945-a7d7-4035-9319-4df5faf62860' /><input type='image' name='submit' alt='Comprar' src='https://cieloecommerce.cielo.com.br/backoffice/Content/img/buttons/button-5-1.png' /></form>
+                  </div>
+                  <div id="payment-child">
+                    <form method='post' action='https://cieloecommerce.cielo.com.br/transactionalvnext/order/buynow' target='blank'><input type='hidden' name='id' value='a92943fe-fdfc-4cc1-8750-bb9ad4acd820' /><input type='image' name='submit' alt='Comprar' src='https://cieloecommerce.cielo.com.br/backoffice/Content/img/buttons/button-5-1.png' /></form>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-
 
         </div>
       </div>
