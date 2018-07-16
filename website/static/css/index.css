@@ -31,6 +31,7 @@
 .quote {
   margin-bottom: 50px;
   font-size: 0.94em;
+  text-align: center;
 }
 
 .quote-line  {
@@ -139,6 +140,11 @@
 .btn-holder {
   margin-top: 30px;
 }
+
+#payment-child {
+  display: none;
+}
+
 
 @media screen and (max-width: 768px) {
   .form-check-boxes {

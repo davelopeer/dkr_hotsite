@@ -12,11 +12,29 @@ def index(request):
     # Discovering the user langugage
     user_language = translation.get_language_from_request(request, check_path=True)
 
+
     if request.method == 'POST':
         form = InscriptionForm(request.POST)
 
-        if user_language == 'pt-br':
-            form.fields['observations'].required = True
+        # # SETTING THE REQUIRED PAYMENT ACCORDING TO THE USER LANGUAGE
+        # if user_language == 'pt-br':
+        #     form.fields['payment'].required = True
+        # else:
+        #     form.fields['payment_international'].required = True
+        #
+        # # SETTING THE REQUIRED PAYMENT INFO ACCORDING TO SELECTED PAYMENT
+        # user_payment = form.fields['payment']
+        # if user_payment == 'Cartão de crédito':
+        #     form.fields['credit_card_name'].required = True
+        #
+        # if (form.fields['payment']) == 'Depósito bancário':
+        #     form.fields['deposit_day'].required = True
+        #     form.fields['deposit_name'].required = True
+        #     form.fields['credit_card_name'].required = True
+
+
+
+
 
         if form.is_valid():
             name = request.POST.get('name', '')

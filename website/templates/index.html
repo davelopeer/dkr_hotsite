@@ -382,10 +382,24 @@
                 {% endfor %}
               </div>
             </div>
+
+            <div class="modal fade" id="childModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Atenção, responsáveis!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    Em caso de participação de crianças, informe no campo 'Observações' o nome dos responsáveis que estarão participando do evento.
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <small id="phoneHelp" class="form-text text-muted margin-bottom-js">Não é possível a participação parcial neste retiro.</small>
-            <small id="phoneHelp" class="form-text text-muted margin-bottom-js">
-              Em caso de participação de crianças, informe no campo 'Observações' o nome dos responsáveis que estarão participando do evento.
-            </small>
 
             <div class="row">
               <div class="form-group col-md-8">
@@ -417,9 +431,6 @@
                   <label class="col-form-label" for="formGroupExampleInput">Nome do titular igual ao que está no cartão:</label>
                   {{form.credit_card_name}}
                 </div>
-                <a id="cielo_link" target="_blank" href="https://cieloecommerce.cielo.com.br/TransactionalVNext/Checkout/Index/f0111d24-26ca-47a5-9f69-c77335892ff5">
-                  <img class="cielo-img" alt="Comprar" src="https://cieloecommerce.cielo.com.br/backoffice/Content/img/buttons/button-5-1.png"/>
-                </a>
               </div>
               <div class="col-md-8 payment_section" id="payment2">
                 <h4 class="font-weight-light">Pagamento via Banco do Brasil:</h4>
@@ -456,7 +467,7 @@
             {% else %}
             <p>{% trans "For PayPal donation/payment, please inform the e-mail <strong>adm@chagdud.org</strong> as donation’s identifier. Also, it is necessary describe what donation for. In this case, please inform Khadro Sangdu Drubchen." %}</p>
               {% for radio in form.payment_international %}
-                <div class="form-check-boxes">
+                <div class="form-check-boxes payment">
                   {{radio.tag}}
                   <label class="form-check-label " for="radio_{{ radio.index}}">{{ radio.choice_label }}</label>
                   <a target="_blank" href="https://www.paypal.com/"><img class="logo-paypal" src="{% static 'images/paypal-logo.png' %}" alt="Paypal"></a>
@@ -488,6 +499,30 @@
               <button type="submit" class="btn btn-outline-primary">Enviar</button>
             </div>
           </form>
+
+          <!-- CIELO PAYMENT MODAL (REQUIREDLY OUTSIDE THE FORM) -->
+          <div class="modal fade" id="paymentModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalCenterTitle">Pagamento com Cielo</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p>Clique na imagem a baixo e seja redirecionado para efetuar o pagamente.</p>
+                  <div id="payment-adult">
+                    <form method='post' action='https://cieloecommerce.cielo.com.br/transactionalvnext/order/buynow' target='blank'><input type='hidden' name='id' value='e5c8f945-a7d7-4035-9319-4df5faf62860' /><input type='image' name='submit' alt='Comprar' src='https://cieloecommerce.cielo.com.br/backoffice/Content/img/buttons/button-5-1.png' /></form>
+                  </div>
+                  <div id="payment-child">
+                    <form method='post' action='https://cieloecommerce.cielo.com.br/transactionalvnext/order/buynow' target='blank'><input type='hidden' name='id' value='a92943fe-fdfc-4cc1-8750-bb9ad4acd820' /><input type='image' name='submit' alt='Comprar' src='https://cieloecommerce.cielo.com.br/backoffice/Content/img/buttons/button-5-1.png' /></form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </main>
