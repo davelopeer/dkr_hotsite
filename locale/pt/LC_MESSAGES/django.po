@@ -225,7 +225,7 @@ msgstr "Medicamentos podem ser encomendados por tele entrega nas farmácias de T
 
 #: .\website\templates\index.html:89
 msgid "li-9"
-msgstr "Os bancos mais próximos estão localizados em Três Coroas, Taquara e Gramado."
+msgstr "Os bancos mais próximos estão localizados em Três Coroas, São Francisco de Paula, Taquara e Gramado."
 
 #: .\website\templates\index.html:90
 msgid "li-10"

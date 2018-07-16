@@ -57,6 +57,14 @@ body {
   color: #36382e;
 }
 
+.footer-div {
+  margin: 50px 20%;
+}
+
+.footer-info * {
+  margin-bottom: 5px;
+}
+
 
 @media screen and (max-width: 768px) {
     .container {

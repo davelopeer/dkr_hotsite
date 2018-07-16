@@ -65,7 +65,6 @@
         </div>
 
 
-        <!-- {% trans "1" %} -->
         <!-- ACCOMMODATIONS -->
         <div class="tab-pane fade padding-sides" id="accommodation" role="tabpanel" aria-labelledby="profile-tab">
           <h2 id="teste"  class="text-center section_title">Acomodações / Transporte</h2>
@@ -167,7 +166,7 @@
             </li>
             <li class="accommodation-li">
               <a href="http://pousadaparanhana.com.br/">Pousada Paranhana</a> <br>
-              Daniela - reservas@pousadaparanhana.com.br
+              reservas@pousadaparanhana.com.br
             </li>
             <li class="accommodation-li">
               <a href="http://pousada-raiodesol.blogspot.com/">Pousada Raio de Sol</a> (acomodações simples) <br>
@@ -351,7 +350,7 @@
                     </button>
                   </div>
                   <div class="modal-body">
-                    Ao escolher essa opção, você não poderá mudá-la durante o evento.
+                    Ao escolher essa opção, você não poderá mudá-la após o envio deste formulário.
                   </div>
                 </div>
               </div>
@@ -387,7 +386,7 @@
               <div class="modal-dialog" role="document">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Atenção, responsáveis!</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">IMPORTANTE!</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                       <span aria-hidden="true">&times;</span>
                     </button>
@@ -441,6 +440,11 @@
                   Agência: 1380-3<br>
                   Conta: 5454-2<br>
                 </p>
+                <p>
+                  Para garantir a sua inscrição, você deve depositar, pelo menos, 1/5 (um quinto) do valor do evento (R$ 610,00 para adultos e
+                  R$ 195,00 para crianças de 4 a 12 anos) e dividir o restante do pagamento até 10 de dezembro de 2018.
+                </p>
+                <p class="underline">DADOS DO PAGAMENTO:</p>
                 <div class="form-group">
                   <label class="col-form-label" for="formGroupExampleInput">Data da transferência/depósito</label>
                   {{form.deposit_day}}
@@ -518,6 +522,7 @@
                   <div id="payment-child">
                     <form method='post' action='https://cieloecommerce.cielo.com.br/transactionalvnext/order/buynow' target='blank'><input type='hidden' name='id' value='a92943fe-fdfc-4cc1-8750-bb9ad4acd820' /><input type='image' name='submit' alt='Comprar' src='https://cieloecommerce.cielo.com.br/backoffice/Content/img/buttons/button-5-1.png' /></form>
                   </div>
+                  <p>Após enviar o pagamento, <span class="underline">lembre-se de enviar o formulário</span> de inscrição.</p>
                 </div>
               </div>
             </div>
