@@ -277,17 +277,29 @@
                 {{form.phone}}
               </div>
             </div>
+
             <div class="row checkbox">
               <div class="custom-controls-stacked col-md-12 checkbox-inline">
                 <p>{% trans "Genre" %}:</p>
+                {% if user_language == 'pt-br' %}
                 {% for radio in form.gender %}
                   <div class="form-check-boxes">
                     {{radio.tag}}
                     <label class="form-check-label" for="radio_{{ radio.index}}">{{ radio.choice_label }}</label>
                   </div>
                 {% endfor %}
+                {% else %}
+                {% for radio in form.gender_en %}
+                  <div class="form-check-boxes">
+                    {{radio.tag}}
+                    <label class="form-check-label" for="radio_{{ radio.index}}">{{ radio.choice_label }}</label>
+                  </div>
+                {% endfor %}
+                {% endif %}
               </div>
             </div>
+
+
             <div class="row">
               <div class="form-group col-md-6">
                 <label class="col-form-label" for="formGroupExampleInput">{% trans "The last empowerments you have received and who gave them:" %}:</label>

@@ -1,6 +1,5 @@
 from django.shortcuts import render
 from website.forms import InscriptionForm
-from website.forms_en import InscriptionFormEn
 from django.core.mail import EmailMessage
 from django.shortcuts import redirect
 from django.template.loader import get_template
@@ -13,9 +12,8 @@ def index(request):
     # Discovering the user langugage
     user_language = translation.get_language_from_request(request, check_path=True)
 
-
     if request.method == 'POST':
-        form = InscriptionForm(request.POST)
+        form = form_class(request.POST)
 
         # # SETTING THE REQUIRED PAYMENT ACCORDING TO THE USER LANGUAGE
 
@@ -31,10 +29,6 @@ def index(request):
         #     form.fields['deposit_day'].required = True
         #     form.fields['deposit_name'].required = True
         #     form.fields['credit_card_name'].required = True
-
-
-
-
 
         if form.is_valid():
             name = request.POST.get('name', '')
@@ -56,13 +50,13 @@ def index(request):
             seat = request.POST.get('seat', '')
             payment = request.POST.get('payment', '')
             payment_international = request.POST.get('payment_international', '')
-            # cancel_terms = request.POST.get('cancel_terms', '')
             deposit_day = request.POST.get('deposit_day', '')
             deposit_name = request.POST.get('deposit_name', '')
             deposit_agency = request.POST.get('deposit_agency', '')
             deposit_envelop = request.POST.get('deposit_envelop', '')
             credit_card_name = request.POST.get('credit_card_name', '')
             event_option = request.POST.get('event_option', '')
+
 
             #Make the date in the br format dd/mm/yyyy
             def dateBR(date):

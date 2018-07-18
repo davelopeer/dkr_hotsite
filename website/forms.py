@@ -1,7 +1,7 @@
 from django import forms
 
 class InscriptionForm(forms.Form):
-
+    # PORTUGUESE
     name = forms.CharField(required=True, max_length=150, widget=forms.TextInput(attrs={'placeholder': 'Nome completo', 'class': 'form-control', 'id': 'formGroupExampleInput'}))
     birthday = forms.DateField(required=True, widget=forms.DateInput(attrs={'placeholder':'01/01/1980','type':'date', 'class': 'form-control', 'id': 'formGroupExampleInput'}))
     adress = forms.CharField(required=True, max_length=200, widget=forms.TextInput(attrs={'placeholder': 'Endereço', 'class': 'form-control', 'id': 'formGroupExampleInput'}))
@@ -50,5 +50,111 @@ class InscriptionForm(forms.Form):
     deposit_agency = forms.CharField(required=False, widget=forms.TextInput(attrs={'placeholder':'ag 2856 c/c 008710', 'class': 'form-control', 'id': 'formGroupExampleInput'}))
     deposit_envelop = forms.CharField(required=False, widget=forms.TextInput(attrs={'placeholder':'1.292.510.482', 'class': 'form-control', 'id': 'formGroupExampleInput'}))
     cancel_terms = forms.ChoiceField(required=True, widget=forms.RadioSelect(attrs={'type':'checkbox', 'class':'form-check'}), choices=(
+        ('Aceito',''),
+    ))
+
+
+    # ENGLISH
+    name_en = forms.CharField(required=True, max_length=150, widget=forms.TextInput(attrs={'placeholder': 'Nome completo', 'class': 'form-control', 'id': 'formGroupExampleInput'}))
+    birthday_en = forms.DateField(required=True, widget=forms.DateInput(attrs={'placeholder':'01/01/1980','type':'date', 'class': 'form-control', 'id': 'formGroupExampleInput'}))
+    adress_en = forms.CharField(required=True, max_length=200, widget=forms.TextInput(attrs={'placeholder': 'Endereço', 'class': 'form-control', 'id': 'formGroupExampleInput'}))
+    adress_num_en = forms.IntegerField(required=True, widget=forms.NumberInput(attrs={'placeholder':'Número', 'class': 'form-control', 'id': 'formGroupExampleInput'}))
+    adress_comp_en = forms.CharField(required=False, max_length=200, widget=forms.TextInput(attrs={'placeholder': 'casa 1', 'class': 'form-control', 'id': 'formGroupExampleInput'}))
+    city_en = forms.CharField(required=True, max_length=150, widget=forms.TextInput(attrs={'placeholder': 'Cidade', 'class': 'form-control', 'id': 'formGroupExampleInput'}))
+    state_en = forms.CharField(required=True, max_length=2, widget=forms.TextInput(attrs={'placeholder': 'Estado', 'class': 'form-control', 'id': 'formGroupExampleInput'}))
+    zip_code_en = forms.CharField(required=True, min_length=9, max_length=9, widget=forms.TextInput(attrs={'placeholder': 'CEP', 'class': 'form-control', 'id': 'formGroupExampleInput'}))
+    email_en = forms.EmailField(required=True, max_length=100, widget=forms.EmailInput(attrs={'placeholder':'exemplo@email.com', 'type':'email', 'class':'form-control', 'id':'formGroupExampleInput'}))
+    phone_en = forms.IntegerField(required=True, widget=forms.NumberInput(attrs={'type':'number','placeholder': 'Somente números', 'class': 'form-control', 'id': 'formGroupExampleInput'}))
+    gender_en = forms.ChoiceField(required=True, widget=forms.RadioSelect(attrs={'type':'radio', 'class':'form-check'}), choices=(
+        ('Masculino','Masculino'),
+        ('Feminino','Feminino'),
+        ('Outro','Outro'),
+    ))
+    initiations_en = forms.CharField(required=True,max_length=2000, widget=forms.Textarea(attrs={'placeholder': 'Ex: Iniciação de Guru Rinpoche...', 'class': 'form-control form_text_area', 'id': 'formGroupExampleInput'}))
+    initiations_lama_en = forms.CharField(required=True,max_length=2000, widget=forms.Textarea(attrs={'placeholder': 'Ex: S. E. Dzongsar Khyentse Rinpoche...', 'class': 'form-control form_text_area', 'id': 'formGroupExampleInput'}))
+    monastic_ordenation_en = forms.ChoiceField(required=True, widget=forms.RadioSelect(attrs={'value':'1','type':'radio', 'class':'form-check inline'}), choices=(
+        ('Sim','Sim'),
+        ('Não','Não'),
+    ))
+    observations_en = forms.CharField(required=False,max_length=4000, widget=forms.Textarea(attrs={'name':'observations','class': 'form-control form_text_area', 'id': 'formGroupExampleInput'}))
+    food_preferency_en = forms.ChoiceField(required=True, widget=forms.RadioSelect(attrs={'type':'radio', 'class':'form-check inline food-preferency', 'data-toggle':'modal', 'data-target':'#exampleModal'}), choices=(
+        ('Não-vegetariana','Não-vegetariana'),
+        ('Vegetariana','Vegetariana'),
+    ))
+    seat_en = forms.ChoiceField(required=True, widget=forms.RadioSelect(attrs={'type':'radio', 'class':'form-check seat-preferency', 'data-toggle':'modal', 'data-target':'#exampleModal'}), choices=(
+        ('Sim','Sim'),
+        ('Não','Não'),
+    ))
+    event_option_en = forms.ChoiceField(required=True, widget=forms.RadioSelect(attrs={'type':'radio', 'class':'form-check inline checkbox-option'}), choices=(
+        ('Adulto','Evento completo com as três refeições incluídas e sem hospedagem: R$ 3.042,00'),
+        ('Criança 4-13 anos','Participação infantil (de 4 a 12 anos) com as três refeições incluídas e sem hospedagem: R$ 972,00'),
+        ('Criança 0-3 anos','Crianças (de 0 a 3 anos) com as três refeições incluídas e sem hospedagem: Isentas'),
+    ))
+    payment_en = forms.ChoiceField(required=False, widget=forms.RadioSelect(attrs={'type':'radio', 'class':'form-check'}), choices=(
+        ('Cartão de crédito','Cartão de crédito'),
+        ('Depósito bancário','Depósito bancário'),
+    ))
+    payment_international_en = forms.ChoiceField(required=False, widget=forms.RadioSelect(attrs={'type':'radio', 'class':'form-check inline'}), choices=(
+        ('PayPal',''),
+    ))
+    credit_card_name_en = forms.CharField(required=False,max_length=200, widget=forms.TextInput(attrs={'placeholder': 'JOSÉ M R SILVA', 'class': 'form-control', 'id': 'formGroupExampleInput'}))
+    deposit_day_en = forms.DateField(required=False, widget=forms.DateInput(attrs={'placeholder':'20/09/2018','type':'date', 'class': 'form-control', 'id': 'formGroupExampleInput'}))
+    deposit_name_en = forms.CharField(required=False, max_length=250, widget=forms.TextInput(attrs={'placeholder': 'José M R Silva', 'class': 'form-control', 'id': 'formGroupExampleInput'}))
+    deposit_agency_en = forms.CharField(required=False, widget=forms.TextInput(attrs={'placeholder':'ag 2856 c/c 008710', 'class': 'form-control', 'id': 'formGroupExampleInput'}))
+    deposit_envelop_en = forms.CharField(required=False, widget=forms.TextInput(attrs={'placeholder':'1.292.510.482', 'class': 'form-control', 'id': 'formGroupExampleInput'}))
+    cancel_terms_en = forms.ChoiceField(required=True, widget=forms.RadioSelect(attrs={'type':'checkbox', 'class':'form-check'}), choices=(
+        ('Aceito',''),
+    ))
+
+
+    # SPANISH
+    name_es = forms.CharField(required=True, max_length=150, widget=forms.TextInput(attrs={'placeholder': 'Nome completo', 'class': 'form-control', 'id': 'formGroupExampleInput'}))
+    birthday_es = forms.DateField(required=True, widget=forms.DateInput(attrs={'placeholder':'01/01/1980','type':'date', 'class': 'form-control', 'id': 'formGroupExampleInput'}))
+    adress_es = forms.CharField(required=True, max_length=200, widget=forms.TextInput(attrs={'placeholder': 'Endereço', 'class': 'form-control', 'id': 'formGroupExampleInput'}))
+    adress_num_es = forms.IntegerField(required=True, widget=forms.NumberInput(attrs={'placeholder':'Número', 'class': 'form-control', 'id': 'formGroupExampleInput'}))
+    adress_comp_es = forms.CharField(required=False, max_length=200, widget=forms.TextInput(attrs={'placeholder': 'casa 1', 'class': 'form-control', 'id': 'formGroupExampleInput'}))
+    city_es = forms.CharField(required=True, max_length=150, widget=forms.TextInput(attrs={'placeholder': 'Cidade', 'class': 'form-control', 'id': 'formGroupExampleInput'}))
+    state_es = forms.CharField(required=True, max_length=2, widget=forms.TextInput(attrs={'placeholder': 'Estado', 'class': 'form-control', 'id': 'formGroupExampleInput'}))
+    zip_code_es = forms.CharField(required=True, min_length=9, max_length=9, widget=forms.TextInput(attrs={'placeholder': 'CEP', 'class': 'form-control', 'id': 'formGroupExampleInput'}))
+    email_es = forms.EmailField(required=True, max_length=100, widget=forms.EmailInput(attrs={'placeholder':'exemplo@email.com', 'type':'email', 'class':'form-control', 'id':'formGroupExampleInput'}))
+    phone_es = forms.IntegerField(required=True, widget=forms.NumberInput(attrs={'type':'number','placeholder': 'Somente números', 'class': 'form-control', 'id': 'formGroupExampleInput'}))
+    gender_es = forms.ChoiceField(required=True, widget=forms.RadioSelect(attrs={'type':'radio', 'class':'form-check'}), choices=(
+        ('Masculino','Masculino'),
+        ('Feminino','Feminino'),
+        ('Outro','Outro'),
+    ))
+    initiations_es = forms.CharField(required=True,max_length=2000, widget=forms.Textarea(attrs={'placeholder': 'Ex: Iniciação de Guru Rinpoche...', 'class': 'form-control form_text_area', 'id': 'formGroupExampleInput'}))
+    initiations_lama_es = forms.CharField(required=True,max_length=2000, widget=forms.Textarea(attrs={'placeholder': 'Ex: S. E. Dzongsar Khyentse Rinpoche...', 'class': 'form-control form_text_area', 'id': 'formGroupExampleInput'}))
+    monastic_ordenation_es = forms.ChoiceField(required=True, widget=forms.RadioSelect(attrs={'value':'1','type':'radio', 'class':'form-check inline'}), choices=(
+        ('Sim','Sim'),
+        ('Não','Não'),
+    ))
+    observations_es = forms.CharField(required=False,max_length=4000, widget=forms.Textarea(attrs={'name':'observations','class': 'form-control form_text_area', 'id': 'formGroupExampleInput'}))
+    food_preferency_es = forms.ChoiceField(required=True, widget=forms.RadioSelect(attrs={'type':'radio', 'class':'form-check inline food-preferency', 'data-toggle':'modal', 'data-target':'#exampleModal'}), choices=(
+        ('Não-vegetariana','Não-vegetariana'),
+        ('Vegetariana','Vegetariana'),
+    ))
+    seat_es = forms.ChoiceField(required=True, widget=forms.RadioSelect(attrs={'type':'radio', 'class':'form-check seat-preferency', 'data-toggle':'modal', 'data-target':'#exampleModal'}), choices=(
+        ('Sim','Sim'),
+        ('Não','Não'),
+    ))
+    event_option_es = forms.ChoiceField(required=True, widget=forms.RadioSelect(attrs={'type':'radio', 'class':'form-check inline checkbox-option'}), choices=(
+        ('Adulto','Evento completo com as três refeições incluídas e sem hospedagem: R$ 3.042,00'),
+        ('Criança 4-13 anos','Participação infantil (de 4 a 12 anos) com as três refeições incluídas e sem hospedagem: R$ 972,00'),
+        ('Criança 0-3 anos','Crianças (de 0 a 3 anos) com as três refeições incluídas e sem hospedagem: Isentas'),
+    ))
+    payment_es = forms.ChoiceField(required=False, widget=forms.RadioSelect(attrs={'type':'radio', 'class':'form-check'}), choices=(
+        ('Cartão de crédito','Cartão de crédito'),
+        ('Depósito bancário','Depósito bancário'),
+    ))
+    payment_international_es = forms.ChoiceField(required=False, widget=forms.RadioSelect(attrs={'type':'radio', 'class':'form-check inline'}), choices=(
+        ('PayPal',''),
+    ))
+    credit_card_name_es = forms.CharField(required=False,max_length=200, widget=forms.TextInput(attrs={'placeholder': 'JOSÉ M R SILVA', 'class': 'form-control', 'id': 'formGroupExampleInput'}))
+    deposit_day_es = forms.DateField(required=False, widget=forms.DateInput(attrs={'placeholder':'20/09/2018','type':'date', 'class': 'form-control', 'id': 'formGroupExampleInput'}))
+    deposit_name_es = forms.CharField(required=False, max_length=250, widget=forms.TextInput(attrs={'placeholder': 'José M R Silva', 'class': 'form-control', 'id': 'formGroupExampleInput'}))
+    deposit_agency_es = forms.CharField(required=False, widget=forms.TextInput(attrs={'placeholder':'ag 2856 c/c 008710', 'class': 'form-control', 'id': 'formGroupExampleInput'}))
+    deposit_envelop_es = forms.CharField(required=False, widget=forms.TextInput(attrs={'placeholder':'1.292.510.482', 'class': 'form-control', 'id': 'formGroupExampleInput'}))
+    cancel_terms_es = forms.ChoiceField(required=True, widget=forms.RadioSelect(attrs={'type':'checkbox', 'class':'form-check'}), choices=(
         ('Aceito',''),
     ))
