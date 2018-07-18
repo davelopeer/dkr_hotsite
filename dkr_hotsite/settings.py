@@ -101,13 +101,12 @@ LANGUAGE_CODE = 'en'
 
 
 # from django.utils.translation import ugettext_lazy as gettext
-DATETIME_FORMAT = 'Y-m-d'
 
 TIME_ZONE = 'UTC'
 
 USE_I18N = True
 
-USE_L10N = True
+USE_L10N = False
 
 USE_TZ = True
 

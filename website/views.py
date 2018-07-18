@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from website.forms import InscriptionForm, InscriptionFormEn
+from website.forms import InscriptionForm, InscriptionFormEn, InscriptionFormEs
 from django.core.mail import EmailMessage
 from django.shortcuts import redirect
 from django.template.loader import get_template
@@ -108,6 +108,7 @@ def index(request):
 
     return render(request, 'index.html',  {
         'form': form,
+        'user_language': user_language
     })
 
 def pay_success(request):

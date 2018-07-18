@@ -3,7 +3,6 @@
 {% extends "base.html"%}
   {% load static %}
   {% load i18n %}
-  {% load l10n %}
 
   {% block extra-head %}
     <link rel="stylesheet" href="{% static 'css/index.css' %}">
@@ -393,7 +392,6 @@
                 {{form.observations}}
               </div>
             </div>
-
             <h3 class="form_section_title payment">{% trans "Payment" %}:</h3>
 
             {% if user_language == 'pt-br' %}
@@ -456,7 +454,7 @@
             </div>
 
             {% else %}
-            <p>{% trans "For PayPal donation/payment, please inform the e-mail <strong>adm@chagdud.org</strong> as donation’s identifier. Also, it is necessary describe what donation for. In this case, please inform Khadro Sangdu Drubchen." %}</p>
+            <p>For PayPal donation/payment, please inform the e-mail <strong>adm@chagdud.org</strong> as donation’s identifier. Also, it is necessary describe what donation for. In this case, please inform Khadro Sangdu Drubchen.</p>
               {% for radio in form.payment_international %}
                 <div class="form-check-boxes payment">
                   {{radio.tag}}
