@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from website.forms import InscriptionForm
+from website.forms import InscriptionForm, InscriptionFormEn
 from django.core.mail import EmailMessage
 from django.shortcuts import redirect
 from django.template.loader import get_template
@@ -8,12 +8,11 @@ from django.utils import translation
 
 # Create your views here.
 def index(request):
-
     # Discovering the user langugage
     user_language = translation.get_language_from_request(request, check_path=True)
 
     if request.method == 'POST':
-        form = form_class(request.POST)
+        form = InscriptionForm(request.POST)
 
         # # SETTING THE REQUIRED PAYMENT ACCORDING TO THE USER LANGUAGE
 
@@ -99,11 +98,16 @@ def index(request):
                     )
             return redirect('pay-success')
     else:
-        form = InscriptionForm()
+        if user_language == 'pt-br':
+            form = InscriptionForm()
+        elif user_language == 'es':
+            form = InscriptionFormEn()
+        else:
+            form = InscriptionFormEn()
+
 
     return render(request, 'index.html',  {
         'form': form,
-        'user_language': user_language,
     })
 
 def pay_success(request):

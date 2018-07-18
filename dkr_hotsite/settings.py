@@ -21,7 +21,6 @@ ALLOWED_HOSTS = ['127.0.0.1', 'dkr.pythonanywhere.com', 'www.ks-drubchen.com', '
 # Application definition
 
 INSTALLED_APPS = [
-    'modeltranslation',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -102,13 +101,13 @@ LANGUAGE_CODE = 'en'
 
 
 # from django.utils.translation import ugettext_lazy as gettext
-
+DATETIME_FORMAT = 'Y-m-d'
 
 TIME_ZONE = 'UTC'
 
 USE_I18N = True
 
-USE_L10N = False
+USE_L10N = True
 
 USE_TZ = True
 

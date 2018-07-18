@@ -11,8 +11,22 @@
 
   {% block body_block %}
 
-  <p>{% trans "The form was sent successfully. Wait for an answer in your email in the next few days" %}</p>
+  <p>{% trans "Your entry form for the event has been successfully sent. Khadro Ling Events department will contact you to confirm your registration." %}</p>
 
   <a href="{% url "index" %}">{% trans "Voltar" %}</a>
+
+
+
+
+  <form>
+    <div>
+      <label for="diaa">Informe a data do seu aniversário:</label>
+      <input type="date" id="bday" name="diaa" required pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}">
+      <span class="validity"></span>
+    </div>
+    <div>
+      <input type="submit">
+    </div>
+  </form>
 
   {% endblock %}
