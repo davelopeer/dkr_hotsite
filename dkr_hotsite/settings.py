@@ -21,6 +21,7 @@ ALLOWED_HOSTS = ['127.0.0.1', 'dkr.pythonanywhere.com', 'www.ks-drubchen.com', '
 # Application definition
 
 INSTALLED_APPS = [
+    'modeltranslation',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -28,6 +29,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'website',
+
 ]
 
 MIDDLEWARE = [

@@ -67,45 +67,40 @@
 
         <!-- ACCOMMODATIONS -->
         <div class="tab-pane fade padding-sides" id="accommodation" role="tabpanel" aria-labelledby="profile-tab">
-          <h2 id="teste"  class="text-center section_title">Acomodações / Transporte</h2>
-          <h3 class="font-weight-bold text">Acomodações</h3>
+          <h2 id="teste"  class="text-center section_title">{% trans "Accommodations/Transportation" %}</h2>
+          <h3 class="font-weight-bold text">{% trans "Accommodations" %}</h3>
+          <p>{% trans "For this drubchen Khadro Ling will not provide/offer  accommodations for practitioners. To this end, we have contacted some hotels in the area so that everyone will be able to find a suitable place to stay. The hotels and hostels listed have different rates to suit different needs." %}</p>
+          <h5>{% trans "Check-in" %}</h5>
+          <p>{% trans "You must arrive at your place of lodging by December, 26th. The event will start on the 27th, time  to be confirmed." %}</p>
+          <h5>{% trans "Check-out:" %}</h5>
           <p>
-            Para este drubchen, o Khadro Ling não hospedará os praticantes. Para tanto, entramos em contato com alguns hotéis da região para que
-            todos tenham condições de encontrar um local adequado para participação no evento. A lista de hotéis e pousadas possuem preços variados
-            conforme a necessidade.
+            {% trans "Drubchen will finish on January, 4th, 2019. On closing night, there will be a party to celebrate the event. Schedule your check-out for January, 5th." %}
           </p>
-          <h5>Check-in:</h5>
-          <p>Você deve chegar no seu local de hospedagem no dia 26 de dezembro. O evento terá início no dia 27 com horário ainda não confirmado.</p>
-          <h5>Check-out:</h5>
+          <h5>{% trans "Please note:" %}</h5>
           <p>
-            O drubchen encerrará no dia 4 de janeiro de 2019 ainda sem horário confirmado. Na noite do encerramento, teremos uma festa para comemorar
-            o evento. Programe-se para fazer seu check-out no dia 5.
+            {% trans "As the drubchen period is during the high tourist season in the region, we suggest the participants to  to make your hotel reservation before registering for the event." %}
           </p>
-          <h5>Importante:</h5>
-          <p>
-            Como o período do drubchen é também uma época de alta temporada turística na região, organize-se para fazer sua reserva antes de realizar sua inscrição.
-          </p>
-          <h4 class="underline">Hotéis e pousadas conveniados para o evento:</h4>
+          <h4 class="underline">{% trans "Hotels and lodgings affiliated to the event:" %}</h4>
           <h5>Três Coroas</h5>
           <ul>
             <li class="accommodation-li">
               <a href="https://www.tripadvisor.com.br/Hotel_Review-g675031-d12087559-Reviews-Pousada_Tres_Coroas-Tres_Coroas_State_of_Rio_Grande_do_Sul.html" target="_blank">
                 Pousada Três Coroas
               </a>
-              (acomodações simples) <br>
+              {% trans "(simple accommodations)" %}<br>
               contato@pousadatrescoroas.com.br <br>
               +55 51 99995 2662 <br>
-              Informar o código promocional: evento DKR <br>
+              {% trans "Inform the promo code: event DKR" %}<br>
             </li>
           </ul>
           <h5>Igrejinha</h5>
           <ul>
             <li class="accommodation-li">
               <a href="https://ibis.accorhotels.com/brasil/index.pt-br.shtml" target="_blank">Ibis Hotel</a> <br>
-              Instruções para a reserva: <br>
-              Português: <a href="{% static 'files/Guia-portugues.pdf' %}" download >Clique aqui</a> <br>
-              English : <a href="{% static 'files/Guide-ingles.pdf' %}" download >Click here</a> <br>
-              Atendimento Inglês/Português.
+              Instruções para a reserva:  <a href="{% static 'files/Guia-portugues.pdf' %}" download >(link para PDF)</a> <br>
+              Instructions for booking: <a href="{% static 'files/Guide-ingles.pdf' %}" download >(link to PDF)</a> <br>
+              {% trans "Atendimento Inglês/Português." %}
+
             </li>
             <li class="accommodation-li">
               <a href=" http://www.ecoland.com.br/" target="_blank">Ecoland</a> <br>
@@ -114,8 +109,8 @@
               hotel@ecoland.com.br <br>
               +55 51 3545 5500 <br>
               +55 51 98594 3488 (WhatsApp) <br>
-              Atendimento Inglês/Português. <br>
-              Informar o código promocional: evento DKR <br>
+              {% trans "Atendimento Inglês/Português. " %}<br>
+              {% trans "Inform the promo code: event DKR" %}<br>
 
             </li>
           </ul>
@@ -124,14 +119,14 @@
             <li class="accommodation-li">
               <a href="http://www.candemilhotel.com.br/" target="_blank">Candemil Hotel</a> <br>
               reservas@candemilhotel.com.br <br>
-              Informar o código promocional: evento DKR
+              {% trans "Inform the promo code: event DKR" %}
             </li>
             <li class="accommodation-li">
               <a href="https://www.facebook.com/pg/hotelehostelraiz/about/?ref=page_internal" target="_blank">Hotel & Hostel Raiz</a> <br>
               hotelraiz@gmail.com <br>
               +55 51 3541 1484 <br>
               +55 51 99998 2689 <br>
-              Informar o código promocional: evento DKR
+              {% trans "Inform the promo code: event DKR" %}
             </li>
           </ul>
           <h5>São Francisco de Paula</h5>
@@ -139,27 +134,27 @@
             <li class="accommodation-li">
               <a href="http://www.villagedaserra.com.br/">Hotel Village da Serra</a> <br>
               village@villagedaserra.com.br <br>
-              Atendimento Inglês/Português/Alemão.<br>
-              Informar o código promocional: evento DKR <br>
+              {% trans "Atendimento Inglês/Português/Alemão." %}<br>
+              {% trans "Inform the promo code: event DKR" %} <br>
               </li>
             <li>
               <a href="http://www.pousadasaochico.com.br/">Pousada São Chico Ecovillage</a>
               contato@pousadasaochico.com.br <br>
-              Atendimento Inglês/Português.<br>
-              Informar o código promocional: evento DKR <br>
+              {% trans "Atendimento Inglês/Português." %}<br>
+              {% trans "Inform the promo code: event DKR" %} <br>
             </li>
             <li class="accommodation-li">
               <a href="http://www.pousadanovohorizonte.com.br/">Pousada Novo Horizonte</a>
               contato@pousadanovohorizonte.com.br <br>
-              Informar o código promocional: evento DKR<br>
+              {% trans "Inform the promo code: event DKR" %}<br>
             </li>
             <li class="accommodation-li">
               <a href="http://pousadarecantodasestrelas.com/">Pousada Recanto das Estrelas</a>
               pousadarecantodasestrelas@yahoo.com.br <br>
-              Informar o código promocional: evento DKR <br>
+              {% trans "Inform the promo code: event DKR" %} <br>
             </li>
           </ul>
-          <h4 class="underline">Outros hotéis da região (não conveniados)</h4>
+          <h4 class="underline">{% trans "Other hotels in the area (not affiliated)" %}</h4>
           <h5>Três Coroas</h5>
           <ul>
             <li class="accommodation-li">
@@ -171,11 +166,11 @@
               reservas@pousadaparanhana.com.br
             </li>
             <li class="accommodation-li">
-              <a href="http://pousada-raiodesol.blogspot.com/">Pousada Raio de Sol</a> (acomodações simples) <br>
+              <a href="http://pousada-raiodesol.blogspot.com/">Pousada Raio de Sol</a> {% trans "simple accommodations" %} <br>
               Reservas por WhatsApp: +55 51 99829 2652
             </li>
             <li class="accommodation-li">
-              <a href="https://www.facebook.com/pg/PousadaRaiodoSolTresCoroas/photos/?ref=page_internal">Pousada Raio de Sol 2</a> (acomodações simples) <br>
+              <a href="https://www.facebook.com/pg/PousadaRaiodoSolTresCoroas/photos/?ref=page_internal">Pousada Raio de Sol 2</a> {% trans "simple accommodations" %} <br>
               raiodesol.pousada@hotmail.com <br>
               +55 51 99616 7554
             </li>
@@ -197,44 +192,32 @@
               reservas@hoteldasaraucarias.com.br
             </li>
           </ul>
-          <h3 class="font-weight-bold">Transporte</h3>
+          <h3 class="font-weight-bold">{% trans "Transportation" %}</h3>
           <p>
-            O preço do evento e a diária de acomodação não incluem transporte/traslado.<br>
-            Mais informações sobre transporte para o evento em breve.
+            {% trans "Event and accommodation rates do not include daily transport/transfer fees." %}<br>
+            {% trans "More information about transportation to the event will be posted soon. " %}
           </p>
         </div>
 
         <!-- GENERAL INFOMATION -->
         <div class="tab-pane fade" id="information" role="tabpanel" aria-labelledby="profile-tab">
           <ul class="list-group">
-            <li class="list-group-item list-group-item-light">{% trans "li-1" %}</li>
-            <li class="list-group-item list-group-item-secondary ">{% trans "li-2" %}</li>
-            <li class="list-group-item list-group-item-light">{% trans "li-3" %}</li>
-            <li class="list-group-item list-group-item-secondary ">
-              {% trans "li-4" %}
-            </li>
-            <li class="list-group-item list-group-item-light">{% trans "li-5" %}</li>
-            <li class="list-group-item list-group-item-secondary ">
-              {% trans "li-6" %}
-            </li>
-            <li class="list-group-item list-group-item-light">{% trans "li-7" %}</li>
-            <li class="list-group-item list-group-item-secondary ">
-              {% trans "li-8" %}
-            </li>
-            <li class="list-group-item list-group-item-light">{% trans "li-9" %}</li>
-            <li class="list-group-item list-group-item-secondary ">{% trans "li-10" %}</li>
-            <li class="list-group-item list-group-item-light">{% trans "li-11" %}</li>
-            <li class="list-group-item list-group-item-secondary ">{% trans "li-12" %}</li>
-            <li class="list-group-item list-group-item-light">{% trans "li-13" %}</li>
-            <li class="list-group-item list-group-item-secondary ">
-              {% trans "li-14" %}
-            </li>
-            <li class="list-group-item list-group-item-light">
-              {% trans "li-15" %}
-            </li>
-            <li class="list-group-item list-group-item-secondary ">
-              {% trans "li-16" %}
-            </li>
+            <li class="list-group-item list-group-item-light">{% trans "Remember to bring personal hygiene products and medications." %}</li>
+            <li class="list-group-item list-group-item-secondary ">{% trans "Three daily meals are included in the event fee. " %}</li>
+            <li class="list-group-item list-group-item-light">{% trans "All sink tap water is potable." %}</li>
+            <li class="list-group-item list-group-item-secondary ">{% trans "Bring your meditation cushion (identified with your name), flashlight, rain apparatuses, sunscreen, hat, insect repellent, comfortable walking footwear and warm clothes." %}</li>
+            <li class="list-group-item list-group-item-light">{% trans "Please bring small bank notes for business transactions." %}</li>
+            <li class="list-group-item list-group-item-secondary ">{% trans "The weather in Khadro Ling is very unstable. We suggest that everyone check out the weather forecast previously." %}</li>
+            <li class="list-group-item list-group-item-light">{% trans "At Khadro Ling we do not have computers available for event atendees." %}</li>
+            <li class="list-group-item list-group-item-secondary ">{% trans "Medications can be ordered for delivery from Três Coroas pharmacies. The phone numbers are posted on the reception message board." %}</li>
+            <li class="list-group-item list-group-item-light">{% trans "The nearest banks are located in Três Coroas, São Francisco, Taquara e Gramado." %}</li>
+            <li class="list-group-item list-group-item-secondary ">{% trans "Our store accepts Visa, Mastercard and Cielo credit cards." %}</li>
+            <li class="list-group-item list-group-item-light">{% trans "Please do not use dinnerware from the refectory at the ceremony site." %}</li>
+            <li class="list-group-item list-group-item-secondary ">{% trans "We suggest bringing your own water bottle to avoid plastic waste." %}</li>
+            <li class="list-group-item list-group-item-light">{% trans "Smoking is prohibited in all Khadro Ling areas." %}</li>
+            <li class="list-group-item list-group-item-secondary ">{% trans "Keep personal objects and value items with you or appropriately stored. Khadro Ling is not responsible for any participant lost object in events." %}</li>
+            <li class="list-group-item list-group-item-light">{% trans "Do not feed the animals. Some of them get very sick from receiving food that are not part of their diet." %}</li>
+            <li class="list-group-item list-group-item-secondary ">{% trans "Thrift shop: Khadro Ling has a thrift shop to raise funds for its projects. Donations in good condition are welcome." %}</li>
             <!-- <li class="list-group-item list-group-item-light"></li>
             <li class="list-group-item list-group-item-warning "></li> -->
           </ul>
@@ -242,45 +225,45 @@
 
         <!-- INSCRIPTION -->
         <div class="tab-pane fade" id="form" role="tabpanel" aria-labelledby="contact-tab">
-          <h2 id="teste"  class="text-center section_title">Formulário de inscrição</h2>
+          <h2 id="teste"  class="text-center section_title">{% trans "Registration form" %}</h2>
           <form class="form" role="form" action="" method="post" enctype="multipart/form-data">
             {% csrf_token %}
             <div class="row">
               <div class="form-group col-md-8">
-                <label class="col-form-label" for="formGroupExampleInput">Seu nome</label>
+                <label class="col-form-label" for="formGroupExampleInput">{% trans "Full name" %}</label>
                 {{form.name}}
-                <small id="nameHelp" class="form-text text-muted">Nome completo sem abreviações.</small>
+                <small id="nameHelp" class="form-text text-muted">{% trans "No abbreviations" %}</small>
               </div>
               <div class="form-group col-md-4">
-                <label class="col-form-label" for="formGroupExampleInput">Data de nascimento</label>
+                <label class="col-form-label" for="formGroupExampleInput">{% trans "Date of birth: " %}</label>
                 {{form.birthday}}
               </div>
             </div>
             <div class="row">
               <div class="form-group col-md-7">
-                <label class="col-form-label" for="formGroupExampleInput">Endereço</label>
+                <label class="col-form-label" for="formGroupExampleInput">{% trans "Address" %}</label>
                 {{form.adress}}
               </div>
               <div class="form-group col-md-2">
-                <label class="col-form-label" for="formGroupExampleInput">Número</label>
+                <label class="col-form-label" for="formGroupExampleInput">{% trans "Number" %}</label>
                 {{form.adress_num}}
               </div>
               <div class="form-group col-md-3">
-                <label class="col-form-label" for="formGroupExampleInput">Complemento</label>
+                <label class="col-form-label" for="formGroupExampleInput">{% trans "Additional address info" %}</label>
                 {{form.adress_comp}}
               </div>
             </div>
             <div class="row">
               <div class="form-group col-md-7">
-                <label class="col-form-label" for="formGroupExampleInput">Cidade</label>
+                <label class="col-form-label" for="formGroupExampleInput">{% trans "City" %}</label>
                 {{form.city}}
               </div>
               <div class="form-group col-md-2">
-                <label class="col-form-label" for="formGroupExampleInput">Estado</label>
+                <label class="col-form-label" for="formGroupExampleInput">{% trans "State" %}</label>
                 {{form.state}}
               </div>
               <div class="form-group col-md-3">
-                <label class="col-form-label" for="formGroupExampleInput">CEP</label>
+                <label class="col-form-label" for="formGroupExampleInput">{% trans "Zip code" %}</label>
                 {{form.zip_code}}
               </div>
             </div>
@@ -290,13 +273,13 @@
                 {{form.email}}
               </div>
               <div class="form-group col-md-6">
-                <label class="col-form-label" for="formGroupExampleInput">Número de telefone</label>
+                <label class="col-form-label" for="formGroupExampleInput">{% trans "Phone/Mobile" %}</label>
                 {{form.phone}}
               </div>
             </div>
             <div class="row checkbox">
               <div class="custom-controls-stacked col-md-12 checkbox-inline">
-                <p>Gênero:</p>
+                <p>{% trans "Genre" %}:</p>
                 {% for radio in form.gender %}
                   <div class="form-check-boxes">
                     {{radio.tag}}
@@ -307,17 +290,17 @@
             </div>
             <div class="row">
               <div class="form-group col-md-6">
-                <label class="col-form-label" for="formGroupExampleInput">Descreva as últimas iniciações que você recebeu:</label>
+                <label class="col-form-label" for="formGroupExampleInput">{% trans "The last empowerments you have received and who gave them:" %}:</label>
                 {{form.initiations}}
               </div>
               <div class="form-group col-md-6">
-                <label class="col-form-label" for="formGroupExampleInput">De qual professor?</label>
+                <label class="col-form-label" for="formGroupExampleInput">{% trans "Who gave them?" %}</label>
                 {{form.initiations_lama}}
               </div>
             </div>
             <div class="row checkbox">
               <div class="custom-controls-stacked col-md-12 checkbox-inline">
-                <p>Praticante com ordenação? (monástica ou outra):</p>
+                <p>{% trans "Are you an ordained practitioner? (monastic or otherwise)" %}:</p>
                 {% for radio in form.monastic_ordenation %}
                   <div class="form-check-boxes">
                     {{radio.tag}}
@@ -327,10 +310,10 @@
               </div>
             </div>
 
-            <h3 class="form_section_title">Alimentação</h3>
+            <h3 class="form_section_title">{% trans "Food" %}</h3>
             <div class="row">
               <div class="custom-controls-stacked col-md-12 checkbox-inline">
-                <p>Preferência alimentar:</p>
+                <p>{% trans "Food preference" %}:</p>
                 {% for radio in form.food_preferency %}
                   <div class="form-check-boxes">
                       {{radio.tag}}
@@ -339,29 +322,29 @@
                 {% endfor %}
               </div>
             </div>
-            <small id="phoneHelp" class="form-text text-muted">O Chagdud Gonpa Khadro Ling  não dispõe de dietas especiais com restrições a ingredientes.</small>
+            <small id="phoneHelp" class="form-text text-muted">{% trans "Khadro Ling does not serve meals for special diets with ingredient restrictions." %}</small>
 
             <!-- ALERT FOR THE INALTERABILITY OF THE FOOD PREFERENCY AND SEAT -->
             <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
               <div class="modal-dialog" role="document">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">ATENÇÃO</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">{% trans "PAY ATTENTION!" %}</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                       <span aria-hidden="true">&times;</span>
                     </button>
                   </div>
                   <div class="modal-body">
-                    Ao escolher essa opção, você não poderá mudá-la após o envio deste formulário.
+                    {% trans "This option cannot be changed after the form submission." %}
                   </div>
                 </div>
               </div>
             </div>
 
-            <h3 class="form_section_title">Assentos</h3>
+            <h3 class="form_section_title">{% trans "Sitting" %}</h3>
             <div class="row">
               <div class="custom-controls-stacked col-md-12 checkbox-inline">
-                <p>Necessita de cadeira?</p>
+                <p>{% trans "Do you need a chair?" %}</p>
                 {% for radio in form.seat %}
                   <div class="form-check-boxes">
                     {{radio.tag}}
@@ -370,9 +353,9 @@
                 {% endfor %}
               </div>
             </div>
-            <small id="phoneHelp" class="form-text text-muted">Apenas para pessoas com limitações para sentar no chão.</small>
+            <small id="phoneHelp" class="form-text text-muted">{% trans "Only for people with limitations to sit on the floor." %}</small>
 
-            <h3 class="form_section_title">Opção de evento:</h3>
+            <h3 class="form_section_title">{% trans "Event option" %}:</h3>
             <div class="row">
               <div class="custom-controls-stacked col-md-12">
                 {% for radio in form.event_option %}
@@ -388,28 +371,28 @@
               <div class="modal-dialog" role="document">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">IMPORTANTE!</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">{% trans "PAY ATTENTION!" %}</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                       <span aria-hidden="true">&times;</span>
                     </button>
                   </div>
                   <div class="modal-body">
-                    Em caso de participação de crianças, informe no campo 'Observações' o nome dos responsáveis que estarão participando do evento.
+                    {% trans "Notify in the field 'Observations' the name of the adult responsible that will be participating in the event." %}
                   </div>
                 </div>
               </div>
             </div>
 
-            <small id="phoneHelp" class="form-text text-muted margin-bottom-js">Não é possível a participação parcial neste retiro.</small>
+            <small id="phoneHelp" class="form-text text-muted margin-bottom-js">{% trans "Partial participation is not possible in this retreat. " %}</small>
 
             <div class="row">
               <div class="form-group col-md-8">
-                <label class="col-form-label" for="formGroupExampleInput">Observações:</label>
+                <label class="col-form-label" for="formGroupExampleInput">{% trans "Extra information" %}:</label>
                 {{form.observations}}
               </div>
             </div>
 
-            <h3 class="form_section_title payment">Forma de pagamento:</h3>
+            <h3 class="form_section_title payment">{% trans "Payment" %}:</h3>
 
             {% if user_language == 'pt-br' %}
 
@@ -491,18 +474,15 @@
                     <label class="form-check-label" for="checkbox{{ checkbox.index}}">{{ checkbox.choice_label }}</label>
                   </div>
                 {% endfor %}
-                <p class="cancel_terms">
-                  Li e aceito a <a target="_blank" href="https://chagdud.com.br/politica-de-cancelamento-de-participacao-em-eventos/">política de cancelamento de
-                  participação em eventos no Khadro Ling.</a>
-                </p>
+                <p class="cancel_terms">{% trans "I have read and I accept the <a target='_blank' href='https://chagdud.com.br/politica-de-cancelamento-de-participacao-em-eventos/'>cancellation policy of participation in Khadro Ling events.</a>" %}</p>
                 <br>
-                <small >Antes de clicar em enviar, certifique-se que preencheu todos os dados corretamente e concluiu o pagamento.</small>
+                <small >{% trans "Before clicking send, make sure that all data is correctly filled and that you have completed the payment. " %}</small>
               </div>
             </div>
 
 
             <div class="btn-holder">
-              <button type="submit" class="btn btn-outline-primary">Enviar</button>
+              <button type="submit" class="btn btn-outline-primary">{% trans "Send" %}</button>
             </div>
           </form>
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-12 15:30-0300\n"
+"POT-Creation-Date: 2018-07-17 16:44-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,7 +34,7 @@ msgstr "Chagdud Gonpa Khadro Ling, Brasil"
 msgid "December 27th, 2018-January 4th, 2019"
 msgstr "De 27 de dezembro a 04 de janeiro"
 
-#: .\website\templates\index.html:19
+#: .\website\templates\index.html:19 .\website\templates\index.html:70
 msgid "Accommodations/Transportation"
 msgstr "Acomodações/Transportes"
 
@@ -188,91 +188,443 @@ msgstr ""
 "drubchen. Caso tenha interesse em participar, você precisa receber uma "
 "iniciação de tantra interno antes de dezembro."
 
-#: .\website\templates\index.html:75
-msgid "li-1"
-msgstr "Lembre-se de trazer medicamentos, objetos de higiene e cuidados pessoais."
+#: .\website\templates\index.html:71
+msgid "Accommodations"
+msgstr "Acomodações"
 
-#: .\website\templates\index.html:76
-msgid "li-2"
-msgstr "O evento inclui as três refeições diárias."
+#: .\website\templates\index.html:72
+msgid ""
+"For this drubchen Khadro Ling will not provide/offer  accommodations for "
+"practitioners. To this end, we have contacted some hotels in the area so "
+"that everyone will be able to find a suitable place to stay. The hotels and "
+"hostels listed have different rates to suit different needs."
+msgstr ""
+"Para este drubchen, o Khadro Ling não hospedará os praticantes. Para tanto, "
+"entramos em contato com alguns hotéis da região para que todos tenham "
+"condições de encontrar um local adequado para participação no evento. A "
+"lista de hotéis e pousadas possuem preços variados conforme a necessidade."
+
+#: .\website\templates\index.html:73
+msgid "Check-in"
+msgstr "Check-in"
+
+#: .\website\templates\index.html:74
+msgid ""
+"You must arrive at your place of lodging by December, 26th. The event will "
+"start on the 27th, time  to be confirmed."
+msgstr ""
+"Você deve chegar no seu local de hospedagem no dia 26 de dezembro. O evento "
+"terá início no dia 27 com horário ainda não confirmado."
+
+#: .\website\templates\index.html:75
+msgid "Check-out:"
+msgstr "Check-out"
 
 #: .\website\templates\index.html:77
-msgid "li-3"
-msgstr "A água em todas as pias é potável."
+msgid ""
+"Drubchen will finish on January, 4th, 2019. On closing night, there will be "
+"a party to celebrate the event. Schedule your check-out for January, 5th."
+msgstr ""
+"O drubchen encerrará no dia 4 de janeiro de 2019 ainda sem horário "
+"confirmado. Na noite do encerramento, teremos uma festa para comemorar o "
+"evento. Programe-se para fazer seu check-out no dia 5."
 
 #: .\website\templates\index.html:79
-msgid "li-4"
-msgstr ""
-"Traga sua almofada para meditação (identificada com o seu nome), lanterna, aparatos "
-"para chuva, protetor solar, chapéu, repelente de insetos, calçado fechado e confortável "
-"para caminhar, agasalhos."
+msgid "Please note:"
+msgstr "Importante:"
 
 #: .\website\templates\index.html:81
-msgid "li-5"
-msgstr "Por favor, traga dinheiro trocado para transações comerciais."
+msgid ""
+"As the drubchen period is during the high tourist season in the region, we "
+"suggest the participants to  to make your hotel reservation before "
+"registering for the event."
+msgstr ""
+"Como o período do drubchen é também uma época de alta temporada turística na "
+"região, organize-se para fazer sua reserva antes de realizar sua inscrição. "
 
 #: .\website\templates\index.html:83
-msgid "li-6"
-msgstr "O clima no Khadro Ling é muito instável. Sugerimos que todos confiram a previsão do tempo previamente."
-
-#: .\website\templates\index.html:85
-msgid "li-7"
-msgstr "Não dispomos de computadores para os particpantes em eventos no Khadro Ling."
-
-#: .\website\templates\index.html:87
-msgid "li-8"
-msgstr "Medicamentos podem ser encomendados por tele entrega nas farmácias de Três Coroas. Os números estão divulgados no mural de nossa recepção."
-
-#: .\website\templates\index.html:89
-msgid "li-9"
-msgstr "Os bancos mais próximos estão localizados em Três Coroas, São Francisco de Paula, Taquara e Gramado."
+msgid "Hotels and lodgings affiliated to the event:"
+msgstr "Hotéis e pousadas conveniados para o evento:"
 
 #: .\website\templates\index.html:90
-msgid "li-10"
-msgstr "Nossa loja aceita cartões com bandeiras Visa, Master e Cielo, débito e crédito."
+msgid "(simple accommodations)"
+msgstr "(acomodações simples)"
 
-#: .\website\templates\index.html:91
-msgid "li-11"
+#: .\website\templates\index.html:93 .\website\templates\index.html:113
+#: .\website\templates\index.html:122 .\website\templates\index.html:129
+#: .\website\templates\index.html:138 .\website\templates\index.html:144
+#: .\website\templates\index.html:149 .\website\templates\index.html:154
+msgid "Inform the promo code: event DKR"
+msgstr "Informar o código promocional: evento DKR"
+
+#: .\website\templates\index.html:102 .\website\templates\index.html:143
+msgid "Atendimento Inglês/Português."
+msgstr "Atendimento Inglês/Português."
+
+#: .\website\templates\index.html:112
+msgid "Atendimento Inglês/Português. "
+msgstr "Atendimento Inglês/Português."
+
+#: .\website\templates\index.html:137
+msgid "Atendimento Inglês/Português/Alemão."
+msgstr "Atendimento Inglês/Português/Alemão."
+
+#: .\website\templates\index.html:157
+msgid "Other hotels in the area (not affiliated)"
+msgstr "Outros hotéis da região (não conveniados)"
+
+#: .\website\templates\index.html:169 .\website\templates\index.html:173
+msgid "simple accommodations"
+msgstr "acomodações simples"
+
+#: .\website\templates\index.html:195
+msgid "Transportation"
+msgstr "Transportes"
+
+#: .\website\templates\index.html:197
+msgid ""
+"Event and accommodation rates do not include daily transport/transfer fees."
+msgstr ""
+"O preço do evento e a diária de acomodação não incluem transporte/traslado."
+
+#: .\website\templates\index.html:198
+msgid ""
+"More information about transportation to the event will be posted soon. "
+msgstr ""
+
+#: .\website\templates\index.html:205
+msgid "Remember to bring personal hygiene products and medications."
+msgstr ""
+"Lembre-se de trazer medicamentos, objetos de higiene e cuidados pessoais."
+
+#: .\website\templates\index.html:206
+msgid "Three daily meals are included in the event fee. "
+msgstr "O evento inclui as três refeições diárias."
+
+#: .\website\templates\index.html:207
+msgid "All sink tap water is potable."
+msgstr "A água em todas as pias é potável."
+
+#: .\website\templates\index.html:208
+msgid ""
+"Bring your meditation cushion (identified with your name), flashlight, rain "
+"apparatuses, sunscreen, hat, insect repellent, comfortable walking footwear "
+"and warm clothes."
+msgstr ""
+"Traga sua almofada para meditação (identificada com o seu nome), lanterna, "
+"aparatos para chuva, protetor solar, chapéu, repelente de insetos, calçado "
+"fechado e confortável para caminhar, agasalhos."
+
+#: .\website\templates\index.html:209
+msgid "Please bring small bank notes for business transactions."
+msgstr "Por favor, traga dinheiro trocado para transações comerciais."
+
+#: .\website\templates\index.html:210
+msgid ""
+"The weather in Khadro Ling is very unstable. We suggest that everyone check "
+"out the weather forecast previously."
+msgstr ""
+"O clima no Khadro Ling é muito instável. Sugerimos que todos confiram a "
+"previsão do tempo previamente."
+
+#: .\website\templates\index.html:211
+msgid "At Khadro Ling we do not have computers available for event atendees."
+msgstr ""
+"Não dispomos de computadores para os participantes em eventos no Khadro Ling."
+
+#: .\website\templates\index.html:212
+msgid ""
+"Medications can be ordered for delivery from Três Coroas pharmacies. The "
+"phone numbers are posted on the reception message board."
+msgstr ""
+"Medicamentos podem ser encomendados por tele entrega nas farmácias de Três "
+"Coroas. Os números estão divulgados no mural de nossa recepção."
+
+#: .\website\templates\index.html:213
+#, fuzzy
+#| msgid "The nearest banks are located in Três Coroas, Taquara e Gramado."
+msgid ""
+"The nearest banks are located in Três Coroas, São Francisco, Taquara e "
+"Gramado."
+msgstr ""
+"Os bancos mais próximos estão localizados em Três Coroas, São Franciso, "
+"Taquara e Gramado."
+
+#: .\website\templates\index.html:214
+msgid "Our store accepts Visa, Mastercard and Cielo credit cards."
+msgstr ""
+"Nossa loja aceita cartões com bandeiras Visa, Master e Cielo, débito e "
+"crédito."
+
+#: .\website\templates\index.html:215
+msgid "Please do not use dinnerware from the refectory at the ceremony site."
 msgstr "Por favor, não utilizem a louça do refeitório no local da cerimônia. "
 
-#: .\website\templates\index.html:92
-msgid "li-12"
-msgstr "Sugerimos trazer sua própria garrafa de água para evitarmos lixo plástico."
+#: .\website\templates\index.html:216
+msgid "We suggest bringing your own water bottle to avoid plastic waste."
+msgstr ""
+"Sugerimos trazer sua própria garrafa de água para evitarmos lixo plástico."
 
-#: .\website\templates\index.html:93
-msgid "li-13"
+#: .\website\templates\index.html:217
+msgid "Smoking is prohibited in all Khadro Ling areas."
 msgstr "É proibido fumar em qualquer área do Khadro Ling."
 
-#: .\website\templates\index.html:95
-msgid "li-14"
+#: .\website\templates\index.html:218
+msgid ""
+"Keep personal objects and value items with you or appropriately stored. "
+"Khadro Ling is not responsible for any participant lost object in events."
 msgstr ""
 "Mantenha objetos pessoais e itens de valor guardados consigo e/ou de forma "
-"adequada. O Khadro Ling não se responsabiliza pela perda de objetos dos participantes em eventos."
+"adequada. O Khadro Ling não se responsabiliza pela perda de objetos dos "
+"participantes em eventos."
 
-#: .\website\templates\index.html:98
-msgid "li-15"
-msgstr "Não alimente os animais. Alguns deles ficam muito doentes por receberem alimentos que não sejam parte de sua dieta."
-
-
-#: .\website\templates\index.html:101
-msgid "li-16"
+#: .\website\templates\index.html:219
+msgid ""
+"Do not feed the animals. Some of them get very sick from receiving food that "
+"are not part of their diet."
 msgstr ""
-"<strong>Brechó</strong>: o Khadro Ling possui um brechó para angariar fundos "
-"para seus projetos. Doações em bom estado são bem-vindas."
+"Não alimente os animais. Alguns deles ficam muito doentes por receberem "
+"alimentos que não sejam parte de sua dieta."
 
-#: .\website\templates\index.html:323
+#: .\website\templates\index.html:220
+msgid ""
+"Thrift shop: Khadro Ling has a thrift shop to raise funds for its projects. "
+"Donations in good condition are welcome."
+msgstr ""
+"Brechó: o Khadro Ling possui um brechó para angariar fundos para seus "
+"projetos. Doações em bom estado são bem-vindas."
+
+#: .\website\templates\index.html:228
+msgid "Registration form"
+msgstr "Inscrição"
+
+#: .\website\templates\index.html:233
+msgid "Full name"
+msgstr "Nome completo"
+
+#: .\website\templates\index.html:235
+msgid "No abbreviations"
+msgstr "Sem abreviações"
+
+#: .\website\templates\index.html:238
+msgid "Date of birth: "
+msgstr "Data de nascimento"
+
+#: .\website\templates\index.html:244
+msgid "Address"
+msgstr "Endereço"
+
+#: .\website\templates\index.html:248
+msgid "Number"
+msgstr "Número"
+
+#: .\website\templates\index.html:252
+msgid "Additional address info"
+msgstr "Complemento"
+
+#: .\website\templates\index.html:258
+msgid "City"
+msgstr "Cidade"
+
+#: .\website\templates\index.html:262
+msgid "State"
+msgstr "Estado"
+
+#: .\website\templates\index.html:266
+msgid "Zip code"
+msgstr "CEP"
+
+#: .\website\templates\index.html:276
+msgid "Phone/Mobile"
+msgstr "Número de telefone"
+
+#: .\website\templates\index.html:282
+msgid "Genre"
+msgstr "Gênero"
+
+#: .\website\templates\index.html:293
+msgid "The last empowerments you have received and who gave them:"
+msgstr "Descreva as últimas iniciações que você recebeu"
+
+#: .\website\templates\index.html:297
+msgid "Who gave them?"
+msgstr ""
+
+#: .\website\templates\index.html:303
+msgid "Are you an ordained practitioner? (monastic or otherwise)"
+msgstr "Praticante com ordenação? (monástica ou outra)"
+
+#: .\website\templates\index.html:313
+msgid "Food"
+msgstr "Alimentação"
+
+#: .\website\templates\index.html:316
+msgid "Food preference"
+msgstr "Preferência alimentar"
+
+#: .\website\templates\index.html:325
+msgid ""
+"Khadro Ling does not serve meals for special diets with ingredient "
+"restrictions."
+msgstr ""
+"O Chagdud Gonpa Khadro Ling não dispõe de dietas especiais com restrições a "
+"ingredientes."
+
+#: .\website\templates\index.html:332 .\website\templates\index.html:374
+msgid "PAY ATTENTION!"
+msgstr "ATENÇÃO!"
+
+#: .\website\templates\index.html:338
+msgid "This option cannot be changed after the form submission."
+msgstr ""
+"Ao escolher essa opção, você não poderá mudá-la após o envio deste "
+"formulário."
+
+#: .\website\templates\index.html:344
+msgid "Sitting"
+msgstr "Assentos"
+
+#: .\website\templates\index.html:347
+msgid "Do you need a chair?"
+msgstr "Necessita de cadeira? "
+
+#: .\website\templates\index.html:356
+msgid "Only for people with limitations to sit on the floor."
+msgstr "Apenas para pessoas com limitações para sentar no chão."
+
+#: .\website\templates\index.html:358
+msgid "Event option"
+msgstr "Opção de evento"
+
+#: .\website\templates\index.html:380
+msgid ""
+"Notify in the field 'Observations' the name of the adult responsible that "
+"will be participating in the event."
+msgstr ""
+"Em caso de participação de crianças, informe no campo 'Observações' o nome "
+"dos responsáveis que estarão participando do evento."
+
+#: .\website\templates\index.html:386
+msgid "Partial participation is not possible in this retreat. "
+msgstr "Não é possível a participação parcial neste retiro."
+
+#: .\website\templates\index.html:390
+msgid "Extra information"
+msgstr "Observações"
+
+#: .\website\templates\index.html:395
+msgid "Payment"
+msgstr "Forma de pagamento"
+
+#: .\website\templates\index.html:457
 msgid ""
 "For PayPal donation/payment, please inform the e-mail <strong>adm@chagdud."
 "org</strong> as donation’s identifier. Also, it is necessary describe what "
 "donation for. In this case, please inform Khadro Sangdu Drubchen."
 msgstr ""
 
+#: .\website\templates\index.html:477
+msgid ""
+"I have read and I accept the <a target='_blank' href='https://chagdud.com.br/"
+"politica-de-cancelamento-de-participacao-em-eventos/'>cancellation policy of "
+"participation in Khadro Ling events.</a>"
+msgstr ""
+"Li e aceito a política de <a target='_blank' href='https://chagdud.com.br/"
+"politica-de-cancelamento-de-participacao-em-eventos/'>cancelamento de "
+"participação em eventos no Khadro Ling.</a> "
+
+#: .\website\templates\index.html:479
+msgid ""
+"Before clicking send, make sure that all data is correctly filled and that "
+"you have completed the payment. "
+msgstr ""
+"Antes de clicar em enviar, certifique-se que preencheu todos os dados "
+"corretamente e concluiu o pagamento."
+
+#: .\website\templates\index.html:485
+msgid "Send"
+msgstr "Enviar"
+
 #: .\website\templates\pay-success.html:14
 msgid ""
 "The form was sent successfully. Wait for an answer in your email in the next "
 "few days"
-msgstr ""
+msgstr "Formulário enviado com sucesso. Espere uma resposta nos próximos dias."
 
 #: .\website\templates\pay-success.html:16
 msgid "Voltar"
-msgstr ""
+msgstr "Voltar"
+
+#~ msgid "Which Vajra Master?"
+#~ msgstr "De qual professor?"
+
+#~ msgid "li-1"
+#~ msgstr ""
+#~ "Lembre-se de trazer medicamentos, objetos de higiene e cuidados pessoais."
+
+#~ msgid "li-2"
+#~ msgstr "O evento inclui as três refeições diárias."
+
+#~ msgid "li-3"
+#~ msgstr "A água em todas as pias é potável."
+
+#~ msgid "li-4"
+#~ msgstr ""
+#~ "Traga sua almofada para meditação (identificada com o seu nome), "
+#~ "lanterna, aparatos para chuva, protetor solar, chapéu, repelente de "
+#~ "insetos, calçado fechado e confortável para caminhar, agasalhos."
+
+#~ msgid "li-5"
+#~ msgstr "Por favor, traga dinheiro trocado para transações comerciais."
+
+#~ msgid "li-6"
+#~ msgstr ""
+#~ "O clima no Khadro Ling é muito instável. Sugerimos que todos confiram a "
+#~ "previsão do tempo previamente."
+
+#~ msgid "li-7"
+#~ msgstr ""
+#~ "Não dispomos de computadores para os particpantes em eventos no Khadro "
+#~ "Ling."
+
+#~ msgid "li-8"
+#~ msgstr ""
+#~ "Medicamentos podem ser encomendados por tele entrega nas farmácias de "
+#~ "Três Coroas. Os números estão divulgados no mural de nossa recepção."
+
+#~ msgid "li-9"
+#~ msgstr ""
+#~ "Os bancos mais próximos estão localizados em Três Coroas, São Francisco "
+#~ "de Paula, Taquara e Gramado."
+
+#~ msgid "li-10"
+#~ msgstr ""
+#~ "Nossa loja aceita cartões com bandeiras Visa, Master e Cielo, débito e "
+#~ "crédito."
+
+#~ msgid "li-11"
+#~ msgstr ""
+#~ "Por favor, não utilizem a louça do refeitório no local da cerimônia. "
+
+#~ msgid "li-12"
+#~ msgstr ""
+#~ "Sugerimos trazer sua própria garrafa de água para evitarmos lixo plástico."
+
+#~ msgid "li-13"
+#~ msgstr "É proibido fumar em qualquer área do Khadro Ling."
+
+#~ msgid "li-14"
+#~ msgstr ""
+#~ "Mantenha objetos pessoais e itens de valor guardados consigo e/ou de "
+#~ "forma adequada. O Khadro Ling não se responsabiliza pela perda de objetos "
+#~ "dos participantes em eventos."
+
+#~ msgid "li-15"
+#~ msgstr ""
+#~ "Não alimente os animais. Alguns deles ficam muito doentes por receberem "
+#~ "alimentos que não sejam parte de sua dieta."
+
+#~ msgid "li-16"
+#~ msgstr ""
+#~ "<strong>Brechó</strong>: o Khadro Ling possui um brechó para angariar "
+#~ "fundos para seus projetos. Doações em bom estado são bem-vindas."

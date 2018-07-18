@@ -1,6 +1,6 @@
 from django import forms
 
-class InscriptionForm(forms.Form):
+class InscriptionFormEn(forms.Form):
 
     name = forms.CharField(required=True, max_length=150, widget=forms.TextInput(attrs={'placeholder': 'Nome completo', 'class': 'form-control', 'id': 'formGroupExampleInput'}))
     birthday = forms.DateField(required=True, widget=forms.DateInput(attrs={'placeholder':'01/01/1980','type':'date', 'class': 'form-control', 'id': 'formGroupExampleInput'}))
@@ -13,9 +13,9 @@ class InscriptionForm(forms.Form):
     email = forms.EmailField(required=True, max_length=100, widget=forms.EmailInput(attrs={'placeholder':'exemplo@email.com', 'type':'email', 'class':'form-control', 'id':'formGroupExampleInput'}))
     phone = forms.IntegerField(required=True, widget=forms.NumberInput(attrs={'type':'number','placeholder': 'Somente números', 'class': 'form-control', 'id': 'formGroupExampleInput'}))
     gender = forms.ChoiceField(required=True, widget=forms.RadioSelect(attrs={'type':'radio', 'class':'form-check'}), choices=(
-        ('Masculino','Masculino'),
-        ('Feminino','Feminino'),
-        ('Outro','Outro'),
+        ('Masculino','Man'),
+        ('Feminino','Women'),
+        ('Outro','Other'),
     ))
     initiations = forms.CharField(required=True,max_length=2000, widget=forms.Textarea(attrs={'placeholder': 'Ex: Iniciação de Guru Rinpoche...', 'class': 'form-control form_text_area', 'id': 'formGroupExampleInput'}))
     initiations_lama = forms.CharField(required=True,max_length=2000, widget=forms.Textarea(attrs={'placeholder': 'Ex: S. E. Dzongsar Khyentse Rinpoche...', 'class': 'form-control form_text_area', 'id': 'formGroupExampleInput'}))

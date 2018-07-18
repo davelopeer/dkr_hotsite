@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from website.forms import InscriptionForm
+from website.forms_en import InscriptionFormEn
 from django.core.mail import EmailMessage
 from django.shortcuts import redirect
 from django.template.loader import get_template
@@ -17,8 +18,7 @@ def index(request):
         form = InscriptionForm(request.POST)
 
         # # SETTING THE REQUIRED PAYMENT ACCORDING TO THE USER LANGUAGE
-        # if user_language == 'pt-br':
-        #     form.fields['payment'].required = True
+
         # else:
         #     form.fields['payment_international'].required = True
         #
@@ -109,7 +109,7 @@ def index(request):
 
     return render(request, 'index.html',  {
         'form': form,
-        'user_language':user_language,
+        'user_language': user_language,
     })
 
 def pay_success(request):
