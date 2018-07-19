@@ -153,3 +153,10 @@ class InscriptionFormEn(forms.Form):
     cancel_terms = forms.ChoiceField(required=True, widget=forms.RadioSelect(attrs={'type':'checkbox', 'class':'form-check'}), choices=(
         ('Aceito',''),
     ))
+
+
+class HealthForm(object):
+    name = forms.CharField(required=True, max_length=150, widget=forms.TextInput(attrs={'class': 'form-control', 'id': 'formGroupExampleInput'}))
+    email = forms.EmailField(required=True, max_length=100, widget=forms.EmailInput(attrs={'placeholder':'example@email.com', 'type':'email', 'class':'form-control', 'id':'formGroupExampleInput'}))
+    birthday = forms.DateField(required=True, widget=forms.DateInput(attrs={'type':'date', 'class': 'form-control', 'id': 'formGroupExampleInput'}))
+    

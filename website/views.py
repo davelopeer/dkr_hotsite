@@ -113,3 +113,6 @@ def index(request):
 
 def pay_success(request):
     return render(request, 'pay-success.html')
+
+def health_form(request):
+    return render(request, 'health-form.html')
