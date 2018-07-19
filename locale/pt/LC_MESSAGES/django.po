@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-18 20:39-0300\n"
+"POT-Creation-Date: 2018-07-19 18:22-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,23 +18,23 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: .\website\templates\base.html:28
+#: .\website\templates\base.html:29
 msgid "Khandro Sangdu Drubchen"
 msgstr "Drubchen de Khandro Sangdu"
 
-#: .\website\templates\base.html:29
+#: .\website\templates\base.html:30
 msgid "<em>with</em> Dzongsar Khyentse Rinpoche"
 msgstr "<em>com</em> Dzongsar Khyentse Rinpoche"
 
-#: .\website\templates\base.html:30
+#: .\website\templates\base.html:31
 msgid "Chagdud Gonpa Khadro Ling, Brazil"
 msgstr "Chagdud Gonpa Khadro Ling, Brasil"
 
-#: .\website\templates\base.html:31
+#: .\website\templates\base.html:32
 msgid "December 27th, 2018-January 4th, 2019"
 msgstr "De 27 de dezembro a 04 de janeiro"
 
-#: .\website\templates\base.html:51
+#: .\website\templates\base.html:52
 msgid "comunicacao@templobudista.org"
 msgstr "eventos@templobudista.org"
 
@@ -402,73 +402,87 @@ msgstr ""
 msgid "Registration form"
 msgstr "Inscrição"
 
-#: .\website\templates\index.html:234
+#: .\website\templates\index.html:232
+msgid "text"
+msgstr "O formulário é individual e deve ser preenchido completamente. "
+
+#: .\website\templates\index.html:233
+msgid "text2"
+msgstr "Crianças, independente da idade, devem estar inscritas no evento."
+
+#: .\website\templates\index.html:233
+msgid "text3"
+msgstr "Certifique-se de enviar o formulário após o pagamento."
+
+#: .\website\templates\index.html:236
 msgid "Full name"
 msgstr "Nome completo"
 
-#: .\website\templates\index.html:236
+#: .\website\templates\index.html:238
 msgid "No abbreviations"
 msgstr "Sem abreviações"
 
-#: .\website\templates\index.html:239
-msgid "Date of birth: "
+#: .\website\templates\index.html:241
+#, fuzzy
+#| msgid "Date of birth: "
+msgid "Date of birth (dd/mm/yyyy): "
 msgstr "Data de nascimento"
 
-#: .\website\templates\index.html:245
+#: .\website\templates\index.html:247
 msgid "Address"
 msgstr "Endereço"
 
-#: .\website\templates\index.html:249
+#: .\website\templates\index.html:251
 msgid "Number"
 msgstr "Número"
 
-#: .\website\templates\index.html:253
+#: .\website\templates\index.html:255
 msgid "Additional address info"
 msgstr "Complemento"
 
-#: .\website\templates\index.html:259
+#: .\website\templates\index.html:261
 msgid "City"
 msgstr "Cidade"
 
-#: .\website\templates\index.html:263
+#: .\website\templates\index.html:265
 msgid "State"
 msgstr "Estado"
 
-#: .\website\templates\index.html:267
+#: .\website\templates\index.html:269
 msgid "Zip code"
 msgstr "CEP"
 
-#: .\website\templates\index.html:277
+#: .\website\templates\index.html:279
 msgid "Phone/Mobile"
 msgstr "Número de telefone"
 
-#: .\website\templates\index.html:283
+#: .\website\templates\index.html:285
 msgid "Genre"
 msgstr "Gênero"
 
-#: .\website\templates\index.html:294
+#: .\website\templates\index.html:296
 #, fuzzy
 #| msgid "The last empowerments you have received and who gave them:"
-msgid "The last empowerments you have received and who gave them"
+msgid "The last empowerments you have received"
 msgstr "Descreva as últimas iniciações que você recebeu"
 
-#: .\website\templates\index.html:298
+#: .\website\templates\index.html:300
 msgid "Who gave them?"
 msgstr "De qual professor?"
 
-#: .\website\templates\index.html:304
+#: .\website\templates\index.html:306
 msgid "Are you an ordained practitioner? (monastic or otherwise)"
 msgstr "Praticante com ordenação? (monástica ou outra)"
 
-#: .\website\templates\index.html:314
+#: .\website\templates\index.html:316
 msgid "Food"
 msgstr "Alimentação"
 
-#: .\website\templates\index.html:317
+#: .\website\templates\index.html:319
 msgid "Food preference"
 msgstr "Preferência alimentar"
 
-#: .\website\templates\index.html:326
+#: .\website\templates\index.html:328
 msgid ""
 "Khadro Ling does not serve meals for special diets with ingredient "
 "restrictions."
@@ -476,53 +490,57 @@ msgstr ""
 "O Chagdud Gonpa Khadro Ling não dispõe de dietas especiais com restrições a "
 "ingredientes."
 
-#: .\website\templates\index.html:333 .\website\templates\index.html:375
+#: .\website\templates\index.html:335 .\website\templates\index.html:377
 msgid "PAY ATTENTION!"
 msgstr "ATENÇÃO!"
 
-#: .\website\templates\index.html:339
+#: .\website\templates\index.html:341
 msgid "This option cannot be changed after the form submission."
 msgstr ""
 "Ao escolher essa opção, você não poderá mudá-la após o envio deste "
 "formulário."
 
-#: .\website\templates\index.html:345
+#: .\website\templates\index.html:347
 msgid "Sitting"
 msgstr "Assentos"
 
-#: .\website\templates\index.html:348
+#: .\website\templates\index.html:350
 msgid "Do you need a chair?"
 msgstr "Necessita de cadeira? "
 
-#: .\website\templates\index.html:357
+#: .\website\templates\index.html:359
 msgid "Only for people with limitations to sit on the floor."
 msgstr "Apenas para pessoas com limitações para sentar no chão."
 
-#: .\website\templates\index.html:359
+#: .\website\templates\index.html:361
 msgid "Event option"
 msgstr "Opção de evento"
 
-#: .\website\templates\index.html:381
+#: .\website\templates\index.html:383
+#, fuzzy
+#| msgid ""
+#| "Notify in the field 'Observations' the name of the adult responsible that "
+#| "will be participating in the event."
 msgid ""
-"Notify in the field 'Observations' the name of the adult responsible that "
-"will be participating in the event."
+"Notify in the field 'Extra information' the name of the adult responsible "
+"that will be participating in the event."
 msgstr ""
 "Em caso de participação de crianças, informe no campo 'Observações' o nome "
 "dos responsáveis que estarão participando do evento."
 
-#: .\website\templates\index.html:387
+#: .\website\templates\index.html:389
 msgid "Partial participation is not possible in this retreat. "
 msgstr "Não é possível a participação parcial neste retiro."
 
-#: .\website\templates\index.html:391
+#: .\website\templates\index.html:393
 msgid "Extra information"
 msgstr "Observações"
 
-#: .\website\templates\index.html:395
+#: .\website\templates\index.html:397
 msgid "Payment"
 msgstr "Forma de pagamento"
 
-#: .\website\templates\index.html:477
+#: .\website\templates\index.html:480
 msgid ""
 "I have read and I accept the <a target='_blank' href='https://chagdud.com.br/"
 "politica-de-cancelamento-de-participacao-em-eventos/'>cancellation policy of "
@@ -532,7 +550,7 @@ msgstr ""
 "politica-de-cancelamento-de-participacao-em-eventos/'>cancelamento de "
 "participação em eventos no Khadro Ling.</a> "
 
-#: .\website\templates\index.html:479
+#: .\website\templates\index.html:482
 msgid ""
 "Before clicking send, make sure that all data is correctly filled and that "
 "you have completed the payment. "
@@ -540,7 +558,7 @@ msgstr ""
 "Antes de clicar em enviar, certifique-se que preencheu todos os dados "
 "corretamente e concluiu o pagamento."
 
-#: .\website\templates\index.html:485
+#: .\website\templates\index.html:488
 msgid "Send"
 msgstr "Enviar"
 

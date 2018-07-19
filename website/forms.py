@@ -136,7 +136,7 @@ class InscriptionFormEn(forms.Form):
     event_option = forms.ChoiceField(required=True, widget=forms.RadioSelect(attrs={'type':'radio', 'class':'form-check inline checkbox-option'}), choices=(
         ('Adulto','Adult full event with three meals and no lodging: R$ 3.042,00'),
         ('Criança 4-13 anos','Children from 4 to 12 years old with three meals and no lodging: R$ 972,00'),
-        ('Criança 0-3 anos','Children from 0 to 3 years old with three meals and no lodging: Isentas'),
+        ('Criança 0-3 anos','Children from 0 to 3 years old with three meals and no lodging: Free'),
     ))
     payment = forms.ChoiceField(required=False, widget=forms.RadioSelect(attrs={'type':'radio', 'class':'form-check'}), choices=(
         ('Cartão de crédito','Credit Card'),
@@ -159,4 +159,3 @@ class HealthForm(object):
     name = forms.CharField(required=True, max_length=150, widget=forms.TextInput(attrs={'class': 'form-control', 'id': 'formGroupExampleInput'}))
     email = forms.EmailField(required=True, max_length=100, widget=forms.EmailInput(attrs={'placeholder':'example@email.com', 'type':'email', 'class':'form-control', 'id':'formGroupExampleInput'}))
     birthday = forms.DateField(required=True, widget=forms.DateInput(attrs={'type':'date', 'class': 'form-control', 'id': 'formGroupExampleInput'}))
-    
