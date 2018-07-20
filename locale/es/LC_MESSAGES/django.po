@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-20 16:08-0300\n"
+"POT-Creation-Date: 2018-07-20 16:23-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -36,21 +36,19 @@ msgstr "27 de diciembre a 4 de enero de 2019"
 
 #: .\website\templates\base.html:52
 msgid "comunicacao@templobudista.org"
-msgstr ""
+msgstr "comunicacao@templobudista.org"
 
 #: .\website\templates\index.html:19 .\website\templates\index.html:70
-#, fuzzy
-#| msgid "Acomodations/Transportation"
-msgid "Accommodations/Transportation"
-msgstr "Acomodaciones/Transporte"
+msgid "Accommodations / Transportation"
+msgstr "Hospedaje/Traslados"
 
 #: .\website\templates\index.html:22
 msgid "General information"
-msgstr ""
+msgstr "Informaciones"
 
 #: .\website\templates\index.html:25
 msgid "Registration"
-msgstr ""
+msgstr "Formulario de inscripción"
 
 #: .\website\templates\index.html:33
 msgid ""
@@ -200,10 +198,8 @@ msgstr ""
 "interno antes de Diciembre."
 
 #: .\website\templates\index.html:71
-#, fuzzy
-#| msgid "Acomodations/Transportation"
 msgid "Accommodations"
-msgstr "Acomodaciones/Transporte"
+msgstr "Hospedaje"
 
 #: .\website\templates\index.html:72
 msgid ""
@@ -211,53 +207,58 @@ msgid ""
 "practitioners. To this end, we have contacted some hotels in the area so "
 "that everyone will be able to find a suitable place to stay. The hotels and "
 "hostels listed have different rates to suit different needs."
-msgstr ""
+msgstr "Hospedaje En ese Drubchen, Khadro Ling no tendrá la posibilidad de hospedaje "
+"para los practicantes. Por lo tanto, hemos hecho contacto con los hoteles de la región "
+"para que sea posible a todos encontrarem un lugar adecuado. Hay hoteles y hostales con "
+"precios variados, para que uno pueda elegir de acuerdo con sus posibilidades."
+
 
 #: .\website\templates\index.html:73
 msgid "Check-in"
-msgstr ""
+msgstr "Check in"
 
 #: .\website\templates\index.html:74
 msgid ""
 "You must arrive at your place of lodging by December, 26th. The event will "
 "start on the 27th, time  to be confirmed."
-msgstr ""
+msgstr "Usted debe llegar a su lugar de hospedaje el 26 de deciembre. El evento empieza el día 27, aun no tenemos la confirmación del horario de inicio."
 
 #: .\website\templates\index.html:75
 msgid "Check-out:"
-msgstr ""
+msgstr "Check out:"
 
 #: .\website\templates\index.html:77
 msgid ""
 "Drubchen will finish on January, 4th, 2019. On closing night, there will be "
 "a party to celebrate the event. Schedule your check-out for January, 5th."
-msgstr ""
+msgstr "El Drubchen termina el día 04 de Enero del 2019, aun sin horario confirmado. En la noche de finalización habrá una fiesta de celbración por el evento. Nuestra sugerencia es que haga sus check out el día 05."
+
 
 #: .\website\templates\index.html:79
 msgid "Please note:"
-msgstr ""
+msgstr "Importante"
 
 #: .\website\templates\index.html:81
 msgid ""
 "As the drubchen period is during the high tourist season in the region, we "
 "suggest the participants to  to make your hotel reservation before "
 "registering for the event."
-msgstr ""
+msgstr "El período Del Drubchen también es una época de alta del turismo en la región, por lo tanto conviene hacer su reserva de hospedaje antes de hacer su inscripción en el evento."
 
 #: .\website\templates\index.html:83
 msgid "Hotels and lodgings affiliated to the event:"
-msgstr ""
+msgstr "Hoteles y hostales conveniados para el evento:"
 
 #: .\website\templates\index.html:90
 msgid "(simple accommodations)"
-msgstr ""
+msgstr "9hostal, acomodaciones sencillas)"
 
 #: .\website\templates\index.html:93 .\website\templates\index.html:113
 #: .\website\templates\index.html:122 .\website\templates\index.html:129
 #: .\website\templates\index.html:138 .\website\templates\index.html:144
 #: .\website\templates\index.html:149 .\website\templates\index.html:154
 msgid "Inform the promo code: event DKR"
-msgstr ""
+msgstr "Informar el código promocional: evento DKR"
 
 #: .\website\templates\index.html:102 .\website\templates\index.html:143
 msgid "Atendimento Inglês/Português."
@@ -273,110 +274,108 @@ msgstr ""
 
 #: .\website\templates\index.html:157
 msgid "Other hotels in the area (not affiliated)"
-msgstr ""
+msgstr "Otros hoteles de la región, sin convenio para el evento"
 
 #: .\website\templates\index.html:169 .\website\templates\index.html:173
 msgid "simple accommodations"
-msgstr ""
+msgstr "acomodaciones sencillas"
 
 #: .\website\templates\index.html:195
-#, fuzzy
-#| msgid "Acomodations/Transportation"
 msgid "Transportation"
-msgstr "Acomodaciones/Transporte"
+msgstr "Transporte"
 
 #: .\website\templates\index.html:197
 msgid ""
 "Event and accommodation rates do not include daily transport/transfer fees."
-msgstr ""
+msgstr "Transporte El valor de traslado no está incluido en el valor del evento, tampoco en el valor de hospedaje de los hoteles y hostales."
 
 #: .\website\templates\index.html:198
 msgid ""
 "More information about transportation to the event will be posted soon. "
-msgstr ""
+msgstr "A la brevidad tendremos más informaciones respeto a posibilidades de traslados para el evento."
 
 #: .\website\templates\index.html:205
 msgid "Remember to bring personal hygiene products and medications."
-msgstr ""
+msgstr "Traiga sus própios medicamentos, objetos de higiene íntima y cuidados personales."
 
 #: .\website\templates\index.html:206
 msgid "Three daily meals are included in the event fee. "
-msgstr ""
+msgstr "El evento incluye desayuno, almuerzo y cena, todos los días."
 
 #: .\website\templates\index.html:207
 msgid "All sink tap water is potable."
-msgstr ""
+msgstr "El água en las cañerías es potable y perfecta para consumo."
 
 #: .\website\templates\index.html:208
 msgid ""
 "Bring your meditation cushion (identified with your name), flashlight, rain "
 "apparatuses, sunscreen, hat, insect repellent, comfortable walking footwear "
 "and warm clothes."
-msgstr ""
+msgstr "Traiga su cojín de meditación (identificada com su nombre), linterna, abrigo y zapatos para la lluvia, protector solar, sombrero o gorro, repelente de insectos, zapatos cómodos para caminar, abrigo para el frio."
 
 #: .\website\templates\index.html:209
 msgid "Please bring small bank notes for business transactions."
-msgstr ""
+msgstr "Pedimos que traigan dinero sencillo, para que sea más fácil el uso en los comercios."
 
 #: .\website\templates\index.html:210
 msgid ""
 "The weather in Khadro Ling is very unstable. We suggest that everyone check "
 "out the weather forecast previously."
-msgstr ""
+msgstr "El clima em Khadro Ling es tremendamente inestable. Sugerimos a todos que averiguen la previsión del tempo anticipadamente."
 
 #: .\website\templates\index.html:211
 msgid "At Khadro Ling we do not have computers available for event atendees."
-msgstr ""
+msgstr "No habrá computadoras disponibles para los participantes del evento."
 
 #: .\website\templates\index.html:212
 msgid ""
 "Medications can be ordered for delivery from Três Coroas pharmacies. The "
 "phone numbers are posted on the reception message board."
-msgstr ""
+msgstr "En caso de necesidad, es posible encargar medicamentos desde la farmacia en Três Coroas. Los contactos están disponibles en la cartelera de nuestra recepción."
 
 #: .\website\templates\index.html:213
 msgid ""
 "The nearest banks are located in Três Coroas, São Francisco, Taquara e "
 "Gramado."
-msgstr ""
+msgstr "Los bancos más próximos están ubicados em las ciudades de Três Coroas, São Francisco, Taquara y Gramado."
 
 #: .\website\templates\index.html:214
 msgid "Our store accepts Visa, Mastercard and Cielo credit cards."
-msgstr ""
+msgstr "Nuestra tienda acepta tarjetas bandera Visa, Master y Cielo, débito o crédito."
 
 #: .\website\templates\index.html:215
 msgid "Please do not use dinnerware from the refectory at the ceremony site."
-msgstr ""
+msgstr "Por favor, no utilicen las vajillas del comedor colectivo en el lugar de la ceremonia."
 
 #: .\website\templates\index.html:216
 msgid "We suggest bringing your own water bottle to avoid plastic waste."
-msgstr ""
+msgstr "Sugerimos que traigan sus propias botellas para água, para disminuir la basura plástica."
 
 #: .\website\templates\index.html:217
 msgid "Smoking is prohibited in all Khadro Ling areas."
-msgstr ""
+msgstr "Es prohibido fumar em cualquier área de Khadro Ling."
 
 #: .\website\templates\index.html:218
 msgid ""
 "Keep personal objects and value items with you or appropriately stored. "
 "Khadro Ling is not responsible for any participant lost object in events."
-msgstr ""
+msgstr "Mantenga sus perteneces y objetos de valor guardados com usted de forma adecuada. Khadro Ling no asume responsabilidad por pérdidas de objetos de lós participantes en los eventos."
 
 #: .\website\templates\index.html:219
 msgid ""
 "Do not feed the animals. Some of them get very sick from receiving food that "
 "are not part of their diet."
-msgstr ""
+msgstr "No alimente los animales. Ellos pueden enfermarse por recibir alimentos no adecuados a su dieta específica."
 
 #: .\website\templates\index.html:220
 msgid ""
 "Thrift shop: Khadro Ling has a thrift shop to raise funds for its projects. "
 "Donations in good condition are welcome."
-msgstr ""
+msgstr "“Brechó”: en Khadro Ling hay una tienda de segunda mano; el valor de las ventas es destinado a mantener sus proyectos. Donaciones en buenas condiciones son bienvenidas!"
 
 #: .\website\templates\index.html:228
 msgid "Registration form"
-msgstr ""
+msgstr "Formulario de inscripción"
 
 #: .\website\templates\index.html:232
 msgid "text"
@@ -392,149 +391,149 @@ msgstr ""
 
 #: .\website\templates\index.html:238
 msgid "Full name"
-msgstr ""
+msgstr "Nombre completo"
 
 #: .\website\templates\index.html:240
 msgid "No abbreviations"
-msgstr ""
+msgstr "Sin abreviaturas"
 
 #: .\website\templates\index.html:243
 msgid "Date of birth (dd/mm/yyyy): "
-msgstr ""
+msgstr "Fecha de nacimiento:"
 
 #: .\website\templates\index.html:249
 msgid "Address"
-msgstr ""
+msgstr "Dirección"
 
 #: .\website\templates\index.html:253
 msgid "Number"
-msgstr ""
+msgstr "Número"
 
 #: .\website\templates\index.html:257
 msgid "Additional address info"
-msgstr ""
+msgstr "Depto"
 
 #: .\website\templates\index.html:263
 msgid "City"
-msgstr ""
+msgstr "Ciudad"
 
 #: .\website\templates\index.html:267
 msgid "State"
-msgstr ""
+msgstr "Departamento/ Región"
 
 #: .\website\templates\index.html:271
 msgid "Zip code"
-msgstr ""
+msgstr "Código Postal"
 
 #: .\website\templates\index.html:281
 msgid "Phone/Mobile"
-msgstr ""
+msgstr "Teléfono fijo/ Celular"
 
 #: .\website\templates\index.html:287
 msgid "Genre"
-msgstr ""
+msgstr "Género"
 
 #: .\website\templates\index.html:298
 msgid "The last empowerments you have received"
-msgstr ""
+msgstr "Cuáles son las iniciaciones más recientes que usted ha recibido?"
 
 #: .\website\templates\index.html:302
 msgid "Who gave them?"
-msgstr ""
+msgstr "De cuál profesor?"
 
 #: .\website\templates\index.html:308
 msgid "Are you an ordained practitioner? (monastic or otherwise)"
-msgstr ""
+msgstr "Practicante con ordenación? (monástica u otra)"
 
 #: .\website\templates\index.html:318
 msgid "Food"
-msgstr ""
+msgstr "Alimentación"
 
 #: .\website\templates\index.html:321
 msgid "Food preference"
-msgstr ""
+msgstr "Preferencia Alimentar"
 
 #: .\website\templates\index.html:330
 msgid ""
 "Khadro Ling does not serve meals for special diets with ingredient "
 "restrictions."
-msgstr ""
+msgstr "Chagdud Gonpa Khadro Ling no ofrece dietas especiales con restricción de ingredientes."
 
 #: .\website\templates\index.html:337
 msgid "WARNING!"
-msgstr ""
+msgstr "ATENCIÓN!"
 
 #: .\website\templates\index.html:343
 msgid "This option cannot be changed after the form submission."
-msgstr ""
+msgstr "Esta opción no podrá ser modificada después del envio del formulario."
 
 #: .\website\templates\index.html:349
 msgid "Sitting"
-msgstr ""
+msgstr "Asientos"
 
 #: .\website\templates\index.html:352
 msgid "Do you need a chair?"
-msgstr ""
+msgstr "Necesita silla?"
 
 #: .\website\templates\index.html:361
 msgid "Only for people with limitations to sit on the floor."
-msgstr ""
+msgstr "Solo para personas com limitaciones para sentar en el suelo."
 
 #: .\website\templates\index.html:363
 msgid "Event option"
-msgstr ""
+msgstr "Opción de evento"
 
 #: .\website\templates\index.html:379
 msgid "PAY ATTENTION!"
-msgstr ""
+msgstr "PRESTE ATENCIÓN"
 
 #: .\website\templates\index.html:385
 msgid ""
 "Notify in the field 'Extra information' the name of the adult responsible "
 "that will be participating in the event."
-msgstr ""
+msgstr "En el campo “observaciones” describa el nombre de los responsables que participarán del evento."
 
 #: .\website\templates\index.html:391
 msgid "Partial participation is not possible in this retreat. "
-msgstr ""
+msgstr "No es posible participación parcial en ese retiro."
 
 #: .\website\templates\index.html:395
 msgid "Extra information"
-msgstr ""
+msgstr "Observaciones"
 
 #: .\website\templates\index.html:399
 msgid "Payment"
-msgstr ""
+msgstr "Condiciones de pago"
 
 #: .\website\templates\index.html:497
 msgid ""
 "I have read and I accept the <a target='_blank' href='https://chagdud.com.br/"
 "politica-de-cancelamento-de-participacao-em-eventos/'>cancellation policy of "
 "participation in Khadro Ling events.</a>"
-msgstr ""
+msgstr "He leído y aceptado la <a target='_blank' href='https://chagdud.com.br/politica-de-cancelamento-de-participacao-em-eventos/'> política de cancelamiento de participación en eventos en Khadro Ling.</a>"
 
 #: .\website\templates\index.html:499
 msgid ""
 "Before clicking send, make sure that all data is correctly filled and that "
 "you have completed the payment. "
-msgstr ""
+msgstr "Antes de pulsar enviar averigue si ha llenado todos los datos correctamente y ha concluido el pago."
 
 #: .\website\templates\index.html:505
 msgid "Send"
-msgstr ""
+msgstr "Enviar"
 
 #: .\website\templates\pay-success.html:14
 msgid "Your entry form for the event has been successfully sent."
-msgstr ""
+msgstr "Su formulario de inscripción para el evento ha sido enviado con exito."
 
 #: .\website\templates\pay-success.html:15
 msgid ""
 "Khadro Ling Events department will contact you to confirm your registration."
-msgstr ""
+msgstr "El Sector de Eventos de Khadro Ling entrará en contacto con usted para confirmar su participación en el evento."
 
 #: .\website\templates\pay-success.html:17
 msgid "Voltar"
-msgstr ""
+msgstr "Regreso"
 
 #~ msgid "Inscription"
 #~ msgstr "Inscripción"

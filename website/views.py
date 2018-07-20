@@ -106,7 +106,7 @@ def index(request):
         if user_language == 'pt-br':
             form = InscriptionForm()
         elif user_language == 'es':
-            form = InscriptionFormEn()
+            form = InscriptionFormEs()
         else:
             form = InscriptionFormEn()
 
