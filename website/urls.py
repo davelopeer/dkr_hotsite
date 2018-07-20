@@ -6,4 +6,5 @@ urlpatterns = [
     url(r'^$', views.index, name='index'),
     url(r'^form-send/$', views.pay_success, name='pay-success'),
     url(r'^health-form/$', views.health_form, name='health-form'),
+    url(r'^cancellation-policy/$', views.cancellation_policy, name='cancellation-policy'),
 ]

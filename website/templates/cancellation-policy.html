@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+{% extends "base.html"%}
+  {% load static %}
+  {% load i18n %}
+
+  {% block extra-head %}
+    <link rel="stylesheet" href="{% static 'css/cancellation-policy.css' %}">
+  {% endblock %}
+
+
+  {% block body_block %}
+
+  <h2 class="text-center section_title">{% trans "Cancellation policy for participation in events" %}</h2>
+  <p class="font-weight-bold question">{% trans "Do you want to cancel your participation in the event?" %}</p>
+  <ul>
+    <li>{% trans "Write to eventos@templobudista.org and let us know you are cancelling your registration." %}</li>
+  </ul>
+  <p class="font-weight-bold question">{% trans "What to do with the money you've already paid for?" %}</p>
+  <ul>
+    <li>{% trans "You can keep it as credit for another event at Khadro Ling. This credit is valid for one year." %}</li>
+    <li>{% trans "Direct it for butterlamp, tsog, Riwo Sangcho or Akshobya offerings" %}</li>
+  </ul>
+  <p class="font-weight-bold question">{% trans "I would like to get my money back" %}</p>
+  <table class="table canceletion-refund-table">
+    <thead>
+    <tr>
+      <th class="font-weight-bold" colspan="2">{% trans "If you cancelled..." %}</th>
+    </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>{% trans "Up to 5 days or more before the start of the event" %}</td>
+        <td>{% trans "90% of the deposited amount" %}</td>
+      </tr>
+      <tr>
+        <td>{% trans "Up to the day before the begining of the event" %}</td>
+        <td>{% trans "70% of the deposited amount" %}</td>
+      </tr>
+      <tr>
+        <td>{% trans "On the day of the event and after it has begun" %}</td>
+        <td>{% trans "There will be no return of the amount paid" %}</td>
+      </tr>
+    </tbody>
+  </table>
+  <p class="font-weight-bold question">{% trans "Why this cancellation policy?" %}</p>
+  <p>{% trans "When you sign up at one of our events, two things will happen:" %}</p>
+  <ol>
+    <li>{% trans "We reserve your spot. Other practitioner will not be able to use it." %}</li>
+    <li>{% trans "We organize the space to receive you. And, in some cases, food is prepared for the scheduled period." %}</li>
+  </ol>
+  <p>{% trans "All this implies costs, both material and operational (time and resources)." %}</p>
+  <p>{% trans "Being so, if you need to cancel your participation, it is very important that you let us know as soon as possible." %}</p>
+
+
+  {% endblock %}

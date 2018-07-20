@@ -118,6 +118,9 @@ def index(request):
 def pay_success(request):
     return render(request, 'pay-success.html')
 
+def cancellation_policy(request):
+    return render(request, 'cancellation-policy.html')
+
 def health_form(request):
 
     user_language = translation.get_language_from_request(request, check_path=True)

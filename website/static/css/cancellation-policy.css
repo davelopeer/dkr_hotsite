@@ -1,0 +1,18 @@
+.section_title {
+  margin-bottom: 50px;
+}
+
+.question {
+  margin-top: 40px;
+}
+
+.canceletion-refund-table {
+  margin-left: 2%;
+  width: 70%;
+}
+
+@media screen and (max-width: 768px) {
+  .canceletion-refund-table {
+    width: 100%;
+  }
+}

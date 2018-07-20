@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-20 19:54-0300\n"
+"POT-Creation-Date: 2018-07-20 20:36-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -38,15 +38,102 @@ msgstr "27 de diciembre a 4 de enero de 2019"
 msgid "comunicacao@templobudista.org"
 msgstr "comunicacao@templobudista.org"
 
+#: .\website\templates\cancellation-policy.html:14
+msgid "Cancellation policy for participation in events"
+msgstr "Política de cancelamiento de participación en eventos"
+
+#: .\website\templates\cancellation-policy.html:15
+msgid "Do you want to cancel your participation in the event?"
+msgstr "Necesita cancelar su participación en el evento?"
+
+#: .\website\templates\cancellation-policy.html:17
+msgid ""
+"Write to eventos@templobudista.org and let us know you are cancelling your "
+"registration."
+msgstr "Escriba para eventos@templobudista.org y avisenos de su cancelamiento."
+
+#: .\website\templates\cancellation-policy.html:19
+msgid "What to do with the money you've already paid for?"
+msgstr "Qué hacer con el dinero que ya he pago?"
+
+#: .\website\templates\cancellation-policy.html:21
+msgid ""
+"You can keep it as credit for another event at Khadro Ling. This credit is "
+"valid for one year."
+msgstr "Usted ló puede usar como crédito para inscripción en futuros eventos de Khadro Ling. El crédito es válido por 1 (un) año."
+
+#: .\website\templates\cancellation-policy.html:22
+msgid "Direct it for butterlamp, tsog, Riwo Sangcho or Akshobya offerings"
+msgstr "Destinarlo a ofrendas como lamparitas, tsogs, Riwo Sangchod o Akshobia."
+
+#: .\website\templates\cancellation-policy.html:24
+msgid "I would like to get my money back"
+msgstr "Me gustaría recibir devolución del dinero."
+
+#: .\website\templates\cancellation-policy.html:28
+msgid "If you cancelled..."
+msgstr "Si usted ha cancelado..."
+
+#: .\website\templates\cancellation-policy.html:33
+msgid "Up to 5 days or more before the start of the event"
+msgstr "En hasta 5 días o más antes del inicio del evento"
+
+#: .\website\templates\cancellation-policy.html:34
+#, python-format
+msgid "90% of the deposited amount"
+msgstr "90% del valor depositado"
+
+#: .\website\templates\cancellation-policy.html:37
+msgid "Up to the day before the begining of the event"
+msgstr "Hasta el dia anterior al início del evento"
+
+#: .\website\templates\cancellation-policy.html:38
+#, python-format
+msgid "70% of the deposited amount"
+msgstr "70% del valor depositado"
+
+#: .\website\templates\cancellation-policy.html:41
+msgid "On the day of the event and after it has begun"
+msgstr "En el dia del evento o después del inicio"
+
+#: .\website\templates\cancellation-policy.html:42
+msgid "There will be no return of the amount paid"
+msgstr "No habrá devolución del valor pagado"
+
+#: .\website\templates\cancellation-policy.html:46
+msgid "Why this cancellation policy?"
+msgstr "Por qué esa política de cancelamiento?"
+
+#: .\website\templates\cancellation-policy.html:47
+msgid "When you sign up at one of our events, two things will happen:"
+msgstr "Cuando usted se inscribe en uno de nuestros eventos, sucede lo siguiente:"
+
+#: .\website\templates\cancellation-policy.html:49
+msgid "We reserve your spot. Other practitioner will not be able to use it."
+msgstr "Reservamos su cupo. Outra persona no podrá utilizarla."
+
+#: .\website\templates\cancellation-policy.html:50
+msgid ""
+"We organize the space to receive you. And, in some cases, food is prepared "
+"for the scheduled period."
+msgstr "Organizamos nuestro espacio para recibirlo. En algunas situaciones, preparamos alimentación para todo el periodo programado."
+
+#: .\website\templates\cancellation-policy.html:52
+msgid ""
+"All this implies costs, both material and operational (time and resources)."
+msgstr "Eso involucra costos, sean materiales o operacionales (tiempo y recursos)."
+
+#: .\website\templates\cancellation-policy.html:53
+msgid ""
+"Being so, if you need to cancel your participation, it is very important "
+"that you let us know as soon as possible."
+msgstr "Por lo tanto, es muy importante que usted nos avise lo más pronto posible si acaso necesita cancelar su participación."
+
 #: .\website\templates\health-form.html:12
-#, fuzzy
-#| msgid "Registration form"
 msgid "Registration Health Form"
 msgstr "Catastro de Salud"
 
 #: .\website\templates\health-form.html:16
-#, fuzzy
-#| msgid "General information"
 msgid "Personal information"
 msgstr "Datos Personales"
 
