@@ -36,7 +36,7 @@ class InscriptionForm(forms.Form):
         ('Criança 4-13 anos','Participação infantil (de 4 a 12 anos) com as três refeições incluídas e sem hospedagem: R$ 972,00'),
         ('Criança 0-3 anos','Crianças (de 0 a 3 anos) com as três refeições incluídas e sem hospedagem: Isentas'),
     ))
-    payment = forms.ChoiceField(required=False, widget=forms.RadioSelect(attrs={'type':'radio', 'class':'form-check'}), choices=(
+    payment = forms.ChoiceField(required=True, widget=forms.RadioSelect(attrs={'type':'radio', 'class':'form-check'}), choices=(
         ('Cartão de crédito','Cartão de crédito'),
         ('Depósito bancário','Depósito bancário'),
     ))

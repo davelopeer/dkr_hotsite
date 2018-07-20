@@ -21,11 +21,11 @@ def sendMail(name,birthday_br,adress,adress_num,adress_comp,city,state,zip_code,
                                     'CEP: ' + zip_code + '\n' + '\n' +
                                     'E-mail: ' + email + '\n' + '\n' +
                                     'Telefone/celular: ' + phone + '\n' + '\n' +
-                                    'Gênero: ' + gender + '\n' + '\n' + '\n' + '\n' +
+                                    'Gênero: ' + gender + '\n' + '\n' +
                                     'Iniciações: ' + '\n' + '\n' + initiations + '\n' + '\n' + '\n' +
                                     'Professores que concederam as iniciações: ' + '\n' + '\n' + initiations_lama + '\n' + '\n' + '\n' +
                                     'Ordenação monástica: ' + monastic_ordenation + '\n' + '\n' +
-                                    'Observações gerais: ' + '\n' + '\n' + observations + '\n' + '\n' + '\n' + '\n' +
+                                    'Observações gerais: ' + '\n' + '\n' + observations + '\n' + '\n' +
                                     'Preferência alimentar: ' + food_preferency + '\n' + '\n' +
                                     'Necessidade de cadeira: ' + seat + '\n' + '\n' +
                                     'Opção de evento: ' + event_option + '\n' + '\n' +

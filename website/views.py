@@ -51,6 +51,7 @@ def index(request):
             payment_international = request.POST.get('payment_international', '')
             deposit_day = request.POST.get('deposit_day', '')
             deposit_name = request.POST.get('deposit_name', '')
+            deposit_value = request.POST.get('deposit_value', '')
             deposit_agency = request.POST.get('deposit_agency', '')
             deposit_account = request.POST.get('deposit_account', '')
             deposit_envelop = request.POST.get('deposit_envelop', '')
@@ -73,7 +74,7 @@ def index(request):
                 if payment == 'Cartão de crédito':
                     payment_info = 'Nome do titular do cartão: ' + credit_card_name
                 else:
-                    payment_info = "Depositado no dia " + deposit_day_br + " por " + deposit_name + " com os dados: " + deposit_envelop + deposit_agency + " " + deposit_account
+                    payment_info = "Depositado o valor de " + deposit_value + " no dia " + deposit_day_br + " por " + deposit_name + " com os dados: " + "\nNúmero do envelope: " + deposit_envelop + "\n    ou" + "\nAgência: " +  deposit_agency + " - Conta: " + deposit_account
             else:
                 payment_info = 'Nome do usuário Paypal: ' + paypal_name
 
@@ -99,7 +100,6 @@ def index(request):
                     payment_international,
                     payment_info,
                     event_option,
-                    paypal_name,
                     )
             return redirect('pay-success')
     else:

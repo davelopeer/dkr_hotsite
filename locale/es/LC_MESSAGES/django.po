@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-10 16:21-0300\n"
+"POT-Creation-Date: 2018-07-20 16:08-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,23 +18,27 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: .\website\templates\base.html:28
+#: .\website\templates\base.html:29
 msgid "Khandro Sangdu Drubchen"
 msgstr "Drubchen de Khandro Sangdu"
 
-#: .\website\templates\base.html:29
+#: .\website\templates\base.html:30
 msgid "<em>with</em> Dzongsar Khyentse Rinpoche"
 msgstr "<em>con</em> Dzongsar Khyentse Rinpoche"
 
-#: .\website\templates\base.html:30
+#: .\website\templates\base.html:31
 msgid "Chagdud Gonpa Khadro Ling, Brazil"
 msgstr "Chagdud Gonpa Khadro Ling, Brasil"
 
-#: .\website\templates\base.html:31
+#: .\website\templates\base.html:32
 msgid "December 27th, 2018-January 4th, 2019"
 msgstr "27 de diciembre a 4 de enero de 2019"
 
-#: .\website\templates\index.html:19
+#: .\website\templates\base.html:52
+msgid "comunicacao@templobudista.org"
+msgstr ""
+
+#: .\website\templates\index.html:19 .\website\templates\index.html:70
 #, fuzzy
 #| msgid "Acomodations/Transportation"
 msgid "Accommodations/Transportation"
@@ -94,17 +98,18 @@ msgid ""
 "Menmo had been his secret friend, and also due to his being blessed by the "
 "ḍākinīs of pristine cognition...”"
 msgstr ""
-"Luego, según el recuento de Su Santidad Dudjom Rinpoche en <em>Historia de la "
-"Escuela Nyigma del Budismo Tibetano</em>, “Este gran secreto, tan maravilloso, "
-"se mantuvo en posesión de las ḍākinīs por algún tiempo, y estuvo más allá del "
-"alcance y posibilidad de personas comunes. El momento de entrenar a seres por "
-"medio de este tesoro vino más tarde, en esta edad de contienda, cuando, por el "
-"poder de la compasión y aspiraciones iluminadas, la transmisión de las "
-"palabras y significado le correspondió al descubridor de tesoros Padma Ösel "
-"Do-ngak Lingpa (Jamyang Khyentse Wangpo, 1820-1892). Esto porque, primero y "
-"ante todo, durante su vida pasada como Guru Chökyi Wangchuk, uno de los cinco "
-"grandes reyes terton, Jomo Menmo había sido su consorte, y también debido a "
-"que había recibido las bendiciones de las ḍākinīs de cognición primordial…”"
+"Luego, según el recuento de Su Santidad Dudjom Rinpoche en <em>Historia de "
+"la Escuela Nyigma del Budismo Tibetano</em>, “Este gran secreto, tan "
+"maravilloso, se mantuvo en posesión de las ḍākinīs por algún tiempo, y "
+"estuvo más allá del alcance y posibilidad de personas comunes. El momento de "
+"entrenar a seres por medio de este tesoro vino más tarde, en esta edad de "
+"contienda, cuando, por el poder de la compasión y aspiraciones iluminadas, "
+"la transmisión de las palabras y significado le correspondió al descubridor "
+"de tesoros Padma Ösel Do-ngak Lingpa (Jamyang Khyentse Wangpo, 1820-1892). "
+"Esto porque, primero y ante todo, durante su vida pasada como Guru Chökyi "
+"Wangchuk, uno de los cinco grandes reyes terton, Jomo Menmo había sido su "
+"consorte, y también debido a que había recibido las bendiciones de las "
+"ḍākinīs de cognición primordial…”"
 
 #: .\website\templates\index.html:46
 msgid ""
@@ -120,8 +125,9 @@ msgstr ""
 "de ḍākinī, y es renombrada por su poder de restaurar la degeneración de los "
 "elementos – tierra, agua, aire y otros - y de aplacar los estragos de la "
 "enfermedad, hambruna y guerra. Debido a su linaje de transmisión corto, en "
-"nuestro tiempo presente las bendiciones de esta práctica se mantienen vívidas "
-"y potentes. Dzongsar Khyentse Rinpoche concederá la iniciación maduradora."
+"nuestro tiempo presente las bendiciones de esta práctica se mantienen "
+"vívidas y potentes. Dzongsar Khyentse Rinpoche concederá la iniciación "
+"maduradora."
 
 #: .\website\templates\index.html:48
 msgid "Requirements for participation"
@@ -142,21 +148,21 @@ msgstr ""
 "Para asistir al Drubchen de Khandro Sangdü es necesario estar comprometido "
 "con el budismo Vajrayana. Pese a que hay numerosas medidas y compromisos que "
 "establecen la fundación para el Vajrayana, quizás lo más claro sea las "
-"cuatro autorizaciones de práctica recibidas en las cuatro iniciaciones"
-"<sup>1</sup> otorgadas en una iniciación del tantra interno<sup>2</sup>. Si "
-"Usted ha recibido tal iniciación y ha mantenido respeto y devoción hacia el "
-"sostenedor-vajra calificado del linaje que otorgó la transmisión, Usted "
-"cumple con el requisito para asistir. Haber recibido la iniciación de Guru "
-"Rinpoché, especialmente de una enseñanza de tesoro, es particularmente "
-"auspicioso para esta ocasión."
+"cuatro autorizaciones de práctica recibidas en las cuatro "
+"iniciaciones<sup>1</sup> otorgadas en una iniciación del tantra "
+"interno<sup>2</sup>. Si Usted ha recibido tal iniciación y ha mantenido "
+"respeto y devoción hacia el sostenedor-vajra calificado del linaje que "
+"otorgó la transmisión, Usted cumple con el requisito para asistir. Haber "
+"recibido la iniciación de Guru Rinpoché, especialmente de una enseñanza de "
+"tesoro, es particularmente auspicioso para esta ocasión."
 
 #: .\website\templates\index.html:53
 msgid ""
 "At the time of the registration, please indicate the name of at least one "
 "empowerment you have received and the lama who bestowed it. "
 msgstr ""
-"Al momento de la inscripción, por favor indique el nombre de al menos "
-"una iniciación que haya recibido y el nombre del lama que la otorgó. "
+"Al momento de la inscripción, por favor indique el nombre de al menos una "
+"iniciación que haya recibido y el nombre del lama que la otorgó. "
 
 #: .\website\templates\index.html:56
 msgid ""
@@ -187,16 +193,347 @@ msgid ""
 "December."
 msgstr ""
 "Los tres vehículos internos del Vajrayana son Maha, Anu y Ati Yoga, y todas "
-"las iniciaciones otorgadas en Chagdud Gonpa son de tantras internos. Los tres "
-"vehículos externos del Vajrayana - Kriya, Charya y Yoga Tantras - también "
-"involucran iniciación, pero no cumplen los requisitos para este drubchen. Si "
-"Usted desea asistir, debe recibir una iniciación de tantra interno antes "
-"de Diciembre."
+"las iniciaciones otorgadas en Chagdud Gonpa son de tantras internos. Los "
+"tres vehículos externos del Vajrayana - Kriya, Charya y Yoga Tantras - "
+"también involucran iniciación, pero no cumplen los requisitos para este "
+"drubchen. Si Usted desea asistir, debe recibir una iniciación de tantra "
+"interno antes de Diciembre."
+
+#: .\website\templates\index.html:71
+#, fuzzy
+#| msgid "Acomodations/Transportation"
+msgid "Accommodations"
+msgstr "Acomodaciones/Transporte"
+
+#: .\website\templates\index.html:72
+msgid ""
+"For this drubchen Khadro Ling will not provide/offer  accommodations for "
+"practitioners. To this end, we have contacted some hotels in the area so "
+"that everyone will be able to find a suitable place to stay. The hotels and "
+"hostels listed have different rates to suit different needs."
+msgstr ""
+
+#: .\website\templates\index.html:73
+msgid "Check-in"
+msgstr ""
+
+#: .\website\templates\index.html:74
+msgid ""
+"You must arrive at your place of lodging by December, 26th. The event will "
+"start on the 27th, time  to be confirmed."
+msgstr ""
+
+#: .\website\templates\index.html:75
+msgid "Check-out:"
+msgstr ""
+
+#: .\website\templates\index.html:77
+msgid ""
+"Drubchen will finish on January, 4th, 2019. On closing night, there will be "
+"a party to celebrate the event. Schedule your check-out for January, 5th."
+msgstr ""
+
+#: .\website\templates\index.html:79
+msgid "Please note:"
+msgstr ""
+
+#: .\website\templates\index.html:81
+msgid ""
+"As the drubchen period is during the high tourist season in the region, we "
+"suggest the participants to  to make your hotel reservation before "
+"registering for the event."
+msgstr ""
+
+#: .\website\templates\index.html:83
+msgid "Hotels and lodgings affiliated to the event:"
+msgstr ""
+
+#: .\website\templates\index.html:90
+msgid "(simple accommodations)"
+msgstr ""
+
+#: .\website\templates\index.html:93 .\website\templates\index.html:113
+#: .\website\templates\index.html:122 .\website\templates\index.html:129
+#: .\website\templates\index.html:138 .\website\templates\index.html:144
+#: .\website\templates\index.html:149 .\website\templates\index.html:154
+msgid "Inform the promo code: event DKR"
+msgstr ""
+
+#: .\website\templates\index.html:102 .\website\templates\index.html:143
+msgid "Atendimento Inglês/Português."
+msgstr ""
+
+#: .\website\templates\index.html:112
+msgid "Atendimento Inglês/Português. "
+msgstr ""
+
+#: .\website\templates\index.html:137
+msgid "Atendimento Inglês/Português/Alemão."
+msgstr ""
+
+#: .\website\templates\index.html:157
+msgid "Other hotels in the area (not affiliated)"
+msgstr ""
+
+#: .\website\templates\index.html:169 .\website\templates\index.html:173
+msgid "simple accommodations"
+msgstr ""
+
+#: .\website\templates\index.html:195
+#, fuzzy
+#| msgid "Acomodations/Transportation"
+msgid "Transportation"
+msgstr "Acomodaciones/Transporte"
+
+#: .\website\templates\index.html:197
+msgid ""
+"Event and accommodation rates do not include daily transport/transfer fees."
+msgstr ""
+
+#: .\website\templates\index.html:198
+msgid ""
+"More information about transportation to the event will be posted soon. "
+msgstr ""
+
+#: .\website\templates\index.html:205
+msgid "Remember to bring personal hygiene products and medications."
+msgstr ""
+
+#: .\website\templates\index.html:206
+msgid "Three daily meals are included in the event fee. "
+msgstr ""
+
+#: .\website\templates\index.html:207
+msgid "All sink tap water is potable."
+msgstr ""
+
+#: .\website\templates\index.html:208
+msgid ""
+"Bring your meditation cushion (identified with your name), flashlight, rain "
+"apparatuses, sunscreen, hat, insect repellent, comfortable walking footwear "
+"and warm clothes."
+msgstr ""
+
+#: .\website\templates\index.html:209
+msgid "Please bring small bank notes for business transactions."
+msgstr ""
+
+#: .\website\templates\index.html:210
+msgid ""
+"The weather in Khadro Ling is very unstable. We suggest that everyone check "
+"out the weather forecast previously."
+msgstr ""
+
+#: .\website\templates\index.html:211
+msgid "At Khadro Ling we do not have computers available for event atendees."
+msgstr ""
+
+#: .\website\templates\index.html:212
+msgid ""
+"Medications can be ordered for delivery from Três Coroas pharmacies. The "
+"phone numbers are posted on the reception message board."
+msgstr ""
+
+#: .\website\templates\index.html:213
+msgid ""
+"The nearest banks are located in Três Coroas, São Francisco, Taquara e "
+"Gramado."
+msgstr ""
+
+#: .\website\templates\index.html:214
+msgid "Our store accepts Visa, Mastercard and Cielo credit cards."
+msgstr ""
+
+#: .\website\templates\index.html:215
+msgid "Please do not use dinnerware from the refectory at the ceremony site."
+msgstr ""
+
+#: .\website\templates\index.html:216
+msgid "We suggest bringing your own water bottle to avoid plastic waste."
+msgstr ""
+
+#: .\website\templates\index.html:217
+msgid "Smoking is prohibited in all Khadro Ling areas."
+msgstr ""
+
+#: .\website\templates\index.html:218
+msgid ""
+"Keep personal objects and value items with you or appropriately stored. "
+"Khadro Ling is not responsible for any participant lost object in events."
+msgstr ""
+
+#: .\website\templates\index.html:219
+msgid ""
+"Do not feed the animals. Some of them get very sick from receiving food that "
+"are not part of their diet."
+msgstr ""
+
+#: .\website\templates\index.html:220
+msgid ""
+"Thrift shop: Khadro Ling has a thrift shop to raise funds for its projects. "
+"Donations in good condition are welcome."
+msgstr ""
+
+#: .\website\templates\index.html:228
+msgid "Registration form"
+msgstr ""
+
+#: .\website\templates\index.html:232
+msgid "text"
+msgstr ""
+
+#: .\website\templates\index.html:233
+msgid "text2"
+msgstr ""
+
+#: .\website\templates\index.html:234
+msgid "text3"
+msgstr ""
+
+#: .\website\templates\index.html:238
+msgid "Full name"
+msgstr ""
+
+#: .\website\templates\index.html:240
+msgid "No abbreviations"
+msgstr ""
+
+#: .\website\templates\index.html:243
+msgid "Date of birth (dd/mm/yyyy): "
+msgstr ""
+
+#: .\website\templates\index.html:249
+msgid "Address"
+msgstr ""
+
+#: .\website\templates\index.html:253
+msgid "Number"
+msgstr ""
+
+#: .\website\templates\index.html:257
+msgid "Additional address info"
+msgstr ""
+
+#: .\website\templates\index.html:263
+msgid "City"
+msgstr ""
+
+#: .\website\templates\index.html:267
+msgid "State"
+msgstr ""
+
+#: .\website\templates\index.html:271
+msgid "Zip code"
+msgstr ""
+
+#: .\website\templates\index.html:281
+msgid "Phone/Mobile"
+msgstr ""
+
+#: .\website\templates\index.html:287
+msgid "Genre"
+msgstr ""
+
+#: .\website\templates\index.html:298
+msgid "The last empowerments you have received"
+msgstr ""
+
+#: .\website\templates\index.html:302
+msgid "Who gave them?"
+msgstr ""
+
+#: .\website\templates\index.html:308
+msgid "Are you an ordained practitioner? (monastic or otherwise)"
+msgstr ""
+
+#: .\website\templates\index.html:318
+msgid "Food"
+msgstr ""
+
+#: .\website\templates\index.html:321
+msgid "Food preference"
+msgstr ""
+
+#: .\website\templates\index.html:330
+msgid ""
+"Khadro Ling does not serve meals for special diets with ingredient "
+"restrictions."
+msgstr ""
+
+#: .\website\templates\index.html:337
+msgid "WARNING!"
+msgstr ""
+
+#: .\website\templates\index.html:343
+msgid "This option cannot be changed after the form submission."
+msgstr ""
+
+#: .\website\templates\index.html:349
+msgid "Sitting"
+msgstr ""
+
+#: .\website\templates\index.html:352
+msgid "Do you need a chair?"
+msgstr ""
+
+#: .\website\templates\index.html:361
+msgid "Only for people with limitations to sit on the floor."
+msgstr ""
+
+#: .\website\templates\index.html:363
+msgid "Event option"
+msgstr ""
+
+#: .\website\templates\index.html:379
+msgid "PAY ATTENTION!"
+msgstr ""
+
+#: .\website\templates\index.html:385
+msgid ""
+"Notify in the field 'Extra information' the name of the adult responsible "
+"that will be participating in the event."
+msgstr ""
+
+#: .\website\templates\index.html:391
+msgid "Partial participation is not possible in this retreat. "
+msgstr ""
+
+#: .\website\templates\index.html:395
+msgid "Extra information"
+msgstr ""
+
+#: .\website\templates\index.html:399
+msgid "Payment"
+msgstr ""
+
+#: .\website\templates\index.html:497
+msgid ""
+"I have read and I accept the <a target='_blank' href='https://chagdud.com.br/"
+"politica-de-cancelamento-de-participacao-em-eventos/'>cancellation policy of "
+"participation in Khadro Ling events.</a>"
+msgstr ""
+
+#: .\website\templates\index.html:499
+msgid ""
+"Before clicking send, make sure that all data is correctly filled and that "
+"you have completed the payment. "
+msgstr ""
+
+#: .\website\templates\index.html:505
+msgid "Send"
+msgstr ""
 
 #: .\website\templates\pay-success.html:14
+msgid "Your entry form for the event has been successfully sent."
+msgstr ""
+
+#: .\website\templates\pay-success.html:15
 msgid ""
-"The form was successfully send. Expect a response in your e-mail in the next "
-"few days"
+"Khadro Ling Events department will contact you to confirm your registration."
+msgstr ""
+
+#: .\website\templates\pay-success.html:17
+msgid "Voltar"
 msgstr ""
 
 #~ msgid "Inscription"
