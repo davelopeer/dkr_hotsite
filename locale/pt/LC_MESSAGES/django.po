@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-20 16:22-0300\n"
+"POT-Creation-Date: 2018-07-20 19:54-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,6 +37,85 @@ msgstr "De 27 de dezembro a 04 de janeiro"
 #: .\website\templates\base.html:52
 msgid "comunicacao@templobudista.org"
 msgstr "eventos@templobudista.org"
+
+#: .\website\templates\health-form.html:12
+msgid "Registration Health Form"
+msgstr "Ficha Cadastral de Saúde"
+
+#: .\website\templates\health-form.html:16
+msgid "Personal information"
+msgstr "Dados Pessoais"
+
+#: .\website\templates\health-form.html:18
+#: .\website\templates\health-form.html:48
+#: .\website\templates\health-form.html:89
+msgid "Name"
+msgstr "Nome"
+
+#: .\website\templates\health-form.html:22
+msgid "E-mail"
+msgstr "E-mail"
+
+#: .\website\templates\health-form.html:26
+msgid "Date of birth(dd/mm/yyyy)"
+msgstr "Data de nascimento"
+
+#: .\website\templates\health-form.html:46
+msgid "Emergency contact"
+msgstr "Contato de emergência"
+
+#: .\website\templates\health-form.html:52
+msgid "Degree of kinship"
+msgstr "Parentesco "
+
+#: .\website\templates\health-form.html:56
+#: .\website\templates\health-form.html:93
+msgid "Phone"
+msgstr "Telefone"
+
+#: .\website\templates\health-form.html:59
+msgid "Medical history"
+msgstr "Histórico médico"
+
+#: .\website\templates\health-form.html:61
+msgid "Do you have any health problems?"
+msgstr "Possui algum problema de saúde?"
+
+#: .\website\templates\health-form.html:65
+msgid "Do you suffer from any allergies ? (food, medication etc.)"
+msgstr "Possui alguma alergia ou incompatibilidade a"
+
+#: .\website\templates\health-form.html:67
+msgid "...to medications"
+msgstr "...medicamentos?"
+
+#: .\website\templates\health-form.html:71
+msgid "...to food"
+msgstr "...alimentos?"
+
+#: .\website\templates\health-form.html:75
+msgid "...to insect bites"
+msgstr "...insetos?"
+
+#: .\website\templates\health-form.html:79
+msgid "Are you undergoing psychiatric or psychological treatment?"
+msgstr "Está em tratamento psiquiátrico ou psicológico? "
+
+#: .\website\templates\health-form.html:83
+msgid "Do you take any medication regularly?"
+msgstr "Usa alguma medicação regularmente? "
+
+#: .\website\templates\health-form.html:87
+msgid "Do you have a doctor monitoring your health?"
+msgstr "Algum médico que acompanha a sua saúde?"
+
+#: .\website\templates\health-form.html:97
+msgid "Comments"
+msgstr "Observações"
+
+#: .\website\templates\health-form.html:102 .\website\templates\index.html:505
+msgid "Send"
+msgstr "Enviar"
 
 #: .\website\templates\index.html:19 .\website\templates\index.html:70
 msgid "Accommodations / Transportation"
@@ -261,17 +340,14 @@ msgstr "(acomodações simples)"
 msgid "Inform the promo code: event DKR"
 msgstr "Informar o código promocional: evento DKR"
 
-#: .\website\templates\index.html:102 .\website\templates\index.html:143
-msgid "Atendimento Inglês/Português."
-msgstr "Atendimento Inglês/Português."
-
-#: .\website\templates\index.html:112
-msgid "Atendimento Inglês/Português. "
-msgstr "Atendimento Inglês/Português."
+#: .\website\templates\index.html:102 .\website\templates\index.html:112
+#: .\website\templates\index.html:143
+msgid "English and portuguese service"
+msgstr "Atendimento em português e inglês"
 
 #: .\website\templates\index.html:137
-msgid "Atendimento Inglês/Português/Alemão."
-msgstr "Atendimento Inglês/Português/Alemão."
+msgid "English, german and portuguese service"
+msgstr "Atendimento em português, inglês e alemão"
 
 #: .\website\templates\index.html:157
 msgid "Other hotels in the area (not affiliated)"
@@ -401,15 +477,16 @@ msgid "Registration form"
 msgstr "Inscrição"
 
 #: .\website\templates\index.html:232
-msgid "text"
-msgstr "O formulário é individual e deve ser preenchido completamente. "
+msgid ""
+"The registration is individual. Please be sure you have filled it completely."
+msgstr "O formulário é individual e deve ser preenchido completamente."
 
 #: .\website\templates\index.html:233
-msgid "text2"
+msgid "Children must also registered for the event."
 msgstr "Crianças, independente da idade, devem estar inscritas no evento."
 
 #: .\website\templates\index.html:234
-msgid "text3"
+msgid "Be sure to submit the registration form after payment."
 msgstr "Certifique-se de enviar o formulário após o pagamento."
 
 #: .\website\templates\index.html:238
@@ -552,10 +629,6 @@ msgstr ""
 "Antes de clicar em enviar, certifique-se que preencheu todos os dados "
 "corretamente e concluiu o pagamento."
 
-#: .\website\templates\index.html:505
-msgid "Send"
-msgstr "Enviar"
-
 #: .\website\templates\pay-success.html:14
 msgid "Your entry form for the event has been successfully sent."
 msgstr "Sua ficha de inscrição para o evento foi enviada com sucesso."
@@ -570,6 +643,24 @@ msgstr ""
 #: .\website\templates\pay-success.html:17
 msgid "Voltar"
 msgstr "Voltar"
+
+#~ msgid "Atendimento Inglês/Português."
+#~ msgstr "Atendimento Inglês/Português."
+
+#~ msgid "Atendimento Inglês/Português. "
+#~ msgstr "Atendimento Inglês/Português."
+
+#~ msgid "Atendimento Inglês/Português/Alemão."
+#~ msgstr "Atendimento Inglês/Português/Alemão."
+
+#~ msgid "text"
+#~ msgstr "O formulário é individual e deve ser preenchido completamente. "
+
+#~ msgid "text2"
+#~ msgstr "Crianças, independente da idade, devem estar inscritas no evento."
+
+#~ msgid "text3"
+#~ msgstr "Certifique-se de enviar o formulário após o pagamento."
 
 #~ msgid ""
 #~ "The form was sent successfully. Wait for an answer in your email in the "

@@ -1,9 +1,9 @@
 from django.shortcuts import render
-from website.forms import InscriptionForm, InscriptionFormEn, InscriptionFormEs
+from website.forms import InscriptionForm, InscriptionFormEn, InscriptionFormEs, HealthForm
 from django.core.mail import EmailMessage
 from django.shortcuts import redirect
 from django.template.loader import get_template
-from website.sendgrid.sg_inscription import sendMail
+from website.sendgrid.sg_inscription import sendMail, sendMailHealth
 from django.utils import translation
 
 # Create your views here.
@@ -15,7 +15,6 @@ def index(request):
         form = InscriptionForm(request.POST)
 
         # # SETTING THE REQUIRED PAYMENT ACCORDING TO THE USER LANGUAGE
-
         # else:
         #     form.fields['payment_international'].required = True
         #
@@ -120,4 +119,61 @@ def pay_success(request):
     return render(request, 'pay-success.html')
 
 def health_form(request):
-    return render(request, 'health-form.html')
+
+    user_language = translation.get_language_from_request(request, check_path=True)
+    if request.method == 'POST':
+        health_form = HealthForm(request.POST)
+        if health_form.is_valid():
+            name = request.POST.get('name', '')
+            email = request.POST.get('email', '')
+            birthday = request.POST.get('birthday', '')
+            medical_agreement = request.POST.get('medical_agreement', '')
+            coverage = request.POST.get('coverage', '')
+            phone = request.POST.get('phone', '')
+            emergency_contact_name = request.POST.get('emergency_contact_name', '')
+            emergency_contact_degree = request.POST.get('emergency_contact_degree', '')
+            emergency_contact_phone = request.POST.get('emergency_contact_phone', '')
+            health_problems = request.POST.get('health_problems', '')
+            medicines_alergie = request.POST.get('medicines_alergie', '')
+            food_alergie = request.POST.get('food_alergie', '')
+            insect_alergie = request.POST.get('insect_alergie', '')
+            psychiatric_treatment = request.POST.get('psychiatric_treatment', '')
+            medication = request.POST.get('medication', '')
+            doctor_name = request.POST.get('doctor_name', '')
+            doctor_phone = request.POST.get('doctor_phone', '')
+            observations = request.POST.get('observations', '')
+
+            def dateBR(date):
+                new_date = str(str(date[8:10]) + '/' +  str(date[5:7]) + '/' + str(date[0:4]))
+                return new_date
+
+            birthday_br = dateBR(birthday)
+
+            sendMailHealth(
+                    name,
+                    email,
+                    birthday_br,
+                    medical_agreement,
+                    coverage,
+                    phone,
+                    emergency_contact_name,
+                    emergency_contact_degree,
+                    emergency_contact_phone,
+                    health_problems,
+                    medicines_alergie,
+                    food_alergie,
+                    insect_alergie,
+                    psychiatric_treatment,
+                    medication,
+                    doctor_name,
+                    doctor_phone,
+                    observations,
+                    )
+            return redirect('index')
+    else:
+        health_form = HealthForm()
+
+    return render(request, 'health-form.html', {
+        'user_language': user_language,
+        'health_form': health_form,
+    })

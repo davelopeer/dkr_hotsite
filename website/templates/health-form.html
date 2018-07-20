@@ -5,9 +5,107 @@
   {% load i18n %}
 
   {% block extra-head %}
-    <link rel="stylesheet" href="{% static 'css/health_form.css' %}">
+    <link rel="stylesheet" href="{% static 'css/health-form.css' %}">
   {% endblock %}
 
   {% block body_block %}
+  <h2 class="text-center section_title">{% trans "Registration Health Form" %}</h2>
+  <form class="form" role="form" action="" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <div class="form-container">
+      <h3 class="form_section_title">{% trans "Personal information" %}</h3>
+      <div class="form-group ">
+        <label class="col-form-label" for="formGroupExampleInput">{% trans "Name" %}</label>
+        {{health_form.name}}
+      </div>
+      <div class="form-group ">
+        <label class="col-form-label" for="formGroupExampleInput">{% trans "E-mail" %}</label>
+        {{health_form.email}}
+      </div>
+      <div class="form-group ">
+        <label class="col-form-label" for="formGroupExampleInput">{% trans "Date of birth(dd/mm/yyyy)" %}</label>
+        {{health_form.birthday}}
+      </div>
+
+      {% if user_language == 'pt-br' %}
+      <h3 class="form_section_title">Convênio Médico</h3>
+      <div class="form-group ">
+        <label class="col-form-label" for="formGroupExampleInput">Plano</label>
+        {{health_form.medical_agreement}}
+      </div>
+      <div class="form-group ">
+        <label class="col-form-label" for="formGroupExampleInput">Cobertura</label>
+        {{health_form.coverage}}
+      </div>
+      <div class="form-group ">
+        <label class="col-form-label" for="formGroupExampleInput">Telefone</label>
+        {{health_form.phone}}
+      </div>
+      {% endif %}
+
+      <h3 class="form_section_title">{% trans "Emergency contact" %}</h3>
+      <div class="form-group ">
+        <label class="col-form-label" for="formGroupExampleInput">{% trans "Name" %}</label>
+        {{health_form.emergency_contact_name}}
+      </div>
+      <div class="form-group ">
+        <label class="col-form-label" for="formGroupExampleInput">{% trans "Degree of kinship" %}</label>
+        {{health_form.emergency_contact_degree}}
+      </div>
+      <div class="form-group ">
+        <label class="col-form-label" for="formGroupExampleInput">{% trans "Phone" %}</label>
+        {{health_form.emergency_contact_phone}}
+      </div>
+      <h3 class="form_section_title">{% trans "Medical history" %}</h3>
+      <div class="form-group ">
+        <label class="col-form-label" for="formGroupExampleInput">{% trans "Do you have any health problems?" %}</label>
+        {{health_form.health_problems}}
+      </div>
+      <hr class="section-divisor">
+      <p class="text-center">{% trans "Do you suffer from any allergies ? (food, medication etc.)" %}</p>
+      <div class="form-group ">
+        <label class="col-form-label" for="formGroupExampleInput">{% trans "...to medications" %}</label>
+        {{health_form.medicines_alergie}}
+      </div>
+      <div class="form-group ">
+        <label class="col-form-label" for="formGroupExampleInput">{% trans "...to food" %}</label>
+        {{health_form.food_alergie}}
+      </div>
+      <div class="form-group ">
+        <label class="col-form-label" for="formGroupExampleInput">{% trans "...to insect bites" %}</label>
+        {{health_form.insect_alergie}}
+      </div>
+      <div class="form-group ">
+        <label class="col-form-label" for="formGroupExampleInput">{% trans "Are you undergoing psychiatric or psychological treatment?" %}</label>
+        {{health_form.psychiatric_treatment}}
+      </div>
+      <div class="form-group ">
+        <label class="col-form-label" for="formGroupExampleInput">{% trans "Do you take any medication regularly?" %}</label>
+        {{health_form.medication}}
+      </div>
+      <hr class="section-divisor">
+      <p class="text-center">{% trans "Do you have a doctor monitoring your health?" %}</p>
+      <div class="form-group ">
+        <label class="col-form-label" for="formGroupExampleInput">{% trans "Name" %}</label>
+        {{health_form.doctor_name}}
+      </div>
+      <div class="form-group ">
+        <label class="col-form-label" for="formGroupExampleInput">{% trans "Phone" %}</label>
+        {{health_form.doctor_phone}}
+      </div>
+      <div class="form-group ">
+        <label class="col-form-label" for="formGroupExampleInput">{% trans "Comments" %}</label>
+        {{health_form.observations}}
+      </div>
+
+      <div class="btn-holder">
+        <button type="submit" class="btn btn-outline-primary">{% trans "Send" %}</button>
+      </div>
+
+
+
+    </div>
+  </form>
+
 
   {% endblock %}

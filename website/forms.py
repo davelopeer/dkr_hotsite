@@ -161,7 +161,22 @@ class InscriptionFormEn(forms.Form):
 
 
 
-class HealthForm(object):
-    name = forms.CharField(required=True, max_length=150, widget=forms.TextInput(attrs={'class': 'form-control',  }))
-    email = forms.EmailField(required=True, max_length=100, widget=forms.EmailInput(attrs={'placeholder':'example@email.com', 'type':'email', 'class':'form-control', 'id':'formGroupExampleInput'}))
-    birthday = forms.DateField(required=True, widget=forms.DateInput(attrs={'type':'date', 'class': 'form-control',  }))
+class HealthForm(forms.Form):
+    name = forms.CharField(required=True, max_length=150, widget=forms.TextInput(attrs={'class': 'form-control'}))
+    email = forms.EmailField(required=True, max_length=100, widget=forms.EmailInput(attrs={'type':'email', 'class':'form-control'}))
+    birthday = forms.DateField(required=True, widget=forms.DateInput(attrs={'type':'date', 'class': 'form-control'}))
+    medical_agreement = forms.CharField(required=False, max_length=150, widget=forms.TextInput(attrs={'class': 'form-control'}))
+    coverage = forms.CharField(required=False, max_length=150, widget=forms.TextInput(attrs={'class': 'form-control'}))
+    phone =  forms.IntegerField(required=False, widget=forms.NumberInput(attrs={'type':'number','class': 'form-control'}))
+    emergency_contact_name = forms.CharField(required=True, max_length=150, widget=forms.TextInput(attrs={'class': 'form-control'}))
+    emergency_contact_degree = forms.CharField(required=True, max_length=150, widget=forms.TextInput(attrs={'class': 'form-control'}))
+    emergency_contact_phone =  forms.IntegerField(required=True, widget=forms.NumberInput(attrs={'type':'number', 'class': 'form-control'}))
+    health_problems = forms.CharField(required=True,max_length=1000, widget=forms.TextInput(attrs={'class': 'form-control form_text_area' }))
+    medicines_alergie = forms.CharField(required=True, max_length=400, widget=forms.TextInput(attrs={'class': 'form-control'}))
+    food_alergie = forms.CharField(required=True, max_length=400, widget=forms.TextInput(attrs={'class': 'form-control'}))
+    insect_alergie = forms.CharField(required=True, max_length=400, widget=forms.TextInput(attrs={'class': 'form-control'}))
+    psychiatric_treatment = forms.CharField(required=True, max_length=400, widget=forms.TextInput(attrs={'class': 'form-control'}))
+    medication = forms.CharField(required=True, max_length=400, widget=forms.TextInput(attrs={'class': 'form-control'}))
+    doctor_name = forms.CharField(required=False, max_length=150, widget=forms.TextInput(attrs={'class': 'form-control'}))
+    doctor_phone =  forms.IntegerField(required=False, widget=forms.NumberInput(attrs={'type':'number', 'class': 'form-control'}))
+    observations = forms.CharField(required=False,max_length=4000, widget=forms.Textarea(attrs={'name':'observations','class': 'form-control form_text_area'}))
