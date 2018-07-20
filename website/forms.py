@@ -8,7 +8,7 @@ class InscriptionForm(forms.Form):
     adress_comp = forms.CharField(required=False, max_length=200, widget=forms.TextInput(attrs={'placeholder': 'casa 1', 'class': 'form-control', 'id': 'formGroupExampleInput'}))
     city = forms.CharField(required=True, max_length=150, widget=forms.TextInput(attrs={'placeholder': 'Cidade', 'class': 'form-control', 'id': 'formGroupExampleInput'}))
     state = forms.CharField(required=True, max_length=2, widget=forms.TextInput(attrs={'placeholder': 'Estado', 'class': 'form-control', 'id': 'formGroupExampleInput'}))
-    zip_code = forms.CharField(required=True, min_length=9, max_length=9, widget=forms.TextInput(attrs={'placeholder': 'CEP', 'class': 'form-control', 'id': 'formGroupExampleInput'}))
+    zip_code = forms.CharField(required=True, min_length=8, max_length=9, widget=forms.TextInput(attrs={'placeholder': 'CEP', 'class': 'form-control', 'id': 'formGroupExampleInput'}))
     email = forms.EmailField(required=True, max_length=100, widget=forms.EmailInput(attrs={'placeholder':'exemplo@email.com', 'type':'email', 'class':'form-control', 'id':'formGroupExampleInput'}))
     phone = forms.IntegerField(required=True, widget=forms.NumberInput(attrs={'type':'number','placeholder': 'Somente números', 'class': 'form-control', 'id': 'formGroupExampleInput'}))
     gender = forms.ChoiceField(required=True, widget=forms.RadioSelect(attrs={'type':'radio', 'class':'form-check'}), choices=(
@@ -46,8 +46,10 @@ class InscriptionForm(forms.Form):
     credit_card_name = forms.CharField(required=False,max_length=200, widget=forms.TextInput(attrs={'placeholder': 'JOSÉ M R SILVA', 'class': 'form-control', 'id': 'formGroupExampleInput'}))
     deposit_day = forms.DateField(required=False, widget=forms.DateInput(attrs={'placeholder':'20/09/2018','type':'date', 'class': 'form-control', 'id': 'formGroupExampleInput'}))
     deposit_name = forms.CharField(required=False, max_length=250, widget=forms.TextInput(attrs={'placeholder': 'José M R Silva', 'class': 'form-control', 'id': 'formGroupExampleInput'}))
-    deposit_agency = forms.CharField(required=False, widget=forms.TextInput(attrs={'placeholder':'ag 2856 c/c 008710', 'class': 'form-control', 'id': 'formGroupExampleInput'}))
+    deposit_agency = forms.CharField(required=False, widget=forms.TextInput(attrs={'placeholder':'ag 2856', 'class': 'form-control', 'id': 'formGroupExampleInput'}))
+    deposit_account = forms.CharField(required=False, widget=forms.TextInput(attrs={'placeholder':'c/c 008710', 'class': 'form-control', 'id': 'formGroupExampleInput'}))
     deposit_envelop = forms.CharField(required=False, widget=forms.TextInput(attrs={'placeholder':'1.292.510.482', 'class': 'form-control', 'id': 'formGroupExampleInput'}))
+    paypal_name = forms.CharField(required=False, widget=forms.TextInput(attrs={'placeholder':'Paypal name', 'class': 'form-control', 'id': 'formGroupExampleInput'}))
     cancel_terms = forms.ChoiceField(required=True, widget=forms.RadioSelect(attrs={'type':'checkbox', 'class':'form-check'}), choices=(
         ('Aceito',''),
     ))
@@ -59,7 +61,7 @@ class InscriptionFormEs(forms.Form):
     adress_comp = forms.CharField(required=False, max_length=200, widget=forms.TextInput(attrs={'placeholder': 'casa 1', 'class': 'form-control', 'id': 'formGroupExampleInput'}))
     city = forms.CharField(required=True, max_length=150, widget=forms.TextInput(attrs={'placeholder': 'Cidade', 'class': 'form-control', 'id': 'formGroupExampleInput'}))
     state = forms.CharField(required=True, max_length=2, widget=forms.TextInput(attrs={'placeholder': 'Estado', 'class': 'form-control', 'id': 'formGroupExampleInput'}))
-    zip_code = forms.CharField(required=True, min_length=9, max_length=9, widget=forms.TextInput(attrs={'placeholder': 'CEP', 'class': 'form-control', 'id': 'formGroupExampleInput'}))
+    zip_code = forms.CharField(required=True, min_length=8, max_length=9, widget=forms.TextInput(attrs={'placeholder': 'CEP', 'class': 'form-control', 'id': 'formGroupExampleInput'}))
     email = forms.EmailField(required=True, max_length=100, widget=forms.EmailInput(attrs={'placeholder':'exemplo@email.com', 'type':'email', 'class':'form-control', 'id':'formGroupExampleInput'}))
     phone = forms.IntegerField(required=True, widget=forms.NumberInput(attrs={'type':'number','placeholder': 'Somente números', 'class': 'form-control', 'id': 'formGroupExampleInput'}))
     gender = forms.ChoiceField(required=True, widget=forms.RadioSelect(attrs={'type':'radio', 'class':'form-check'}), choices=(
@@ -99,6 +101,7 @@ class InscriptionFormEs(forms.Form):
     deposit_name = forms.CharField(required=False, max_length=250, widget=forms.TextInput(attrs={'placeholder': 'José M R Silva', 'class': 'form-control', 'id': 'formGroupExampleInput'}))
     deposit_agency = forms.CharField(required=False, widget=forms.TextInput(attrs={'placeholder':'ag 2856 c/c 008710', 'class': 'form-control', 'id': 'formGroupExampleInput'}))
     deposit_envelop = forms.CharField(required=False, widget=forms.TextInput(attrs={'placeholder':'1.292.510.482', 'class': 'form-control', 'id': 'formGroupExampleInput'}))
+    paypal_name = forms.CharField(required=False, widget=forms.TextInput(attrs={'placeholder':'Paypal name', 'class': 'form-control', 'id': 'formGroupExampleInput'}))
     cancel_terms = forms.ChoiceField(required=True, widget=forms.RadioSelect(attrs={'type':'checkbox', 'class':'form-check'}), choices=(
         ('Aceito',''),
     ))
@@ -110,7 +113,7 @@ class InscriptionFormEn(forms.Form):
     adress_comp = forms.CharField(required=False, max_length=200, widget=forms.TextInput(attrs={'placeholder': 'apartament 10', 'class': 'form-control', 'id': 'formGroupExampleInput'}))
     city = forms.CharField(required=True, max_length=150, widget=forms.TextInput(attrs={'placeholder': 'City', 'class': 'form-control', 'id': 'formGroupExampleInput'}))
     state = forms.CharField(required=True, max_length=2, widget=forms.TextInput(attrs={'placeholder': 'State', 'class': 'form-control', 'id': 'formGroupExampleInput'}))
-    zip_code = forms.CharField(required=True, min_length=9, max_length=9, widget=forms.TextInput(attrs={'placeholder': 'Zip-code', 'class': 'form-control', 'id': 'formGroupExampleInput'}))
+    zip_code = forms.CharField(required=True, min_length=8, max_length=9, widget=forms.TextInput(attrs={'placeholder': 'Zip-code', 'class': 'form-control', 'id': 'formGroupExampleInput'}))
     email = forms.EmailField(required=True, max_length=100, widget=forms.EmailInput(attrs={'placeholder':'example@email.com', 'type':'email', 'class':'form-control', 'id':'formGroupExampleInput'}))
     phone = forms.IntegerField(required=True, widget=forms.NumberInput(attrs={'type':'number','placeholder': 'Numbers only', 'class': 'form-control', 'id': 'formGroupExampleInput'}))
     gender = forms.ChoiceField(required=True, widget=forms.RadioSelect(attrs={'type':'radio', 'class':'form-check'}), choices=(
@@ -150,9 +153,11 @@ class InscriptionFormEn(forms.Form):
     deposit_name = forms.CharField(required=False, max_length=250, widget=forms.TextInput(attrs={'placeholder': 'José M R Silva', 'class': 'form-control', 'id': 'formGroupExampleInput'}))
     deposit_agency = forms.CharField(required=False, widget=forms.TextInput(attrs={'placeholder':'ag 2856 c/c 008710', 'class': 'form-control', 'id': 'formGroupExampleInput'}))
     deposit_envelop = forms.CharField(required=False, widget=forms.TextInput(attrs={'placeholder':'1.292.510.482', 'class': 'form-control', 'id': 'formGroupExampleInput'}))
+    paypal_name = forms.CharField(required=True, widget=forms.TextInput(attrs={'placeholder':'Paypal name', 'class': 'form-control', 'id': 'formGroupExampleInput'}))
     cancel_terms = forms.ChoiceField(required=True, widget=forms.RadioSelect(attrs={'type':'checkbox', 'class':'form-check'}), choices=(
         ('Aceito',''),
     ))
+
 
 
 class HealthForm(object):

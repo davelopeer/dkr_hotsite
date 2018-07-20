@@ -335,7 +335,7 @@
               <div class="modal-dialog" role="document">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">{% trans "PAY ATTENTION!" %}</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">{% trans "WARNING!" %}</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                       <span aria-hidden="true">&times;</span>
                     </button>
@@ -415,7 +415,7 @@
             <div class="row payment_form">
               <div class="col-md-8 payment_section" id="payment1">
                 <h4 class="font-weight-light">Pagamento via Cielo</h4>
-                <p>Pague com seu cartão de crédito ou débito. Clique na imagem abaixo:</p>
+                <p>Pague com seu cartão de crédito ou débito. O evento poderá ser parcelado em até 12x sem juros no cartão</p>
                 <div class="form-group">
                   <label class="col-form-label" for="formGroupExampleInput">Nome do titular igual ao que está no cartão:</label>
                   {{form.credit_card_name}}
@@ -468,6 +468,13 @@
                   <a target="_blank" href="https://www.paypal.com/"><img class="logo-paypal" src="{% static 'images/paypal-logo.png' %}" alt="Paypal"></a>
                 </div>
               {% endfor %}
+              <div class="col-md-8">
+                <p>Inform us your Paypal username</p>
+                <div class="form-group">
+                  <label class="col-form-label" for="formGroupExampleInput">Nome do titular igual ao que está no cartão:</label>
+                  {{form.paypal_name}}
+                </div>
+              </div>
 
             {% endif %}
 
@@ -503,7 +510,7 @@
                   </button>
                 </div>
                 <div class="modal-body">
-                  <p>Clique na imagem a baixo e seja redirecionado para efetuar o pagamente.</p>
+                  <p>Clique na imagem a baixo e seja redirecionado para efetuar o pagamento.</p>
                   <div id="payment-adult">
                     <form method='post' action='https://cieloecommerce.cielo.com.br/transactionalvnext/order/buynow' target='blank'><input type='hidden' name='id' value='e5c8f945-a7d7-4035-9319-4df5faf62860' /><input type='image' name='submit' alt='Comprar' src='https://cieloecommerce.cielo.com.br/backoffice/Content/img/buttons/button-5-1.png' /></form>
                   </div>
