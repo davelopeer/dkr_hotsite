@@ -2,7 +2,6 @@
 $(document).ready(function(){
       $('#id_event_option_1, #id_event_option_2, #id_payment_0').attr('data-toggle', 'modal')
       $('#id_event_option_1, #id_event_option_2').attr('data-target', '#childModal')
-      $('#id_payment_0').attr('data-target', '#paymentModal')
 });
 
 

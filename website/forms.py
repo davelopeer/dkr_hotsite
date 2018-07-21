@@ -16,8 +16,8 @@ class InscriptionForm(forms.Form):
         ('Feminino','Feminino'),
         ('Outro','Outro'),
     ))
-    initiations = forms.CharField(required=True,max_length=2000, widget=forms.Textarea(attrs={'placeholder': 'Ex: Iniciação de Guru Rinpoche...', 'class': 'form-control form_text_area',  }))
-    initiations_lama = forms.CharField(required=True,max_length=2000, widget=forms.Textarea(attrs={'placeholder': 'Ex: S. E. Dzongsar Khyentse Rinpoche...', 'class': 'form-control form_text_area',  }))
+    initiations = forms.CharField(required=True,max_length=2000, widget=forms.Textarea(attrs={'class': 'form-control form_text_area',  }))
+    initiations_lama = forms.CharField(required=True,max_length=2000, widget=forms.Textarea(attrs={'class': 'form-control form_text_area',  }))
     monastic_ordenation = forms.ChoiceField(required=True, widget=forms.RadioSelect(attrs={'value':'1','type':'radio', 'class':'form-check inline'}), choices=(
         ('Sim','Sim'),
         ('Não','Não'),
@@ -43,7 +43,7 @@ class InscriptionForm(forms.Form):
     payment_international = forms.ChoiceField(required=False, widget=forms.RadioSelect(attrs={'type':'radio', 'class':'form-check inline'}), choices=(
         ('PayPal',''),
     ))
-    credit_card_name = forms.CharField(required=False,max_length=200, widget=forms.TextInput(attrs={'placeholder': 'JOSÉ M R SILVA', 'class': 'form-control',  }))
+    credit_card_name = forms.CharField(required=False,max_length=200, widget=forms.TextInput(attrs={'class': 'form-control',  }))
     deposit_day = forms.DateField(required=False, widget=forms.DateInput(attrs={'placeholder':'20/09/2018','type':'date', 'class': 'form-control',  }))
     deposit_name = forms.CharField(required=False, max_length=250, widget=forms.TextInput(attrs={'class': 'form-control'}))
     deposit_value = forms.CharField(required=False, max_length=250, widget=forms.TextInput(attrs={'class': 'form-control' }))
@@ -70,8 +70,8 @@ class InscriptionFormEs(forms.Form):
         ('Feminino','Femenino'),
         ('Outro','Otro'),
     ))
-    initiations = forms.CharField(required=True,max_length=2000, widget=forms.Textarea(attrs={'placeholder': 'Ex: Guru Rinpoche...', 'class': 'form-control form_text_area',  }))
-    initiations_lama = forms.CharField(required=True,max_length=2000, widget=forms.Textarea(attrs={'placeholder': 'Ex: S. E. Dzongsar Khyentse Rinpoche...', 'class': 'form-control form_text_area',  }))
+    initiations = forms.CharField(required=True,max_length=2000, widget=forms.Textarea(attrs={'class': 'form-control form_text_area',  }))
+    initiations_lama = forms.CharField(required=True,max_length=2000, widget=forms.Textarea(attrs={'class': 'form-control form_text_area',  }))
     monastic_ordenation = forms.ChoiceField(required=True, widget=forms.RadioSelect(attrs={'value':'1','type':'radio', 'class':'form-check inline'}), choices=(
         ('Sim','Si'),
         ('Não','No'),
@@ -111,7 +111,7 @@ class InscriptionFormEn(forms.Form):
     birthday = forms.DateField(required=True, widget=forms.DateInput(attrs={'type':'date', 'class': 'form-control',  }))
     adress = forms.CharField(required=True, max_length=200, widget=forms.TextInput(attrs={'placeholder': 'Adress', 'class': 'form-control',  }))
     adress_num = forms.IntegerField(required=True, widget=forms.NumberInput(attrs={'placeholder':'Number', 'class': 'form-control',  }))
-    adress_comp = forms.CharField(required=False, max_length=200, widget=forms.TextInput(attrs={'placeholder': 'apartament 10', 'class': 'form-control',  }))
+    adress_comp = forms.CharField(required=False, max_length=200, widget=forms.TextInput(attrs={'class': 'form-control',  }))
     city = forms.CharField(required=True, max_length=150, widget=forms.TextInput(attrs={'placeholder': 'City', 'class': 'form-control',  }))
     state = forms.CharField(required=True, max_length=2, widget=forms.TextInput(attrs={'placeholder': 'State', 'class': 'form-control',  }))
     zip_code = forms.CharField(required=True, min_length=8, max_length=9, widget=forms.TextInput(attrs={'placeholder': 'Zip-code', 'class': 'form-control',  }))
@@ -122,8 +122,8 @@ class InscriptionFormEn(forms.Form):
         ('Feminino','Female'),
         ('Outro','Other'),
     ))
-    initiations = forms.CharField(required=True,max_length=2000, widget=forms.Textarea(attrs={'placeholder': 'Ex: Guru Rinpoche', 'class': 'form-control form_text_area',  }))
-    initiations_lama = forms.CharField(required=True,max_length=2000, widget=forms.Textarea(attrs={'placeholder': 'Ex: S. E. Dzongsar Khyentse Rinpoche', 'class': 'form-control form_text_area',  }))
+    initiations = forms.CharField(required=True,max_length=2000, widget=forms.Textarea(attrs={'class': 'form-control form_text_area',  }))
+    initiations_lama = forms.CharField(required=True,max_length=2000, widget=forms.Textarea(attrs={'class': 'form-control form_text_area',  }))
     monastic_ordenation = forms.ChoiceField(required=True, widget=forms.RadioSelect(attrs={'value':'1','type':'radio', 'class':'form-check inline'}), choices=(
         ('Sim','Yes'),
         ('Não','No'),

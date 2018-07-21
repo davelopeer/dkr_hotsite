@@ -116,6 +116,10 @@
   margin-bottom: 30px;
 }
 
+.font-large {
+  font-size: 1.5em;
+}
+
 .payment_form {
   margin: 30px auto 50px;
   display: run-in;

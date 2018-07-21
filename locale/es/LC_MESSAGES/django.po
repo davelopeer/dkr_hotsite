@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-20 20:36-0300\n"
+"POT-Creation-Date: 2018-07-21 11:02-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -60,11 +60,14 @@ msgstr "Qué hacer con el dinero que ya he pago?"
 msgid ""
 "You can keep it as credit for another event at Khadro Ling. This credit is "
 "valid for one year."
-msgstr "Usted ló puede usar como crédito para inscripción en futuros eventos de Khadro Ling. El crédito es válido por 1 (un) año."
+msgstr ""
+"Usted ló puede usar como crédito para inscripción en futuros eventos de "
+"Khadro Ling. El crédito es válido por 1 (un) año."
 
 #: .\website\templates\cancellation-policy.html:22
 msgid "Direct it for butterlamp, tsog, Riwo Sangcho or Akshobya offerings"
-msgstr "Destinarlo a ofrendas como lamparitas, tsogs, Riwo Sangchod o Akshobia."
+msgstr ""
+"Destinarlo a ofrendas como lamparitas, tsogs, Riwo Sangchod o Akshobia."
 
 #: .\website\templates\cancellation-policy.html:24
 msgid "I would like to get my money back"
@@ -79,6 +82,8 @@ msgid "Up to 5 days or more before the start of the event"
 msgstr "En hasta 5 días o más antes del inicio del evento"
 
 #: .\website\templates\cancellation-policy.html:34
+#, fuzzy, python-format
+#| msgid "90%% of the deposited amount"
 msgid "90%% of the deposited amount"
 msgstr "90% del valor depositado"
 
@@ -87,6 +92,8 @@ msgid "Up to the day before the begining of the event"
 msgstr "Hasta el dia anterior al início del evento"
 
 #: .\website\templates\cancellation-policy.html:38
+#, fuzzy, python-format
+#| msgid "70%% of the deposited amount"
 msgid "70%% of the deposited amount"
 msgstr "70% del valor depositado"
 
@@ -104,7 +111,8 @@ msgstr "Por qué esa política de cancelamiento?"
 
 #: .\website\templates\cancellation-policy.html:47
 msgid "When you sign up at one of our events, two things will happen:"
-msgstr "Cuando usted se inscribe en uno de nuestros eventos, sucede lo siguiente:"
+msgstr ""
+"Cuando usted se inscribe en uno de nuestros eventos, sucede lo siguiente:"
 
 #: .\website\templates\cancellation-policy.html:49
 msgid "We reserve your spot. Other practitioner will not be able to use it."
@@ -114,18 +122,23 @@ msgstr "Reservamos su cupo. Outra persona no podrá utilizarla."
 msgid ""
 "We organize the space to receive you. And, in some cases, food is prepared "
 "for the scheduled period."
-msgstr "Organizamos nuestro espacio para recibirlo. En algunas situaciones, preparamos alimentación para todo el periodo programado."
+msgstr ""
+"Organizamos nuestro espacio para recibirlo. En algunas situaciones, "
+"preparamos alimentación para todo el periodo programado."
 
 #: .\website\templates\cancellation-policy.html:52
 msgid ""
 "All this implies costs, both material and operational (time and resources)."
-msgstr "Eso involucra costos, sean materiales o operacionales (tiempo y recursos)."
+msgstr ""
+"Eso involucra costos, sean materiales o operacionales (tiempo y recursos)."
 
 #: .\website\templates\cancellation-policy.html:53
 msgid ""
 "Being so, if you need to cancel your participation, it is very important "
 "that you let us know as soon as possible."
-msgstr "Por lo tanto, es muy importante que usted nos avise lo más pronto posible si acaso necesita cancelar su participación."
+msgstr ""
+"Por lo tanto, es muy importante que usted nos avise lo más pronto posible si "
+"acaso necesita cancelar su participación."
 
 #: .\website\templates\health-form.html:12
 msgid "Registration Health Form"
@@ -171,19 +184,27 @@ msgid "Do you have any health problems?"
 msgstr "Tiene algun problema de salud?"
 
 #: .\website\templates\health-form.html:65
-msgid "Do you suffer from any allergies ? (food, medication etc.)"
+#, fuzzy
+#| msgid "Do you suffer from any allergies ? (food, medication etc.)"
+msgid "Do you suffer from any allergies:"
 msgstr "Tiene alguna alergia o incompatibilidad a"
 
 #: .\website\templates\health-form.html:67
-msgid "...to medications"
+#, fuzzy
+#| msgid "...to medications"
+msgid "...to medications?"
 msgstr "...medicamentos"
 
 #: .\website\templates\health-form.html:71
-msgid "...to food"
+#, fuzzy
+#| msgid "...to food"
+msgid "...to food?"
 msgstr "...alimentos"
 
 #: .\website\templates\health-form.html:75
-msgid "...to insect bites"
+#, fuzzy
+#| msgid "...to insect bites"
+msgid "...to insect bites?"
 msgstr "...insectos"
 
 #: .\website\templates\health-form.html:79
@@ -202,7 +223,7 @@ msgstr "Tiene médico personal?"
 msgid "Comments"
 msgstr "Observaciones"
 
-#: .\website\templates\health-form.html:102 .\website\templates\index.html:505
+#: .\website\templates\health-form.html:102 .\website\templates\index.html:506
 msgid "Send"
 msgstr "Enviar"
 
@@ -669,9 +690,9 @@ msgstr ""
 "Chagdud Gonpa Khadro Ling no ofrece dietas especiales con restricción de "
 "ingredientes."
 
-#: .\website\templates\index.html:337
-msgid "WARNING!"
-msgstr "ATENCIÓN!"
+#: .\website\templates\index.html:337 .\website\templates\index.html:379
+msgid "Please pay attention"
+msgstr "Atención"
 
 #: .\website\templates\index.html:343
 msgid "This option cannot be changed after the form submission."
@@ -693,10 +714,6 @@ msgstr "Solo para personas com limitaciones para sentar en el suelo."
 msgid "Event option"
 msgstr "Opción de evento"
 
-#: .\website\templates\index.html:379
-msgid "PAY ATTENTION!"
-msgstr "PRESTE ATENCIÓN"
-
 #: .\website\templates\index.html:385
 msgid ""
 "Notify in the field 'Extra information' the name of the adult responsible "
@@ -717,20 +734,40 @@ msgstr "Observaciones"
 msgid "Payment"
 msgstr "Condiciones de pago"
 
-#: .\website\templates\index.html:497
+#: .\website\templates\index.html:470
 msgid ""
-"I have read and I accept the <a target='_blank' href='https://chagdud.com.br/"
-"politica-de-cancelamento-de-participacao-em-eventos/'>cancellation policy of "
-"participation in Khadro Ling events.</a>"
+"For PayPal donation/payment, please inform the e-mail <strong>adm@chagdud."
+"org</strong> as donation’s identifier. Also, it is necessary describe what "
+"donation for. In this case, please inform Khandro Sangdu Drubchen."
+msgstr "Para hacer la donación a través de PayPal, por favor comunique al correo "
+"adm@chagdud.org como identificador de donación. También es necesario describir "
+"a qué la donación se destina. En ese caso, por favor marque Khadro Sangdu "
+"Drubchen. "
+
+#: .\website\templates\index.html:471
+msgid "Be shure to send the registration form after payment."
+msgstr ""
+"Después del pago, fíjese si el formulario fue enviado correctamente. Nombre "
+"del responsable por la transacción PayPal."
+
+#: .\website\templates\index.html:481
+msgid "Inform us your Paypal username:"
+msgstr "Nombre del responsable por la transacción PayPal"
+
+#: .\website\templates\index.html:498
+msgid ""
+"I have read and I accept the <a target='_blank' href='http://www.ks-drubchen."
+"com/cancellation-policy/'>cancellation policy of participation in Khadro "
+"Ling events.</a>"
 msgstr ""
 "He leído y aceptado la <a target='_blank' href='https://chagdud.com.br/"
 "politica-de-cancelamento-de-participacao-em-eventos/'> política de "
 "cancelamiento de participación en eventos en Khadro Ling.</a>"
 
-#: .\website\templates\index.html:499
+#: .\website\templates\index.html:500
 msgid ""
 "Before clicking send, make sure that all data is correctly filled and that "
-"you have completed the payment. "
+"you have completed the payment."
 msgstr ""
 "Antes de pulsar enviar averigue si ha llenado todos los datos correctamente "
 "y ha concluido el pago."
@@ -749,6 +786,12 @@ msgstr ""
 #: .\website\templates\pay-success.html:17
 msgid "Voltar"
 msgstr "Regreso"
+
+#~ msgid "WARNING!"
+#~ msgstr "ATENCIÓN!"
+
+#~ msgid "PAY ATTENTION!"
+#~ msgstr "PRESTE ATENCIÓN"
 
 #~ msgid "Inscription"
 #~ msgstr "Inscripción"
