@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-21 18:30-0300\n"
+"POT-Creation-Date: 2018-07-21 18:33-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -219,7 +219,7 @@ msgstr "Tiene médico personal?"
 msgid "Comments"
 msgstr "Observaciones"
 
-#: .\website\templates\health-form.html:106 .\website\templates\index.html:512
+#: .\website\templates\health-form.html:106 .\website\templates\index.html:511
 msgid "Send"
 msgstr "Enviar"
 
@@ -484,8 +484,8 @@ msgstr ""
 "valor de hospedaje de los hoteles y hostales."
 
 #: .\website\templates\index.html:204
-msgid ""
-"More information about transportation to the event will be posted soon. "
+msgid "More information about transportation to the event will be posted closer to "
+"the event."
 msgstr ""
 "A la brevidad tendremos más informaciones respeto a posibilidades de "
 "traslados para el evento."
@@ -606,84 +606,81 @@ msgstr "Formulario de inscripción"
 
 #: .\website\templates\index.html:238
 msgid ""
-"The registration is individual. Please be sure you have filled it completely."
-msgstr "El formulario es individual y se debe llenarlo completamente."
+"The registration form must be completed for each participant, including "
+"children of all ages."
+msgstr "El formulario es individual y se debe llenarlo completamente. Niños, independiente de la edad, deben estar inscritos en el evento."
 
 #: .\website\templates\index.html:239
-msgid "Children must also registered for the event."
-msgstr "Niños, independiente de la edad, deben estar inscritos en el evento."
-
-#: .\website\templates\index.html:240
-msgid "Be sure to submit the registration form after payment."
+msgid "Be sure to submit the registration form after payment tab is complete."
 msgstr ""
 "Después del pago, fíjese si el formulario fue enviado correctamente. Nombre "
 "del responsable por la transacción PayPal."
 
-#: .\website\templates\index.html:244
+#: .\website\templates\index.html:243
 msgid "Full name"
 msgstr "Nombre completo"
 
-#: .\website\templates\index.html:246
+#: .\website\templates\index.html:245
 msgid "Without abbreviations"
 msgstr "Sin abreviaturas"
 
-#: .\website\templates\index.html:249
+#: .\website\templates\index.html:248
 msgid "Date of birth (dd/mm/yyyy): "
 msgstr "Fecha de nacimiento:"
 
-#: .\website\templates\index.html:255
+#: .\website\templates\index.html:254
 msgid "Address"
 msgstr "Dirección"
 
-#: .\website\templates\index.html:259
+#: .\website\templates\index.html:258
 msgid "Number"
 msgstr "Número"
 
-#: .\website\templates\index.html:263
+#: .\website\templates\index.html:262
 msgid "Additional address info"
 msgstr "Depto"
 
-#: .\website\templates\index.html:269
+#: .\website\templates\index.html:268
 msgid "City"
 msgstr "Ciudad"
 
-#: .\website\templates\index.html:273
+#: .\website\templates\index.html:272
 msgid "State"
 msgstr "Departamento/ Región"
 
-#: .\website\templates\index.html:277
+#: .\website\templates\index.html:276
 msgid "Zip code"
 msgstr "Código Postal"
 
-#: .\website\templates\index.html:287
+#: .\website\templates\index.html:286
 msgid "Phone/Mobile"
 msgstr "Teléfono fijo/ Celular"
 
-#: .\website\templates\index.html:293
+#: .\website\templates\index.html:292
 msgid "Genre"
 msgstr "Género"
 
-#: .\website\templates\index.html:304
+#: .\website\templates\index.html:303
 msgid "Previous empowerments received:"
 msgstr "Cuáles son las iniciaciones más recientes que usted ha recibido?"
 
-#: .\website\templates\index.html:308
+#: .\website\templates\index.html:307
 msgid "Empowerment bestowed:"
-msgstr ""
+msgstr "De cuál profesor?"
 
-#: .\website\templates\index.html:314
+#: .\website\templates\index.html:313
 msgid "Are you an ordained practitioner? (monastic or otherwise)"
 msgstr "Practicante con ordenación? (monástica u otra)"
 
-#: .\website\templates\index.html:324
+#: .\website\templates\index.html:323
 msgid "Food"
 msgstr "Alimentación"
 
-#: .\website\templates\index.html:327
+#: .\website\templates\index.html:326
 msgid "Food preference"
 msgstr "Preferencia Alimentar"
 
-#: .\website\templates\index.html:336
+#: .\website\templates\index.html:335
 msgid ""
 "Khadro Ling does not serve meals for special diets with ingredient "
 "restrictions."
@@ -691,31 +688,31 @@ msgstr ""
 "Chagdud Gonpa Khadro Ling no ofrece dietas especiales con restricción de "
 "ingredientes."
 
-#: .\website\templates\index.html:343 .\website\templates\index.html:385
+#: .\website\templates\index.html:342 .\website\templates\index.html:384
 msgid "Please pay attention"
 msgstr "Atención"
 
-#: .\website\templates\index.html:349
+#: .\website\templates\index.html:348
 msgid "This option cannot be changed after the form submission."
 msgstr "Esta opción no podrá ser modificada después del envio del formulario."
 
-#: .\website\templates\index.html:355
+#: .\website\templates\index.html:354
 msgid "Sitting"
 msgstr "Asientos"
 
-#: .\website\templates\index.html:358
+#: .\website\templates\index.html:357
 msgid "Do you need a chair?"
 msgstr "Necesita silla?"
 
-#: .\website\templates\index.html:367
+#: .\website\templates\index.html:366
 msgid "Only for people with limitations and unable sit on the floor."
 msgstr "Solo para personas com limitaciones para sentar en el suelo."
 
-#: .\website\templates\index.html:369
+#: .\website\templates\index.html:368
 msgid "Event option"
 msgstr "Opción de evento"
 
-#: .\website\templates\index.html:391
+#: .\website\templates\index.html:390
 msgid ""
 "Notify in the field 'Extra information' the name of the adult responsible "
 "that will be participating in the event."
@@ -723,19 +720,19 @@ msgstr ""
 "En el campo “observaciones” describa el nombre de los responsables que "
 "participarán del evento."
 
-#: .\website\templates\index.html:397
+#: .\website\templates\index.html:396
 msgid "Partial participation is not possible in this retreat. "
 msgstr "No es posible participación parcial en ese retiro."
 
-#: .\website\templates\index.html:401
+#: .\website\templates\index.html:400
 msgid "Extra information"
 msgstr "Observaciones"
 
-#: .\website\templates\index.html:405
+#: .\website\templates\index.html:404
 msgid "Payment"
 msgstr "Condiciones de pago"
 
-#: .\website\templates\index.html:476
+#: .\website\templates\index.html:475
 msgid ""
 "For PayPal donation/payment, please use the following email address for "
 "payment receiver: <strong>adm@chagdud.org</strong>. Also, in comment field "
@@ -746,17 +743,17 @@ msgstr ""
 "describir a qué la donación se destina. En ese caso, por favor marque Khadro "
 "Sangdu Drubchen. "
 
-#: .\website\templates\index.html:477
+#: .\website\templates\index.html:476
 msgid "Be shure to send the registration form after pay."
 msgstr ""
 "Después del pago, fíjese si el formulario fue enviado correctamente. Nombre "
 "del responsable por la transacción PayPal."
 
-#: .\website\templates\index.html:487
+#: .\website\templates\index.html:486
 msgid "Paypal username:"
 msgstr "Nombre del responsable por la transacción PayPal"
 
-#: .\website\templates\index.html:504
+#: .\website\templates\index.html:503
 msgid ""
 "I have read and I accept the <a target='_blank' href='http://www.ks-drubchen."
 "com/cancellation-policy/'>cancellation policy of participation in Khadro "
@@ -766,7 +763,7 @@ msgstr ""
 "politica-de-cancelamento-de-participacao-em-eventos/'> política de "
 "cancelamiento de participación en eventos en Khadro Ling.</a>"
 
-#: .\website\templates\index.html:506
+#: .\website\templates\index.html:505
 msgid ""
 "Before clicking send, make sure that all data is correctly filled in and "
 "that you have completed the payment."
@@ -785,8 +782,20 @@ msgstr ""
 "confirmar su participación en el evento."
 
 #: .\website\templates\pay-success.html:17
-msgid "Voltar"
+msgid "Back"
 msgstr "Regreso"
+
+#~ msgid ""
+#~ "The registration is individual. Please be sure you have filled it "
+#~ "completely."
+#~ msgstr "El formulario es individual y se debe llenarlo completamente."
+
+#~ msgid "Children must also registered for the event."
+#~ msgstr ""
+#~ "Niños, independiente de la edad, deben estar inscritos en el evento."
+
+#~ msgid "Voltar"
+#~ msgstr "Regreso"
 
 #~ msgid "Degree of kinship"
 #~ msgstr "Parentesco"

@@ -201,7 +201,7 @@
           <h3 class="font-weight-bold">{% trans "Transportation" %}</h3>
           <p>
             {% trans "Event and accommodation rates do not include daily transport/transfer fees." %}<br>
-            {% trans "More information about transportation to the event will be posted soon. " %}
+            {% trans "More information about transportation to the event will be posted closer to the event." %}
           </p>
         </div>
 
@@ -235,9 +235,8 @@
           <form class="form" role="form" action="" method="post" enctype="multipart/form-data">
             {% csrf_token %}
             <div class="margin-bottom">
-              <p class="text-center">{% trans "The registration is individual. Please be sure you have filled it completely." %}</p>
-              <p class="text-center">{% trans "Children must also registered for the event." %}</p>
-              <p class="text-center">{% trans "Be sure to submit the registration form after payment." %}</p>
+              <p class="text-center">{% trans "The registration form must be completed for each participant, including children of all ages." %}</p>
+              <p class="text-center">{% trans "Be sure to submit the registration form after payment tab is complete." %}</p>
             </div>
             <div class="row">
               <div class="form-group col-md-8">
