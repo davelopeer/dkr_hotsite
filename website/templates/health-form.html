@@ -49,7 +49,7 @@
         {{health_form.emergency_contact_name}}
       </div>
       <div class="form-group ">
-        <label class="col-form-label" for="formGroupExampleInput">{% trans "Degree of kinship" %}</label>
+        <label class="col-form-label" for="formGroupExampleInput">{% trans "Relation" %}</label>
         {{health_form.emergency_contact_degree}}
       </div>
       <div class="form-group ">
@@ -58,11 +58,11 @@
       </div>
       <h3 class="form_section_title">{% trans "Medical history" %}</h3>
       <div class="form-group ">
-        <label class="col-form-label" for="formGroupExampleInput">{% trans "Do you have any health problems?" %}</label>
+        <label class="col-form-label" for="formGroupExampleInput">{% trans "Do you have any health problems? If yes, please specify, i.e. diabetes, hypertension etc." %}</label>
         {{health_form.health_problems}}
       </div>
       <hr class="section-divisor">
-      <p class="text-center">{% trans "Do you suffer from any allergies:" %}</p>
+      <p class="text-center">{% trans "Do you suffer from any allergies? If yes, specify them." %}</p>
       <div class="form-group ">
         <label class="col-form-label" for="formGroupExampleInput">{% trans "...to medications?" %}</label>
         {{health_form.medicines_alergie}}
@@ -76,11 +76,11 @@
         {{health_form.insect_alergie}}
       </div>
       <div class="form-group ">
-        <label class="col-form-label" for="formGroupExampleInput">{% trans "Are you undergoing psychiatric or psychological treatment?" %}</label>
+        <label class="col-form-label" for="formGroupExampleInput">{% trans "Are you undergoing psychiatric or psychological treatment? If yes, please describe." %}</label>
         {{health_form.psychiatric_treatment}}
       </div>
       <div class="form-group ">
-        <label class="col-form-label" for="formGroupExampleInput">{% trans "Do you take any medication regularly?" %}</label>
+        <label class="col-form-label" for="formGroupExampleInput">{% trans "Do you take any medication regularly? If yes, please describe." %}</label>
         {{health_form.medication}}
       </div>
       <hr class="section-divisor">

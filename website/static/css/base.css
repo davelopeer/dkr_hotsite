@@ -64,10 +64,6 @@ body {
   margin-bottom: 5px;
 }
 
-.word-break{
-  word-break: break-all;
-}
-
 
 @media screen and (max-width: 768px) {
     .container {

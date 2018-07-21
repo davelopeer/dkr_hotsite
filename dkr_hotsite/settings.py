@@ -102,7 +102,7 @@ LANGUAGE_CODE = 'en'
 
 # from django.utils.translation import ugettext_lazy as gettext
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'UTC-8'
 
 USE_I18N = True
 
