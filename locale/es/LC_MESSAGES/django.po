@@ -79,8 +79,7 @@ msgid "Up to 5 days or more before the start of the event"
 msgstr "En hasta 5 días o más antes del inicio del evento"
 
 #: .\website\templates\cancellation-policy.html:34
-#, python-format
-msgid "90% of the deposited amount"
+msgid "90%% of the deposited amount"
 msgstr "90% del valor depositado"
 
 #: .\website\templates\cancellation-policy.html:37
@@ -88,8 +87,7 @@ msgid "Up to the day before the begining of the event"
 msgstr "Hasta el dia anterior al início del evento"
 
 #: .\website\templates\cancellation-policy.html:38
-#, python-format
-msgid "70% of the deposited amount"
+msgid "70%% of the deposited amount"
 msgstr "70% del valor depositado"
 
 #: .\website\templates\cancellation-policy.html:41
