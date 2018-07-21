@@ -3,6 +3,7 @@
 {% extends "base.html"%}
   {% load static %}
   {% load i18n %}
+  {# Translators: xgettext:no-python-format #}
 
   {% block extra-head %}
     <link rel="stylesheet" href="{% static 'css/index.css' %}">
@@ -97,8 +98,13 @@
           <ul>
             <li class="accommodation-li">
               <a href="https://ibis.accorhotels.com/brasil/index.pt-br.shtml" target="_blank">Ibis Hotel</a> <br>
-              Instruções para a reserva:  <a href="{% static 'files/Guia-portugues.pdf' %}" download >(link para PDF)</a> <br>
-              Instructions for booking: <a href="{% static 'files/Guide-ingles.pdf' %}" download >(link to PDF)</a> <br>
+              {% if user_language == 'pt-br' %}
+                Instruções para a reserva:  <a href="{% static 'files/Guia-portugues.pdf' %}" download >(link para PDF)</a> <br>
+              {% elif user_language == 'es' %}
+                Instrucciones para la reserva: <a href="{% static 'files/Guide-ingles.pdf' %}" download >(link para PDF)</a> <br>
+              {% else %}
+                Instructions for booking: <a href="{% static 'files/Guide-ingles.pdf' %}" download >(link to PDF)</a> <br>
+              {% endif %}
               {% trans "English and Portuguese service" %}
 
             </li>
