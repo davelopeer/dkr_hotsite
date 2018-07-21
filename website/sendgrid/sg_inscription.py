@@ -42,7 +42,7 @@ def sendMail(name,birthday_br,adress,adress_num,adress_comp,city,state,zip_code,
         print(response.headers)
 
 
-def sendMailHealth(name,email,birthday_br,medical_agreement,coverage,phone,emergency_contact_name,emergency_contact_degree,emergency_contact_phone,health_problems,medicines_alergie,food_alergie,insect_alergie,psychiatric_treatment,medication,doctor_name,doctor_phone,observations):
+def sendMailHealth(name,email,birthday_br,medical_agreement,coverage,phone,emergency_contact_name,emergency_contact_degree,emergency_contact_phone, emergency_contact_email,health_problems,medicines_alergie,food_alergie,insect_alergie,psychiatric_treatment,medication,doctor_name,doctor_phone,observations):
         sg = sendgrid.SendGridAPIClient(apikey=os.environ.get('DKR_SG_API_KEY'))
         from_email = Email(os.environ.get('DEFAULT_FROM_EMAIL'))
         to_email = Email(os.environ.get('DEFAULT_TO_EMAIL'))
@@ -62,6 +62,7 @@ def sendMailHealth(name,email,birthday_br,medical_agreement,coverage,phone,emerg
                                     'Nome: ' + emergency_contact_name + '\n' + '\n' +
                                     'Parentesco: ' + emergency_contact_degree + '\n' + '\n' +
                                     'Telefone: ' + emergency_contact_phone + '\n' + '\n' +
+                                    'Email: ' + emergency_contact_email + '\n' + '\n' +
 
                                     'HISTÓRICO MÉDICO' + '\n' + '\n' +
                                     'Problema de saúde: ' + health_problems + '\n' + '\n' +

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-21 15:37-0300\n"
+"POT-Creation-Date: 2018-07-21 16:12-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -150,7 +150,7 @@ msgstr "Dados Pessoais"
 
 #: .\website\templates\health-form.html:18
 #: .\website\templates\health-form.html:48
-#: .\website\templates\health-form.html:89
+#: .\website\templates\health-form.html:93
 msgid "Name"
 msgstr "Nome"
 
@@ -171,55 +171,59 @@ msgid "Relation"
 msgstr "Parentesco"
 
 #: .\website\templates\health-form.html:56
-#: .\website\templates\health-form.html:93
+#: .\website\templates\health-form.html:97
 msgid "Phone"
 msgstr "Telefone"
 
-#: .\website\templates\health-form.html:59
+#: .\website\templates\health-form.html:60
+msgid "Email"
+msgstr "E-mail"
+
+#: .\website\templates\health-form.html:63
 msgid "Medical history"
 msgstr "Histórico médico"
 
-#: .\website\templates\health-form.html:61
+#: .\website\templates\health-form.html:65
 msgid ""
 "Do you have any health problems? If yes, please specify, i.e. diabetes, "
 "hypertension etc."
 msgstr "Possui algum problema de saúde?"
 
-#: .\website\templates\health-form.html:65
+#: .\website\templates\health-form.html:69
 msgid "Do you suffer from any allergies? If yes, specify them."
 msgstr "Possui alguma alergia ou incompatibilidade a"
 
-#: .\website\templates\health-form.html:67
+#: .\website\templates\health-form.html:71
 msgid "...to medications?"
 msgstr "...medicamentos?"
 
-#: .\website\templates\health-form.html:71
+#: .\website\templates\health-form.html:75
 msgid "...to food?"
 msgstr "...alimentos?"
 
-#: .\website\templates\health-form.html:75
+#: .\website\templates\health-form.html:79
 msgid "...to insect bites?"
 msgstr "...insetos?"
 
-#: .\website\templates\health-form.html:79
+#: .\website\templates\health-form.html:83
 msgid ""
 "Are you undergoing psychiatric or psychological treatment? If yes, please "
 "describe."
 msgstr "Está em tratamento psiquiátrico ou psicológico? "
 
-#: .\website\templates\health-form.html:83
+#: .\website\templates\health-form.html:87
 msgid "Do you take any medication regularly? If yes, please describe."
 msgstr "Usa alguma medicação regularmente? "
 
-#: .\website\templates\health-form.html:87
+#: .\website\templates\health-form.html:91
 msgid "Do you have a doctor monitoring your health?"
 msgstr "Algum médico que acompanha a sua saúde?"
 
-#: .\website\templates\health-form.html:97
+#: .\website\templates\health-form.html:101
 msgid "Comments"
 msgstr "Observações"
 
-#: .\website\templates\health-form.html:102 .\website\templates\index.html:506
+#: .\website\templates\health-form.html:106 .\website\templates\index.html:506
 msgid "Send"
 msgstr "Enviar"
 

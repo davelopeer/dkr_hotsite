@@ -12,7 +12,13 @@ def index(request):
     user_language = translation.get_language_from_request(request, check_path=True)
 
     if request.method == 'POST':
-        form = InscriptionForm(request.POST)
+        if user_language == 'pt-br':
+            form = InscriptionForm(request.POST)
+        elif user_language == 'es':
+            form = InscriptionFormEs(request.POST)
+        else:
+            form = InscriptionFormEn(request.POST)
+
 
         # # SETTING THE REQUIRED PAYMENT ACCORDING TO THE USER LANGUAGE
         # else:
@@ -101,6 +107,8 @@ def index(request):
                     event_option,
                     )
             return redirect('pay-success')
+        else:
+            return redirect('https://web.whatsapp.com/')
     else:
         if user_language == 'pt-br':
             form = InscriptionForm()
@@ -162,6 +170,7 @@ def health_form(request):
                     emergency_contact_name,
                     emergency_contact_degree,
                     emergency_contact_phone,
+                    emergency_contact_email,
                     health_problems,
                     medicines_alergie,
                     food_alergie,

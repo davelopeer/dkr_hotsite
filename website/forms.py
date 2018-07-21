@@ -40,9 +40,9 @@ class InscriptionForm(forms.Form):
         ('Cartão de crédito','Cartão de crédito'),
         ('Depósito bancário','Depósito bancário'),
     ))
-    payment_international = forms.ChoiceField(required=False, widget=forms.RadioSelect(attrs={'type':'radio', 'class':'form-check inline'}), choices=(
-        ('PayPal',''),
-    ))
+    # payment_international = forms.ChoiceField(required=False, widget=forms.RadioSelect(attrs={'type':'radio', 'class':'form-check inline'}), choices=(
+    #     ('PayPal',''),
+    # ))
     credit_card_name = forms.CharField(required=False,max_length=200, widget=forms.TextInput(attrs={'class': 'form-control',  }))
     deposit_day = forms.DateField(required=False, widget=forms.DateInput(attrs={'placeholder':'20/09/2018','type':'date', 'class': 'form-control',  }))
     deposit_name = forms.CharField(required=False, max_length=250, widget=forms.TextInput(attrs={'class': 'form-control'}))
@@ -50,7 +50,7 @@ class InscriptionForm(forms.Form):
     deposit_agency = forms.CharField(required=False, widget=forms.TextInput(attrs={ 'class': 'form-control'}))
     deposit_account = forms.CharField(required=False, widget=forms.TextInput(attrs={'class': 'form-control'}))
     deposit_envelop = forms.CharField(required=False, widget=forms.TextInput(attrs={'class': 'form-control'}))
-    paypal_name = forms.CharField(required=False, widget=forms.TextInput(attrs={ 'class': 'form-control'}))
+    # paypal_name = forms.CharField(required=False, widget=forms.TextInput(attrs={ 'class': 'form-control'}))
     cancel_terms = forms.ChoiceField(required=True, widget=forms.RadioSelect(attrs={'type':'checkbox', 'class':'form-check'}), choices=(
         ('Aceito',''),
     ))
@@ -62,7 +62,7 @@ class InscriptionFormEs(forms.Form):
     adress_comp = forms.CharField(required=False, max_length=200, widget=forms.TextInput(attrs={'placeholder': 'casa 1', 'class': 'form-control',  }))
     city = forms.CharField(required=True, max_length=150, widget=forms.TextInput(attrs={'placeholder': 'Ciudad', 'class': 'form-control',  }))
     state = forms.CharField(required=True, max_length=2, widget=forms.TextInput(attrs={'placeholder': 'Departamento/ Región', 'class': 'form-control',  }))
-    zip_code = forms.CharField(required=True, min_length=8, max_length=9, widget=forms.TextInput(attrs={'placeholder': 'Código Postal', 'class': 'form-control',  }))
+    zip_code = forms.CharField(required=True, widget=forms.TextInput(attrs={'placeholder': 'Código Postal', 'class': 'form-control',  }))
     email = forms.EmailField(required=True, max_length=100, widget=forms.EmailInput(attrs={'placeholder':'exemplo@email.com', 'type':'email', 'class':'form-control', 'id':'formGroupExampleInput'}))
     phone = forms.IntegerField(required=True, widget=forms.NumberInput(attrs={'type':'number','placeholder': 'Sólo números', 'class': 'form-control',  }))
     gender = forms.ChoiceField(required=True, widget=forms.RadioSelect(attrs={'type':'radio', 'class':'form-check'}), choices=(
@@ -86,22 +86,23 @@ class InscriptionFormEs(forms.Form):
         ('Não','No'),
     ))
     event_option = forms.ChoiceField(required=True, widget=forms.RadioSelect(attrs={'type':'radio', 'class':'form-check inline checkbox-option'}), choices=(
-        ('Adulto','Evento completo, incluye tres comidas al día, sin hospedaje: R$ 3.042,00'),
-        ('Criança 4-13 anos','Participación infantil (4 a 12 años) incluye tres comidas al día, sin hospedaje: R$ 972,00'),
+        ('Adulto','Evento completo, incluye tres comidas al día, sin hospedaje: US$ 809,05'),
+        ('Criança 4-13 anos','Participación infantil (4 a 12 años) incluye tres comidas al día, sin hospedaje: US$ 258,52'),
         ('Criança 0-3 anos','Participación infantil (de 0 a 3 anos): incluye tres comidas al día, sin hospedaje: Isentas'),
     ))
-    payment = forms.ChoiceField(required=False, widget=forms.RadioSelect(attrs={'type':'radio', 'class':'form-check'}), choices=(
-        ('Cartão de crédito','Cartão de crédito'),
-        ('Depósito bancário','Depósito bancário'),
-    ))
-    payment_international = forms.ChoiceField(required=False, widget=forms.RadioSelect(attrs={'type':'radio', 'class':'form-check inline'}), choices=(
+    # payment = forms.ChoiceField(required=False, widget=forms.RadioSelect(attrs={'type':'radio', 'class':'form-check'}), choices=(
+    #     ('Cartão de crédito','Cartão de crédito'),
+    #     ('Depósito bancário','Depósito bancário'),
+    # ))
+    payment_international = forms.ChoiceField(required=True, widget=forms.RadioSelect(attrs={'type':'radio', 'class':'form-check inline'}), choices=(
         ('PayPal',''),
     ))
-    credit_card_name = forms.CharField(required=False,max_length=200, widget=forms.TextInput(attrs={'placeholder': 'JOSÉ M R SILVA', 'class': 'form-control',  }))
-    deposit_day = forms.DateField(required=False, widget=forms.DateInput(attrs={'placeholder':'20/09/2018','type':'date', 'class': 'form-control',  }))
-    deposit_name = forms.CharField(required=False, max_length=250, widget=forms.TextInput(attrs={'placeholder': 'José M R Silva', 'class': 'form-control',  }))
-    deposit_agency = forms.CharField(required=False, widget=forms.TextInput(attrs={'placeholder':'ag 2856 c/c 008710', 'class': 'form-control',  }))
-    deposit_envelop = forms.CharField(required=False, widget=forms.TextInput(attrs={'placeholder':'1.292.510.482', 'class': 'form-control',  }))
+    # credit_card_name = forms.CharField(required=False,max_length=200, widget=forms.TextInput(attrs={'placeholder': 'JOSÉ M R SILVA', 'class': 'form-control',  }))
+    # deposit_day = forms.DateField(required=False, widget=forms.DateInput(attrs={'placeholder':'20/09/2018','type':'date', 'class': 'form-control',  }))
+    # deposit_name = forms.CharField(required=False, max_length=250, widget=forms.TextInput(attrs={'placeholder': 'José M R Silva', 'class': 'form-control',  }))
+    # deposit_agency = forms.CharField(required=False, widget=forms.TextInput(attrs={'placeholder':'ag 2856 c/c 008710', 'class': 'form-control',  }))
+    # deposit_account = forms.CharField(required=False, widget=forms.TextInput(attrs={'class': 'form-control'}))
+    # deposit_envelop = forms.CharField(required=False, widget=forms.TextInput(attrs={'placeholder':'1.292.510.482', 'class': 'form-control',  }))
     paypal_name = forms.CharField(required=False, widget=forms.TextInput(attrs={'class': 'form-control',  }))
     cancel_terms = forms.ChoiceField(required=True, widget=forms.RadioSelect(attrs={'type':'checkbox', 'class':'form-check'}), choices=(
         ('Aceito',''),
@@ -114,7 +115,7 @@ class InscriptionFormEn(forms.Form):
     adress_comp = forms.CharField(required=False, max_length=200, widget=forms.TextInput(attrs={'class': 'form-control',  }))
     city = forms.CharField(required=True, max_length=150, widget=forms.TextInput(attrs={'placeholder': 'City', 'class': 'form-control',  }))
     state = forms.CharField(required=True, max_length=2, widget=forms.TextInput(attrs={'placeholder': 'State', 'class': 'form-control',  }))
-    zip_code = forms.CharField(required=True, min_length=8, max_length=9, widget=forms.TextInput(attrs={'placeholder': 'Zip-code', 'class': 'form-control',  }))
+    zip_code = forms.CharField(required=True, widget=forms.TextInput(attrs={'placeholder': 'Zip-code', 'class': 'form-control',  }))
     email = forms.EmailField(required=True, max_length=100, widget=forms.EmailInput(attrs={'placeholder':'example@email.com', 'type':'email', 'class':'form-control', 'id':'formGroupExampleInput'}))
     phone = forms.IntegerField(required=True, widget=forms.NumberInput(attrs={'type':'number','placeholder': 'Numbers only', 'class': 'form-control',  }))
     gender = forms.ChoiceField(required=True, widget=forms.RadioSelect(attrs={'type':'radio', 'class':'form-check'}), choices=(
@@ -138,22 +139,23 @@ class InscriptionFormEn(forms.Form):
         ('Não','No'),
     ))
     event_option = forms.ChoiceField(required=True, widget=forms.RadioSelect(attrs={'type':'radio', 'class':'form-check inline checkbox-option'}), choices=(
-        ('Adulto','Adult full event with three meals and no lodging: R$ 3.042,00'),
-        ('Criança 4-13 anos','Children from 4 to 12 years old with three meals and no lodging: R$ 972,00'),
+        ('Adulto','Adult full event with three meals and no lodging: US$ 809,05'),
+        ('Criança 4-13 anos','Children from 4 to 12 years old with three meals and no lodging: US$ 258,52'),
         ('Criança 0-3 anos','Children from 0 to 3 years old with three meals and no lodging: Free'),
     ))
-    payment = forms.ChoiceField(required=False, widget=forms.RadioSelect(attrs={'type':'radio', 'class':'form-check'}), choices=(
-        ('Cartão de crédito','Credit Card'),
-        ('Depósito bancário','Depósito bancário'),
-    ))
+    # payment = forms.ChoiceField(required=False, widget=forms.RadioSelect(attrs={'type':'radio', 'class':'form-check'}), choices=(
+    #     ('Cartão de crédito','Credit Card'),
+    #     ('Depósito bancário','Depósito bancário'),
+    # ))
     payment_international = forms.ChoiceField(required=True, widget=forms.RadioSelect(attrs={'type':'radio', 'class':'form-check inline'}), choices=(
         ('PayPal',''),
     ))
-    credit_card_name = forms.CharField(required=False,max_length=200, widget=forms.TextInput(attrs={'placeholder': 'JOSÉ M R SILVA', 'class': 'form-control',  }))
-    deposit_day = forms.DateField(required=False, widget=forms.DateInput(attrs={'placeholder':'20/09/2018','type':'date', 'class': 'form-control',  }))
-    deposit_name = forms.CharField(required=False, max_length=250, widget=forms.TextInput(attrs={'placeholder': 'José M R Silva', 'class': 'form-control',  }))
-    deposit_agency = forms.CharField(required=False, widget=forms.TextInput(attrs={'placeholder':'ag 2856 c/c 008710', 'class': 'form-control',  }))
-    deposit_envelop = forms.CharField(required=False, widget=forms.TextInput(attrs={'placeholder':'1.292.510.482', 'class': 'form-control',  }))
+    # credit_card_name = forms.CharField(required=False,max_length=200, widget=forms.TextInput(attrs={'placeholder': 'JOSÉ M R SILVA', 'class': 'form-control',  }))
+    # deposit_day = forms.DateField(required=False, widget=forms.DateInput(attrs={'placeholder':'20/09/2018','type':'date', 'class': 'form-control',  }))
+    # deposit_name = forms.CharField(required=False, max_length=250, widget=forms.TextInput(attrs={'placeholder': 'José M R Silva', 'class': 'form-control',  }))
+    # deposit_agency = forms.CharField(required=False, widget=forms.TextInput(attrs={'placeholder':'ag 2856 c/c 008710', 'class': 'form-control',  }))
+    # deposit_account = forms.CharField(required=False, widget=forms.TextInput(attrs={'class': 'form-control'}))
+    # deposit_envelop = forms.CharField(required=False, widget=forms.TextInput(attrs={'placeholder':'1.292.510.482', 'class': 'form-control',  }))
     paypal_name = forms.CharField(required=True, widget=forms.TextInput(attrs={'class': 'form-control',  }))
     cancel_terms = forms.ChoiceField(required=True, widget=forms.RadioSelect(attrs={'type':'checkbox', 'class':'form-check'}), choices=(
         ('Aceito',''),
@@ -171,6 +173,7 @@ class HealthForm(forms.Form):
     emergency_contact_name = forms.CharField(required=True, max_length=150, widget=forms.TextInput(attrs={'class': 'form-control'}))
     emergency_contact_degree = forms.CharField(required=True, max_length=150, widget=forms.TextInput(attrs={'class': 'form-control'}))
     emergency_contact_phone =  forms.IntegerField(required=True, widget=forms.NumberInput(attrs={'type':'number', 'class': 'form-control'}))
+    emergency_contact_email = forms.EmailField(required=True, max_length=100, widget=forms.EmailInput(attrs={'type':'email', 'class':'form-control'}))
     health_problems = forms.CharField(required=True,max_length=1000, widget=forms.TextInput(attrs={'class': 'form-control form_text_area' }))
     medicines_alergie = forms.CharField(required=True, max_length=400, widget=forms.TextInput(attrs={'class': 'form-control'}))
     food_alergie = forms.CharField(required=True, max_length=400, widget=forms.TextInput(attrs={'class': 'form-control'}))
