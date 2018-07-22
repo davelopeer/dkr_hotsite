@@ -144,6 +144,7 @@ def health_form(request):
             emergency_contact_name = request.POST.get('emergency_contact_name', '')
             emergency_contact_degree = request.POST.get('emergency_contact_degree', '')
             emergency_contact_phone = request.POST.get('emergency_contact_phone', '')
+            emergency_contact_email = request.POST.get('emergency_contact_email', '')
             health_problems = request.POST.get('health_problems', '')
             medicines_alergie = request.POST.get('medicines_alergie', '')
             food_alergie = request.POST.get('food_alergie', '')
