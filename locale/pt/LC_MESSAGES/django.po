@@ -20,7 +20,7 @@ msgstr ""
 
 #: .\website\templates\base.html:29
 msgid "Khandro Sangdu Drubchen"
-msgstr "Drubchen de Khandro Sangdu"
+msgstr "Drubchen de Khadro Sangdu"
 
 #: .\website\templates\base.html:30
 msgid "<em>with</em> Dzongsar Khyentse Rinpoche"
@@ -262,7 +262,7 @@ msgid ""
 "the year 1283, she achieved the rainbow body at the age of 36."
 msgstr ""
 "Quando tinha 13 anos, a terton Jomo Menmo, uma encarnação de Yeshe Tsogyal, "
-"descobriu o ensinamento do tesouro oculto <em>Khandro Sangwa Kündü, Reunião "
+"descobriu o ensinamento do tesouro oculto <em>Khadro Sangwa Kündü, Reunião "
 "dos Segredos da Dakini</em>. Em 1283, com 36 anos, Jomo Menmo alcançou o "
 "corpo de arco-íris por meio dessa prática."
 
@@ -325,7 +325,7 @@ msgid ""
 "requirement to attend. Empowerment into Guru Rinpoche, especially from a "
 "Treasure Teaching, is particularly auspicious."
 msgstr ""
-"Para participar do drubchen de Khandro Sangdü, é preciso estar comprometido "
+"Para participar do drubchen de Khadro Sangdü, é preciso estar comprometido "
 "com o budismo Vajrayana. Apesar de inúmeras medidas e compromissos "
 "estabelecerem a fundação para o Vajrayana, talvez o mais claro seja as "
 "quatro autorizações de prática recebidas nas quatro iniciações<sup>1</sup> "
