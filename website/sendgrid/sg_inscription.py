@@ -34,7 +34,7 @@ def sendMail(name,birthday_br,adress,adress_num,adress_comp,city,state,zip_code,
                                     )
 
 
-        mail = Mail(from_email, subject, to_email, sendgrid_content).encode('utf-8')
+        mail = Mail(from_email, subject, to_email, sendgrid_content)
 
         response = sg.client.mail.send.post(request_body=u_mail.get())
         print(response.status_code)
