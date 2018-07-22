@@ -79,7 +79,7 @@ def index(request):
                 if payment == 'Cartão de crédito':
                     payment_info = 'Nome do titular do cartão: ' + credit_card_name
                 else:
-                    payment_info = "Depositado o valor de " + deposit_value + " no dia " + deposit_day_br + " por " + deposit_name + " com os dados: " + "\n" + "\nNúmero do envelope: " + deposit_envelop + "\n    ou" + "\nAgência: " +  deposit_agency + " - Conta: " + deposit_account
+                    payment_info = "Depositado o valor de " + deposit_value + " no dia " + deposit_day_br + " por " + deposit_name + " com os dados: <br>" + "Número do envelope: " + deposit_envelop + "<br>ou<br>" + "Agência: " +  deposit_agency + " - Conta: " + deposit_account
             else:
                 payment_info = 'Nome do usuário Paypal: ' + paypal_name
 
