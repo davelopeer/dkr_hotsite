@@ -49,7 +49,7 @@ def sendMailHealth(name,email,birthday_br,medical_agreement,coverage,phone,emerg
         from_email = Email(email)
         to_email = Email(os.environ.get('DEFAULT_TO_EMAIL'))
         subject = "Formulário de saúde" + name
-        sendgrid_content = Content("text", '<!DOCTYPE html><html lang="en" dir="ltr"><head><meta charset="utf-8"><title></title><style media="screen">ul {font-size: 1.3em;}li {margin-bottom: 20px;}</style></head><body><h2>Dados Pessoais</h2><ul><li>Nome: ' + name +
+        sendgrid_content = Content("text/html", '<!DOCTYPE html><html lang="en" dir="ltr"><head><meta charset="utf-8"><title></title><style media="screen">ul {font-size: 1.3em;}li {margin-bottom: 20px;}</style></head><body><h2>Dados Pessoais</h2><ul><li>Nome: ' + name +
                                         '</li><li>E-mail: ' + email +
                                         '</li><li>Data de nascimento: ' + birthday_br +
                                         '</li><h2>Convênio Médico</h2><li>Convênio: ' + medical_agreement +
