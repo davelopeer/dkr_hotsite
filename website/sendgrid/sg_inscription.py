@@ -11,30 +11,28 @@ def sendMail(name,birthday_br,adress,adress_num,adress_comp,city,state,zip_code,
         from_email = Email(email)
         to_email = Email(os.environ.get('DEFAULT_TO_EMAIL'), 'david.barenco@hotmail.com')
         subject = "Formulário de inscrição - Drubchen de Khadro Sangdu"
-        sendgrid_content = Content("text/html", '<!DOCTYPE html><html lang="en" dir="ltr"><head><meta charset="utf-8"><title></title></head><body><h1>Nome: '+ name + '</h1><h1>Endereço: ' + adress +'</h1></body></html>'
+        sendgrid_content = Content("text/html", '<!DOCTYPE html><html lang="en" dir="ltr"><head><meta charset="utf-8"><title></title></head><body><h2>Dados Pessoais</h2><ul><li>Name: ' + name +
+                                        '</li><li>Data de nascimento: ' + birthday_br +
+                                        '</li><li>Endereço: ' + adress +
+                                        '</li><li>Número: ' + adress_num +
+                                        '</li><li>Complemento: ' + birthday_br +
+                                        '</li><li>Cidade: ' + city +
+                                        '</li><li>Estado: ' + state +
+                                        '</li><li>CEP: ' + zip_code +
+                                        '</li><li>E-mail: ' + email +
+                                        '</li><li>Telefone/celular: ' + phone +
+                                        '</li><li>Gênero: ' + gender +
+                                        '</li><li>Iniciações: ' + initiations +
+                                        '</li><li>Professores que concederam as iniciações: ' + initiations_lama +
+                                        '</li><li>Ordenação monástica: ' + monastic_ordenation +
+                                        '</li><li>Observações gerais: ' + observations +
+                                        '</li><li>Preferência alimentar: ' + food_preferency +
+                                        '</li><li>Necessidade de cadeira: ' + seat +
+                                        '</li><li>Opção de evento: ' + event_option +
+                                        '</li><li>Forma de pagamento: ' + payment + payment_international +
+                                        '</li><li>Dados do pagamento: ' + payment_info +
+                                        '</li></ul></body></html>'
                                     )
-        # sendgrid_content = Content("text/html", 'DADOS PESSOAIS' + '\n' + '\n' +
-        #                             'Nome: ' + name + '\n' + '\n'
-        #                             'Data de nascimento: ' + birthday_br + '\n' + '\n' +
-        #                             'Endereço: ' + adress + '\n' + '\n' +
-        #                             'Número: ' + adress_num + '\n' + '\n' +
-        #                             'Complemento: ' + adress_comp + '\n' + '\n' +
-        #                             'Cidade: ' + city + '\n' + '\n' +
-        #                             'Estado: ' + state + '\n' + '\n' +
-        #                             'CEP: ' + zip_code + '\n' + '\n' +
-        #                             'E-mail: ' + email + '\n' + '\n' +
-        #                             'Telefone/celular: ' + phone + '\n' + '\n' +
-        #                             'Gênero: ' + gender + '\n' + '\n' +
-        #                             'Iniciações: ' + '\n' + '\n' + initiations + '\n' + '\n' + '\n' +
-        #                             'Professores que concederam as iniciações: ' + '\n' + '\n' + initiations_lama + '\n' + '\n' + '\n' +
-        #                             'Ordenação monástica: ' + monastic_ordenation + '\n' + '\n' +
-        #                             'Observações gerais: ' + '\n' + '\n' + observations + '\n' + '\n' +
-        #                             'Preferência alimentar: ' + food_preferency + '\n' + '\n' +
-        #                             'Necessidade de cadeira: ' + seat + '\n' + '\n' +
-        #                             'Opção de evento: ' + event_option + '\n' + '\n' +
-        #                             'Forma de pagamento: ' + payment + payment_international + '\n' + '\n' +
-        #                             'Dados do pagamento: ' + payment_info + '\n' + '\n'
-        #                             )
 
 
         mail = Mail(from_email, subject, to_email, sendgrid_content)
