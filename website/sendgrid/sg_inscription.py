@@ -11,7 +11,7 @@ def sendMail(name,birthday_br,adress,adress_num,adress_comp,city,state,zip_code,
         from_email = Email(email)
         to_email = Email(os.environ.get('DEFAULT_TO_EMAIL'), 'david.barenco@hotmail.com')
         subject = "Formulário de inscrição - Drubchen de Khadro Sangdu"
-        sendgrid_content = Content("text/html", '<!DOCTYPE html><html lang="en" dir="ltr"><head><meta charset="utf-8"><title></title></head><body><h1>Nome: {{name}}</h1><h1>Endereço: {{adress}}</h1></body></html>'
+        sendgrid_content = Content("text/html", '<!DOCTYPE html><html lang="en" dir="ltr"><head><meta charset="utf-8"><title></title></head><body><h1>Nome: '+ name + '</h1><h1>Endereço: ' + adress +'</h1></body></html>'
                                     )
         # sendgrid_content = Content("text/html", 'DADOS PESSOAIS' + '\n' + '\n' +
         #                             'Nome: ' + name + '\n' + '\n'
