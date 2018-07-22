@@ -34,27 +34,22 @@ body {
   font-size: 0.7em;
 }
 
-.idioms .nav-link {
-  border-radius: 5px;
-  padding: 3px 8px;
-  margin-left: 6px;
-  border: 1px solid #36382e;
+.language-form {
+  float: right;
 }
 
-.idioms {
-  font-size: 0.7em;
-  margin-top: 25px;
+.go-btn {
+  margin-top: 10px;
+  display: block;
+  border-radius: 15px;
+  float: right;
 }
 
-.idioms .nav-link {
-  background-color: #36382e;
-  color: #fff;
+.language-choice {
+  margin: 30px 20px 0 0;
 }
 
-.idioms .nav-link:hover {
-  background-color: #ebebeb;
-  color: #36382e;
-}
+/* FOOTER */
 
 .footer-div {
   margin: 50px 20%;
@@ -70,4 +65,41 @@ body {
       width: 83%;
       margin-top: 50px;
     }
+    .language-choice {
+
+      float: left;
+
+    }
+    .language-form {
+      float: left;
+      display: inline-block;
+      width: 30%;
+    }
+    .go-btn {
+      float: left;
+      display: inline;
+      margin-top: 10px;
+    }
   }
+
+  /* .idioms .nav-link {
+    border-radius: 5px;
+    padding: 3px 8px;
+    margin-left: 6px;
+    border: 1px solid #36382e;
+  }
+
+  .idioms {
+    font-size: 0.7em;
+    margin-top: 25px;
+  }
+
+  .idioms .nav-link {
+    background-color: #36382e;
+    color: #fff;
+  }
+
+  .idioms .nav-link:hover {
+    background-color: #ebebeb;
+    color: #36382e;
+  } */

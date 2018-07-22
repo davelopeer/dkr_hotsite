@@ -24,14 +24,31 @@
   <body>
     <div class="container">
       <header>
-        <div class="row">
+        <div class="row justify-content-between">
           <div class="col-md-8 header-text">
             <h1 class="header-title">{% trans "Khandro Sangdu Drubchen" %}</h1>
             <h2 class="header-name">{% trans "<em>with</em> Dzongsar Khyentse Rinpoche" %}</h2>
             <h4 class="header-subtitle">{% trans "Chagdud Gonpa Khadro Ling, Brazil" %}</h4>
             <h4 class="header-subtitle">{% trans "December 27th, 2018-January 4th, 2019" %}</h4>
           </div>
+          <div class="col-md-2 language-choice">
+            <form class="language-form" action="{% url 'set_language' %}" method="post">
+              {% csrf_token %}
+              <input type="hidden" name="next" value="{{ redirect_to }}">
+              <select class="custom-select" name="language">
+                {% get_available_languages as LANGUAGES %}
+                {% get_language_info_list for LANGUAGES as languages %}
+                {% for language in languages %}
+                  <option value="{{ language.code}}" {% if language.code == LANGUAGE_CODE %} selected {% endif %}>
+                    {{ language.code }}
+                  </option>
+                {% endfor %}
+              </select>
+              <input class="go-btn btn btn-dark" type="submit" value="Go">
+            </form>
+          </div>
         </div>
+
       </header>
       <hr>
 
