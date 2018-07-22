@@ -42,6 +42,7 @@ def index(request):
             adress_comp = request.POST.get('adress_comp', '')
             city = request.POST.get('city', '')
             state = request.POST.get('state', '')
+            country = request.POST.get('country', '')
             zip_code = request.POST.get('zip_code', '')
             email = request.POST.get('email', '')
             phone = request.POST.get('phone', '')
@@ -91,6 +92,7 @@ def index(request):
                     adress_comp,
                     city,
                     state,
+                    country,
                     zip_code,
                     email,
                     phone,

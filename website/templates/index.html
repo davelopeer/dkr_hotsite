@@ -250,7 +250,7 @@
               </div>
             </div>
             <div class="row">
-              <div class="form-group col-md-7">
+              <div class="form-group col-md-6">
                 <label class="col-form-label" for="formGroupExampleInput">{% trans "Address" %}</label>
                 {{form.adress}}
               </div>
@@ -258,13 +258,17 @@
                 <label class="col-form-label" for="formGroupExampleInput">{% trans "Number" %}</label>
                 {{form.adress_num}}
               </div>
-              <div class="form-group col-md-3">
+              <div class="form-group col-md-2">
                 <label class="col-form-label" for="formGroupExampleInput">{% trans "Additional address info" %}</label>
                 {{form.adress_comp}}
               </div>
+              <div class="form-group col-md-2">
+                <label class="col-form-label" for="formGroupExampleInput">{% trans "Zip code" %}</label>
+                {{form.zip_code}}
+              </div>
             </div>
             <div class="row">
-              <div class="form-group col-md-5">
+              <div class="form-group col-md-4">
                 <label class="col-form-label" for="formGroupExampleInput">{% trans "City" %}</label>
                 {{form.city}}
               </div>
@@ -272,10 +276,11 @@
                 <label class="col-form-label" for="formGroupExampleInput">{% trans "State" %}</label>
                 {{form.state}}
               </div>
-              <div class="form-group col-md-3">
-                <label class="col-form-label" for="formGroupExampleInput">{% trans "Zip code" %}</label>
-                {{form.zip_code}}
+              <div class="form-group col-md-4">
+                <label class="col-form-label" for="formGroupExampleInput">{% trans "Country" %}</label>
+                {{form.country}}
               </div>
+
             </div>
             <div class="row">
               <div class="form-group col-md-6">

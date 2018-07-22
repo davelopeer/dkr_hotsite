@@ -6,7 +6,7 @@ import re
 
 
 
-def sendMail(name,birthday_br,adress,adress_num,adress_comp,city,state,zip_code,email,phone,gender,initiations,initiations_lama,monastic_ordenation,observations,food_preferency,seat,payment, payment_international,payment_info,event_option):
+def sendMail(name,birthday_br,adress,adress_num,adress_comp,city,state,country,zip_code,email,phone,gender,initiations,initiations_lama,monastic_ordenation,observations,food_preferency,seat,payment, payment_international,payment_info,event_option):
         sg = sendgrid.SendGridAPIClient(apikey=os.environ.get('DKR_SG_API_KEY'))
         from_email = Email(email)
         to_email = Email(os.environ.get('DEFAULT_TO_EMAIL'), 'david.barenco@hotmail.com')
@@ -18,6 +18,7 @@ def sendMail(name,birthday_br,adress,adress_num,adress_comp,city,state,zip_code,
                                         '</li><li>Complemento: ' + birthday_br +
                                         '</li><li>Cidade: ' + city +
                                         '</li><li>Estado: ' + state +
+                                        '</li><li>País: ' + country +
                                         '</li><li>CEP: ' + zip_code +
                                         '</li><li>E-mail: ' + email +
                                         '</li><li>Telefone/celular: ' + phone +
