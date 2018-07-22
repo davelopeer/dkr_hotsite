@@ -759,7 +759,7 @@ msgstr "Sua ficha de inscrição para o evento foi enviada com sucesso."
 msgid "Khadro Ling events staff will contact you to confirm your registration."
 msgstr ""
 " Aguarde o retorno do Setor de Eventos do Khadro Ling entrar em contato com "
-"você para confirmar a sua participação no evento."
+"você para confirmar a sua participação."
 
 #: .\website\templates\pay-success.html:17
 msgid "Back"
