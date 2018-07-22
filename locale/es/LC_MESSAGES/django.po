@@ -616,8 +616,7 @@ msgstr ""
 #: .\website\templates\index.html:239
 msgid "Be sure to submit the registration form after payment tab is complete."
 msgstr ""
-"Después del pago, fíjese si el formulario fue enviado correctamente. Nombre "
-"del responsable por la transacción PayPal."
+"Después del pago, fíjese si el formulario fue enviado correctamente."
 
 #: .\website\templates\index.html:243
 msgid "Full name"
