@@ -67,7 +67,7 @@ def sendMailHealth(name,email,birthday_br,medical_agreement,coverage,phone,emerg
                                         '</li><li>Usa medicação: ' + medication +
                                         '</li><p>Algum médico que acompanha a sua saúde?</p><li>Nome: ' + doctor_name +
                                         '</li><li>Telefone: ' + doctor_phone +
-                                        '</li><li>Observações: ' + payment + observations +
+                                        '</li><li>Observações: ' + observations +
                                         '</li></ul></body></html>'
                                     )
 
