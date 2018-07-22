@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-21 18:33-0300\n"
+"POT-Creation-Date: 2018-07-22 17:03-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -484,7 +484,8 @@ msgstr ""
 "valor de hospedaje de los hoteles y hostales."
 
 #: .\website\templates\index.html:204
-msgid "More information about transportation to the event will be posted closer to "
+msgid ""
+"More information about transportation to the event will be posted closer to "
 "the event."
 msgstr ""
 "A la brevidad tendremos más informaciones respeto a posibilidades de "
@@ -608,7 +609,9 @@ msgstr "Formulario de inscripción"
 msgid ""
 "The registration form must be completed for each participant, including "
 "children of all ages."
-msgstr "El formulario es individual y se debe llenarlo completamente. Niños, independiente de la edad, deben estar inscritos en el evento."
+msgstr ""
+"El formulario es individual y se debe llenarlo completamente. Niños, "
+"independiente de la edad, deben estar inscritos en el evento."
 
 #: .\website\templates\index.html:239
 msgid "Be sure to submit the registration form after payment tab is complete."
@@ -665,7 +668,7 @@ msgid "Previous empowerments received:"
 msgstr "Cuáles son las iniciaciones más recientes que usted ha recibido?"
 
 #: .\website\templates\index.html:307
-msgid "Empowerment bestowed:"
+msgid "Empowerment bestowed by:"
 msgstr "De cuál profesor?"
 
 #: .\website\templates\index.html:313
@@ -744,7 +747,7 @@ msgstr ""
 "Sangdu Drubchen. "
 
 #: .\website\templates\index.html:476
-msgid "Be shure to send the registration form after pay."
+msgid "Be sure to send the registration form after pay."
 msgstr ""
 "Después del pago, fíjese si el formulario fue enviado correctamente. Nombre "
 "del responsable por la transacción PayPal."

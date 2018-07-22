@@ -143,7 +143,7 @@
               {% trans "English, German and Portuguese service" %}<br>
               {% trans "Inform the promo code: event DKR" %} <br>
               </li>
-            <li>
+            <li class="accommodation-li">
               <a href="http://www.pousadasaochico.com.br/">Pousada São Chico Ecovillage</a> <br>
               contato@pousadasaochico.com.br <br>
               {% trans "English and Portuguese service" %}<br>
@@ -152,7 +152,7 @@
             <li class="accommodation-li">
               <a href="http://www.pousadanovohorizonte.com.br/">Pousada Novo Horizonte</a> <br>
               contato@pousadanovohorizonte.com.br <br>
-              {% trans "Inform the promo code: event DKR" %}<br>
+              {% trans "Inform the promo code: event DKR" %} <br>
             </li>
             <li class="accommodation-li">
               <a href="http://pousadarecantodasestrelas.com/">Pousada Recanto das Estrelas</a> <br>
@@ -304,7 +304,7 @@
                 {{form.initiations}}
               </div>
               <div class="form-group col-md-6">
-                <label class="col-form-label" for="formGroupExampleInput">{% trans "Empowerment bestowed:" %}</label>
+                <label class="col-form-label" for="formGroupExampleInput">{% trans "Empowerment bestowed by:" %}</label>
                 {{form.initiations_lama}}
               </div>
             </div>
@@ -473,7 +473,7 @@
 
             {% else %}
             <p>{% trans "For PayPal donation/payment, please use the following email address for payment receiver: <strong>adm@chagdud.org</strong>. Also, in comment field inform that payment is for Khadro Sangdu Drubchen." %}</p>
-            <p class="underline">{% trans "Be shure to send the registration form after pay." %}</p>
+            <p class="underline">{% trans "Be sure to send the registration form after pay." %}</p>
               {% for radio in form.payment_international %}
                 <div class="form-check-boxes payment">
                   {{radio.tag}}

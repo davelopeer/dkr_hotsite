@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-21 18:36-0300\n"
+"POT-Creation-Date: 2018-07-22 17:03-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -649,8 +649,8 @@ msgid "Previous empowerments received:"
 msgstr "Descreva as últimas iniciações que você recebeu"
 
 #: .\website\templates\index.html:307
-msgid "Empowerment bestowed:"
-msgstr "De qual professor"
+msgid "Empowerment bestowed by:"
+msgstr "De qual professor?"
 
 #: .\website\templates\index.html:313
 msgid "Are you an ordained practitioner? (monastic or otherwise)"
@@ -726,7 +726,7 @@ msgid ""
 msgstr ""
 
 #: .\website\templates\index.html:476
-msgid "Be shure to send the registration form after pay."
+msgid "Be sure to send the registration form after pay."
 msgstr "Certifique-se de enviar o formulário após o pagamento."
 
 #: .\website\templates\index.html:486
