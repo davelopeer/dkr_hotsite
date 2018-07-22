@@ -47,36 +47,27 @@ def sendMailHealth(name,email,birthday_br,medical_agreement,coverage,phone,emerg
         sg = sendgrid.SendGridAPIClient(apikey=os.environ.get('DKR_SG_API_KEY'))
         from_email = Email(email)
         to_email = Email(os.environ.get('DEFAULT_TO_EMAIL'))
-        subject = "Formulário de saúde - Drubchen de Khadro Sangdu"
-        sendgrid_content = Content("text", 'DADOS PESSOAIS' + '\n' + '\n' +
-                                    'Nome: ' + name + '\n' + '\n'
-                                    'E-mail: ' + email + '\n' + '\n' +
-                                    'Data de nascimento: ' + birthday_br + '\n' + '\n' + '\n' +
-
-                                    'CONVÊNIO MÉDICO' + '\n' + '\n' +
-
-                                    'Convênio: ' + medical_agreement + '\n' + '\n' +
-                                    'Cobertura: ' + coverage + '\n' + '\n' +
-                                    'Telefone: ' + phone + '\n' + '\n' +
-
-                                    'CONTATO DE EMERGÊNCIA' + '\n' + '\n' +
-                                    'Nome: ' + emergency_contact_name + '\n' + '\n' +
-                                    'Parentesco: ' + emergency_contact_degree + '\n' + '\n' +
-                                    'Telefone: ' + emergency_contact_phone + '\n' + '\n' +
-                                    'Email: ' + emergency_contact_email + '\n' + '\n' +
-
-                                    'HISTÓRICO MÉDICO' + '\n' + '\n' +
-                                    'Problema de saúde: ' + health_problems + '\n' + '\n' +
-                                    'Alergia a:' + '\n' +
-                                    'Medicamentos: ' + medicines_alergie + '\n' +
-                                    'Comida: ' + food_alergie + '\n' +
-                                    'Alergia ' + insect_alergie + '\n' + '\n' +
-                                    'Tratamento psiquiátrico ou psicológico: ' + psychiatric_treatment + '\n' + '\n' +
-                                    'Usa medicação: ' + medication + '\n' + '\n' +
-                                    'Algum médico que acompanha a sua saúde?' + '\n' +
-                                    'Nome: ' + doctor_name + '\n' + '\n' +
-                                    'Telefone: ' + doctor_phone + '\n' + '\n' +
-                                    'Observações: ' + observations + '\n' + '\n'
+        subject = "Formulário de saúde" + name
+        sendgrid_content = Content("text", '<!DOCTYPE html><html lang="en" dir="ltr"><head><meta charset="utf-8"><title></title><style media="screen">ul {font-size: 1.3em;}li {margin-bottom: 20px;}</style></head><body><h2>Dados Pessoais</h2><ul><li>Nome: ' + name +
+                                        '</li><li>E-mail: ' + email +
+                                        '</li><li>Data de nascimento: ' + birthday_br +
+                                        '</li><h2>Convênio Médico</h2><li>Convênio: ' + medical_agreement +
+                                        '</li><li>Cobertura: ' + coverage +
+                                        '</li><li>Telefone: ' + phone +
+                                        '</li><h2>Contato de emergência</h2><li>Nome: ' + emergency_contact_name +
+                                        '</li><li>Parentesco: ' + emergency_contact_degree +
+                                        '</li><li>Telefone: ' + emergency_contact_phone +
+                                        '</li><li>Email: ' + emergency_contact_email +
+                                        '</li><h2>Histórico médico</h2><li>Problema de saúde: ' + health_problems +
+                                        '</li><p>Alergia a:</p><li>Medicamentos: ' + medicines_alergie +
+                                        '</li><li>Comida: ' + food_alergie +
+                                        '</li><li>Insetos: ' + insect_alergie +
+                                        '</li><li>Tratamento psiquiátrico ou psicológico: ' + psychiatric_treatment +
+                                        '</li><li>Usa medicação: ' + medication +
+                                        '</li><p>Algum médico que acompanha a sua saúde?</p><li>Nome: ' + doctor_name +
+                                        '</li><li>Telefone: ' + doctor_phone +
+                                        '</li><li>Observações: ' + payment + observations +
+                                        '</li></ul></body></html>'
                                     )
 
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-22 17:03-0300\n"
+"POT-Creation-Date: 2018-07-22 17:53-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -726,7 +726,7 @@ msgid ""
 msgstr ""
 
 #: .\website\templates\index.html:476
-msgid "Be sure to send the registration form after pay."
+msgid "Be sure to send the registration form after payment is completed."
 msgstr "Certifique-se de enviar o formulário após o pagamento."
 
 #: .\website\templates\index.html:486
@@ -764,6 +764,9 @@ msgstr ""
 #: .\website\templates\pay-success.html:17
 msgid "Back"
 msgstr "Voltar"
+
+#~ msgid "Be sure to send the registration form after pay."
+#~ msgstr "Certifique-se de enviar o formulário após o pagamento."
 
 #~ msgid ""
 #~ "The registration is individual. Please be sure you have filled it "
