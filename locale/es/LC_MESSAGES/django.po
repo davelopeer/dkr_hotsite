@@ -183,11 +183,11 @@ msgstr "Historico médico"
 msgid ""
 "Do you have any health problems? If yes, please specify, i.e. diabetes, "
 "hypertension etc."
-msgstr "Tiene algun problema de salud? "
+msgstr "Tiene algun problema de salud? En caso afirmativo, cuál? Ejemplo: diabetis, hipertensión."
 
 #: .\website\templates\health-form.html:69
 msgid "Do you suffer from any allergies? If yes, specify them."
-msgstr "Tiene alguna alergia o incompatibilidad a"
+msgstr "Tiene alguna alergia o incompatibilidad? En caso afirmativo, cuáles?"
 
 #: .\website\templates\health-form.html:71
 msgid "...to medications?"
@@ -205,11 +205,11 @@ msgstr "...insectos?"
 msgid ""
 "Are you undergoing psychiatric or psychological treatment? If yes, please "
 "describe."
-msgstr "Está en tratamento psiquiátrico o psicológico?"
+msgstr "Está en tratamento psiquiátrico o psicológico? En caso afirmativo, cuál?"
 
 #: .\website\templates\health-form.html:87
 msgid "Do you take any medication regularly? If yes, please describe."
-msgstr "Usa alguna medicación regularmente?"
+msgstr "Usa alguna medicación regularmente? En caso afirmativo, cuáles?"
 
 #: .\website\templates\health-form.html:91
 msgid "Do you have a doctor monitoring your health?"
