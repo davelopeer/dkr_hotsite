@@ -45,7 +45,7 @@ def sendMail(name,birthday_br,adress,adress_num,adress_comp,city,state,zip_code,
 
 def sendMailHealth(name,email,birthday_br,medical_agreement,coverage,phone,emergency_contact_name,emergency_contact_degree,emergency_contact_phone, emergency_contact_email,health_problems,medicines_alergie,food_alergie,insect_alergie,psychiatric_treatment,medication,doctor_name,doctor_phone,observations):
         sg = sendgrid.SendGridAPIClient(apikey=os.environ.get('DKR_SG_API_KEY'))
-        from_email = Email(os.environ.get('DEFAULT_FROM_EMAIL'))
+        from_email = Email(email)
         to_email = Email(os.environ.get('DEFAULT_TO_EMAIL'))
         subject = "Formulário de saúde - Drubchen de Khadro Sangdu"
         sendgrid_content = Content("text", 'DADOS PESSOAIS' + '\n' + '\n' +
