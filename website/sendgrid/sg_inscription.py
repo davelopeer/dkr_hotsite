@@ -2,6 +2,7 @@ import sendgrid
 import os
 from sendgrid.helpers.mail import *
 # import pdb; pdb.set_trace()
+import re
 
 
 
@@ -10,7 +11,7 @@ def sendMail(name,birthday_br,adress,adress_num,adress_comp,city,state,zip_code,
         from_email = Email(email)
         to_email = Email(os.environ.get('DEFAULT_TO_EMAIL'), 'david.barenco@hotmail.com')
         subject = "Formulário de inscrição - Drubchen de Khadro Sangdu"
-        sendgrid_content = Content("text", 'DADOS PESSOAIS' + '\n' + '\n' +
+        sendgrid_content = Content("text/plain", 'DADOS PESSOAIS' + '\n' + '\n' +
                                     'Nome: ' + name + '\n' + '\n'
                                     'Data de nascimento: ' + birthday_br + '\n' + '\n' +
                                     'Endereço: ' + adress + '\n' + '\n' +
