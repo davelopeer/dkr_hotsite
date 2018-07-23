@@ -62,7 +62,7 @@ class InscriptionFormEs(forms.Form):
     adress_num = forms.IntegerField(required=True, widget=forms.NumberInput(attrs={'placeholder':'Número', 'class': 'form-control',  }))
     adress_comp = forms.CharField(required=False, max_length=200, widget=forms.TextInput(attrs={'placeholder': 'casa 1', 'class': 'form-control',  }))
     city = forms.CharField(required=True, max_length=150, widget=forms.TextInput(attrs={'placeholder': 'Ciudad', 'class': 'form-control',  }))
-    state = forms.CharField(required=True, max_length=2, widget=forms.TextInput(attrs={'placeholder': 'Departamento/ Región', 'class': 'form-control',  }))
+    state = forms.CharField(required=True, max_length=30, widget=forms.TextInput(attrs={'placeholder': 'Departamento/ Región', 'class': 'form-control',  }))
     country = forms.CharField(required=True, max_length=100, widget=forms.TextInput(attrs={'placeholder': 'País', 'class': 'form-control'}))
     zip_code = forms.CharField(required=True, widget=forms.TextInput(attrs={'placeholder': 'Código Postal', 'class': 'form-control',  }))
     email = forms.EmailField(required=True, max_length=100, widget=forms.EmailInput(attrs={'placeholder':'exemplo@email.com', 'type':'email', 'class':'form-control', 'id':'formGroupExampleInput'}))
@@ -105,7 +105,7 @@ class InscriptionFormEs(forms.Form):
     # deposit_agency = forms.CharField(required=False, widget=forms.TextInput(attrs={'placeholder':'ag 2856 c/c 008710', 'class': 'form-control',  }))
     # deposit_account = forms.CharField(required=False, widget=forms.TextInput(attrs={'class': 'form-control'}))
     # deposit_envelop = forms.CharField(required=False, widget=forms.TextInput(attrs={'placeholder':'1.292.510.482', 'class': 'form-control',  }))
-    paypal_name = forms.CharField(required=False, widget=forms.TextInput(attrs={'class': 'form-control',  }))
+    paypal_name = forms.CharField(required=True, widget=forms.TextInput(attrs={'class': 'form-control',  }))
     cancel_terms = forms.ChoiceField(required=True, widget=forms.RadioSelect(attrs={'type':'checkbox', 'class':'form-check'}), choices=(
         ('Aceito',''),
     ))
@@ -116,7 +116,7 @@ class InscriptionFormEn(forms.Form):
     adress_num = forms.IntegerField(required=True, widget=forms.NumberInput(attrs={'placeholder':'Number', 'class': 'form-control',  }))
     adress_comp = forms.CharField(required=False, max_length=200, widget=forms.TextInput(attrs={'class': 'form-control',  }))
     city = forms.CharField(required=True, max_length=150, widget=forms.TextInput(attrs={'placeholder': 'City', 'class': 'form-control',  }))
-    state = forms.CharField(required=True, max_length=2, widget=forms.TextInput(attrs={'placeholder': 'State', 'class': 'form-control',  }))
+    state = forms.CharField(required=True, max_length=30, widget=forms.TextInput(attrs={'placeholder': 'State', 'class': 'form-control',  }))
     country = forms.CharField(required=True, max_length=100, widget=forms.TextInput(attrs={'placeholder': 'Country', 'class': 'form-control'}))
     zip_code = forms.CharField(required=True, widget=forms.TextInput(attrs={'placeholder': 'Zip-code', 'class': 'form-control',  }))
     email = forms.EmailField(required=True, max_length=100, widget=forms.EmailInput(attrs={'placeholder':'example@email.com', 'type':'email', 'class':'form-control', 'id':'formGroupExampleInput'}))
