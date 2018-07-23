@@ -9,13 +9,13 @@ import re
 def sendMail(name,birthday_br,adress,adress_num,adress_comp,city,state,country,zip_code,email,phone,gender,initiations,initiations_lama,monastic_ordenation,observations,food_preferency,seat,payment, payment_international,payment_info,event_option):
         sg = sendgrid.SendGridAPIClient(apikey=os.environ.get('DKR_SG_API_KEY'))
         from_email = Email(email)
-        to_email = Email(os.environ.get('DEFAULT_TO_EMAIL'), 'david.barenco@hotmail.com')
+        to_email = Email(os.environ.get('DEFAULT_TO_EMAIL'))
         subject = "Formulário de inscrição - Drubchen de Khadro Sangdu"
         sendgrid_content = Content("text/html", '<!DOCTYPE html><html lang="en" dir="ltr"><head><meta charset="utf-8"><title></title><style media="screen">ul {font-size: 1.3em;}li {margin-bottom: 20px;}</style></head><body><h2>Dados Pessoais</h2><ul><li>Nome: ' + name +
                                         '</li><li>Data de nascimento: ' + birthday_br +
                                         '</li><li>Endereço: ' + adress +
                                         '</li><li>Número: ' + adress_num +
-                                        '</li><li>Complemento: ' + birthday_br +
+                                        '</li><li>Complemento: ' + adress_comp +
                                         '</li><li>Cidade: ' + city +
                                         '</li><li>Estado: ' + state +
                                         '</li><li>País: ' + country +

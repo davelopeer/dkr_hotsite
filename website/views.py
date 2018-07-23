@@ -5,6 +5,7 @@ from django.shortcuts import redirect
 from django.template.loader import get_template
 from website.sendgrid.sg_inscription import sendMail, sendMailHealth
 from django.utils import translation
+from django.http import HttpResponseNotFound
 
 # Create your views here.
 def index(request):
@@ -110,7 +111,13 @@ def index(request):
                     )
             return redirect('pay-success')
         else:
-            return redirect('https://web.whatsapp.com/')
+            if user_language == 'pt-br':
+                return HttpResponseNotFound('<h1>Dados inválidos no formulário. Por favor, preencha novamente. Certifique-se que os campos aniversário e email estão corretamente preenchido.</h1>')
+            elif user_language == 'es':
+                return HttpResponseNotFound('<h1>Datos no válidos en el formulario. Por favor, rellene de nuevo. Asegúrese de que los campos de cumpleaños y correo electrónico están correctamente llenados.</h1>')
+            else:
+                return HttpResponseNotFound('<h1>Invalid form data. Please, fill in again. Make sure that the birthday and email fields are correctly filled in.</h1>')
+
     else:
         if user_language == 'pt-br':
             form = InscriptionForm()
