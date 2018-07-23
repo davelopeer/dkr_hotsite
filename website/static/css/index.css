@@ -131,6 +131,10 @@
   padding: 20px;
 }
 
+.padding {
+  margin-left: 3%;
+}
+
 .cielo-img {
   margin: 10px 0 15px;
 }

@@ -598,7 +598,7 @@ msgstr ""
 
 #: .\website\templates\index.html:239
 msgid "Be sure to submit the registration form after payment tab is complete."
-msgstr "Certifique-se de enviar o formulário após o pagamento."
+msgstr "Certifique-se de enviar o formulário após o pagamento. Sua inscrição somente será confirmada após a identificação do pagamento do evento."
 
 #: .\website\templates\index.html:243
 msgid "Full name"
