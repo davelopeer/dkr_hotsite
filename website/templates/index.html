@@ -234,9 +234,11 @@
           <h2 id="teste"  class="text-center section_title">{% trans "Registration form" %}</h2>
           <form class="form" role="form" action="" method="post" enctype="multipart/form-data">
             {% csrf_token %}
-            <div class="margin-bottom">
-              <p class="text-center">{% trans "The registration form must be completed for each participant, including children of all ages." %}</p>
-              <p class="text-center">{% trans "Be sure to submit the registration form after payment tab is complete." %}</p>
+            <div class="margin-bottom row justify-content-center">
+              <div class=" col-md-9">
+                <p class="text-center">{% trans "The registration form must be completed for each participant, including children of all ages." %}</p>
+                <p class="text-center">{% trans "Be sure to submit the registration form after payment tab is complete." %}</p>
+              </div>
             </div>
             <div class="row">
               <div class="form-group col-md-8">
@@ -421,7 +423,7 @@
                 {% endfor %}
 
               </div>
-              <small class="form-text text-muted padding"><p>O pagamento em cartão de crédito poderá ser parcelado em 12x sem juros.</p></small> 
+              <small class="form-text text-muted padding"><p>O pagamento em cartão de crédito poderá ser parcelado em 12x sem juros.</p></small>
             </div>
             <div class="row payment_form">
               <div class="col-md-8 payment_section" id="payment1">
