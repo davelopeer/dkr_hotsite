@@ -2,7 +2,7 @@ from django import forms
 
 class InscriptionForm(forms.Form):
     name = forms.CharField(required=True, max_length=150, widget=forms.TextInput(attrs={'placeholder': 'Nome completo', 'class': 'form-control',  }))
-    birthday = forms.DateField(required=True, widget=forms.DateInput(attrs={'placeholder':'01/01/1980','type':'date', 'class': 'form-control',  }))
+    birthday = forms.DateField(required=True, widget=forms.DateInput(attrs={'placeholder':'01/01/1980','max':'2999-12-31','type':'date', 'class': 'form-control',  }))
     adress = forms.CharField(required=True, max_length=200, widget=forms.TextInput(attrs={'placeholder': 'Endereço', 'class': 'form-control',  }))
     adress_num = forms.IntegerField(required=True, widget=forms.NumberInput(attrs={'placeholder':'Número', 'class': 'form-control',  }))
     adress_comp = forms.CharField(required=False, max_length=200, widget=forms.TextInput(attrs={'placeholder': 'casa 1', 'class': 'form-control',  }))
@@ -57,7 +57,7 @@ class InscriptionForm(forms.Form):
     ))
 class InscriptionFormEs(forms.Form):
     name = forms.CharField(required=True, max_length=150, widget=forms.TextInput(attrs={'placeholder': 'Nombre completo', 'class': 'form-control',  }))
-    birthday = forms.DateField(required=True, widget=forms.DateInput(attrs={'placeholder':'01/01/1980','type':'date', 'class': 'form-control',  }))
+    birthday = forms.DateField(required=True, widget=forms.DateInput(attrs={'placeholder':'01/01/1980','max':'2999-12-31','type':'date', 'class': 'form-control',  }))
     adress = forms.CharField(required=True, max_length=200, widget=forms.TextInput(attrs={'placeholder': 'Dirección', 'class': 'form-control',  }))
     adress_num = forms.IntegerField(required=True, widget=forms.NumberInput(attrs={'placeholder':'Número', 'class': 'form-control',  }))
     adress_comp = forms.CharField(required=False, max_length=200, widget=forms.TextInput(attrs={'placeholder': 'casa 1', 'class': 'form-control',  }))
@@ -111,7 +111,7 @@ class InscriptionFormEs(forms.Form):
     ))
 class InscriptionFormEn(forms.Form):
     name = forms.CharField(required=True, max_length=150, widget=forms.TextInput(attrs={'placeholder': 'Full name', 'class': 'form-control',  }))
-    birthday = forms.DateField(required=True, widget=forms.DateInput(attrs={'type':'date', 'class': 'form-control',  }))
+    birthday = forms.DateField(required=True, widget=forms.DateInput(attrs={'type':'date','max':'2999-12-31', 'class': 'form-control',  }))
     adress = forms.CharField(required=True, max_length=200, widget=forms.TextInput(attrs={'placeholder': 'Adress', 'class': 'form-control',  }))
     adress_num = forms.IntegerField(required=True, widget=forms.NumberInput(attrs={'placeholder':'Number', 'class': 'form-control',  }))
     adress_comp = forms.CharField(required=False, max_length=200, widget=forms.TextInput(attrs={'class': 'form-control',  }))
@@ -169,7 +169,7 @@ class InscriptionFormEn(forms.Form):
 class HealthForm(forms.Form):
     name = forms.CharField(required=True, max_length=150, widget=forms.TextInput(attrs={'class': 'form-control'}))
     email = forms.EmailField(required=True, max_length=100, widget=forms.EmailInput(attrs={'type':'email', 'class':'form-control'}))
-    birthday = forms.DateField(required=True, widget=forms.DateInput(attrs={'type':'date', 'class': 'form-control'}))
+    birthday = forms.DateField(required=True, widget=forms.DateInput(attrs={'type':'date','max':'2999-12-31', 'class': 'form-control'}))
     medical_agreement = forms.CharField(required=False, max_length=150, widget=forms.TextInput(attrs={'class': 'form-control'}))
     coverage = forms.CharField(required=False, max_length=150, widget=forms.TextInput(attrs={'class': 'form-control'}))
     phone =  forms.IntegerField(required=False, widget=forms.NumberInput(attrs={'type':'number','class': 'form-control'}))
