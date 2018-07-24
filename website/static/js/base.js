@@ -1,7 +1,9 @@
 // SET THE CHILD OPTIONS IN THE EVENT SECTION TO LINK TO THE MODAL POP-UP ALERT
 $(document).ready(function(){
-      $('#id_event_option_1, #id_event_option_2, #id_payment_0').attr('data-toggle', 'modal')
+      $('#id_event_option_1, #id_event_option_2, #id_payment_0, #id_payment_international_0').attr('data-toggle', 'modal')
       $('#id_event_option_1, #id_event_option_2').attr('data-target', '#childModal')
+      $('#id_payment_0').attr('data-target', '#cardModal')
+      $('#id_payment_international_0').attr('data-target', '#paypalModal')
 });
 
 

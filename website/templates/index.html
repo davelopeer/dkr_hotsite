@@ -421,9 +421,23 @@
                     <label class="form-check-label" for="radio_{{ radio.index}}">{{ radio.choice_label }}</label>
                   </div>
                 {% endfor %}
-
               </div>
               <small class="form-text text-muted padding"><p>O pagamento em cartão de crédito poderá ser parcelado em 12x sem juros.</p></small>
+            </div>
+            <div class="modal fade" id="cardModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title font-large" id="exampleModalCenterTitle">LEMBRE-SE</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <p class="font-large">Você será <span class="underline">redirecionado</span> para outra aba para realizar o pagamento. Após o fim da transação, <span class="underline">volte</span> para a ficha de inscrição para o envio.</p>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="row payment_form">
               <div class="col-md-8 payment_section" id="payment1">
@@ -487,13 +501,29 @@
                 <div class="form-check-boxes payment">
                   {{radio.tag}}
                   <label class="form-check-label " for="radio_{{ radio.index}}">{{ radio.choice_label }}</label>
-                  <a target="_blank" href="https://www.paypal.com/"><img class="logo-paypal" src="{% static 'images/paypal-logo.png' %}" alt="Paypal"></a>
+                  <img class="logo-paypal" src="{% static 'images/paypal-logo.png' %}" alt="Paypal">
                 </div>
               {% endfor %}
               <div class="col-md-8">
                 <div class="form-group">
                   <label class="col-form-label" for="formGroupExampleInput">{% trans "Paypal username:" %}</label>
                   {{form.paypal_name}}
+                </div>
+              </div>
+              <div class="modal fade" id="paypalModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title font-large" id="exampleModalCenterTitle">{% trans "Please note:" %}</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <p>{% trans "A new tab will open for payment process. After the transaction is complete, return to registration page and submit form." %}</p>
+                      <a target="_blank" href="https://www.paypal.com/"><img class="logo-paypal" src="{% static 'images/paypal-logo.png' %}" alt="Paypal"></a>
+                    </div>
+                  </div>
                 </div>
               </div>
 
