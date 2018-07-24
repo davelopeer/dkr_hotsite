@@ -37,7 +37,7 @@ class InscriptionForm(forms.Form):
         ('Criança 4-12 anos','Participação infantil (de 4 a 12 anos) com as três refeições incluídas e sem hospedagem: R$ 972,00'),
         ('Criança 0-3 anos','Crianças (de 0 a 3 anos) com as três refeições incluídas e sem hospedagem: Isentas'),
     ))
-    payment = forms.ChoiceField(required=True, widget=forms.RadioSelect(attrs={'type':'radio', 'class':'form-check'}), choices=(
+    payment = forms.ChoiceField(required=False, widget=forms.RadioSelect(attrs={'type':'radio', 'class':'form-check'}), choices=(
         ('Cartão de crédito','Cartão de crédito'),
         ('Depósito bancário','Depósito bancário'),
     ))
@@ -96,7 +96,7 @@ class InscriptionFormEs(forms.Form):
     #     ('Cartão de crédito','Cartão de crédito'),
     #     ('Depósito bancário','Depósito bancário'),
     # ))
-    payment_international = forms.ChoiceField(required=True, widget=forms.RadioSelect(attrs={'type':'radio', 'class':'form-check inline'}), choices=(
+    payment_international = forms.ChoiceField(required=False, widget=forms.RadioSelect(attrs={'type':'radio', 'class':'form-check inline'}), choices=(
         ('PayPal',''),
     ))
     # credit_card_name = forms.CharField(required=False,max_length=200, widget=forms.TextInput(attrs={'placeholder': 'JOSÉ M R SILVA', 'class': 'form-control',  }))
@@ -150,7 +150,7 @@ class InscriptionFormEn(forms.Form):
     #     ('Cartão de crédito','Credit Card'),
     #     ('Depósito bancário','Depósito bancário'),
     # ))
-    payment_international = forms.ChoiceField(required=True, widget=forms.RadioSelect(attrs={'type':'radio', 'class':'form-check inline'}), choices=(
+    payment_international = forms.ChoiceField(required=False, widget=forms.RadioSelect(attrs={'type':'radio', 'class':'form-check inline'}), choices=(
         ('PayPal',''),
     ))
     # credit_card_name = forms.CharField(required=False,max_length=200, widget=forms.TextInput(attrs={'placeholder': 'JOSÉ M R SILVA', 'class': 'form-control',  }))
