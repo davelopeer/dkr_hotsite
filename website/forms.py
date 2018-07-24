@@ -2,7 +2,7 @@ from django import forms
 
 class InscriptionForm(forms.Form):
     name = forms.CharField(required=True, max_length=150, widget=forms.TextInput(attrs={'placeholder': 'Nome completo', 'class': 'form-control',  }))
-    birthday = forms.CharField(required=True, widget=forms.TextInput(attrs={'placeholder': '11/01/1980', 'class': 'form-control',  }))
+    birthday = forms.CharField(required=True,max_length=40, widget=forms.TextInput(attrs={'placeholder': '11/01/1980', 'class': 'form-control',  }))
     adress = forms.CharField(required=True, max_length=200, widget=forms.TextInput(attrs={'placeholder': 'Endereço', 'class': 'form-control',  }))
     adress_num = forms.IntegerField(required=True, widget=forms.NumberInput(attrs={'placeholder':'Número', 'class': 'form-control',  }))
     adress_comp = forms.CharField(required=False, max_length=200, widget=forms.TextInput(attrs={'placeholder': 'casa 1', 'class': 'form-control',  }))
@@ -45,7 +45,7 @@ class InscriptionForm(forms.Form):
     #     ('PayPal',''),
     # ))
     credit_card_name = forms.CharField(required=False,max_length=200, widget=forms.TextInput(attrs={'class': 'form-control', }))
-    deposit_day = forms.DateField(required=False, widget=forms.DateInput(attrs={'placeholder':'20/09/2018','type':'date', 'class': 'form-control',  }))
+    deposit_day = forms.CharField(required=False, max_length=40, widget=forms.TextInput(attrs={'placeholder':'20/09/2018','class': 'form-control',  }))
     deposit_name = forms.CharField(required=False, max_length=250, widget=forms.TextInput(attrs={'class': 'form-control'}))
     deposit_value = forms.CharField(required=False, max_length=250, widget=forms.TextInput(attrs={'class': 'form-control' }))
     deposit_agency = forms.CharField(required=False, widget=forms.TextInput(attrs={ 'class': 'form-control'}))
@@ -57,7 +57,7 @@ class InscriptionForm(forms.Form):
     ))
 class InscriptionFormEs(forms.Form):
     name = forms.CharField(required=True, max_length=150, widget=forms.TextInput(attrs={'placeholder': 'Nombre completo', 'class': 'form-control',  }))
-    birthday = forms.CharField(required=True, widget=forms.TextInput(attrs={'placeholder': '11/01/1980', 'class': 'form-control',  }))
+    birthday = forms.CharField(required=True,max_length=40, widget=forms.TextInput(attrs={'placeholder': '11/01/1980', 'class': 'form-control',  }))
     adress = forms.CharField(required=True, max_length=200, widget=forms.TextInput(attrs={'placeholder': 'Dirección', 'class': 'form-control',  }))
     adress_num = forms.IntegerField(required=True, widget=forms.NumberInput(attrs={'placeholder':'Número', 'class': 'form-control',  }))
     adress_comp = forms.CharField(required=False, max_length=200, widget=forms.TextInput(attrs={'placeholder': 'casa 1', 'class': 'form-control',  }))
@@ -111,7 +111,7 @@ class InscriptionFormEs(forms.Form):
     ))
 class InscriptionFormEn(forms.Form):
     name = forms.CharField(required=True, max_length=150, widget=forms.TextInput(attrs={'placeholder': 'Full name', 'class': 'form-control',  }))
-    birthday = forms.CharField(required=True, widget=forms.TextInput(attrs={'placeholder': '11/25/1980', 'class': 'form-control',  }))
+    birthday = forms.CharField(required=True,max_length=40, widget=forms.TextInput(attrs={'placeholder': '11/25/1980', 'class': 'form-control',  }))
     adress = forms.CharField(required=True, max_length=200, widget=forms.TextInput(attrs={'placeholder': 'Adress', 'class': 'form-control',  }))
     adress_num = forms.IntegerField(required=True, widget=forms.NumberInput(attrs={'placeholder':'Number', 'class': 'form-control',  }))
     adress_comp = forms.CharField(required=False, max_length=200, widget=forms.TextInput(attrs={'class': 'form-control',  }))
