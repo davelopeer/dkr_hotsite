@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-22 18:08-0300\n"
+"POT-Creation-Date: 2018-07-24 17:16-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,7 +34,7 @@ msgstr "Chagdud Gonpa Khadro Ling, Brasil"
 msgid "December 27th, 2018-January 4th, 2019"
 msgstr "27 de diciembre a 4 de enero de 2019"
 
-#: .\website\templates\base.html:52
+#: .\website\templates\base.html:69
 msgid "comunicacao@templobudista.org"
 msgstr "comunicacao@templobudista.org"
 
@@ -183,7 +183,9 @@ msgstr "Historico médico"
 msgid ""
 "Do you have any health problems? If yes, please specify, i.e. diabetes, "
 "hypertension etc."
-msgstr "Tiene algun problema de salud? En caso afirmativo, cuál? Ejemplo: diabetis, hipertensión."
+msgstr ""
+"Tiene algun problema de salud? En caso afirmativo, cuál? Ejemplo: diabetis, "
+"hipertensión."
 
 #: .\website\templates\health-form.html:69
 msgid "Do you suffer from any allergies? If yes, specify them."
@@ -205,7 +207,8 @@ msgstr "...insectos?"
 msgid ""
 "Are you undergoing psychiatric or psychological treatment? If yes, please "
 "describe."
-msgstr "Está en tratamento psiquiátrico o psicológico? En caso afirmativo, cuál?"
+msgstr ""
+"Está en tratamento psiquiátrico o psicológico? En caso afirmativo, cuál?"
 
 #: .\website\templates\health-form.html:87
 msgid "Do you take any medication regularly? If yes, please describe."
@@ -219,7 +222,7 @@ msgstr "Tiene médico personal?"
 msgid "Comments"
 msgstr "Observaciones"
 
-#: .\website\templates\health-form.html:106 .\website\templates\index.html:516
+#: .\website\templates\health-form.html:106 .\website\templates\index.html:550
 msgid "Send"
 msgstr "Enviar"
 
@@ -426,7 +429,7 @@ msgstr ""
 "En la noche de finalización habrá una fiesta de celbración por el evento. "
 "Nuestra sugerencia es que haga sus check out el día 05."
 
-#: .\website\templates\index.html:80
+#: .\website\templates\index.html:80 .\website\templates\index.html:517
 msgid "Please note:"
 msgstr "Importante"
 
@@ -605,7 +608,7 @@ msgstr ""
 msgid "Registration form"
 msgstr "Formulario de inscripción"
 
-#: .\website\templates\index.html:238
+#: .\website\templates\index.html:239
 msgid ""
 "The registration form must be completed for each participant, including "
 "children of all ages."
@@ -613,79 +616,79 @@ msgstr ""
 "El formulario es individual y se debe llenarlo completamente. Niños, "
 "independiente de la edad, deben estar inscritos en el evento."
 
-#: .\website\templates\index.html:239
+#: .\website\templates\index.html:240
 msgid "Be sure to submit the registration form after payment tab is complete."
 msgstr "Después del pago, fíjese si el formulario fue enviado correctamente."
 
-#: .\website\templates\index.html:243
+#: .\website\templates\index.html:245
 msgid "Full name"
 msgstr "Nombre completo"
 
-#: .\website\templates\index.html:245
+#: .\website\templates\index.html:247
 msgid "Without abbreviations"
 msgstr "Sin abreviaturas"
 
-#: .\website\templates\index.html:248
+#: .\website\templates\index.html:250
 msgid "Date of birth (dd/mm/yyyy): "
 msgstr "Fecha de nacimiento:"
 
-#: .\website\templates\index.html:254
+#: .\website\templates\index.html:256
 msgid "Address"
 msgstr "Dirección"
 
-#: .\website\templates\index.html:258
+#: .\website\templates\index.html:260
 msgid "Number"
 msgstr "Número"
 
-#: .\website\templates\index.html:262
+#: .\website\templates\index.html:264
 msgid "Additional address info"
 msgstr "Depto"
 
-#: .\website\templates\index.html:266
+#: .\website\templates\index.html:268
 msgid "Zip code"
 msgstr "Código Postal"
 
-#: .\website\templates\index.html:272
+#: .\website\templates\index.html:274
 msgid "City"
 msgstr "Ciudad"
 
-#: .\website\templates\index.html:276
+#: .\website\templates\index.html:278
 msgid "State"
 msgstr "Departamento/ Región"
 
-#: .\website\templates\index.html:280
+#: .\website\templates\index.html:282
 msgid "Country"
 msgstr "País"
 
-#: .\website\templates\index.html:291
+#: .\website\templates\index.html:293
 msgid "Phone/Mobile"
 msgstr "Teléfono fijo/ Celular"
 
-#: .\website\templates\index.html:297
+#: .\website\templates\index.html:299
 msgid "Genre"
 msgstr "Género"
 
-#: .\website\templates\index.html:308
+#: .\website\templates\index.html:310
 msgid "Previous empowerments received:"
 msgstr "Cuáles son las iniciaciones más recientes que usted ha recibido?"
 
-#: .\website\templates\index.html:312
+#: .\website\templates\index.html:314
 msgid "Empowerment bestowed by:"
 msgstr "De cuál profesor?"
 
-#: .\website\templates\index.html:318
+#: .\website\templates\index.html:320
 msgid "Are you an ordained practitioner? (monastic or otherwise)"
 msgstr "Practicante con ordenación? (monástica u otra)"
 
-#: .\website\templates\index.html:328
+#: .\website\templates\index.html:330
 msgid "Food"
 msgstr "Alimentación"
 
-#: .\website\templates\index.html:331
+#: .\website\templates\index.html:333
 msgid "Food preference"
 msgstr "Preferencia Alimentar"
 
-#: .\website\templates\index.html:340
+#: .\website\templates\index.html:342
 msgid ""
 "Khadro Ling does not serve meals for special diets with ingredient "
 "restrictions."
@@ -693,31 +696,31 @@ msgstr ""
 "Chagdud Gonpa Khadro Ling no ofrece dietas especiales con restricción de "
 "ingredientes."
 
-#: .\website\templates\index.html:347 .\website\templates\index.html:389
+#: .\website\templates\index.html:349 .\website\templates\index.html:391
 msgid "Please pay attention"
 msgstr "Atención"
 
-#: .\website\templates\index.html:353
+#: .\website\templates\index.html:355
 msgid "This option cannot be changed after the form submission."
 msgstr "Esta opción no podrá ser modificada después del envio del formulario."
 
-#: .\website\templates\index.html:359
+#: .\website\templates\index.html:361
 msgid "Sitting"
 msgstr "Asientos"
 
-#: .\website\templates\index.html:362
+#: .\website\templates\index.html:364
 msgid "Do you need a chair?"
 msgstr "Necesita silla?"
 
-#: .\website\templates\index.html:371
+#: .\website\templates\index.html:373
 msgid "Only for people with limitations and unable sit on the floor."
 msgstr "Solo para personas com limitaciones para sentar en el suelo."
 
-#: .\website\templates\index.html:373
+#: .\website\templates\index.html:375
 msgid "Event option"
 msgstr "Opción de evento"
 
-#: .\website\templates\index.html:395
+#: .\website\templates\index.html:397
 msgid ""
 "Notify in the field 'Extra information' the name of the adult responsible "
 "that will be participating in the event."
@@ -725,19 +728,19 @@ msgstr ""
 "En el campo “observaciones” describa el nombre de los responsables que "
 "participarán del evento."
 
-#: .\website\templates\index.html:401
+#: .\website\templates\index.html:403
 msgid "Partial participation is not possible in this retreat. "
 msgstr "No es posible participación parcial en ese retiro."
 
-#: .\website\templates\index.html:405
+#: .\website\templates\index.html:407
 msgid "Extra information"
 msgstr "Observaciones"
 
-#: .\website\templates\index.html:409
+#: .\website\templates\index.html:411
 msgid "Payment"
 msgstr "Condiciones de pago"
 
-#: .\website\templates\index.html:480
+#: .\website\templates\index.html:498
 msgid ""
 "For PayPal donation/payment, please use the following email address for "
 "payment receiver: <strong>adm@chagdud.org</strong>. Also, in comment field "
@@ -748,17 +751,23 @@ msgstr ""
 "describir a qué la donación se destina. En ese caso, por favor marque Khadro "
 "Sangdu Drubchen. "
 
-#: .\website\templates\index.html:481
+#: .\website\templates\index.html:499
 msgid "Be sure to send the registration form after payment is completed."
 msgstr ""
 "Después del pago, fíjese si el formulario fue enviado correctamente. Nombre "
 "del responsable por la transacción PayPal."
 
-#: .\website\templates\index.html:491
+#: .\website\templates\index.html:509
 msgid "Paypal username:"
 msgstr "Nombre del responsable por la transacción PayPal"
 
-#: .\website\templates\index.html:508
+#: .\website\templates\index.html:523
+msgid ""
+"A new tab will open for payment process. After the transaction is complete, "
+"return to registration page and submit form. Click on the image below."
+msgstr "Você será redirecionado para outra aba para realizar o pagamento. Após o fim da transação, volte para a ficha de inscrição para o envio."
+
+#: .\website\templates\index.html:542
 msgid ""
 "I have read and I accept the <a target='_blank' href='http://www.ks-drubchen."
 "com/cancellation-policy/'>cancellation policy of participation in Khadro "
@@ -768,7 +777,7 @@ msgstr ""
 "cancellation-policy/'> política de cancelamiento de participación en eventos "
 "en Khadro Ling.</a>"
 
-#: .\website\templates\index.html:510
+#: .\website\templates\index.html:544
 msgid ""
 "Before clicking send, make sure that all data is correctly filled in and "
 "that you have completed the payment."
