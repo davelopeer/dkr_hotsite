@@ -84,7 +84,7 @@ def sendMailError(name,birthday_br,adress,adress_num,adress_comp,city,state,coun
         sg = sendgrid.SendGridAPIClient(apikey=os.environ.get('DKR_SG_API_KEY'))
         from_email = Email(email)
         to_email = Email('davidbarenco@gmail.com')
-        subject = "Error: Formulário de inscrição - Drubchen de Khadro Sangdu"
+        subject = "Error: incrição - " + name
         sendgrid_content = Content("text/html", '<!DOCTYPE html><html lang="en" dir="ltr"><head><meta charset="utf-8"><title></title><style media="screen">ul {font-size: 1.3em;}li {margin-bottom: 20px;}</style></head><body><h2>Dados Pessoais</h2><ul><li>Nome: ' + name +
                                         '</li><li>Data de nascimento: ' + birthday_br +
                                         '</li><li>Endereço: ' + adress +

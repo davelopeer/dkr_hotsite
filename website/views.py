@@ -3,7 +3,7 @@ from website.forms import InscriptionForm, InscriptionFormEn, InscriptionFormEs,
 from django.core.mail import EmailMessage
 from django.shortcuts import redirect
 from django.template.loader import get_template
-from website.sendgrid.sg_inscription import sendMail, sendMailHealth
+from website.sendgrid.sg_inscription import sendMail, sendMailHealth, sendMailError
 from django.utils import translation
 from django.http import HttpResponseNotFound
 
