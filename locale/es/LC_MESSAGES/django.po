@@ -765,7 +765,7 @@ msgstr "Nombre del responsable por la transacción PayPal"
 msgid ""
 "A new tab will open for payment process. After the transaction is complete, "
 "return to registration page and submit form. Click on the image below."
-msgstr "Usted será redirigido a una nueva ventana para hacer el pago. Después de terminar la transación, vuelva al formulario de inscripción para el envio. Haga clic en la imagen de abajo"
+msgstr "Usted será redirigido a una nueva ventana para hacer el pago. Después de terminar la transación, vuelva al formulario de inscripción para el envio. Haga clic en la imagen de abajo."
 
 #: .\website\templates\index.html:542
 msgid ""
