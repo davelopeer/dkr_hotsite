@@ -7,7 +7,6 @@ from django.utils import translation
 from django.http import HttpResponseNotFound
 from website.forms import InscriptionForm, InscriptionFormEn, InscriptionFormEs, HealthForm
 from website.sendgrid.sg_inscription import sendMail, sendMailHealth, sendMailError, sendMailHealthError
-import requests
 
 def index(request):
     user_language = translation.get_language_from_request(request, check_path=True)

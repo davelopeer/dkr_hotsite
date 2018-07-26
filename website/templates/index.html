@@ -3,12 +3,9 @@
 {% extends "base.html"%}
   {% load static %}
   {% load i18n %}
-  {% load recaptcha2 %}
 
   {% block extra-head %}
-    <script src='https://www.google.com/recaptcha/api.js'></script>
     <link rel="stylesheet" href="{% static 'css/index.css' %}">
-    {% recaptcha_init %}
   {% endblock %}
 
   {% block body_block %}
