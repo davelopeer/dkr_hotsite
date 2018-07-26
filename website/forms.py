@@ -1,4 +1,6 @@
 from django import forms
+from snowpenguin.django.recaptcha2.fields import ReCaptchaField
+from snowpenguin.django.recaptcha2.widgets import ReCaptchaWidget
 
 class InscriptionForm(forms.Form):
     name = forms.CharField(required=True, max_length=150, widget=forms.TextInput(attrs={'placeholder': 'Nome completo', 'class': 'form-control',  }))
@@ -9,7 +11,7 @@ class InscriptionForm(forms.Form):
     city = forms.CharField(required=True, max_length=150, widget=forms.TextInput(attrs={'placeholder': 'Cidade', 'class': 'form-control',  }))
     state = forms.CharField(required=True, max_length=2, widget=forms.TextInput(attrs={'placeholder': 'Estado', 'class': 'form-control',  }))
     country = forms.CharField(required=True, max_length=100, widget=forms.TextInput(attrs={'placeholder': 'País', 'class': 'form-control'}))
-    zip_code = forms.CharField(required=True, min_length=8, max_length=9, widget=forms.TextInput(attrs={'placeholder': 'CEP', 'class': 'form-control',  }))
+    zip_code = forms.CharField(required=True, max_length=15, widget=forms.TextInput(attrs={'placeholder': 'CEP', 'class': 'form-control',  }))
     email = forms.EmailField(required=True, max_length=100, widget=forms.EmailInput(attrs={'placeholder':'exemplo@email.com', 'type':'email', 'class':'form-control', 'id':'formGroupExampleInput'}))
     phone = forms.IntegerField(required=True, widget=forms.NumberInput(attrs={'type':'number','placeholder': 'Somente números', 'class': 'form-control',  }))
     gender = forms.ChoiceField(required=True, widget=forms.RadioSelect(attrs={'type':'radio', 'class':'form-check'}), choices=(
@@ -169,7 +171,7 @@ class InscriptionFormEn(forms.Form):
 class HealthForm(forms.Form):
     name = forms.CharField(required=True, max_length=150, widget=forms.TextInput(attrs={'class': 'form-control'}))
     email = forms.EmailField(required=True, max_length=100, widget=forms.EmailInput(attrs={'type':'email', 'class':'form-control'}))
-    birthday = forms.DateField(required=True, widget=forms.DateInput(attrs={'type':'date','max':'2999-12-31', 'class': 'form-control'}))
+    birthday = forms.CharField(required=True, widget=forms.TextInput(attrs={'max':'2999-12-31', 'class': 'form-control'}))
     medical_agreement = forms.CharField(required=False, max_length=150, widget=forms.TextInput(attrs={'class': 'form-control'}))
     coverage = forms.CharField(required=False, max_length=150, widget=forms.TextInput(attrs={'class': 'form-control'}))
     phone =  forms.IntegerField(required=False, widget=forms.NumberInput(attrs={'type':'number','class': 'form-control'}))

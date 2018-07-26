@@ -1,15 +1,15 @@
-from django.shortcuts import render
-from website.forms import InscriptionForm, InscriptionFormEn, InscriptionFormEs, HealthForm
+from django.shortcuts import render, redirect
 from django.core.mail import EmailMessage
-from django.shortcuts import redirect
+from django.conf import settings
+from django.contrib import messages
 from django.template.loader import get_template
-from website.sendgrid.sg_inscription import sendMail, sendMailHealth, sendMailError
 from django.utils import translation
 from django.http import HttpResponseNotFound
+from website.forms import InscriptionForm, InscriptionFormEn, InscriptionFormEs, HealthForm
+from website.sendgrid.sg_inscription import sendMail, sendMailHealth, sendMailError, sendMailHealthError
+import requests
 
-# Create your views here.
 def index(request):
-    # Discovering the user langugage
     user_language = translation.get_language_from_request(request, check_path=True)
 
     if request.method == 'POST':
@@ -21,70 +21,48 @@ def index(request):
             form = InscriptionFormEn(request.POST)
 
 
-        # # SETTING THE REQUIRED PAYMENT ACCORDING TO THE USER LANGUAGE
-        # else:
-        #     form.fields['payment_international'].required = True
-        #
-        # # SETTING THE REQUIRED PAYMENT INFO ACCORDING TO SELECTED PAYMENT
-        # user_payment = form.fields['payment']
-        # if user_payment == 'Cartão de crédito':
-        #     form.fields['credit_card_name'].required = True
-        #
         # if (form.fields['payment']) == 'Depósito bancário':
         #     form.fields['deposit_day'].required = True
-        #     form.fields['deposit_name'].required = True
-        #     form.fields['credit_card_name'].required = True
+        name = request.POST.get('name', '')
+        birthday = request.POST.get('birthday', '')
+        adress = request.POST.get('adress', '')
+        adress_num = request.POST.get('adress_num', '')
+        adress_comp = request.POST.get('adress_comp', '')
+        city = request.POST.get('city', '')
+        state = request.POST.get('state', '')
+        country = request.POST.get('country', '')
+        zip_code = request.POST.get('zip_code', '')
+        email = request.POST.get('email', '')
+        phone = request.POST.get('phone', '')
+        gender = request.POST.get('gender', '')
+        initiations = request.POST.get('initiations', '')
+        initiations_lama = request.POST.get('initiations_lama', '')
+        monastic_ordenation = request.POST.get('monastic_ordenation', '')
+        observations = request.POST.get('observations', '')
+        food_preferency = request.POST.get('food_preferency', '')
+        seat = request.POST.get('seat', '')
+        payment = request.POST.get('payment', '')
+        payment_international = request.POST.get('payment_international', '')
+        deposit_day = request.POST.get('deposit_day', '')
+        deposit_name = request.POST.get('deposit_name', '')
+        deposit_value = request.POST.get('deposit_value', '')
+        deposit_agency = request.POST.get('deposit_agency', '')
+        deposit_account = request.POST.get('deposit_account', '')
+        deposit_envelop = request.POST.get('deposit_envelop', '')
+        credit_card_name = request.POST.get('credit_card_name', '')
+        paypal_name = request.POST.get('paypal_name', '')
+        event_option = request.POST.get('event_option', '')
+
+        # SET THE PAYMENT_INFO
+        if user_language == 'pt-br':
+            if payment == 'Cartão de crédito':
+                payment_info = 'Nome do titular do cartão: ' + credit_card_name
+            else:
+                payment_info = "Depositado o valor de " + deposit_value + " no dia " + deposit_day + " por " + deposit_name + " com os dados: <br>" + "Número do envelope: " + deposit_envelop + "<br>ou<br>" + "Agência: " +  deposit_agency + " - Conta: " + deposit_account
+        else:
+            payment_info = 'Nome do usuário Paypal: ' + paypal_name
 
         if form.is_valid():
-            name = request.POST.get('name', '')
-            birthday = request.POST.get('birthday', '')
-            adress = request.POST.get('adress', '')
-            adress_num = request.POST.get('adress_num', '')
-            adress_comp = request.POST.get('adress_comp', '')
-            city = request.POST.get('city', '')
-            state = request.POST.get('state', '')
-            country = request.POST.get('country', '')
-            zip_code = request.POST.get('zip_code', '')
-            email = request.POST.get('email', '')
-            phone = request.POST.get('phone', '')
-            gender = request.POST.get('gender', '')
-            initiations = request.POST.get('initiations', '')
-            initiations_lama = request.POST.get('initiations_lama', '')
-            monastic_ordenation = request.POST.get('monastic_ordenation', '')
-            observations = request.POST.get('observations', '')
-            food_preferency = request.POST.get('food_preferency', '')
-            seat = request.POST.get('seat', '')
-            payment = request.POST.get('payment', '')
-            payment_international = request.POST.get('payment_international', '')
-            deposit_day = request.POST.get('deposit_day', '')
-            deposit_name = request.POST.get('deposit_name', '')
-            deposit_value = request.POST.get('deposit_value', '')
-            deposit_agency = request.POST.get('deposit_agency', '')
-            deposit_account = request.POST.get('deposit_account', '')
-            deposit_envelop = request.POST.get('deposit_envelop', '')
-            credit_card_name = request.POST.get('credit_card_name', '')
-            paypal_name = request.POST.get('paypal_name', '')
-            event_option = request.POST.get('event_option', '')
-
-
-            #Make the date in the br format dd/mm/yyyy
-            # def dateBR(date):
-            #     new_date = str(str(date[8:10]) + '/' +  str(date[5:7]) + '/' + str(date[0:4]))
-            #     return new_date
-            #
-            # birthday_br = dateBR(birthday)
-            # deposit_day_br = dateBR(deposit_day)
-
-
-            # See if it was paid with credit card or deposit
-            if user_language == 'pt-br':
-                if payment == 'Cartão de crédito':
-                    payment_info = 'Nome do titular do cartão: ' + credit_card_name
-                else:
-                    payment_info = "Depositado o valor de " + deposit_value + " no dia " + deposit_day + " por " + deposit_name + " com os dados: <br>" + "Número do envelope: " + deposit_envelop + "<br>ou<br>" + "Agência: " +  deposit_agency + " - Conta: " + deposit_account
-            else:
-                payment_info = 'Nome do usuário Paypal: ' + paypal_name
-
             sendMail(
                     name,
                     birthday,
@@ -110,56 +88,8 @@ def index(request):
                     event_option,
                     )
             return redirect('pay-success')
+
         else:
-            name = request.POST.get('name', '')
-            birthday = request.POST.get('birthday', '')
-            adress = request.POST.get('adress', '')
-            adress_num = request.POST.get('adress_num', '')
-            adress_comp = request.POST.get('adress_comp', '')
-            city = request.POST.get('city', '')
-            state = request.POST.get('state', '')
-            country = request.POST.get('country', '')
-            zip_code = request.POST.get('zip_code', '')
-            email = request.POST.get('email', '')
-            phone = request.POST.get('phone', '')
-            gender = request.POST.get('gender', '')
-            initiations = request.POST.get('initiations', '')
-            initiations_lama = request.POST.get('initiations_lama', '')
-            monastic_ordenation = request.POST.get('monastic_ordenation', '')
-            observations = request.POST.get('observations', '')
-            food_preferency = request.POST.get('food_preferency', '')
-            seat = request.POST.get('seat', '')
-            payment = request.POST.get('payment', '')
-            payment_international = request.POST.get('payment_international', '')
-            deposit_day = request.POST.get('deposit_day', '')
-            deposit_name = request.POST.get('deposit_name', '')
-            deposit_value = request.POST.get('deposit_value', '')
-            deposit_agency = request.POST.get('deposit_agency', '')
-            deposit_account = request.POST.get('deposit_account', '')
-            deposit_envelop = request.POST.get('deposit_envelop', '')
-            credit_card_name = request.POST.get('credit_card_name', '')
-            paypal_name = request.POST.get('paypal_name', '')
-            event_option = request.POST.get('event_option', '')
-
-
-            #Make the date in the br format dd/mm/yyyy
-            # def dateBR(date):
-            #     new_date = str(str(date[8:10]) + '/' +  str(date[5:7]) + '/' + str(date[0:4]))
-            #     return new_date
-            #
-            # birthday_br = dateBR(birthday)
-            # deposit_day_br = dateBR(deposit_day)
-
-
-            # See if it was paid with credit card or deposit
-            if user_language == 'pt-br':
-                if payment == 'Cartão de crédito':
-                    payment_info = 'Nome do titular do cartão: ' + credit_card_name
-                else:
-                    payment_info = "Depositado o valor de " + deposit_value + " no dia " + deposit_day + " por " + deposit_name + " com os dados: <br>" + "Número do envelope: " + deposit_envelop + "<br>ou<br>" + "Agência: " +  deposit_agency + " - Conta: " + deposit_account
-            else:
-                payment_info = 'Nome do usuário Paypal: ' + paypal_name
-
             sendMailError(
                     name,
                     birthday,
@@ -185,11 +115,11 @@ def index(request):
                     event_option,
                     )
             if user_language == 'pt-br':
-                return HttpResponseNotFound('<h1>Dados inválidos no formulário. Por favor, preencha novamente. Certifique-se que o campo email está corretamente preenchido.</h1>')
+                return HttpResponseNotFound('<h1>Dados inválidos no formulário. Iremos avaliar os seus dados e entraremos em contato com você. Certifique-se de ter preenchido corretamento o campo e-mail.</h1>')
             elif user_language == 'es':
-                return HttpResponseNotFound('<h1>Datos no válidos en el formulario. Por favor, rellene de nuevo. Asegúrese de que el campo de correo electrónico se rellena correctamente.</h1>')
+                return HttpResponseNotFound('<h1>Datos no válidos en el formulario. Nosotros evaluamos sus datos y nos pondremos en contacto con usted. Asegúrese de que ha completado el campo de correo electrónico.</h1>')
             else:
-                return HttpResponseNotFound('<h1>Invalid form data. Please, fill in again. Make sure that the email field is correctly filled in.</h1>')
+                return HttpResponseNotFound('<h1>Invalid form data. We will evaluate it and will contact you. Make sure your email has been correctly filled.</h1>')
 
     else:
         if user_language == 'pt-br':
@@ -212,41 +142,34 @@ def cancellation_policy(request):
     return render(request, 'cancellation-policy.html')
 
 def health_form(request):
-
     user_language = translation.get_language_from_request(request, check_path=True)
     if request.method == 'POST':
         health_form = HealthForm(request.POST)
+        name = request.POST.get('name', '')
+        email = request.POST.get('email', '')
+        birthday = request.POST.get('birthday', '')
+        medical_agreement = request.POST.get('medical_agreement', '')
+        coverage = request.POST.get('coverage', '')
+        phone = request.POST.get('phone', '')
+        emergency_contact_name = request.POST.get('emergency_contact_name', '')
+        emergency_contact_degree = request.POST.get('emergency_contact_degree', '')
+        emergency_contact_phone = request.POST.get('emergency_contact_phone', '')
+        emergency_contact_email = request.POST.get('emergency_contact_email', '')
+        health_problems = request.POST.get('health_problems', '')
+        medicines_alergie = request.POST.get('medicines_alergie', '')
+        food_alergie = request.POST.get('food_alergie', '')
+        insect_alergie = request.POST.get('insect_alergie', '')
+        psychiatric_treatment = request.POST.get('psychiatric_treatment', '')
+        medication = request.POST.get('medication', '')
+        doctor_name = request.POST.get('doctor_name', '')
+        doctor_phone = request.POST.get('doctor_phone', '')
+        observations = request.POST.get('observations', '')
+
         if health_form.is_valid():
-            name = request.POST.get('name', '')
-            email = request.POST.get('email', '')
-            birthday = request.POST.get('birthday', '')
-            medical_agreement = request.POST.get('medical_agreement', '')
-            coverage = request.POST.get('coverage', '')
-            phone = request.POST.get('phone', '')
-            emergency_contact_name = request.POST.get('emergency_contact_name', '')
-            emergency_contact_degree = request.POST.get('emergency_contact_degree', '')
-            emergency_contact_phone = request.POST.get('emergency_contact_phone', '')
-            emergency_contact_email = request.POST.get('emergency_contact_email', '')
-            health_problems = request.POST.get('health_problems', '')
-            medicines_alergie = request.POST.get('medicines_alergie', '')
-            food_alergie = request.POST.get('food_alergie', '')
-            insect_alergie = request.POST.get('insect_alergie', '')
-            psychiatric_treatment = request.POST.get('psychiatric_treatment', '')
-            medication = request.POST.get('medication', '')
-            doctor_name = request.POST.get('doctor_name', '')
-            doctor_phone = request.POST.get('doctor_phone', '')
-            observations = request.POST.get('observations', '')
-
-            def dateBR(date):
-                new_date = str(str(date[8:10]) + '/' +  str(date[5:7]) + '/' + str(date[0:4]))
-                return new_date
-
-            birthday_br = dateBR(birthday)
-
             sendMailHealth(
                     name,
                     email,
-                    birthday_br,
+                    birthday,
                     medical_agreement,
                     coverage,
                     phone,
@@ -265,6 +188,34 @@ def health_form(request):
                     observations,
                     )
             return redirect('index')
+        else:
+            sendMailHealthError(
+                    name,
+                    email,
+                    birthday,
+                    medical_agreement,
+                    coverage,
+                    phone,
+                    emergency_contact_name,
+                    emergency_contact_degree,
+                    emergency_contact_phone,
+                    emergency_contact_email,
+                    health_problems,
+                    medicines_alergie,
+                    food_alergie,
+                    insect_alergie,
+                    psychiatric_treatment,
+                    medication,
+                    doctor_name,
+                    doctor_phone,
+                    observations,
+                    )
+            if user_language == 'pt-br':
+                return HttpResponseNotFound('<h1>Dados inválidos no formulário. Iremos avaliar os seus dados e entraremos em contato com você. Certifique-se de ter preenchido corretamento o campo e-mail.</h1>')
+            elif user_language == 'es':
+                return HttpResponseNotFound('<h1>Datos no válidos en el formulario. Nosotros evaluamos sus datos y nos pondremos en contacto con usted. Asegúrese de que ha completado el campo de correo electrónico.</h1>')
+            else:
+                return HttpResponseNotFound('<h1>Invalid form data. We will evaluate it and will contact you. Make sure your email has been correctly filled.</h1>')
     else:
         health_form = HealthForm()
 

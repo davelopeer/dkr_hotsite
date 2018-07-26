@@ -3,10 +3,12 @@
 {% extends "base.html"%}
   {% load static %}
   {% load i18n %}
-  {# Translators: xgettext:no-python-format #}
+  {% load recaptcha2 %}
 
   {% block extra-head %}
+    <script src='https://www.google.com/recaptcha/api.js'></script>
     <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    {% recaptcha_init %}
   {% endblock %}
 
   {% block body_block %}
@@ -545,6 +547,8 @@
               </div>
             </div>
 
+            <!-- <div class="g-recaptcha" data-sitekey="6LfZM2YUAAAAAAFnDJz-B_eevQVB_nWGk60IXSy9"></div> -->
+            <!-- {{form.captcha}} -->
 
             <div class="btn-holder">
               <button type="submit" class="btn btn-outline-primary">{% trans "Send" %}</button>

@@ -6,14 +6,17 @@ TEMPLATES_DIR = os.path.join(BASE_DIR,'templates')
 STATIC_DIR = os.path.join(BASE_DIR,'static')
 
 
+
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = os.environ.get('SK_DKR_HOTSITE')
+# RECAPTCHA_PRIVATE_KEY = os.environ.get('SK_GOOGLE_RECAPTCHA')
+# RECAPTCHA_PUBLIC_KEY = '6LfZM2YUAAAAAAFnDJz-B_eevQVB_nWGk60IXSy9'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['127.0.0.1', 'dkr.pythonanywhere.com', 'www.ks-drubchen.com', 'ks-drubchen.com']
 
@@ -28,7 +31,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'website',
-
+    'snowpenguin.django.recaptcha2',
 ]
 
 MIDDLEWARE = [

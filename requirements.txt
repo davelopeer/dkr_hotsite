@@ -1,2 +1,3 @@
 django==2.0.6
 sendgrid
+django-recaptcha2
