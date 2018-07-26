@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+
+{% extends "base.html"%}
+  {% load static %}
+  {% load i18n %}
+
+  {% block extra-head %}
+    <link rel="stylesheet" href="{% static 'css/health-form.css' %}">
+  {% endblock %}
+
+  {% block body_block %}
+  <h2 class="text-center section_title">{% trans "Volunteer Form" %}</h2>
+
+
+  {% endblock %}

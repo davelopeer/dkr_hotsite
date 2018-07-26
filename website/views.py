@@ -19,7 +19,6 @@ def index(request):
         else:
             form = InscriptionFormEn(request.POST)
 
-
         # if (form.fields['payment']) == 'Depósito bancário':
         #     form.fields['deposit_day'].required = True
         name = request.POST.get('name', '')
@@ -222,3 +221,10 @@ def health_form(request):
         'user_language': user_language,
         'health_form': health_form,
     })
+
+
+def volunteer_form(request):
+    return render(request, 'volunteer-form.html')
+
+def guest_form(request):
+    return render(request, 'guest-form.html')
