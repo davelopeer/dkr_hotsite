@@ -778,8 +778,6 @@ msgid ""
 msgstr "Mais informações sobre transporte para o evento em breve."
 
 #: .\website\templates\index.html:394
-#, fuzzy
-#| msgid "Accommodations"
 msgid "Accomodation"
 msgstr "Acomodações"
 
