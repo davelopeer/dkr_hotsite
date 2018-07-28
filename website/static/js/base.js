@@ -34,14 +34,6 @@ $("#id_event_option_2").on("click", function(){
       $('.cancel_terms_area').css('margin-top', '50px')
 });
 
-// GOOGLE MAPS
-var map;
-function initMap() {
-  map = new google.maps.Map(document.getElementById('map'), {
-    center: {lat: -34.397, lng: 150.644},
-    zoom: 8
-  });
-}
 
 // GO TO ACCOMODATION TAB
 $("#accomodation-link").on("click", function(){

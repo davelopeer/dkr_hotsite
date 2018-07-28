@@ -84,32 +84,21 @@
             {% trans "As the drubchen is scheduled during a high tourist season in the region, we suggest that participants make hotel reservations without delay." %}
           </p>
           {% if user_language != "pt-br" %}
-          <p class="margin-top">{% trans "Contact info: If you have any questions about this event or logistics, feel free to contact events manager Tsering at <span class='font-italic'>comunicacao@templobudista.org</span>" %}</p>
+          <h5>{% trans "Contact info:" %}</h5>
+          <p class="margin-bottom">{% trans "If you have any questions about this event or logistics, feel free to contact events manager Tsering at <span class='font-italic'>comunicacao@templobudista.org</span>" %}</p>
           {% endif %}
           <h4 class="underline">{% trans "Hotels and lodgings affiliated with the event:" %}</h4>
-          <div class="row">
-            <div class="col-md-6">
-              <h5>Três Coroas</h5>
-              <ul>
-                <li class="accommodation-li">
-                  <a href="https://www.tripadvisor.com.br/Hotel_Review-g675031-d12087559-Reviews-Pousada_Tres_Coroas-Tres_Coroas_State_of_Rio_Grande_do_Sul.html" target="_blank">
-                    Pousada Três Coroas
-                  </a>
-                  {% trans "(simple accommodations)" %}<br>
-                  contato@pousadatrescoroas.com.br <br>
-                  +55 51 99995 2662 <br>
-                  {% trans "Inform the promo code: event DKR" %}<br>
-                </li>
-              </ul>
-            </div>
-            <div class="col-md-6">
-              <div id="map"></div>
-            </div>
-          </div>
-
-
-          <h5>Igrejinha</h5>
+          <h5>Três Coroas <a target='_blank' href='https://www.google.com.br/maps/dir/Tr%C3%AAs+Coroas+-+RS/Chagdud+Gonpa+Khadro+Ling+-+R.+%C3%81guas+Brancas+-+Zona+Rural,+Tr%C3%AAs+Coroas+-+RS/@-29.5051586,-50.7664256,15z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x951925e9f281b4ab:0x6c89883e237c5462!2m2!1d-50.779097!2d-29.5155878!1m5!1m1!1s0x951924e3e62ee177:0x2c76fe743d69fe51!2m2!1d-50.7406202!2d-29.4920421'>{% trans "(how to get to)" %}</a></h5>
           <ul>
+            <li class="accommodation-li">
+              <a href="https://www.tripadvisor.com.br/Hotel_Review-g675031-d12087559-Reviews-Pousada_Tres_Coroas-Tres_Coroas_State_of_Rio_Grande_do_Sul.html" target="_blank">
+                Pousada Três Coroas
+              </a>
+              {% trans "(simple accommodations)" %}<br>
+              contato@pousadatrescoroas.com.br <br>
+              +55 51 99995 2662 <br>
+              {% trans "Inform the promo code: event DKR" %}<br>
+            </li>
             <li class="accommodation-li">
               <a href="https://ibis.accorhotels.com/brasil/index.pt-br.shtml" target="_blank">Ibis Hotel</a> <br>
               {% if user_language == 'pt-br' %}
@@ -121,8 +110,10 @@
               {% endif %}
               {% trans "The promotional code for this hotel is in the instructions pdf." %} <br>
               {% trans "English and Portuguese service" %}
-
             </li>
+
+          <h5>Igrejinha <a target='_blank' href='https://www.google.com.br/maps/dir/Igrejinha,+RS/Chagdud+Gonpa+Khadro+Ling+-+R.+%C3%81guas+Brancas+-+Zona+Rural,+Tr%C3%AAs+Coroas+-+RS/@-29.5407097,-50.7948752,13z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x951923b1eac3ce13:0xd7c78e677a32df29!2m2!1d-50.7927755!2d-29.5700426!1m5!1m1!1s0x951924e3e62ee177:0x2c76fe743d69fe51!2m2!1d-50.7406202!2d-29.4920421'>{% trans "(how to get to)" %}</a></h5>
+          <ul>
             <li class="accommodation-li">
               <a href=" http://www.ecoland.com.br/" target="_blank">Ecoland</a> <br>
               contato@ecoland.com.br <br>
@@ -135,7 +126,7 @@
 
             </li>
           </ul>
-          <h5>Taquara</h5>
+          <h5>Taquara <a target='_blank' href='https://www.google.com.br/maps/dir/Taquara,+RS/Chagdud+Gonpa+Khadro+Ling+-+R.+%C3%81guas+Brancas+-+Zona+Rural,+Tr%C3%AAs+Coroas+-+RS/@-29.5714887,-50.8359774,12z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x951919256d1ed945:0x1a2002b8f5e07da0!2m2!1d-50.7757844!2d-29.6509722!1m5!1m1!1s0x951924e3e62ee177:0x2c76fe743d69fe51!2m2!1d-50.7406202!2d-29.4920421'>{% trans "(how to get to)" %}</a></h5>
           <ul>
             <li class="accommodation-li">
               <a href="http://www.candemilhotel.com.br/" target="_blank">Candemil Hotel</a> <br>
@@ -150,7 +141,7 @@
               {% trans "Inform the promo code: event DKR" %}
             </li>
           </ul>
-          <h5>São Francisco de Paula</h5>
+          <h5>São Francisco de Paula <a target='_blank' href='https://www.google.com.br/maps/dir/S%C3%A3o+Francisco+de+Paula,+RS/Chagdud+Gonpa+Khadro+Ling+-+R.+%C3%81guas+Brancas+-+Zona+Rural,+Tr%C3%AAs+Coroas+-+RS/@-29.5054914,-50.6810905,11.82z/data=!4m13!4m12!1m5!1m1!1s0x9518dbc3a85f6585:0xafdcd616de54e9c!2m2!1d-50.5807037!2d-29.445913!1m5!1m1!1s0x951924e3e62ee177:0x2c76fe743d69fe51!2m2!1d-50.7406202!2d-29.4920421'>{% trans "(how to get to)" %}</a></h5>
           <ul>
             <li class="accommodation-li">
               <a href="http://www.villagedaserra.com.br/">Hotel Village da Serra</a> <br>
@@ -603,15 +594,6 @@
       </div>
     </main>
     <script type="text/javascript" src="{% static 'js/base.js' %}"></script>
-    <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyB5A9ULGk3lE4TDYL2C8crIFuoylB6uJ9g;sensor=false"></script>
-    <script>
-    var map;
-    function initMap() {
-      map = new google.maps.Map(document.getElementById('map'), {
-        center: {lat: -34.397, lng: 150.644},
-        zoom: 8
-      });
-    }
-    </script>
+
     <!-- MAPS -->
   {% endblock %}
