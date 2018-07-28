@@ -55,10 +55,6 @@
   font-size: 0.85em;
 }
 
-
-
-
-
 /* ACCOMMODATIONS */
 
 .accommodation-li {
@@ -94,6 +90,10 @@
 
 .checkbox-option {
   margin-bottom: 15px;
+}
+
+.margin-top {
+  margin-top: 40px;
 }
 
 .margin-bottom {
@@ -151,6 +151,10 @@
 
 .btn-holder {
   margin-top: 30px;
+}
+
+#maps {
+  height: 100px;
 }
 
 #payment-child {

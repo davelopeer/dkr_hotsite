@@ -16,13 +16,16 @@
           <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" id="profile-tab" data-toggle="tab" href="#accommodation" role="tab" aria-controls="accommodation" aria-selected="false">{% trans "Accommodations / Transportation" %}</a>
+            <a class="nav-link" id="accomodation-tab" data-toggle="tab" href="#accommodation" role="tab" aria-controls="accommodation" aria-selected="false">{% trans "Accommodations" %}</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" id="profile-tab" data-toggle="tab" href="#information" role="tab" aria-controls="information" aria-selected="false">{% trans "General information" %}</a>
+            <a class="nav-link" id="transportation-tab" data-toggle="tab" href="#transportation" role="tab" aria-controls="transportation" aria-selected="false">{% trans "Transportation" %}</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" id="contact-tab" data-toggle="tab" href="#form" role="tab" aria-controls="form" aria-selected="false">{% trans "Registration" %}</a>
+          <a class="nav-link" id="information-tab" data-toggle="tab" href="#information" role="tab" aria-controls="information" aria-selected="false">{% trans "General information" %}</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="registration-tab" data-toggle="tab" href="#form" role="tab" aria-controls="form" aria-selected="false">{% trans "Registration" %}</a>
         </li>
       </ul>
       <div class="tab-content" id="myTabContent">
@@ -81,18 +84,30 @@
             {% trans "As the drubchen is scheduled during a high tourist season in the region, we suggest that participants make hotel reservations without delay." %}
           </p>
           <h4 class="underline">{% trans "Hotels and lodgings affiliated with the event:" %}</h4>
-          <h5>Três Coroas</h5>
-          <ul>
-            <li class="accommodation-li">
-              <a href="https://www.tripadvisor.com.br/Hotel_Review-g675031-d12087559-Reviews-Pousada_Tres_Coroas-Tres_Coroas_State_of_Rio_Grande_do_Sul.html" target="_blank">
-                Pousada Três Coroas
-              </a>
-              {% trans "(simple accommodations)" %}<br>
-              contato@pousadatrescoroas.com.br <br>
-              +55 51 99995 2662 <br>
-              {% trans "Inform the promo code: event DKR" %}<br>
-            </li>
-          </ul>
+          {% if user_language != "pt-br" %}
+          <p class="margin-top">{% trans "Contact info: If you have any questions about this event or logistics, feel free to contact events manager Tsering at comunicacao@templobudista.org" %}</p>
+          {% endif %}
+          <div class="row">
+            <div class="col-md-6">
+              <h5>Três Coroas</h5>
+              <ul>
+                <li class="accommodation-li">
+                  <a href="https://www.tripadvisor.com.br/Hotel_Review-g675031-d12087559-Reviews-Pousada_Tres_Coroas-Tres_Coroas_State_of_Rio_Grande_do_Sul.html" target="_blank">
+                    Pousada Três Coroas
+                  </a>
+                  {% trans "(simple accommodations)" %}<br>
+                  contato@pousadatrescoroas.com.br <br>
+                  +55 51 99995 2662 <br>
+                  {% trans "Inform the promo code: event DKR" %}<br>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <div id="map"></div>
+            </div>
+          </div>
+
+
           <h5>Igrejinha</h5>
           <ul>
             <li class="accommodation-li">
@@ -104,6 +119,7 @@
               {% else %}
                 Instructions for booking: <a href="{% static 'files/Guide-ingles.pdf' %}" download >(link to PDF)</a> <br>
               {% endif %}
+              {% trans "The promotional code for this hotel is in the instructions pdf." %} <br>
               {% trans "English and Portuguese service" %}
 
             </li>
@@ -197,11 +213,6 @@
               reservas@hoteldasaraucarias.com.br
             </li>
           </ul>
-          <h3 class="font-weight-bold">{% trans "Transportation" %}</h3>
-          <p>
-            {% trans "Event and accommodation rates do not include daily transport/transfer fees." %}<br>
-            {% trans "More information about transportation to the event will be posted closer to the event." %}
-          </p>
         </div>
 
         <!-- GENERAL INFOMATION -->
@@ -226,6 +237,15 @@
             <!-- <li class="list-group-item list-group-item-light"></li>
             <li class="list-group-item list-group-item-warning "></li> -->
           </ul>
+        </div>
+
+
+        <div class="tab-pane fade" id="transportation" role="tabpanel" aria-labelledby="profile-tab">
+          <h2 class="text-center section_title">{% trans "Transportation" %}</h2>
+          <p class="text-center">
+            {% trans "Event and accommodation rates do not include daily transport/transfer fees." %}<br>
+            {% trans "More information about transportation to the event will be posted closer to the event." %}
+          </p>
         </div>
 
         <!-- INSCRIPTION -->
@@ -370,6 +390,9 @@
               </div>
             </div>
             <small id="phoneHelp" class="form-text text-muted">{% trans "Only for people with limitations and unable sit on the floor." %}</small>
+
+            <h3 class="form_section_title">{% trans "Accomodation" %}:</h3>
+            <p>{% trans "Due to the size of this special event, Khadro Ling will not be able to provide onsite accomodations. Please, refer to the list of Hotels and B&B's available under the <a href='#' id='accomodation-link'>accomodations</a> tab." %}</p>
 
             <h3 class="form_section_title">{% trans "Event option" %}:</h3>
             <div class="row">
@@ -580,4 +603,15 @@
       </div>
     </main>
     <script type="text/javascript" src="{% static 'js/base.js' %}"></script>
+    <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyB5A9ULGk3lE4TDYL2C8crIFuoylB6uJ9g;sensor=false"></script>
+    <script>
+    var map;
+    function initMap() {
+      map = new google.maps.Map(document.getElementById('map'), {
+        center: {lat: -34.397, lng: 150.644},
+        zoom: 8
+      });
+    }
+    </script>
+    <!-- MAPS -->
   {% endblock %}
