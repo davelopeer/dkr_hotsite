@@ -99,6 +99,10 @@
               +55 51 99995 2662 <br>
               {% trans "Inform the promo code: event DKR" %}<br>
             </li>
+          </ul>
+
+          <h5>Igrejinha <a target='_blank' href='https://www.google.com.br/maps/dir/Igrejinha,+RS/Chagdud+Gonpa+Khadro+Ling+-+R.+%C3%81guas+Brancas+-+Zona+Rural,+Tr%C3%AAs+Coroas+-+RS/@-29.5407097,-50.7948752,13z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x951923b1eac3ce13:0xd7c78e677a32df29!2m2!1d-50.7927755!2d-29.5700426!1m5!1m1!1s0x951924e3e62ee177:0x2c76fe743d69fe51!2m2!1d-50.7406202!2d-29.4920421'>{% trans "(how to get to)" %}</a></h5>
+          <ul>
             <li class="accommodation-li">
               <a href="https://ibis.accorhotels.com/brasil/index.pt-br.shtml" target="_blank">Ibis Hotel</a> <br>
               {% if user_language == 'pt-br' %}
@@ -111,9 +115,6 @@
               {% trans "The promotional code for this hotel is in the instructions pdf." %} <br>
               {% trans "English and Portuguese service" %}
             </li>
-
-          <h5>Igrejinha <a target='_blank' href='https://www.google.com.br/maps/dir/Igrejinha,+RS/Chagdud+Gonpa+Khadro+Ling+-+R.+%C3%81guas+Brancas+-+Zona+Rural,+Tr%C3%AAs+Coroas+-+RS/@-29.5407097,-50.7948752,13z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x951923b1eac3ce13:0xd7c78e677a32df29!2m2!1d-50.7927755!2d-29.5700426!1m5!1m1!1s0x951924e3e62ee177:0x2c76fe743d69fe51!2m2!1d-50.7406202!2d-29.4920421'>{% trans "(how to get to)" %}</a></h5>
-          <ul>
             <li class="accommodation-li">
               <a href=" http://www.ecoland.com.br/" target="_blank">Ecoland</a> <br>
               contato@ecoland.com.br <br>
@@ -510,6 +511,7 @@
             {% else %}
             <p>{% trans "For PayPal donation/payment, please use the following email address for payment receiver: <strong>adm@chagdud.org</strong>. Also, in comment field inform that payment is for Khadro Sangdu Drubchen." %}</p>
             <p class="underline">{% trans "Be sure to send the registration form after payment is completed." %}</p>
+            <p>{% trans "If you are paying for someone else, please inform the name on 'Extra Information'." %}</p>
               {% for radio in form.payment_international %}
                 <div class="form-check-boxes payment">
                   {{radio.tag}}
