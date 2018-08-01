@@ -16,9 +16,9 @@ SECRET_KEY = os.environ.get('SK_DKR_HOTSITE')
 # RECAPTCHA_PUBLIC_KEY = '6LfZM2YUAAAAAAFnDJz-B_eevQVB_nWGk60IXSy9'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-SECURE_SSL_REDIRECT = True
+# SECURE_SSL_REDIRECT = True
 
 ALLOWED_HOSTS = ['127.0.0.1', 'dkr.pythonanywhere.com', 'www.ks-drubchen.com', 'ks-drubchen.com']
 
