@@ -5,11 +5,16 @@
   {% load i18n %}
 
   {% block extra-head %}
-    <link rel="stylesheet" href="{% static 'css/health-form.css' %}">
+    <link rel="stylesheet" href="{% static 'css/volunteer-form.css' %}">
   {% endblock %}
 
   {% block body_block %}
   <h2 class="text-center section_title">{% trans "Volunteer Form" %}</h2>
+
+  <div class="form-group ">
+    <label class="col-form-label" for="formGroupExampleInput">{% trans "Name" %}</label>
+    {{form.name}}
+  </div>
 
 
   {% endblock %}
