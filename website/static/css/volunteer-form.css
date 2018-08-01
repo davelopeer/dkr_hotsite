@@ -1,0 +1,84 @@
+
+.form {
+  padding: 0 3%;
+}
+
+.checkbox-inline * {
+  display: inline;
+}
+
+.inline {
+  display: inline;
+}
+
+.checkbox-option {
+  margin-bottom: 15px;
+}
+
+.margin-bottom {
+  margin-bottom: 50px;
+}
+
+.form-check-boxes {
+  margin-left: 15px;
+}
+
+.form_text_area {
+  height: 150px;
+}
+
+.form_section_title {
+  margin: 30px auto 20px;
+}
+
+.checkbox{
+  margin-bottom: 30px;
+}
+
+.font-large {
+  font-size: 1.5em;
+}
+
+.payment_form {
+  margin: 30px auto 50px;
+  display: run-in;
+}
+
+.payment_section {
+  display: none;
+  border: 1px dashed grey;
+  padding: 20px;
+}
+
+.padding {
+  margin-left: 3%;
+}
+
+.cielo-img {
+  margin: 10px 0 15px;
+}
+
+.cancel_terms {
+  margin-top: 43px;
+}
+
+.logo-paypal{
+  max-width: 150px;
+  margin: 20px 0 30px 15px;
+  display: inline;
+}
+
+.btn-holder {
+  margin-top: 30px;
+}
+
+#payment-child {
+  display: none;
+}
+
+
+@media screen and (max-width: 768px) {
+  .form-check-boxes {
+    display: block;
+  }
+}
