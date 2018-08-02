@@ -338,7 +338,10 @@ class VolunteerForm(forms.Form):
     ))
     initiations = forms.CharField(required=True,max_length=2000, widget=forms.Textarea(attrs={'class': 'form-control form_text_area',  }))
     initiations_lama = forms.CharField(required=True,max_length=2000, widget=forms.Textarea(attrs={'class': 'form-control form_text_area',  }))
-
+    monastic_ordenation = forms.ChoiceField(required=True, widget=forms.RadioSelect(attrs={'value':'1','type':'radio', 'class':'form-check inline'}), choices=(
+        ('Sim','Sim'),
+        ('Não','Não'),
+    ))
     observations = forms.CharField(required=False,max_length=4000, widget=forms.Textarea(attrs={'name':'observations','class': 'form-control form_text_area',  }))
     food_preferency = forms.ChoiceField(required=True, widget=forms.RadioSelect(attrs={'type':'radio', 'class':'form-check inline food-preferency', 'data-toggle':'modal', 'data-target':'#exampleModal'}), choices=(
         ('Não-vegetariana','Não-vegetariana'),
@@ -365,6 +368,9 @@ class VolunteerForm(forms.Form):
     deposit_agency = forms.CharField(required=False, widget=forms.TextInput(attrs={ 'class': 'form-control'}))
     deposit_account = forms.CharField(required=False, widget=forms.TextInput(attrs={'class': 'form-control'}))
     deposit_envelop = forms.CharField(required=False, widget=forms.TextInput(attrs={'class': 'form-control'}))
+    cancel_terms = forms.ChoiceField(required=True, widget=forms.RadioSelect(attrs={'type':'checkbox', 'class':'form-check'}), choices=(
+        ('Aceito',''),
+    ))
 
 class VolunteerFormEs(forms.Form):
     name = forms.CharField(required=True, max_length=150, widget=forms.TextInput(attrs={'placeholder': 'Nombre completo', 'class': 'form-control',  }))
@@ -385,6 +391,10 @@ class VolunteerFormEs(forms.Form):
     ))
     initiations = forms.CharField(required=True,max_length=2000, widget=forms.Textarea(attrs={'class': 'form-control form_text_area',  }))
     initiations_lama = forms.CharField(required=True,max_length=2000, widget=forms.Textarea(attrs={'class': 'form-control form_text_area',  }))
+    monastic_ordenation = forms.ChoiceField(required=True, widget=forms.RadioSelect(attrs={'value':'1','type':'radio', 'class':'form-check inline'}), choices=(
+        ('Sim','Si'),
+        ('Não','No'),
+    ))
     observations = forms.CharField(required=False,max_length=4000, widget=forms.Textarea(attrs={'name':'observations','class': 'form-control form_text_area',  }))
     food_preferency = forms.ChoiceField(required=True, widget=forms.RadioSelect(attrs={'type':'radio', 'class':'form-check inline food-preferency', 'data-toggle':'modal', 'data-target':'#exampleModal'}), choices=(
         ('Não-vegetariana','No vegetariana'),
@@ -404,6 +414,9 @@ class VolunteerFormEs(forms.Form):
         ('PayPal',''),
     ))
     paypal_name = forms.CharField(required=True, widget=forms.TextInput(attrs={'class': 'form-control',  }))
+    cancel_terms = forms.ChoiceField(required=True, widget=forms.RadioSelect(attrs={'type':'checkbox', 'class':'form-check'}), choices=(
+        ('Aceito',''),
+    ))
 
 class VolunteerFormEn(forms.Form):
     name = forms.CharField(required=True, max_length=150, widget=forms.TextInput(attrs={'placeholder': 'Full name', 'class': 'form-control',  }))
@@ -424,6 +437,10 @@ class VolunteerFormEn(forms.Form):
     ))
     initiations = forms.CharField(required=True,max_length=2000, widget=forms.Textarea(attrs={'class': 'form-control form_text_area',  }))
     initiations_lama = forms.CharField(required=True,max_length=2000, widget=forms.Textarea(attrs={'class': 'form-control form_text_area',  }))
+    monastic_ordenation = forms.ChoiceField(required=True, widget=forms.RadioSelect(attrs={'value':'1','type':'radio', 'class':'form-check inline'}), choices=(
+        ('Sim','Yes'),
+        ('Não','No'),
+    ))
     observations = forms.CharField(required=False,max_length=4000, widget=forms.Textarea(attrs={'name':'observations','class': 'form-control form_text_area',  }))
     food_preferency = forms.ChoiceField(required=True, widget=forms.RadioSelect(attrs={'type':'radio', 'class':'form-check inline food-preferency', 'data-toggle':'modal', 'data-target':'#exampleModal'}), choices=(
         ('Não-vegetariana','Non vegetarian'),
@@ -443,3 +460,6 @@ class VolunteerFormEn(forms.Form):
         ('PayPal',''),
     ))
     paypal_name = forms.CharField(required=True, widget=forms.TextInput(attrs={'class': 'form-control',  }))
+    cancel_terms = forms.ChoiceField(required=True, widget=forms.RadioSelect(attrs={'type':'checkbox', 'class':'form-check'}), choices=(
+        ('Aceito',''),
+    ))
