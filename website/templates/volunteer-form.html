@@ -129,6 +129,17 @@
               {{form.initiations_lama}}
             </div>
           </div>
+          <div class="row checkbox">
+            <div class="custom-controls-stacked col-md-12 checkbox-inline">
+              <p>{% trans "Are you an ordained practitioner? (monastic or otherwise)" %}:</p>
+              {% for radio in form.monastic_ordenation %}
+                <div class="form-check-boxes">
+                  {{radio.tag}}
+                  <label class="form-check-label inline" for="radio_{{ radio.index}}">{{ radio.choice_label }}</label>
+                </div>
+              {% endfor %}
+            </div>
+          </div>
 
           <h3 class="form_section_title">{% trans "Food" %}</h3>
           <div class="row">
@@ -175,29 +186,27 @@
           </div>
           <small id="phoneHelp" class="form-text text-muted">{% trans "Only for people with limitations and unable sit on the floor." %}</small>
 
+          <h3 class="form_section_title">{% trans "Accomodation" %}:</h3>
+          <p>{% trans "Todos os voluntários ficarão hospedados nas casas de retiro. Lembre-se de trazer sua roupa de cama, travesseiro, toalhas e cobertores." %}</p>
           <h3 class="form_section_title">{% trans "Additional information"%}</h3>
           <div class="row">
             <div class="form-group col-md-10">
               <label class="col-form-label" for="formGroupExampleInput">{% trans "Possui algum problema físico que impeça de carregar peso? Se sim, descreva:" %}</label>
-              {{form.observations}}
+              {{form.physical_problems}}
             </div>
           </div>
           <div class="row">
             <div class="form-group col-md-10">
               <label class="col-form-label" for="formGroupExampleInput">{% trans "Possui algum tipo de problema articular (tendinite, artrite e outros)? Se sim, por favor, descreva:" %}</label>
-              {{form.observations}}
+              {{form.joint_problems}}
             </div>
           </div>
           <div class="row">
             <div class="form-group col-md-10">
               <label class="col-form-label" for="formGroupExampleInput">{% trans "Você possui algum problema de saúde que cause limitação para atividades físicas ou para algum função? Se sim, quais?" %}:</label>
-              {{form.observations}}
+              {{form.health_problems}}
             </div>
           </div>
-          <h3 class="form_section_title">{% trans "Accomodation" %}:</h3>
-          <p>{% trans "Todos os voluntários ficarão hospedados nas casas de retiro. Lembre-se de trazer sua roupa de cama, travesseiro, toalhas e cobertores." %}</p>
-
-
 
           <h3 class="form_section_title">{% trans "Preço do evento" %}:</h3>
           <p>O preço do evento para voluntário cobre os custos de sua refeição durante o período do evento.</p>

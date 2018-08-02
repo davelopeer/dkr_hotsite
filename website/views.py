@@ -6,7 +6,7 @@ from django.template.loader import get_template
 from django.utils import translation
 from django.http import HttpResponseNotFound
 from website.forms import InscriptionForm, InscriptionFormEn, InscriptionFormEs, HealthForm, GuestForm, GuestFormEs, GuestFormEn, VolunteerForm, VolunteerFormEn, VolunteerFormEs
-from website.sendgrid.sg_inscription import sendMail, sendMailHealth, sendMailError, sendMailHealthError
+from website.sendgrid.sg_inscription import sendMail, sendMailHealth, sendMailVolunteer, sendMailError, sendMailHealthError, sendMailVolunteerError
 
 def index(request):
     user_language = translation.get_language_from_request(request, check_path=True)
@@ -247,6 +247,7 @@ def volunteer_form(request):
         gender = request.POST.get('gender', '')
         initiations = request.POST.get('initiations', '')
         initiations_lama = request.POST.get('initiations_lama', '')
+        monastic_ordenation = request.POST.get('monastic_ordenation', '')
         observations = request.POST.get('observations', '')
         food_preferency = request.POST.get('food_preferency', '')
         seat = request.POST.get('seat', '')
@@ -274,7 +275,7 @@ def volunteer_form(request):
             payment_info = 'Nome do usuário Paypal: ' + paypal_name
 
         if form.is_valid():
-            sendMail(
+            sendMailVolunteer(
                     name,
                     birthday,
                     adress,
@@ -289,6 +290,7 @@ def volunteer_form(request):
                     gender,
                     initiations,
                     initiations_lama,
+                    monastic_ordenation,
                     observations,
                     food_preferency,
                     seat,
@@ -303,7 +305,7 @@ def volunteer_form(request):
             return redirect('pay-success')
 
         else:
-            sendMailError(
+            sendMailVolunteerError(
                     name,
                     birthday,
                     adress,
@@ -318,6 +320,7 @@ def volunteer_form(request):
                     gender,
                     initiations,
                     initiations_lama,
+                    monastic_ordenation,
                     observations,
                     food_preferency,
                     seat,
