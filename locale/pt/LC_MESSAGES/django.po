@@ -862,7 +862,7 @@ msgstr "Voltar"
 
 #: .\website\templates\volunteer-form.html:12
 msgid "Volunteer Form"
-msgstr ""
+msgstr "Formulário de voluntário"
 
 #: .\website\templates\volunteer-form.html:17
 msgid "The registration form must be completed for each participant."
