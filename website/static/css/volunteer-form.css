@@ -1,3 +1,15 @@
+/* GENERAL INFORMATION */
+
+.list-group{
+  margin: 0 auto 50px;
+  width: 90%;
+}
+
+.list-group-item-warning {
+  background-color: grey;
+}
+
+/* FORM */
 
 .form {
   padding: 0 3%;

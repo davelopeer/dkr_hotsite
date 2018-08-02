@@ -9,362 +9,399 @@
   {% endblock %}
 
   {% block body_block %}
-  <h2 class="text-center section_title">{% trans "Volunteer Form" %}</h2>
-  <form class="form" role="form" action="" method="post" enctype="multipart/form-data">
-    {% csrf_token %}
-    <div class="margin-bottom row justify-content-center">
-      <div class=" col-md-9">
-        <p class="text-center">{% trans "The registration form must be completed for each participant." %}</p>
-        <p class="text-center">{% trans "Be sure to submit the registration form after payment tab is complete." %}</p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="form-group col-md-8">
-        <label class="col-form-label" for="formGroupExampleInput">{% trans "Full name" %}</label>
-        {{form.name}}
-        <small class="form-text text-muted">{% trans "Without abbreviations" %}</small>
-      </div>
-      <div class="form-group col-md-4">
-        <label class="col-form-label" for="formGroupExampleInput">{% trans "Date of birth: " %}</label>
-        {{ form.birthday }}
-      </div>
-    </div>
-    <div class="row">
-      <div class="form-group col-md-6">
-        <label class="col-form-label" for="formGroupExampleInput">{% trans "Address" %}</label>
-        {{form.adress}}
-      </div>
-      <div class="form-group col-md-2">
-        <label class="col-form-label" for="formGroupExampleInput">{% trans "Number" %}</label>
-        {{form.adress_num}}
-      </div>
-      <div class="form-group col-md-2">
-        <label class="col-form-label" for="formGroupExampleInput">{% trans "Additional address info" %}</label>
-        {{form.adress_comp}}
-      </div>
-      <div class="form-group col-md-2">
-        <label class="col-form-label" for="formGroupExampleInput">{% trans "Zip code" %}</label>
-        {{form.zip_code}}
-      </div>
-    </div>
-    <div class="row">
-      <div class="form-group col-md-4">
-        <label class="col-form-label" for="formGroupExampleInput">{% trans "City" %}</label>
-        {{form.city}}
-      </div>
-      <div class="form-group col-md-4">
-        <label class="col-form-label" for="formGroupExampleInput">{% trans "State" %}</label>
-        {{form.state}}
-      </div>
-      <div class="form-group col-md-4">
-        <label class="col-form-label" for="formGroupExampleInput">{% trans "Country" %}</label>
-        {{form.country}}
+
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" id="information-tab" data-toggle="tab" href="#information" role="tab" aria-controls="information" aria-selected="true">{% trans "General information" %}</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="registration-tab" data-toggle="tab" href="#form" role="tab" aria-controls="form" aria-selected="false">{% trans "Registration" %}</a>
+      </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+
+      <!-- GENERAL INFORMATION -->
+      <div class="tab-pane fade show active" id="information" role="tabpanel" aria-labelledby="profile-tab">
+        <ul class="list-group">
+          <li class="list-group-item list-group-item-light">{% trans "Remember to bring personal hygiene products and medications." %}</li>
+          <li class="list-group-item list-group-item-secondary ">{% trans "Three daily meals are included in the event fee. " %}</li>
+          <li class="list-group-item list-group-item-light">{% trans "All sink tap water is potable at Khadro Ling." %}</li>
+          <li class="list-group-item list-group-item-secondary ">{% trans "Bring your meditation cushion (identified with your name), flashlight, rain gear, sunscreen, hat, insect repellent, comfortable walking footwear and warm clothes." %}</li>
+          <li class="list-group-item list-group-item-light">{% trans "Please bring small bank notes for business transactions." %}</li>
+          <li class="list-group-item list-group-item-secondary ">{% trans "The weather conditions in this area vary. We suggest that everyone check the weather forecast before arrival." %}</li>
+          <li class="list-group-item list-group-item-light">{% trans "At Khadro Ling we do not have computers available for event participant use." %}</li>
+          <li class="list-group-item list-group-item-secondary ">{% trans "Medications can be ordered for delivery from Três Coroas pharmacies. The phone numbers are posted on the reception message board." %}</li>
+          <li class="list-group-item list-group-item-light">{% trans "The nearest banks are located in Três Coroas, Taquara, Gramado and São Francisco de Paula." %}</li>
+          <li class="list-group-item list-group-item-secondary ">{% trans "Our store accepts Visa, Mastercard and Cielo credit cards." %}</li>
+          <li class="list-group-item list-group-item-light">{% trans "Please, do not take dinnerware from dining area to other locations such as shrineroom during event." %}</li>
+          <li class="list-group-item list-group-item-secondary ">{% trans "We suggest bringing your own water bottle to avoid plastic waste." %}</li>
+          <li class="list-group-item list-group-item-light">{% trans "Smoking is prohibited in all Khadro Ling areas." %}</li>
+          <li class="list-group-item list-group-item-secondary ">{% trans "Keep personal objects and value items with you or appropriately stored. Khadro Ling is not responsible for any lost object during events." %}</li>
+          <li class="list-group-item list-group-item-light">{% trans "Do not feed the animals. Some of them get very sick from receiving food that are not part of their diet." %}</li>
+          <li class="list-group-item list-group-item-secondary ">{% trans "Thrift shop: Khadro Ling has a thrift shop to raise funds for its projects. Donations in good condition are welcome." %}</li>
+        </ul>
       </div>
 
-    </div>
-    <div class="row">
-      <div class="form-group col-md-6">
-        <label class="col-form-label" for="formGroupExampleInput">E-mail</label>
-        {{form.email}}
-      </div>
-      <div class="form-group col-md-6">
-        <label class="col-form-label" for="formGroupExampleInput">{% trans "Phone/Mobile" %}</label>
-        {{form.phone}}
-      </div>
-    </div>
-    <div class="row checkbox">
-      <div class="custom-controls-stacked col-md-12 checkbox-inline">
-        <p>{% trans "Genre" %}:</p>
-        {% for radio in form.gender %}
-          <div class="form-check-boxes">
-            {{radio.tag}}
-            <label class="form-check-label" for="radio_{{ radio.index}}">{{ radio.choice_label }}</label>
+
+      <!-- FORM -->
+      <div class="tab-pane fade" id="form" role="tabpanel" aria-labelledby="contact-tab">
+        <h2 class="text-center section_title">{% trans "Volunteer Form" %}</h2>
+        <form class="form" role="form" action="" method="post" enctype="multipart/form-data">
+          {% csrf_token %}
+          <div class="margin-bottom row justify-content-center">
+            <div class=" col-md-9">
+              <p class="text-center">{% trans "The registration form must be completed for each participant." %}</p>
+              <p class="text-center">{% trans "Be sure to submit the registration form after payment tab is complete." %}</p>
+            </div>
           </div>
-        {% endfor %}
-      </div>
-    </div>
-    <div class="row">
-      <div class="form-group col-md-6">
-        <label class="col-form-label" for="formGroupExampleInput">{% trans "Previous empowerments received:" %}:</label>
-        {{form.initiations}}
-      </div>
-      <div class="form-group col-md-6">
-        <label class="col-form-label" for="formGroupExampleInput">{% trans "Empowerment bestowed by:" %}</label>
-        {{form.initiations_lama}}
-      </div>
-    </div>
-
-    <h3 class="form_section_title">{% trans "Food" %}</h3>
-    <div class="row">
-      <div class="custom-controls-stacked col-md-12 checkbox-inline">
-        <p>{% trans "Food preference" %}:</p>
-        {% for radio in form.food_preferency %}
-          <div class="form-check-boxes">
-              {{radio.tag}}
-            <label class="form-check-label inline" for="radio_{{ radio.index}}">{{ radio.choice_label }}</label>
+          <div class="row">
+            <div class="form-group col-md-8">
+              <label class="col-form-label" for="formGroupExampleInput">{% trans "Full name" %}</label>
+              {{form.name}}
+              <small class="form-text text-muted">{% trans "Without abbreviations" %}</small>
+            </div>
+            <div class="form-group col-md-4">
+              <label class="col-form-label" for="formGroupExampleInput">{% trans "Date of birth: " %}</label>
+              {{ form.birthday }}
+            </div>
           </div>
-        {% endfor %}
-      </div>
-    </div>
-    <small id="phoneHelp" class="form-text text-muted">{% trans "Khadro Ling does not serve meals for special diets with ingredient restrictions." %}</small>
-
-    <!-- ALERT FOR THE INALTERABILITY OF THE FOOD PREFERENCY AND SEAT -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title font-large" id="exampleModalLabel">{% trans "Please pay attention" %}</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
+          <div class="row">
+            <div class="form-group col-md-6">
+              <label class="col-form-label" for="formGroupExampleInput">{% trans "Address" %}</label>
+              {{form.adress}}
+            </div>
+            <div class="form-group col-md-2">
+              <label class="col-form-label" for="formGroupExampleInput">{% trans "Number" %}</label>
+              {{form.adress_num}}
+            </div>
+            <div class="form-group col-md-2">
+              <label class="col-form-label" for="formGroupExampleInput">{% trans "Additional address info" %}</label>
+              {{form.adress_comp}}
+            </div>
+            <div class="form-group col-md-2">
+              <label class="col-form-label" for="formGroupExampleInput">{% trans "Zip code" %}</label>
+              {{form.zip_code}}
+            </div>
           </div>
-          <div class="modal-body">
-            {% trans "This option cannot be changed after the form submission." %}
+          <div class="row">
+            <div class="form-group col-md-4">
+              <label class="col-form-label" for="formGroupExampleInput">{% trans "City" %}</label>
+              {{form.city}}
+            </div>
+            <div class="form-group col-md-4">
+              <label class="col-form-label" for="formGroupExampleInput">{% trans "State" %}</label>
+              {{form.state}}
+            </div>
+            <div class="form-group col-md-4">
+              <label class="col-form-label" for="formGroupExampleInput">{% trans "Country" %}</label>
+              {{form.country}}
+            </div>
+
           </div>
-        </div>
-      </div>
-    </div>
-
-    <h3 class="form_section_title">{% trans "Sitting" %}</h3>
-    <div class="row">
-      <div class="custom-controls-stacked col-md-12 checkbox-inline">
-        <p>{% trans "Do you need a chair?" %}</p>
-        {% for radio in form.seat %}
-          <div class="form-check-boxes">
-            {{radio.tag}}
-            <label class="form-check-label" for="radio_{{ radio.index}}">{{ radio.choice_label }}</label>
+          <div class="row">
+            <div class="form-group col-md-6">
+              <label class="col-form-label" for="formGroupExampleInput">E-mail</label>
+              {{form.email}}
+            </div>
+            <div class="form-group col-md-6">
+              <label class="col-form-label" for="formGroupExampleInput">{% trans "Phone/Mobile" %}</label>
+              {{form.phone}}
+            </div>
           </div>
-        {% endfor %}
-      </div>
-    </div>
-    <small id="phoneHelp" class="form-text text-muted">{% trans "Only for people with limitations and unable sit on the floor." %}</small>
-
-    <h3 class="form_section_title">{% trans "Additional information"%}</h3>
-    <div class="row">
-      <div class="form-group col-md-10">
-        <label class="col-form-label" for="formGroupExampleInput">{% trans "Possui algum problema físico que impeça de carregar peso? Se sim, descreva:" %}</label>
-        {{form.observations}}
-      </div>
-    </div>
-    <div class="row">
-      <div class="form-group col-md-10">
-        <label class="col-form-label" for="formGroupExampleInput">{% trans "Possui algum tipo de problema articular (tendinite, artrite e outros)? Se sim, por favor, descreva:" %}</label>
-        {{form.observations}}
-      </div>
-    </div>
-    <div class="row">
-      <div class="form-group col-md-10">
-        <label class="col-form-label" for="formGroupExampleInput">{% trans "Você possui algum problema de saúde que cause limitação para atividades físicas ou para algum função? Se sim, quais?" %}:</label>
-        {{form.observations}}
-      </div>
-    </div>
-    <h3 class="form_section_title">{% trans "Accomodation" %}:</h3>
-    <p>{% trans "Todos os voluntários ficarão hospedados nas casas de retiro. Lembre-se de trazer sua roupa de cama, travesseiro, toalhas e cobertores." %}</p>
-
-
-
-    <h3 class="form_section_title">{% trans "Preço do evento" %}:</h3>
-    <p>O preço do evento para voluntário cobre os custos de sua refeição durante o período do evento.</p>
-    <div class="row">
-      <div class="custom-controls-stacked col-md-12">
-        {% for radio in form.event_option %}
-          <div class="form-check-boxes">
-            {{radio.tag}}
-            <label class="form-check-label inline" for="radio_{{ radio.index}}">{{ radio.choice_label }}</label>
+          <div class="row checkbox">
+            <div class="custom-controls-stacked col-md-12 checkbox-inline">
+              <p>{% trans "Genre" %}:</p>
+              {% for radio in form.gender %}
+                <div class="form-check-boxes">
+                  {{radio.tag}}
+                  <label class="form-check-label" for="radio_{{ radio.index}}">{{ radio.choice_label }}</label>
+                </div>
+              {% endfor %}
+            </div>
           </div>
-        {% endfor %}
-      </div>
-    </div>
-
-    <div class="modal fade" id="childModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title font-large" id="exampleModalLabel">{% trans "Please pay attention" %}</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
+          <div class="row">
+            <div class="form-group col-md-6">
+              <label class="col-form-label" for="formGroupExampleInput">{% trans "Previous empowerments received:" %}:</label>
+              {{form.initiations}}
+            </div>
+            <div class="form-group col-md-6">
+              <label class="col-form-label" for="formGroupExampleInput">{% trans "Empowerment bestowed by:" %}</label>
+              {{form.initiations_lama}}
+            </div>
           </div>
-          <div class="modal-body">
-            {% trans "Notify in the field 'Extra information' the name of the adult responsible that will be participating in the event." %}
+
+          <h3 class="form_section_title">{% trans "Food" %}</h3>
+          <div class="row">
+            <div class="custom-controls-stacked col-md-12 checkbox-inline">
+              <p>{% trans "Food preference" %}:</p>
+              {% for radio in form.food_preferency %}
+                <div class="form-check-boxes">
+                    {{radio.tag}}
+                  <label class="form-check-label inline" for="radio_{{ radio.index}}">{{ radio.choice_label }}</label>
+                </div>
+              {% endfor %}
+            </div>
           </div>
-        </div>
-      </div>
-    </div>
+          <small id="phoneHelp" class="form-text text-muted">{% trans "Khadro Ling does not serve meals for special diets with ingredient restrictions." %}</small>
 
-    <small id="phoneHelp" class="form-text text-muted margin-bottom-js">{% trans "Partial participation is not possible in this retreat. " %}</small>
-
-    <div class="row">
-      <div class="form-group col-md-8">
-        <label class="col-form-label" for="formGroupExampleInput">{% trans "Extra information" %}:</label>
-        {{form.observations}}
-      </div>
-    </div>
-    <h3 class="form_section_title payment">{% trans "Payment" %}:</h3>
-
-    {% if user_language == 'pt-br' %}
-
-    <div class="row payment">
-      <div class="custom-controls-stacked col-md-12 checkbox-inline">
-        <p>Forma de pagamento</p>
-        {% for radio in form.payment %}
-          <div class="form-check-boxes">
-            {{radio.tag}}
-            <label class="form-check-label" for="radio_{{ radio.index}}">{{ radio.choice_label }}</label>
+          <!-- ALERT FOR THE INALTERABILITY OF THE FOOD PREFERENCY AND SEAT -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title font-large" id="exampleModalLabel">{% trans "Please pay attention" %}</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  {% trans "This option cannot be changed after the form submission." %}
+                </div>
+              </div>
+            </div>
           </div>
-        {% endfor %}
-      </div>
-      <small class="form-text text-muted padding"><p>O pagamento em cartão de crédito poderá ser parcelado em 12x sem juros.</p></small>
-    </div>
-    <div class="modal fade" id="cardModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title font-large" id="exampleModalCenterTitle">LEMBRE-SE</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <p class="font-large">Você será <span class="underline">redirecionado</span> para outra aba para realizar o pagamento. Após o fim da transação, <span class="underline">volte</span> para a ficha de inscrição para o envio.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row payment_form">
-      <div class="col-md-8 payment_section" id="payment1">
-        <h4 class="font-weight-light">Pagamento via Cielo</h4>
-        <p>Pague com seu cartão de crédito ou débito. O evento poderá ser parcelado em até 12x sem juros no cartão</p>
-        <div class="form-group">
-          <label class="col-form-label" for="formGroupExampleInput">Nome do titular igual ao que está no cartão:</label>
-          {{form.credit_card_name}}
-        </div>
-        <button data-toggle="modal" data-target="#paymentModal" type="button" name="button">Efetuar pagamento</button>
-      </div>
-      <div class="col-md-8 payment_section" id="payment2">
-        <h4 class="font-weight-light">Pagamento via Banco do Brasil:</h4>
-        <p>Dados para depósito ou transferência:<br>
-          <a target="_blank" href="http://www.bb.com.br/pbb/pagina-inicial#/">Banco do Brasil</a><br>
-          Titular: Chagdud Gonpa Brasil<br>
-          CNPJ: 00.990.708/0001-37<br>
-          Agência: 1380-3<br>
-          Conta: 5454-2<br>
-        </p>
-        <p>
-          Para garantir a sua inscrição, você deve depositar, pelo menos, 1/4 (um quarto) do valor do evento (R$ 137,50) e dividir o restante do pagamento até 10 de dezembro de 2018.
-        </p>
-        <p class="underline">DADOS DO PAGAMENTO:</p>
-        <div class="form-group">
-          <label class="col-form-label" for="formGroupExampleInput">Data da transferência/depósito</label>
-          {{form.deposit_day}}
-        </div>
-        <div class="form-group">
-          <label class="col-form-label" for="formGroupExampleInput">Nome do titular da conta</label>
-          {{form.deposit_name}}
-        </div>
-        <div class="form-group">
-          <label class="col-form-label" for="formGroupExampleInput">Valor do depósito</label>
-          {{form.deposit_value}}
-        </div>
-        <div class="form-group">
-          <label class="col-form-label" for="formGroupExampleInput">Número da agência</label>
-          {{form.deposit_agency}}
-        </div>
-        <div class="form-group">
-          <label class="col-form-label" for="formGroupExampleInput">Número da conta</label>
-          {{form.deposit_account}}
-        </div>
-        <p class="text-center">ou</p>
-        <div class="form-group">
-          <label class="col-form-label" for="formGroupExampleInput">Número do envelope ou DOC </label>
-          {{form.deposit_envelop}}
-        </div>
-        <small id="phoneHelp" class="form-text text-muted margin-bottom-js">
-          Caso você efetue mais de um pagamento no mesmo depósito, por favor, informe no campo 'Observações'.
-        </small>
-      </div>
-    </div>
 
-    {% else %}
-    <p>{% trans "For PayPal donation/payment, please use the following email address for payment receiver: <strong>adm@chagdud.org</strong>. Also, in comment field inform that payment is for Khadro Sangdu Drubchen." %}</p>
-    <p class="underline">{% trans "Be sure to send the registration form after payment is completed." %}</p>
-      {% for radio in form.payment_international %}
-        <div class="form-check-boxes payment">
-          {{radio.tag}}
-          <label class="form-check-label " for="radio_{{ radio.index}}">{{ radio.choice_label }}</label>
-          <img class="logo-paypal" src="{% static 'images/paypal-logo.png' %}" alt="Paypal">
-        </div>
-      {% endfor %}
-      <div class="col-md-8">
-        <div class="form-group">
-          <label class="col-form-label" for="formGroupExampleInput">{% trans "Paypal username:" %}</label>
-          {{form.paypal_name}}
-        </div>
+          <h3 class="form_section_title">{% trans "Sitting" %}</h3>
+          <div class="row">
+            <div class="custom-controls-stacked col-md-12 checkbox-inline">
+              <p>{% trans "Do you need a chair?" %}</p>
+              {% for radio in form.seat %}
+                <div class="form-check-boxes">
+                  {{radio.tag}}
+                  <label class="form-check-label" for="radio_{{ radio.index}}">{{ radio.choice_label }}</label>
+                </div>
+              {% endfor %}
+            </div>
+          </div>
+          <small id="phoneHelp" class="form-text text-muted">{% trans "Only for people with limitations and unable sit on the floor." %}</small>
+
+          <h3 class="form_section_title">{% trans "Additional information"%}</h3>
+          <div class="row">
+            <div class="form-group col-md-10">
+              <label class="col-form-label" for="formGroupExampleInput">{% trans "Possui algum problema físico que impeça de carregar peso? Se sim, descreva:" %}</label>
+              {{form.observations}}
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group col-md-10">
+              <label class="col-form-label" for="formGroupExampleInput">{% trans "Possui algum tipo de problema articular (tendinite, artrite e outros)? Se sim, por favor, descreva:" %}</label>
+              {{form.observations}}
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group col-md-10">
+              <label class="col-form-label" for="formGroupExampleInput">{% trans "Você possui algum problema de saúde que cause limitação para atividades físicas ou para algum função? Se sim, quais?" %}:</label>
+              {{form.observations}}
+            </div>
+          </div>
+          <h3 class="form_section_title">{% trans "Accomodation" %}:</h3>
+          <p>{% trans "Todos os voluntários ficarão hospedados nas casas de retiro. Lembre-se de trazer sua roupa de cama, travesseiro, toalhas e cobertores." %}</p>
+
+
+
+          <h3 class="form_section_title">{% trans "Preço do evento" %}:</h3>
+          <p>O preço do evento para voluntário cobre os custos de sua refeição durante o período do evento.</p>
+          <div class="row">
+            <div class="custom-controls-stacked col-md-12">
+              {% for radio in form.event_option %}
+                <div class="form-check-boxes">
+                  {{radio.tag}}
+                  <label class="form-check-label inline" for="radio_{{ radio.index}}">{{ radio.choice_label }}</label>
+                </div>
+              {% endfor %}
+            </div>
+          </div>
+
+          <div class="modal fade" id="childModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title font-large" id="exampleModalLabel">{% trans "Please pay attention" %}</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  {% trans "Notify in the field 'Extra information' the name of the adult responsible that will be participating in the event." %}
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <small id="phoneHelp" class="form-text text-muted margin-bottom-js">{% trans "Partial participation is not possible in this retreat. " %}</small>
+
+          <div class="row">
+            <div class="form-group col-md-8">
+              <label class="col-form-label" for="formGroupExampleInput">{% trans "Extra information" %}:</label>
+              {{form.observations}}
+            </div>
+          </div>
+          <h3 class="form_section_title payment">{% trans "Payment" %}:</h3>
+
+          {% if user_language == 'pt-br' %}
+
+          <div class="row payment">
+            <div class="custom-controls-stacked col-md-12 checkbox-inline">
+              <p>Forma de pagamento</p>
+              {% for radio in form.payment %}
+                <div class="form-check-boxes">
+                  {{radio.tag}}
+                  <label class="form-check-label" for="radio_{{ radio.index}}">{{ radio.choice_label }}</label>
+                </div>
+              {% endfor %}
+            </div>
+            <small class="form-text text-muted padding"><p>O pagamento em cartão de crédito poderá ser parcelado em 12x sem juros.</p></small>
+          </div>
+          <div class="modal fade" id="cardModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title font-large" id="exampleModalCenterTitle">LEMBRE-SE</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p class="font-large">Você será <span class="underline">redirecionado</span> para outra aba para realizar o pagamento. Após o fim da transação, <span class="underline">volte</span> para a ficha de inscrição para o envio.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row payment_form">
+            <div class="col-md-8 payment_section" id="payment1">
+              <h4 class="font-weight-light">Pagamento via Cielo</h4>
+              <p>Pague com seu cartão de crédito ou débito. O evento poderá ser parcelado em até 12x sem juros no cartão</p>
+              <div class="form-group">
+                <label class="col-form-label" for="formGroupExampleInput">Nome do titular igual ao que está no cartão:</label>
+                {{form.credit_card_name}}
+              </div>
+              <button data-toggle="modal" data-target="#paymentModal" type="button" name="button">Efetuar pagamento</button>
+            </div>
+            <div class="col-md-8 payment_section" id="payment2">
+              <h4 class="font-weight-light">Pagamento via Banco do Brasil:</h4>
+              <p>Dados para depósito ou transferência:<br>
+                <a target="_blank" href="http://www.bb.com.br/pbb/pagina-inicial#/">Banco do Brasil</a><br>
+                Titular: Chagdud Gonpa Brasil<br>
+                CNPJ: 00.990.708/0001-37<br>
+                Agência: 1380-3<br>
+                Conta: 5454-2<br>
+              </p>
+              <p>
+                Para garantir a sua inscrição, você deve depositar, pelo menos, 1/4 (um quarto) do valor do evento (R$ 137,50) e dividir o restante do pagamento até 10 de dezembro de 2018.
+              </p>
+              <p class="underline">DADOS DO PAGAMENTO:</p>
+              <div class="form-group">
+                <label class="col-form-label" for="formGroupExampleInput">Data da transferência/depósito</label>
+                {{form.deposit_day}}
+              </div>
+              <div class="form-group">
+                <label class="col-form-label" for="formGroupExampleInput">Nome do titular da conta</label>
+                {{form.deposit_name}}
+              </div>
+              <div class="form-group">
+                <label class="col-form-label" for="formGroupExampleInput">Valor do depósito</label>
+                {{form.deposit_value}}
+              </div>
+              <div class="form-group">
+                <label class="col-form-label" for="formGroupExampleInput">Número da agência</label>
+                {{form.deposit_agency}}
+              </div>
+              <div class="form-group">
+                <label class="col-form-label" for="formGroupExampleInput">Número da conta</label>
+                {{form.deposit_account}}
+              </div>
+              <p class="text-center">ou</p>
+              <div class="form-group">
+                <label class="col-form-label" for="formGroupExampleInput">Número do envelope ou DOC </label>
+                {{form.deposit_envelop}}
+              </div>
+              <small id="phoneHelp" class="form-text text-muted margin-bottom-js">
+                Caso você efetue mais de um pagamento no mesmo depósito, por favor, informe no campo 'Observações'.
+              </small>
+            </div>
+          </div>
+
+          {% else %}
+          <p>{% trans "For PayPal donation/payment, please use the following email address for payment receiver: <strong>adm@chagdud.org</strong>. Also, in comment field inform that payment is for Khadro Sangdu Drubchen." %}</p>
+          <p class="underline">{% trans "Be sure to send the registration form after payment is completed." %}</p>
+            {% for radio in form.payment_international %}
+              <div class="form-check-boxes payment">
+                {{radio.tag}}
+                <label class="form-check-label " for="radio_{{ radio.index}}">{{ radio.choice_label }}</label>
+                <img class="logo-paypal" src="{% static 'images/paypal-logo.png' %}" alt="Paypal">
+              </div>
+            {% endfor %}
+            <div class="col-md-8">
+              <div class="form-group">
+                <label class="col-form-label" for="formGroupExampleInput">{% trans "Paypal username:" %}</label>
+                {{form.paypal_name}}
+              </div>
+            </div>
+            <div class="modal fade" id="paypalModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title font-large" id="exampleModalCenterTitle">{% trans "Please note:" %}</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <p>{% trans "A new tab will open for payment process. After the transaction is complete, return to registration page and submit form. Click on the image below." %}</p>
+                    <a target="_blank" href="https://www.paypal.com/"><img class="logo-paypal" src="{% static 'images/paypal-logo.png' %}" alt="Paypal"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          {% endif %}
+
+
+          <div class="row cancel_terms_area">
+            <div class="custom-controls-stacked col-md-12 checkbox-inline">
+              {% for checkbox in form.cancel_terms %}
+                <div class="form-check-boxes">
+                  {{checkbox.tag}}
+                  <label class="form-check-label" for="checkbox{{ checkbox.index}}">{{ checkbox.choice_label }}</label>
+                </div>
+              {% endfor %}
+
+              <p class="cancel_terms">{% trans "I have read and I accept the <a target='_blank' href='http://www.ks-drubchen.com/cancellation-policy/'>cancellation policy of participation in Khadro Ling events.</a>" %}</p>
+              <br>
+              <small >{% trans "Before clicking send, make sure that all data is correctly filled in and that you have completed the payment." %}</small>
+            </div>
+          </div>
+
+          <!-- <div class="g-recaptcha" data-sitekey="6LfZM2YUAAAAAAFnDJz-B_eevQVB_nWGk60IXSy9"></div> -->
+          <!-- {{form.captcha}} -->
+
+          <div class="btn-holder">
+            <button type="submit" class="btn btn-outline-primary">{% trans "Send" %}</button>
+          </div>
+        </form>
       </div>
-      <div class="modal fade" id="paypalModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+
+      <!-- CIELO PAYMENT MODAL (REQUIREDLY OUTSIDE THE FORM) -->
+      <div class="modal fade" id="paymentModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title font-large" id="exampleModalCenterTitle">{% trans "Please note:" %}</h5>
+              <h5 class="modal-title font-large" id="exampleModalCenterTitle">Pagamento com Cielo</h5>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
             <div class="modal-body">
-              <p>{% trans "A new tab will open for payment process. After the transaction is complete, return to registration page and submit form. Click on the image below." %}</p>
-              <a target="_blank" href="https://www.paypal.com/"><img class="logo-paypal" src="{% static 'images/paypal-logo.png' %}" alt="Paypal"></a>
+              <p>Clique na imagem a baixo e seja redirecionado para efetuar o pagamento.</p>
+              <div>
+                <form method='post' action='https://cieloecommerce.cielo.com.br/transactionalvnext/order/buynow' target='blank'><input type='hidden' name='id' value='b1d7d1a2-489a-41e7-8d08-ebd1e639608d' /><input type='image' name='submit' alt='Comprar' src='https://cieloecommerce.cielo.com.br/backoffice/Content/img/buttons/button-5-1.png' /></form>
+              </div>
+              <p>Após enviar o pagamento, <span class="underline">lembre-se de enviar o formulário</span> de inscrição.</p>
             </div>
           </div>
         </div>
       </div>
-
-    {% endif %}
-
-
-    <div class="row cancel_terms_area">
-      <div class="custom-controls-stacked col-md-12 checkbox-inline">
-        {% for checkbox in form.cancel_terms %}
-          <div class="form-check-boxes">
-            {{checkbox.tag}}
-            <label class="form-check-label" for="checkbox{{ checkbox.index}}">{{ checkbox.choice_label }}</label>
-          </div>
-        {% endfor %}
-
-        <p class="cancel_terms">{% trans "I have read and I accept the <a target='_blank' href='http://www.ks-drubchen.com/cancellation-policy/'>cancellation policy of participation in Khadro Ling events.</a>" %}</p>
-        <br>
-        <small >{% trans "Before clicking send, make sure that all data is correctly filled in and that you have completed the payment." %}</small>
-      </div>
-    </div>
-
-    <!-- <div class="g-recaptcha" data-sitekey="6LfZM2YUAAAAAAFnDJz-B_eevQVB_nWGk60IXSy9"></div> -->
-    <!-- {{form.captcha}} -->
-
-    <div class="btn-holder">
-      <button type="submit" class="btn btn-outline-primary">{% trans "Send" %}</button>
-    </div>
-  </form>
-
-  <!-- CIELO PAYMENT MODAL (REQUIREDLY OUTSIDE THE FORM) -->
-  <div class="modal fade" id="paymentModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title font-large" id="exampleModalCenterTitle">Pagamento com Cielo</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <p>Clique na imagem a baixo e seja redirecionado para efetuar o pagamento.</p>
-          <div>
-            <form method='post' action='https://cieloecommerce.cielo.com.br/transactionalvnext/order/buynow' target='blank'><input type='hidden' name='id' value='b1d7d1a2-489a-41e7-8d08-ebd1e639608d' /><input type='image' name='submit' alt='Comprar' src='https://cieloecommerce.cielo.com.br/backoffice/Content/img/buttons/button-5-1.png' /></form>
-          </div>
-          <p>Após enviar o pagamento, <span class="underline">lembre-se de enviar o formulário</span> de inscrição.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <script type="text/javascript" src="{% static 'js/base.js' %}"></script>
+      <script type="text/javascript" src="{% static 'js/base.js' %}"></script>
 
 
   {% endblock %}
