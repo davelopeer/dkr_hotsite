@@ -408,7 +408,7 @@ class VolunteerFormEs(forms.Form):
     joint_problems = forms.CharField(required=True, widget=forms.Textarea(attrs={'class': 'form-control form_text_area',}))
     health_problems = forms.CharField(required=True, widget=forms.Textarea(attrs={'class': 'form-control form_text_area',}))
     event_option = forms.ChoiceField(required=True, widget=forms.RadioSelect(attrs={'type':'radio', 'class':'form-check inline checkbox-option'}), choices=(
-        ('Voluntário','Alimentação durante o drubchen com hospedagem na Casa de Retiro: R$ 550,00'),
+        ('Voluntário','Alimentación durante el drubchen con alojamiento en la Casa de Retiro: US$ 146.50'),
     ))
     payment_international = forms.ChoiceField(required=False, widget=forms.RadioSelect(attrs={'type':'radio', 'class':'form-check inline'}), choices=(
         ('PayPal',''),
@@ -454,7 +454,7 @@ class VolunteerFormEn(forms.Form):
     joint_problems = forms.CharField(required=True, widget=forms.Textarea(attrs={'class': 'form-control form_text_area',}))
     health_problems = forms.CharField(required=True, widget=forms.Textarea(attrs={'class': 'form-control form_text_area',}))
     event_option = forms.ChoiceField(required=True, widget=forms.RadioSelect(attrs={'type':'radio', 'class':'form-check inline checkbox-option'}), choices=(
-        ('Voluntário','Alimentação durante o drubchen com hospedagem na Casa de Retiro: R$ 550,00'),
+        ('Voluntário','Alimentación durante el drubchen con alojamiento en la Casa de Retiro: US$ 146.50'),
     ))
     payment_international = forms.ChoiceField(required=False, widget=forms.RadioSelect(attrs={'type':'radio', 'class':'form-check inline'}), choices=(
         ('PayPal',''),

@@ -45,7 +45,7 @@
 
       <!-- FORM -->
       <div class="tab-pane fade" id="form" role="tabpanel" aria-labelledby="contact-tab">
-        <h2 class="text-center section_title">{% trans "Volunteer Form" %}</h2>
+        <h2 class="text-center section_title">{% trans "Volunteer application form" %}</h2>
         <form class="form" role="form" action="" method="post" enctype="multipart/form-data">
           {% csrf_token %}
           <div class="margin-bottom row justify-content-center">
@@ -187,7 +187,7 @@
           <small id="phoneHelp" class="form-text text-muted">{% trans "Only for people with limitations and unable sit on the floor." %}</small>
 
           <h3 class="form_section_title">{% trans "Accomodation" %}:</h3>
-          <p>{% trans "Todos os voluntários ficarão hospedados nas casas de retiro. Lembre-se de trazer sua roupa de cama, travesseiro, toalhas e cobertores." %}</p>
+          <p>{% trans "All volunteers will be accommodated in the retreat house. Please be sure to bring your bedding, pillow, towels and blankets." %}</p>
           <h3 class="form_section_title">{% trans "Additional information"%}</h3>
           <div class="row">
             <div class="form-group col-md-10">
@@ -203,13 +203,13 @@
           </div>
           <div class="row">
             <div class="form-group col-md-10">
-              <label class="col-form-label" for="formGroupExampleInput">{% trans "Você possui algum problema de saúde que cause limitação para atividades físicas ou para algum função? Se sim, quais?" %}:</label>
+              <label class="col-form-label" for="formGroupExampleInput">{% trans "Você possui algum problema de saúde que cause limitação para atividades físicas ou para algum função? Se sim, quais?" %}</label>
               {{form.health_problems}}
             </div>
           </div>
 
           <h3 class="form_section_title">{% trans "Preço do evento" %}:</h3>
-          <p>O preço do evento para voluntário cobre os custos de sua refeição durante o período do evento.</p>
+          <p>{% trans "O preço do evento para voluntário cobre os custos de sua refeição durante o período do evento." %}</p>
           <div class="row">
             <div class="custom-controls-stacked col-md-12">
               {% for radio in form.event_option %}
