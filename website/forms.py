@@ -463,3 +463,35 @@ class VolunteerFormEn(forms.Form):
     cancel_terms = forms.ChoiceField(required=True, widget=forms.RadioSelect(attrs={'type':'checkbox', 'class':'form-check'}), choices=(
         ('Aceito',''),
     ))
+
+
+class Sponsor(forms.Form):
+    name = forms.CharField(required=True, max_length=150, widget=forms.TextInput(attrs={'class': 'form-control'}))
+    email = forms.EmailField(required=True, max_length=100, widget=forms.EmailInput(attrs={'type':'email', 'class':'form-control', 'id':'formGroupExampleInput'}))
+    phone = forms.IntegerField(required=True, widget=forms.NumberInput(attrs={'type':'number', 'class': 'form-control'}))
+    payment = forms.ChoiceField(required=False, widget=forms.RadioSelect(attrs={'type':'radio', 'class':'form-check'}), choices=(
+        ('Cartão de crédito','Cartão de crédito'),
+        ('Depósito bancário','Depósito bancário'),
+    ))
+    credit_card_name = forms.CharField(required=False,max_length=200, widget=forms.TextInput(attrs={'class': 'form-control', }))
+    deposit_day = forms.CharField(required=False, max_length=40, widget=forms.TextInput(attrs={'class': 'form-control',  }))
+    deposit_name = forms.CharField(required=False, max_length=250, widget=forms.TextInput(attrs={'class': 'form-control'}))
+    deposit_value = forms.CharField(required=False, max_length=250, widget=forms.TextInput(attrs={'class': 'form-control' }))
+    deposit_agency = forms.CharField(required=False, widget=forms.TextInput(attrs={ 'class': 'form-control'}))
+    deposit_account = forms.CharField(required=False, widget=forms.TextInput(attrs={'class': 'form-control'}))
+    deposit_envelop = forms.CharField(required=False, widget=forms.TextInput(attrs={'class': 'form-control'}))
+
+class SponsorEn(forms.Form):
+    name = forms.CharField(required=True, max_length=150, widget=forms.TextInput(attrs={'class': 'form-control'}))
+    email = forms.EmailField(required=True, max_length=100, widget=forms.EmailInput(attrs={'type':'email', 'class':'form-control', 'id':'formGroupExampleInput'}))
+    phone = forms.IntegerField(required=True, widget=forms.NumberInput(attrs={'type':'number', 'class': 'form-control'}))
+    payment_international = forms.ChoiceField(required=False, widget=forms.RadioSelect(attrs={'type':'radio', 'class':'form-check inline'}), choices=(
+        ('PayPal',''),
+    ))
+    paypal_name = forms.CharField(required=True, widget=forms.TextInput(attrs={'class': 'form-control',  }))
+
+class Sponsored(forms.Form):
+    name = forms.CharField(required=True, max_length=150, widget=forms.TextInput(attrs={'class': 'form-control'}))
+    email = forms.EmailField(required=True, max_length=100, widget=forms.EmailInput(attrs={'type':'email', 'class':'form-control', 'id':'formGroupExampleInput'}))
+    phone = forms.IntegerField(required=True, widget=forms.NumberInput(attrs={'type':'number', 'class': 'form-control'}))
+    sangha = forms.CharField(required=True,max_length=1000, widget=forms.Textarea(attrs={'class': 'form-control form_text_area'}))
