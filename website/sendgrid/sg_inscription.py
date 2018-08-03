@@ -5,7 +5,6 @@ from sendgrid.helpers.mail import *
 import re
 
 
-
 def sendMail(name,birthday,adress,adress_num,adress_comp,city,state,country,zip_code,email,phone,gender,initiations,initiations_lama,monastic_ordenation,observations,food_preferency,seat,payment, payment_international,payment_info,event_option):
         sg = sendgrid.SendGridAPIClient(apikey=os.environ.get('DKR_SG_API_KEY'))
         from_email = Email(email)
@@ -80,7 +79,6 @@ def sendMailError(name,birthday_br,adress,adress_num,adress_comp,city,state,coun
         print(response.body)
         print(response.headers)
 
-
 def sendMailHealth(name,email,birthday,medical_agreement,coverage,phone,emergency_contact_name,emergency_contact_degree,emergency_contact_phone, emergency_contact_email,health_problems,medicines_alergie,food_alergie,insect_alergie,psychiatric_treatment,medication,doctor_name,doctor_phone,observations):
         sg = sendgrid.SendGridAPIClient(apikey=os.environ.get('DKR_SG_API_KEY'))
         from_email = Email(email)
@@ -115,6 +113,7 @@ def sendMailHealth(name,email,birthday,medical_agreement,coverage,phone,emergenc
         print(response.status_code)
         print(response.body)
         print(response.headers)
+
 def sendMailHealthError(name,email,birthday,medical_agreement,coverage,phone,emergency_contact_name,emergency_contact_degree,emergency_contact_phone, emergency_contact_email,health_problems,medicines_alergie,food_alergie,insect_alergie,psychiatric_treatment,medication,doctor_name,doctor_phone,observations):
         sg = sendgrid.SendGridAPIClient(apikey=os.environ.get('DKR_SG_API_KEY'))
         from_email = Email(email)
@@ -219,6 +218,69 @@ def sendMailVolunteerError(name, birthday, adress, adress_num, adress_comp,city,
                                         '</li><li>Opção de evento: ' + event_option +
                                         '</li><li>Forma de pagamento: ' + payment + payment_international +
                                         '</li><li>Dados do pagamento: ' + payment_info +
+                                        '</li></ul></body></html>'
+                                    )
+
+
+        mail = Mail(from_email, subject, to_email, sendgrid_content)
+
+        response = sg.client.mail.send.post(request_body=mail.get())
+        print(response.status_code)
+        print(response.body)
+        print(response.headers)
+
+def sendMailSponsor(name, email, phone, payment, payment_international, payment_info):
+        sg = sendgrid.SendGridAPIClient(apikey=os.environ.get('DKR_SG_API_KEY'))
+        from_email = Email(email)
+        to_email = Email(os.environ.get('DEFAULT_TO_EMAIL'))
+        subject = "Patrocínio - Drubchen de Khadro Sangdu"
+        sendgrid_content = Content("text/html", '<!DOCTYPE html><html lang="en" dir="ltr"><head><meta charset="utf-8"><title></title><style media="screen">ul {font-size: 1.3em;}li {margin-bottom: 20px;}</style></head><body><h2>Dados Pessoais</h2><ul><li>Nome: ' + name +
+                                        '</li><li>E-mail: ' + email +
+                                        '</li><li>Telefone/celular: ' + phone +
+                                        '</li><li>Forma de pagamento: ' + payment + payment_international +
+                                        '</li><li>Dados do pagamento: ' + payment_info +
+                                        '</li></ul></body></html>'
+                                    )
+
+
+        mail = Mail(from_email, subject, to_email, sendgrid_content)
+
+        response = sg.client.mail.send.post(request_body=mail.get())
+        print(response.status_code)
+        print(response.body)
+        print(response.headers)
+
+def sendMailSponsored(name, email, phone, sangha):
+        sg = sendgrid.SendGridAPIClient(apikey=os.environ.get('DKR_SG_API_KEY'))
+        from_email = Email(email)
+        to_email = Email(os.environ.get('DEFAULT_TO_EMAIL'))
+        subject = "Solicitação de patrocínio - Drubchen de Khadro Sangdu"
+        sendgrid_content = Content("text/html", '<!DOCTYPE html><html lang="en" dir="ltr"><head><meta charset="utf-8"><title></title><style media="screen">ul {font-size: 1.3em;}li {margin-bottom: 20px;}</style></head><body><h2>Dados Pessoais</h2><ul><li>Nome: ' + name +
+                                        '</li><li>E-mail: ' + email +
+                                        '</li><li>Telefone/celular: ' + phone +
+                                        '</li><li>Sangha: ' + sangha +
+                                        '</li></ul></body></html>'
+                                    )
+
+
+        mail = Mail(from_email, subject, to_email, sendgrid_content)
+
+        response = sg.client.mail.send.post(request_body=mail.get())
+        print(response.status_code)
+        print(response.body)
+        print(response.headers)
+
+def sendMailSponsorError(name, email, phone, payment, payment_international, payment_info):
+        sg = sendgrid.SendGridAPIClient(apikey=os.environ.get('DKR_SG_API_KEY'))
+        from_email = Email(email)
+        to_email = Email(os.environ.get('DEFAULT_TO_EMAIL'))
+        subject = "Error - patrocínio"
+        sendgrid_content = Content("text/html", '<!DOCTYPE html><html lang="en" dir="ltr"><head><meta charset="utf-8"><title></title><style media="screen">ul {font-size: 1.3em;}li {margin-bottom: 20px;}</style></head><body><h2>Dados Pessoais</h2><ul><li>Nome: ' + name +
+                                        '</li><li>E-mail: ' + email +
+                                        '</li><li>Telefone/celular: ' + phone +
+                                        '</li><li>Forma de pagamento: ' + payment + payment_international +
+                                        '</li><li>Dados do pagamento: ' + payment_info +
+                                        '</li><li>Sangha: ' + sangha +
                                         '</li></ul></body></html>'
                                     )
 
