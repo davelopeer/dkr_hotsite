@@ -5,7 +5,7 @@ from django.contrib import messages
 from django.template.loader import get_template
 from django.utils import translation
 from django.http import HttpResponseNotFound
-from website.forms import InscriptionForm, InscriptionFormEn, InscriptionFormEs, HealthForm, GuestForm, GuestFormEs, GuestFormEn, VolunteerForm, VolunteerFormEn, VolunteerFormEs
+from website.forms import InscriptionForm, InscriptionFormEn, InscriptionFormEs, HealthForm, GuestForm, GuestFormEs, GuestFormEn, VolunteerForm, VolunteerFormEn, VolunteerFormEs, SponsorForm, SponsorFormEn, SponsoredForm
 from website.sendgrid.sg_inscription import sendMail, sendMailHealth, sendMailVolunteer, sendMailError, sendMailHealthError, sendMailVolunteerError
 
 def index(request):
@@ -474,5 +474,85 @@ def guest_form(request):
 
     return render(request, 'guest-form.html',  {
         'form': form,
+        'user_language': user_language
+    })
+
+
+def sponsor(request):
+    user_language = translation.get_language_from_request(request, check_path=True)
+
+    if request.method == 'POST':
+
+        sponsored_form = Sponsored(request.POST)
+        if user_language == 'pt-br':
+            sponsor_form = Sponsor(request.POST)
+        else:
+            sponsor_form = SponsorEn(request.POST)
+
+        # if (form.fields['payment']) == 'Depósito bancário':
+        #     form.fields['deposit_day'].required = True
+
+        name = request.POST.get('name', '')
+        email = request.POST.get('email', '')
+        phone = request.POST.get('phone', '')
+        payment = request.POST.get('payment', '')
+        payment_international = request.POST.get('payment_international', '')
+        deposit_day = request.POST.get('deposit_day', '')
+        deposit_name = request.POST.get('deposit_name', '')
+        deposit_value = request.POST.get('deposit_value', '')
+        deposit_agency = request.POST.get('deposit_agency', '')
+        deposit_account = request.POST.get('deposit_account', '')
+        deposit_envelop = request.POST.get('deposit_envelop', '')
+        credit_card_name = request.POST.get('credit_card_name', '')
+        paypal_name = request.POST.get('paypal_name', '')
+        sangha = request.POST.get('sangha', '')
+
+        # SET THE PAYMENT_INFO
+        if user_language == 'pt-br':
+            if payment == 'Cartão de crédito':
+                payment_info = 'Nome do titular do cartão: ' + credit_card_name
+            else:
+                payment_info = "Depositado o valor de " + deposit_value + " no dia " + deposit_day + " por " + deposit_name + " com os dados: <br>" + "Número do envelope: " + deposit_envelop + "<br>ou<br>" + "Agência: " +  deposit_agency + " - Conta: " + deposit_account
+        else:
+            payment_info = 'Nome do usuário Paypal: ' + paypal_name
+
+        if form.is_valid():
+            sendMailSponsor(
+                    name,
+                    email,
+                    phone,
+                    payment,
+                    payment_international,
+                    payment_info,
+                    )
+            return redirect('pay-success')
+
+        else:
+            sendMailError(
+                    name,
+                    email,
+                    phone,
+                    payment,
+                    payment_international,
+                    payment_info,
+                    )
+            if user_language == 'pt-br':
+                return HttpResponseNotFound('<h1>Dados inválidos no formulário. Iremos avaliar os seus dados e entraremos em contato com você. Certifique-se de ter preenchido corretamento o campo e-mail.</h1>')
+            elif user_language == 'es':
+                return HttpResponseNotFound('<h1>Datos no válidos en el formulario. Nosotros evaluamos sus datos y nos pondremos en contacto con usted. Asegúrese de que ha completado el campo de correo electrónico.</h1>')
+            else:
+                return HttpResponseNotFound('<h1>Invalid form data. We will evaluate it and will contact you. Make sure your email has been correctly filled.</h1>')
+
+    else:
+        sponsored_form = Sponsored()
+        if user_language == 'pt-br':
+            sponsor_form = Sponsor()
+        else:
+            sponsor_form = SponsorEn()
+
+
+    return render(request, 'sponsor-form.html',  {
+        'sponsored_form': sponsored_form,
+        'sponsor_form': sponsor_form,
         'user_language': user_language
     })
