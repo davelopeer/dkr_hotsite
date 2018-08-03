@@ -494,4 +494,4 @@ class SponsoredForm(forms.Form):
     name = forms.CharField(required=True, max_length=150, widget=forms.TextInput(attrs={'class': 'form-control'}))
     email = forms.EmailField(required=True, max_length=100, widget=forms.EmailInput(attrs={'type':'email', 'class':'form-control', 'id':'formGroupExampleInput'}))
     phone = forms.IntegerField(required=True, widget=forms.NumberInput(attrs={'type':'number', 'class': 'form-control'}))
-    sangha = forms.CharField(required=False,max_length=1000, widget=forms.Textarea(attrs={'class': 'form-control form_text_area'}))
+    sangha = forms.CharField(required=True,max_length=1000, widget=forms.Textarea(attrs={'class': 'form-control form_text_area'}))
