@@ -528,7 +528,7 @@ def sponsor(request):
             return redirect('pay-success')
 
         else:
-            sendMailError(
+            sendMailSponsorError(
                     name,
                     email,
                     phone,
