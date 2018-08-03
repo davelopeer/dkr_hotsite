@@ -11,10 +11,198 @@
 
   {% block body_block %}
 
-  <form class="" action="index.html" method="post">
-    {% crsf_token %}
-    {{ sponsor_form }}
-    {{ sponsored_form }}
+  <form class="" action="index.html" method="post" name="sponsor">
+    {% csrf_token %}
+    <h2>{% trans "Sponsor Form" %}</h2>
+    <div class="row">
+      <div class="form-group col-md-8">
+        <label class="col-form-label" for="formGroupExampleInput">{% trans "Name" %}:</label>
+        {{sponsor_form.name}}
+      </div>
+    </div>
+    <div class="row">
+      <div class="form-group col-md-8">
+        <label class="col-form-label" for="formGroupExampleInput">{% trans "E-mail" %}:</label>
+        {{sponsor_form.email}}
+      </div>
+    </div>
+    <div class="row">
+      <div class="form-group col-md-8">
+        <label class="col-form-label" for="formGroupExampleInput">{% trans "Phone" %}:</label>
+        {{sponsor_form.phone}}
+      </div>
+    </div>
+    {% if user_language == 'pt-br' %}
+
+    <div class="row payment">
+      <div class="custom-controls-stacked col-md-12 checkbox-inline">
+        <p>Forma de pagamento</p>
+        {% for radio in sponsor_form.payment %}
+          <div class="form-check-boxes">
+            {{radio.tag}}
+            <label class="form-check-label" for="radio_{{ radio.index}}">{{ radio.choice_label }}</label>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+    <div class="modal fade" id="cardModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title font-large" id="exampleModalCenterTitle">LEMBRE-SE</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p class="font-large">Você será <span class="underline">redirecionado</span> para outra aba para realizar o pagamento. Após o fim da transação, <span class="underline">volte</span> para a ficha de inscrição para o envio.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row payment_form">
+      <div class="col-md-8 payment_section" id="payment1">
+        <h4 class="font-weight-light">Pagamento via Cielo</h4>
+        <p>Pague com seu cartão de crédito ou débito. O evento poderá ser parcelado em até 12x sem juros no cartão</p>
+        <div class="form-group">
+          <label class="col-form-label" for="formGroupExampleInput">Nome do titular igual ao que está no cartão:</label>
+          {{sponsor_form.credit_card_name}}
+        </div>
+        <button data-toggle="modal" data-target="#paymentModal" type="button" name="button">Efetuar pagamento</button>
+      </div>
+      <div class="col-md-8 payment_section" id="payment2">
+        <h4 class="font-weight-light">Pagamento via Banco do Brasil:</h4>
+        <p>Dados para depósito ou transferência:<br>
+          <a target="_blank" href="http://www.bb.com.br/pbb/pagina-inicial#/">Banco do Brasil</a><br>
+          Titular: Chagdud Gonpa Brasil<br>
+          CNPJ: 00.990.708/0001-37<br>
+          Agência: 1380-3<br>
+          Conta: 5454-2<br>
+        </p>
+        <p class="underline">DADOS DO PAGAMENTO:</p>
+        <div class="form-group">
+          <label class="col-form-label" for="formGroupExampleInput">Data da transferência/depósito</label>
+          {{sponsor_form.deposit_day}}
+        </div>
+        <div class="form-group">
+          <label class="col-form-label" for="formGroupExampleInput">Nome do titular da conta</label>
+          {{sponsor_form.deposit_name}}
+        </div>
+        <div class="form-group">
+          <label class="col-form-label" for="formGroupExampleInput">Valor do depósito</label>
+          {{sponsor_form.deposit_value}}
+        </div>
+        <div class="form-group">
+          <label class="col-form-label" for="formGroupExampleInput">Número da agência</label>
+          {{sponsor_form.deposit_agency}}
+        </div>
+        <div class="form-group">
+          <label class="col-form-label" for="formGroupExampleInput">Número da conta</label>
+          {{sponsor_form.deposit_account}}
+        </div>
+        <p class="text-center">ou</p>
+        <div class="form-group">
+          <label class="col-form-label" for="formGroupExampleInput">Número do envelope ou DOC </label>
+          {{sponsor_form.deposit_envelop}}
+        </div>
+      </div>
+    </div>
+
+    {% else %}
+    <p>{% trans "For PayPal donation/payment, please use the following email address for payment receiver: <strong>adm@chagdud.org</strong>. Also, in comment field inform that payment is for Khadro Sangdu Drubchen." %}</p>
+    <p class="underline">{% trans "Be sure to send the registration form after payment is completed." %}</p>
+    <p>{% trans "If you are paying for someone else, please inform the name on 'Extra Information'." %}</p>
+      {% for radio in form.payment_international %}
+        <div class="form-check-boxes payment">
+          {{radio.tag}}
+          <label class="form-check-label " for="radio_{{ radio.index}}">{{ radio.choice_label }}</label>
+          <img class="logo-paypal" src="{% static 'images/paypal-logo.png' %}" alt="Paypal">
+        </div>
+      {% endfor %}
+      <div class="col-md-8">
+        <div class="form-group">
+          <label class="col-form-label" for="formGroupExampleInput">{% trans "Paypal username:" %}</label>
+          {{sponsor_form.paypal_name}}
+        </div>
+      </div>
+      <div class="modal fade" id="paypalModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title font-large" id="exampleModalCenterTitle">{% trans "Please note:" %}</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>{% trans "A new tab will open for payment process. After the transaction is complete, return to registration page and submit form. Click on the image below." %}</p>
+              <a target="_blank" href="https://www.paypal.com/"><img class="logo-paypal" src="{% static 'images/paypal-logo.png' %}" alt="Paypal"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    {% endif %}
+    <button type="submit" class="btn btn-outline-primary">{% trans "Send" %}</button>
   </form>
+
+  <div class="modal fade" id="paymentModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title font-large" id="exampleModalCenterTitle">Pagamento com Cielo</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Clique na imagem a baixo e seja redirecionado para efetuar o pagamento.</p>
+          <div id="payment-adult">
+            <form method='post' action='https://cieloecommerce.cielo.com.br/transactionalvnext/order/buynow' target='blank'><input type='hidden' name='id' value='e5c8f945-a7d7-4035-9319-4df5faf62860' /><input type='image' name='submit' alt='Comprar' src='https://cieloecommerce.cielo.com.br/backoffice/Content/img/buttons/button-5-1.png' /></form>
+          </div>
+          <div id="payment-child">
+            <form method='post' action='https://cieloecommerce.cielo.com.br/transactionalvnext/order/buynow' target='blank'><input type='hidden' name='id' value='a92943fe-fdfc-4cc1-8750-bb9ad4acd820' /><input type='image' name='submit' alt='Comprar' src='https://cieloecommerce.cielo.com.br/backoffice/Content/img/buttons/button-5-1.png' /></form>
+          </div>
+          <p>Após enviar o pagamento, <span class="underline">lembre-se de enviar o formulário</span> de inscrição.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="divisioner">
+
+  <form class="" action="index.html" method="post" name="sponsored">
+    {% csrf_token %}
+
+    <h2>{% trans "Sponsored Form" %}</h2>
+    <div class="row">
+      <div class="form-group col-md-8">
+        <label class="col-form-label" for="formGroupExampleInput">{% trans "Name" %}:</label>
+        {{sponsored_form.name}}
+      </div>
+    </div>
+    <div class="row">
+      <div class="form-group col-md-8">
+        <label class="col-form-label" for="formGroupExampleInput">{% trans "E-mail" %}:</label>
+        {{sponsored_form.email}}
+      </div>
+    </div>
+    <div class="row">
+      <div class="form-group col-md-8">
+        <label class="col-form-label" for="formGroupExampleInput">{% trans "Phone" %}:</label>
+        {{sponsored_form.phone}}
+      </div>
+    </div>
+    <div class="row">
+      <div class="form-group col-md-8">
+        <label class="col-form-label" for="formGroupExampleInput">{% trans "Sanga da qual frequenta" %}:</label>
+        {{sponsored_form.sangha}}
+      </div>
+    </div>
+
+    <button type="submit" class="btn btn-outline-primary">{% trans "Send" %}</button>
+  </form>
+
+  <script type="text/javascript" src="{% static 'js/base.js' %}"></script>
 
   {% endblock %}

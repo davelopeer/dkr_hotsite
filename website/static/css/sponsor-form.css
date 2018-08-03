@@ -1,0 +1,49 @@
+.divisioner {
+  margin: 60px auto;
+  width: 84%;
+}
+
+.checkbox-inline * {
+  display: inline;
+}
+
+.inline {
+  display: inline;
+}
+
+.form-check-boxes {
+  margin-left: 15px;
+}
+
+.checkbox{
+  margin-bottom: 30px;
+}
+
+.font-large {
+  font-size: 1.5em;
+}
+
+.payment_form {
+  margin: 30px auto 50px;
+  display: run-in;
+}
+
+.payment_section {
+  display: none;
+  border: 1px dashed grey;
+  padding: 20px;
+}
+
+.padding {
+  margin-left: 3%;
+}
+
+.logo-paypal{
+  max-width: 150px;
+  margin: 20px 0 30px 15px;
+  display: inline;
+}
+
+#payment-child {
+  display: none;
+}
