@@ -483,11 +483,11 @@ def sponsor(request):
 
     if request.method == 'POST':
 
-        sponsored_form = Sponsored(request.POST)
+        sponsored_form = SponsoredForm(request.POST)
         if user_language == 'pt-br':
-            sponsor_form = Sponsor(request.POST)
+            sponsor_form = SponsorForm(request.POST)
         else:
-            sponsor_form = SponsorEn(request.POST)
+            sponsor_form = SponsorFormEn(request.POST)
 
         # if (form.fields['payment']) == 'Depósito bancário':
         #     form.fields['deposit_day'].required = True
@@ -544,11 +544,11 @@ def sponsor(request):
                 return HttpResponseNotFound('<h1>Invalid form data. We will evaluate it and will contact you. Make sure your email has been correctly filled.</h1>')
 
     else:
-        sponsored_form = Sponsored()
+        sponsored_form = SponsoredForm()
         if user_language == 'pt-br':
-            sponsor_form = Sponsor()
+            sponsor_form = SponsorForm()
         else:
-            sponsor_form = SponsorEn()
+            sponsor_form = SponsorFormEn()
 
 
     return render(request, 'sponsor-form.html',  {
