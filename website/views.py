@@ -6,7 +6,7 @@ from django.template.loader import get_template
 from django.utils import translation
 from django.http import HttpResponseNotFound
 from website.forms import InscriptionForm, InscriptionFormEn, InscriptionFormEs, HealthForm, GuestForm, GuestFormEs, GuestFormEn, VolunteerForm, VolunteerFormEn, VolunteerFormEs, SponsorForm, SponsorFormEn, SponsoredForm
-from website.sendgrid.sg_inscription import sendMail, sendMailHealth, sendMailVolunteer, sendMailError, sendMailHealthError, sendMailVolunteerError
+from website.sendgrid.sg_inscription import sendMail, sendMailHealth, sendMailVolunteer, sendMailError, sendMailHealthError, sendMailVolunteerError, sendMailSponsor, sendMailSponsored, sendMailSponsorError
 
 def index(request):
     user_language = translation.get_language_from_request(request, check_path=True)
@@ -221,7 +221,6 @@ def health_form(request):
         'user_language': user_language,
         'health_form': health_form,
     })
-
 
 def volunteer_form(request):
     user_language = translation.get_language_from_request(request, check_path=True)
@@ -477,7 +476,6 @@ def guest_form(request):
         'user_language': user_language
     })
 
-
 def sponsor(request):
     user_language = translation.get_language_from_request(request, check_path=True)
 
@@ -516,7 +514,23 @@ def sponsor(request):
         else:
             payment_info = 'Nome do usuário Paypal: ' + paypal_name
 
-        if form.is_valid():
+
+        if sponsored_form.is_valid():
+            sendMailSponsored(
+                    name,
+                    email,
+                    phone,
+                    sangha,
+                    )
+            sponsered_send_success = True
+            return render(request, 'sponsor-form.html',  {
+                'sponsored_form': sponsored_form,
+                'sponsor_form': sponsor_form,
+                'user_language': user_language,
+                'sponsered_send_success': sponsered_send_success,
+            })
+
+        elif sponsor_form.is_valid():
             sendMailSponsor(
                     name,
                     email,
@@ -525,23 +539,22 @@ def sponsor(request):
                     payment_international,
                     payment_info,
                     )
-            return redirect('pay-success')
-
+            sponser_send_success = True
+            return render(request, 'sponsor-form.html',  {
+                'sponsored_form': sponsored_form,
+                'sponsor_form': sponsor_form,
+                'user_language': user_language,
+                'sponser_send_success': sponser_send_success,
+            })
         else:
-            sendMailSponsorError(
-                    name,
-                    email,
-                    phone,
-                    payment,
-                    payment_international,
-                    payment_info,
-                    )
-            if user_language == 'pt-br':
-                return HttpResponseNotFound('<h1>Dados inválidos no formulário. Iremos avaliar os seus dados e entraremos em contato com você. Certifique-se de ter preenchido corretamento o campo e-mail.</h1>')
-            elif user_language == 'es':
-                return HttpResponseNotFound('<h1>Datos no válidos en el formulario. Nosotros evaluamos sus datos y nos pondremos en contacto con usted. Asegúrese de que ha completado el campo de correo electrónico.</h1>')
-            else:
-                return HttpResponseNotFound('<h1>Invalid form data. We will evaluate it and will contact you. Make sure your email has been correctly filled.</h1>')
+            invalid_data = True
+            return render(request, 'sponsor-form.html',  {
+                'sponsored_form': sponsored_form,
+                'sponsor_form': sponsor_form,
+                'user_language': user_language,
+                'invalid_data': invalid_data,
+            })
+
 
     else:
         sponsored_form = SponsoredForm()
