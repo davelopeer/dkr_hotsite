@@ -465,7 +465,7 @@ class VolunteerFormEn(forms.Form):
     ))
 
 
-class Sponsor(forms.Form):
+class SponsorForm(forms.Form):
     name = forms.CharField(required=True, max_length=150, widget=forms.TextInput(attrs={'class': 'form-control'}))
     email = forms.EmailField(required=True, max_length=100, widget=forms.EmailInput(attrs={'type':'email', 'class':'form-control', 'id':'formGroupExampleInput'}))
     phone = forms.IntegerField(required=True, widget=forms.NumberInput(attrs={'type':'number', 'class': 'form-control'}))
@@ -481,7 +481,7 @@ class Sponsor(forms.Form):
     deposit_account = forms.CharField(required=False, widget=forms.TextInput(attrs={'class': 'form-control'}))
     deposit_envelop = forms.CharField(required=False, widget=forms.TextInput(attrs={'class': 'form-control'}))
 
-class SponsorEn(forms.Form):
+class SponsorFormEn(forms.Form):
     name = forms.CharField(required=True, max_length=150, widget=forms.TextInput(attrs={'class': 'form-control'}))
     email = forms.EmailField(required=True, max_length=100, widget=forms.EmailInput(attrs={'type':'email', 'class':'form-control', 'id':'formGroupExampleInput'}))
     phone = forms.IntegerField(required=True, widget=forms.NumberInput(attrs={'type':'number', 'class': 'form-control'}))
@@ -490,8 +490,8 @@ class SponsorEn(forms.Form):
     ))
     paypal_name = forms.CharField(required=True, widget=forms.TextInput(attrs={'class': 'form-control',  }))
 
-class Sponsored(forms.Form):
+class SponsoredForm(forms.Form):
     name = forms.CharField(required=True, max_length=150, widget=forms.TextInput(attrs={'class': 'form-control'}))
     email = forms.EmailField(required=True, max_length=100, widget=forms.EmailInput(attrs={'type':'email', 'class':'form-control', 'id':'formGroupExampleInput'}))
     phone = forms.IntegerField(required=True, widget=forms.NumberInput(attrs={'type':'number', 'class': 'form-control'}))
-    sangha = forms.CharField(required=True,max_length=1000, widget=forms.Textarea(attrs={'class': 'form-control form_text_area'}))
+    sangha = forms.CharField(required=False,max_length=1000, widget=forms.Textarea(attrs={'class': 'form-control form_text_area'}))
