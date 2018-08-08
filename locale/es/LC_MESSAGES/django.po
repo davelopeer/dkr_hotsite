@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-02 17:48-0300\n"
+"POT-Creation-Date: 2018-08-08 14:47-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -181,7 +181,7 @@ msgstr "Número"
 #: .\website\templates\guest-form.html:42 .\website\templates\index.html:275
 #: .\website\templates\volunteer-form.html:78
 msgid "Additional address info"
-msgstr "Depto"
+msgstr "Apto"
 
 #: .\website\templates\guest-form.html:46 .\website\templates\index.html:279
 #: .\website\templates\volunteer-form.html:82
@@ -236,7 +236,7 @@ msgstr "Alimentación"
 #: .\website\templates\guest-form.html:111 .\website\templates\index.html:344
 #: .\website\templates\volunteer-form.html:147
 msgid "Food preference"
-msgstr "Preferencia Alimentar"
+msgstr "Preferencia alimenticia"
 
 #: .\website\templates\guest-form.html:120 .\website\templates\index.html:353
 #: .\website\templates\volunteer-form.html:156
@@ -273,7 +273,7 @@ msgstr "Necesita silla?"
 #: .\website\templates\guest-form.html:151 .\website\templates\index.html:384
 #: .\website\templates\volunteer-form.html:187
 msgid "Only for people with limitations and unable sit on the floor."
-msgstr "Solo para personas com limitaciones para sentar en el suelo."
+msgstr "Solo para personas con limitaciones para sentarse en el suelo."
 
 #: .\website\templates\guest-form.html:153 .\website\templates\index.html:389
 msgid "Event option"
@@ -299,23 +299,27 @@ msgid "Extra information"
 msgstr "Observaciones"
 
 #: .\website\templates\guest-form.html:189 .\website\templates\index.html:425
+#: .\website\templates\sponsor-form.html:51
 #: .\website\templates\volunteer-form.html:248
 msgid "Payment"
 msgstr "Condiciones de pago"
 
 #: .\website\templates\guest-form.html:276 .\website\templates\index.html:512
+#: .\website\templates\sponsor-form.html:128
 #: .\website\templates\volunteer-form.html:334
 msgid ""
 "For PayPal donation/payment, please use the following email address for "
 "payment receiver: <strong>adm@chagdud.org</strong>. Also, in comment field "
 "inform that payment is for Khadro Sangdu Drubchen."
 msgstr ""
-"Para hacer la donación a través de PayPal, por favor comunique al correo "
-"adm@chagdud.org como identificador de donación. También es necesario "
-"describir a qué la donación se destina. En ese caso, por favor marque Khadro "
+"Para hacer la donación a través de PayPal, por favor comuníquese al correo "
+"electrónico adm@chagdud.org con el identificador de la donación. También es "
+"necesario describir cual es el destino de la donación. "
+"En ese caso, por favor marque Khadro "
 "Sangdu Drubchen. "
 
 #: .\website\templates\guest-form.html:277 .\website\templates\index.html:513
+#: .\website\templates\sponsor-form.html:129
 #: .\website\templates\volunteer-form.html:335
 msgid "Be sure to send the registration form after payment is completed."
 msgstr ""
@@ -323,17 +327,19 @@ msgstr ""
 "del responsable por la transacción PayPal."
 
 #: .\website\templates\guest-form.html:287 .\website\templates\index.html:524
+#: .\website\templates\sponsor-form.html:140
 #: .\website\templates\volunteer-form.html:345
 msgid "Paypal username:"
 msgstr "Nombre del responsable por la transacción PayPal"
 
 #: .\website\templates\guest-form.html:295 .\website\templates\index.html:82
-#: .\website\templates\index.html:532
+#: .\website\templates\index.html:532 .\website\templates\sponsor-form.html:148
 #: .\website\templates\volunteer-form.html:353
 msgid "Please note:"
 msgstr "Acuerdese:"
 
 #: .\website\templates\guest-form.html:301 .\website\templates\index.html:538
+#: .\website\templates\sponsor-form.html:154
 #: .\website\templates\volunteer-form.html:359
 msgid ""
 "A new tab will open for payment process. After the transaction is complete, "
@@ -365,6 +371,8 @@ msgstr ""
 
 #: .\website\templates\guest-form.html:330
 #: .\website\templates\health-form.html:106 .\website\templates\index.html:567
+#: .\website\templates\sponsor-form.html:163
+#: .\website\templates\sponsor-form.html:221
 #: .\website\templates\volunteer-form.html:388
 msgid "Send"
 msgstr "Enviar"
@@ -380,10 +388,14 @@ msgstr "Datos Personales"
 #: .\website\templates\health-form.html:18
 #: .\website\templates\health-form.html:48
 #: .\website\templates\health-form.html:93
+#: .\website\templates\sponsor-form.html:34
+#: .\website\templates\sponsor-form.html:197
 msgid "Name"
 msgstr "Nombre"
 
 #: .\website\templates\health-form.html:22
+#: .\website\templates\sponsor-form.html:40
+#: .\website\templates\sponsor-form.html:203
 msgid "E-mail"
 msgstr "E-mail"
 
@@ -401,6 +413,8 @@ msgstr "Parentesco"
 
 #: .\website\templates\health-form.html:56
 #: .\website\templates\health-form.html:97
+#: .\website\templates\sponsor-form.html:46
+#: .\website\templates\sponsor-form.html:209
 msgid "Phone"
 msgstr "Teléfono"
 
@@ -748,7 +762,7 @@ msgid ""
 "gear, sunscreen, hat, insect repellent, comfortable walking footwear and "
 "warm clothes."
 msgstr ""
-"Traiga su cojín de meditación (identificada com su nombre), linterna, abrigo "
+"Traiga su cojín de meditación (identificado com su nombre), linterna, abrigo "
 "y zapatos para la lluvia, protector solar, sombrero o gorro, repelente de "
 "insectos, zapatos cómodos para caminar, abrigo para el frio."
 
@@ -756,7 +770,7 @@ msgstr ""
 #: .\website\templates\volunteer-form.html:30
 msgid "Please bring small bank notes for business transactions."
 msgstr ""
-"Pedimos que traigan dinero sencillo, para que sea más fácil el uso en los "
+"Pedimos que traigan dinero cambiado, para que sea más fácil el uso en los "
 "comercios."
 
 #: .\website\templates\index.html:218
@@ -765,8 +779,8 @@ msgid ""
 "The weather conditions in this area vary. We suggest that everyone check the "
 "weather forecast before arrival."
 msgstr ""
-"El clima em Khadro Ling es tremendamente inestable. Sugerimos a todos que "
-"averiguen la previsión del tempo anticipadamente."
+"El clima em Khadro Ling es muy inestable. Sugerimos a todos que "
+"averiguen el pronóstico del tiempo anticipadamente."
 
 #: .\website\templates\index.html:219
 #: .\website\templates\volunteer-form.html:32
@@ -797,7 +811,7 @@ msgstr ""
 #: .\website\templates\volunteer-form.html:35
 msgid "Our store accepts Visa, Mastercard and Cielo credit cards."
 msgstr ""
-"Nuestra tienda acepta tarjetas bandera Visa, Master y Cielo, débito o "
+"Nuestra tienda acepta las tarjetas Visa, Master y Cielo, débito o "
 "crédito."
 
 #: .\website\templates\index.html:223
@@ -806,20 +820,20 @@ msgid ""
 "Please, do not take dinnerware from dining area to other locations such as "
 "shrineroom during event."
 msgstr ""
-"Por favor, no utilicen las vajillas del comedor colectivo en el lugar de la "
+"Por favor, no utilicen la vajilla del comedor colectivo en el lugar de la "
 "ceremonia."
 
 #: .\website\templates\index.html:224
 #: .\website\templates\volunteer-form.html:37
 msgid "We suggest bringing your own water bottle to avoid plastic waste."
 msgstr ""
-"Sugerimos que traigan sus propias botellas para água, para disminuir la "
+"Sugerimos que traigan sus propias botellas de agua, para disminuir la "
 "basura plástica."
 
 #: .\website\templates\index.html:225
 #: .\website\templates\volunteer-form.html:38
 msgid "Smoking is prohibited in all Khadro Ling areas."
-msgstr "Es prohibido fumar em cualquier área de Khadro Ling."
+msgstr "Es prohibido fumar en cualquier área de Khadro Ling."
 
 #: .\website\templates\index.html:226
 #: .\website\templates\volunteer-form.html:39
@@ -827,8 +841,8 @@ msgid ""
 "Keep personal objects and value items with you or appropriately stored. "
 "Khadro Ling is not responsible for any lost object during events."
 msgstr ""
-"Mantenga sus perteneces y objetos de valor guardados com usted de forma "
-"adecuada. Khadro Ling no asume responsabilidad por pérdidas de objetos de "
+"Mantenga sus perteneces y objetos de valor guardados com de forma adecuada con usted. "
+"Khadro Ling no asume responsabilidad por pérdidas de objetos de "
 "lós participantes en los eventos."
 
 #: .\website\templates\index.html:227
@@ -877,7 +891,7 @@ msgid ""
 "available under the <a href='#' id='accomodation-link'>accomodations</a> tab."
 msgstr ""
 
-#: .\website\templates\index.html:514
+#: .\website\templates\index.html:514 .\website\templates\sponsor-form.html:130
 msgid ""
 "If you are paying for someone else, please inform the name on 'Extra "
 "Information'."
@@ -897,6 +911,41 @@ msgstr ""
 msgid "Back"
 msgstr "Regreso"
 
+#: .\website\templates\sponsor-form.html:15
+#: .\website\templates\sponsor-form.html:20
+msgid "Form successfully send."
+msgstr ""
+
+#: .\website\templates\sponsor-form.html:16
+msgid "We'll be contacting you soon, sponser."
+msgstr ""
+
+#: .\website\templates\sponsor-form.html:21
+msgid "We'll be contacting you soon, sponsered"
+msgstr ""
+
+#: .\website\templates\sponsor-form.html:25
+#, fuzzy
+#| msgid "General information"
+msgid "Invalid information."
+msgstr "Informaciones"
+
+#: .\website\templates\sponsor-form.html:26
+msgid "Be shure that you correctly filled all fields."
+msgstr ""
+
+#: .\website\templates\sponsor-form.html:31
+msgid "Sponsor Form"
+msgstr ""
+
+#: .\website\templates\sponsor-form.html:194
+msgid "Sponsored Form"
+msgstr ""
+
+#: .\website\templates\sponsor-form.html:215
+msgid "Sanga da qual frequenta"
+msgstr ""
+
 #: .\website\templates\volunteer-form.html:48
 msgid "Volunteer application form"
 msgstr "Formulario de inscripción para voluntarios"
@@ -910,7 +959,8 @@ msgid ""
 "All volunteers will be accommodated in the retreat house. Please be sure to "
 "bring your bedding, pillow, towels and blankets."
 msgstr ""
-"Todos los voluntarios quedarán alojados en las casas de retiro. Recuerde traer su ropa de cama, almohada, toallas y mantas."
+"Todos los voluntarios quedarán alojados en las casas de retiro. Recuerde "
+"traer su ropa de cama, almohada, toallas y mantas."
 
 #: .\website\templates\volunteer-form.html:191
 msgid "Additional information"
