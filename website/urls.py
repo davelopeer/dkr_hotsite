@@ -10,4 +10,6 @@ urlpatterns = [
     url(r'^volunteer-form/$', views.volunteer_form, name='volunteer-form'),
     url(r'^cancellation-policy/$', views.cancellation_policy, name='cancellation-policy'),
     url(r'^sponsor/$', views.sponsor, name='sponsor'),
+    url(r'^accommodation/$', views.accomodation, name='accomodation'),
+
 ]
