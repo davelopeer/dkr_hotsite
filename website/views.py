@@ -569,3 +569,7 @@ def sponsor(request):
         'sponsor_form': sponsor_form,
         'user_language': user_language
     })
+
+def accomodation(request):
+    accommodation = True
+    return render(request, 'index.html', {'accommodation': accommodation,})
