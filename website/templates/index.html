@@ -16,7 +16,7 @@
           <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" id="accomodation-tab" data-toggle="tab" href="#accommodation" role="tab" aria-controls="accommodation" aria-selected="false">{% trans "Accommodations" %}</a>
+            <a class="nav-link" id="accommodation-tab" data-toggle="tab" href="#accommodation" role="tab" aria-controls="accommodation" aria-selected="false">{% trans "Accommodations" %}</a>
         </li>
         <li class="nav-item">
             <a class="nav-link" id="transportation-tab" data-toggle="tab" href="#transportation" role="tab" aria-controls="transportation" aria-selected="false">{% trans "Transportation" %}</a>
@@ -603,6 +603,19 @@
         </div>
       </div>
     </main>
+
+    {% if accommodation == True %}
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('#home').attr('class', 'tab-pane fade padding-sides')
+        $('#accommodation').attr('class', 'tab-pane fade show active padding-sides')
+        $('#home-tab').attr('class', 'nav-link')
+        $('#accommodation-tab').attr('class', 'nav-link active')
+
+    });
+    </script>
+    {% endif %}
+
     <script type="text/javascript" src="{% static 'js/base.js' %}"></script>
 
     <!-- MAPS -->
