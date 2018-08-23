@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-08 14:47-0300\n"
+"POT-Creation-Date: 2018-08-23 16:38-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -136,11 +136,11 @@ msgstr ""
 "Por lo tanto, es muy importante que usted nos avise lo más pronto posible si "
 "acaso necesita cancelar su participación."
 
-#: .\website\templates\guest-form.html:12 .\website\templates\index.html:245
+#: .\website\templates\guest-form.html:12 .\website\templates\index.html:254
 msgid "Registration form"
 msgstr "Formulario de inscripción"
 
-#: .\website\templates\guest-form.html:17 .\website\templates\index.html:250
+#: .\website\templates\guest-form.html:17 .\website\templates\index.html:260
 msgid ""
 "The registration form must be completed for each participant, including "
 "children of all ages."
@@ -148,97 +148,97 @@ msgstr ""
 "El formulario es individual y se debe llenarlo completamente. Niños, "
 "independiente de la edad, deben estar inscritos en el evento."
 
-#: .\website\templates\guest-form.html:18 .\website\templates\index.html:251
+#: .\website\templates\guest-form.html:18 .\website\templates\index.html:261
 #: .\website\templates\volunteer-form.html:54
 msgid "Be sure to submit the registration form after payment tab is complete."
 msgstr "Después del pago, fíjese si el formulario fue enviado correctamente."
 
-#: .\website\templates\guest-form.html:23 .\website\templates\index.html:256
+#: .\website\templates\guest-form.html:23 .\website\templates\index.html:266
 #: .\website\templates\volunteer-form.html:59
 msgid "Full name"
 msgstr "Nombre completo"
 
-#: .\website\templates\guest-form.html:25 .\website\templates\index.html:258
+#: .\website\templates\guest-form.html:25 .\website\templates\index.html:268
 #: .\website\templates\volunteer-form.html:61
 msgid "Without abbreviations"
 msgstr "Sin abreviaturas"
 
-#: .\website\templates\guest-form.html:28 .\website\templates\index.html:261
+#: .\website\templates\guest-form.html:28 .\website\templates\index.html:271
 #: .\website\templates\volunteer-form.html:64
 msgid "Date of birth: "
 msgstr "Fecha de nacimiento:"
 
-#: .\website\templates\guest-form.html:34 .\website\templates\index.html:267
+#: .\website\templates\guest-form.html:34 .\website\templates\index.html:277
 #: .\website\templates\volunteer-form.html:70
 msgid "Address"
 msgstr "Dirección"
 
-#: .\website\templates\guest-form.html:38 .\website\templates\index.html:271
+#: .\website\templates\guest-form.html:38 .\website\templates\index.html:281
 #: .\website\templates\volunteer-form.html:74
 msgid "Number"
 msgstr "Número"
 
-#: .\website\templates\guest-form.html:42 .\website\templates\index.html:275
+#: .\website\templates\guest-form.html:42 .\website\templates\index.html:285
 #: .\website\templates\volunteer-form.html:78
 msgid "Additional address info"
 msgstr "Apto"
 
-#: .\website\templates\guest-form.html:46 .\website\templates\index.html:279
+#: .\website\templates\guest-form.html:46 .\website\templates\index.html:289
 #: .\website\templates\volunteer-form.html:82
 msgid "Zip code"
 msgstr "Código Postal"
 
-#: .\website\templates\guest-form.html:52 .\website\templates\index.html:285
+#: .\website\templates\guest-form.html:52 .\website\templates\index.html:295
 #: .\website\templates\volunteer-form.html:88
 msgid "City"
 msgstr "Ciudad"
 
-#: .\website\templates\guest-form.html:56 .\website\templates\index.html:289
+#: .\website\templates\guest-form.html:56 .\website\templates\index.html:299
 #: .\website\templates\volunteer-form.html:92
 msgid "State"
 msgstr "Departamento/ Región"
 
-#: .\website\templates\guest-form.html:60 .\website\templates\index.html:293
+#: .\website\templates\guest-form.html:60 .\website\templates\index.html:303
 #: .\website\templates\volunteer-form.html:96
 msgid "Country"
 msgstr "País"
 
-#: .\website\templates\guest-form.html:71 .\website\templates\index.html:304
+#: .\website\templates\guest-form.html:71 .\website\templates\index.html:314
 #: .\website\templates\volunteer-form.html:107
 msgid "Phone/Mobile"
 msgstr "Teléfono fijo/ Celular"
 
-#: .\website\templates\guest-form.html:77 .\website\templates\index.html:310
+#: .\website\templates\guest-form.html:77 .\website\templates\index.html:320
 #: .\website\templates\volunteer-form.html:113
 msgid "Genre"
 msgstr "Género"
 
-#: .\website\templates\guest-form.html:88 .\website\templates\index.html:321
+#: .\website\templates\guest-form.html:88 .\website\templates\index.html:331
 #: .\website\templates\volunteer-form.html:124
 msgid "Previous empowerments received:"
 msgstr "Cuáles son las iniciaciones más recientes que usted ha recibido?"
 
-#: .\website\templates\guest-form.html:92 .\website\templates\index.html:325
+#: .\website\templates\guest-form.html:92 .\website\templates\index.html:335
 #: .\website\templates\volunteer-form.html:128
 msgid "Empowerment bestowed by:"
 msgstr "De cuál profesor?"
 
-#: .\website\templates\guest-form.html:98 .\website\templates\index.html:331
+#: .\website\templates\guest-form.html:98 .\website\templates\index.html:341
 #: .\website\templates\volunteer-form.html:134
 msgid "Are you an ordained practitioner? (monastic or otherwise)"
 msgstr "Practicante con ordenación? (monástica u otra)"
 
-#: .\website\templates\guest-form.html:108 .\website\templates\index.html:341
+#: .\website\templates\guest-form.html:108 .\website\templates\index.html:351
 #: .\website\templates\volunteer-form.html:144
 msgid "Food"
 msgstr "Alimentación"
 
-#: .\website\templates\guest-form.html:111 .\website\templates\index.html:344
+#: .\website\templates\guest-form.html:111 .\website\templates\index.html:354
 #: .\website\templates\volunteer-form.html:147
 msgid "Food preference"
 msgstr "Preferencia alimenticia"
 
-#: .\website\templates\guest-form.html:120 .\website\templates\index.html:353
+#: .\website\templates\guest-form.html:120 .\website\templates\index.html:363
 #: .\website\templates\volunteer-form.html:156
 msgid ""
 "Khadro Ling does not serve meals for special diets with ingredient "
@@ -248,38 +248,38 @@ msgstr ""
 "ingredientes."
 
 #: .\website\templates\guest-form.html:127
-#: .\website\templates\guest-form.html:169 .\website\templates\index.html:360
-#: .\website\templates\index.html:405
+#: .\website\templates\guest-form.html:169 .\website\templates\index.html:370
+#: .\website\templates\index.html:415
 #: .\website\templates\volunteer-form.html:163
 #: .\website\templates\volunteer-form.html:228
 msgid "Please pay attention"
 msgstr "Atención"
 
-#: .\website\templates\guest-form.html:133 .\website\templates\index.html:366
+#: .\website\templates\guest-form.html:133 .\website\templates\index.html:376
 #: .\website\templates\volunteer-form.html:169
 msgid "This option cannot be changed after the form submission."
 msgstr "Esta opción no podrá ser modificada después del envio del formulario."
 
-#: .\website\templates\guest-form.html:139 .\website\templates\index.html:372
+#: .\website\templates\guest-form.html:139 .\website\templates\index.html:382
 #: .\website\templates\volunteer-form.html:175
 msgid "Sitting"
 msgstr "Asientos"
 
-#: .\website\templates\guest-form.html:142 .\website\templates\index.html:375
+#: .\website\templates\guest-form.html:142 .\website\templates\index.html:385
 #: .\website\templates\volunteer-form.html:178
 msgid "Do you need a chair?"
 msgstr "Necesita silla?"
 
-#: .\website\templates\guest-form.html:151 .\website\templates\index.html:384
+#: .\website\templates\guest-form.html:151 .\website\templates\index.html:394
 #: .\website\templates\volunteer-form.html:187
 msgid "Only for people with limitations and unable sit on the floor."
 msgstr "Solo para personas con limitaciones para sentarse en el suelo."
 
-#: .\website\templates\guest-form.html:153 .\website\templates\index.html:389
+#: .\website\templates\guest-form.html:153 .\website\templates\index.html:399
 msgid "Event option"
 msgstr "Opción de evento"
 
-#: .\website\templates\guest-form.html:175 .\website\templates\index.html:411
+#: .\website\templates\guest-form.html:175 .\website\templates\index.html:421
 #: .\website\templates\volunteer-form.html:234
 msgid ""
 "Notify in the field 'Extra information' the name of the adult responsible "
@@ -288,23 +288,23 @@ msgstr ""
 "En el campo “observaciones” describa el nombre de los responsables que "
 "participarán del evento."
 
-#: .\website\templates\guest-form.html:181 .\website\templates\index.html:417
+#: .\website\templates\guest-form.html:181 .\website\templates\index.html:427
 #: .\website\templates\volunteer-form.html:240
 msgid "Partial participation is not possible in this retreat. "
 msgstr "No es posible participación parcial en ese retiro."
 
-#: .\website\templates\guest-form.html:185 .\website\templates\index.html:421
+#: .\website\templates\guest-form.html:185 .\website\templates\index.html:431
 #: .\website\templates\volunteer-form.html:244
 msgid "Extra information"
 msgstr "Observaciones"
 
-#: .\website\templates\guest-form.html:189 .\website\templates\index.html:425
+#: .\website\templates\guest-form.html:189 .\website\templates\index.html:435
 #: .\website\templates\sponsor-form.html:51
 #: .\website\templates\volunteer-form.html:248
 msgid "Payment"
 msgstr "Condiciones de pago"
 
-#: .\website\templates\guest-form.html:276 .\website\templates\index.html:512
+#: .\website\templates\guest-form.html:276 .\website\templates\index.html:522
 #: .\website\templates\sponsor-form.html:128
 #: .\website\templates\volunteer-form.html:334
 msgid ""
@@ -314,11 +314,10 @@ msgid ""
 msgstr ""
 "Para hacer la donación a través de PayPal, por favor comuníquese al correo "
 "electrónico adm@chagdud.org con el identificador de la donación. También es "
-"necesario describir cual es el destino de la donación. "
-"En ese caso, por favor marque Khadro "
-"Sangdu Drubchen. "
+"necesario describir cual es el destino de la donación. En ese caso, por "
+"favor marque Khadro Sangdu Drubchen. "
 
-#: .\website\templates\guest-form.html:277 .\website\templates\index.html:513
+#: .\website\templates\guest-form.html:277 .\website\templates\index.html:523
 #: .\website\templates\sponsor-form.html:129
 #: .\website\templates\volunteer-form.html:335
 msgid "Be sure to send the registration form after payment is completed."
@@ -326,19 +325,19 @@ msgstr ""
 "Después del pago, fíjese si el formulario fue enviado correctamente. Nombre "
 "del responsable por la transacción PayPal."
 
-#: .\website\templates\guest-form.html:287 .\website\templates\index.html:524
+#: .\website\templates\guest-form.html:287 .\website\templates\index.html:534
 #: .\website\templates\sponsor-form.html:140
 #: .\website\templates\volunteer-form.html:345
 msgid "Paypal username:"
 msgstr "Nombre del responsable por la transacción PayPal"
 
 #: .\website\templates\guest-form.html:295 .\website\templates\index.html:82
-#: .\website\templates\index.html:532 .\website\templates\sponsor-form.html:148
+#: .\website\templates\index.html:542 .\website\templates\sponsor-form.html:148
 #: .\website\templates\volunteer-form.html:353
 msgid "Please note:"
 msgstr "Acuerdese:"
 
-#: .\website\templates\guest-form.html:301 .\website\templates\index.html:538
+#: .\website\templates\guest-form.html:301 .\website\templates\index.html:548
 #: .\website\templates\sponsor-form.html:154
 #: .\website\templates\volunteer-form.html:359
 msgid ""
@@ -349,7 +348,7 @@ msgstr ""
 "terminar la transación, vuelva al formulario de inscripción para el envio. "
 "Haga clic en la imagen de abajo."
 
-#: .\website\templates\guest-form.html:320 .\website\templates\index.html:557
+#: .\website\templates\guest-form.html:320 .\website\templates\index.html:567
 #: .\website\templates\volunteer-form.html:378
 msgid ""
 "I have read and I accept the <a target='_blank' href='http://www.ks-drubchen."
@@ -360,7 +359,7 @@ msgstr ""
 "cancellation-policy/'> política de cancelamiento de participación en eventos "
 "en Khadro Ling.</a>"
 
-#: .\website\templates\guest-form.html:322 .\website\templates\index.html:559
+#: .\website\templates\guest-form.html:322 .\website\templates\index.html:569
 #: .\website\templates\volunteer-form.html:380
 msgid ""
 "Before clicking send, make sure that all data is correctly filled in and "
@@ -370,7 +369,7 @@ msgstr ""
 "y ha concluido el pago."
 
 #: .\website\templates\guest-form.html:330
-#: .\website\templates\health-form.html:106 .\website\templates\index.html:567
+#: .\website\templates\health-form.html:106 .\website\templates\index.html:577
 #: .\website\templates\sponsor-form.html:163
 #: .\website\templates\sponsor-form.html:221
 #: .\website\templates\volunteer-form.html:388
@@ -469,11 +468,12 @@ msgstr "Tiene médico personal?"
 msgid "Comments"
 msgstr "Observaciones"
 
-#: .\website\templates\index.html:19 .\website\templates\index.html:74
+#: .\website\templates\index.html:19 .\website\templates\index.html:73
+#: .\website\templates\index.html:74
 msgid "Accommodations"
 msgstr "Hospedaje"
 
-#: .\website\templates\index.html:22 .\website\templates\index.html:236
+#: .\website\templates\index.html:22 .\website\templates\index.html:245
 msgid "Transportation"
 msgstr "Transporte"
 
@@ -632,10 +632,6 @@ msgstr ""
 "drubchen. Si Usted desea asistir, debe recibir una iniciación de tantra "
 "interno antes de Diciembre."
 
-#: .\website\templates\index.html:73
-msgid "Accommodations / Transportation"
-msgstr "Hospedaje/Traslados"
-
 #: .\website\templates\index.html:75
 msgid ""
 "During this drubchen Khadro Ling will not provide accommodations for "
@@ -700,62 +696,68 @@ msgstr ""
 msgid "Hotels and lodgings affiliated with the event:"
 msgstr "Hoteles y hostales conveniados para el evento:"
 
-#: .\website\templates\index.html:91 .\website\templates\index.html:104
-#: .\website\templates\index.html:130 .\website\templates\index.html:145
+#: .\website\templates\index.html:91
+msgid ""
+"The block off of reservations for our event will close the end of September."
+msgstr "El bloqueo concluirá a fin de setiembre."
+
+#: .\website\templates\index.html:92 .\website\templates\index.html:113
+#: .\website\templates\index.html:139 .\website\templates\index.html:154
 msgid "(how to get to)"
 msgstr "(como llegar)"
 
-#: .\website\templates\index.html:97 .\website\templates\index.html:182
-#: .\website\templates\index.html:186
+#: .\website\templates\index.html:98 .\website\templates\index.html:191
+#: .\website\templates\index.html:195
 msgid "(simple accommodations)"
 msgstr "(hostal, acomodaciones sencillas)"
 
-#: .\website\templates\index.html:100 .\website\templates\index.html:126
-#: .\website\templates\index.html:135 .\website\templates\index.html:142
-#: .\website\templates\index.html:151 .\website\templates\index.html:157
-#: .\website\templates\index.html:162 .\website\templates\index.html:167
+#: .\website\templates\index.html:101 .\website\templates\index.html:109
+#: .\website\templates\index.html:135 .\website\templates\index.html:144
+#: .\website\templates\index.html:151 .\website\templates\index.html:160
+#: .\website\templates\index.html:166 .\website\templates\index.html:171
+#: .\website\templates\index.html:176
 msgid "Inform the promo code: event DKR"
 msgstr "Informar el código promocional: evento DKR"
 
-#: .\website\templates\index.html:115
+#: .\website\templates\index.html:124
 msgid "The promotional code for this hotel is in the instructions pdf."
 msgstr ""
 
-#: .\website\templates\index.html:116 .\website\templates\index.html:125
-#: .\website\templates\index.html:156
+#: .\website\templates\index.html:125 .\website\templates\index.html:134
+#: .\website\templates\index.html:165
 msgid "English and Portuguese service"
 msgstr "Servicio en portugués y Inglés"
 
-#: .\website\templates\index.html:138
+#: .\website\templates\index.html:147
 msgid "(simple accommodation)"
 msgstr "(hostal, acomodaciones sencillas)"
 
-#: .\website\templates\index.html:150
+#: .\website\templates\index.html:159
 msgid "English, German and Portuguese service"
 msgstr "Servicio en portugués, Inglés y alemán"
 
-#: .\website\templates\index.html:170
+#: .\website\templates\index.html:179
 msgid "Other hotels in the area (not affiliated)"
 msgstr "Otros hoteles de la región, sin convenio para el evento"
 
-#: .\website\templates\index.html:213
+#: .\website\templates\index.html:222
 #: .\website\templates\volunteer-form.html:26
 msgid "Remember to bring personal hygiene products and medications."
 msgstr ""
 "Traiga sus própios medicamentos, objetos de higiene íntima y cuidados "
 "personales."
 
-#: .\website\templates\index.html:214
+#: .\website\templates\index.html:223
 #: .\website\templates\volunteer-form.html:27
 msgid "Three daily meals are included in the event fee. "
 msgstr "El evento incluye desayuno, almuerzo y cena, todos los días."
 
-#: .\website\templates\index.html:215
+#: .\website\templates\index.html:224
 #: .\website\templates\volunteer-form.html:28
 msgid "All sink tap water is potable at Khadro Ling."
 msgstr "El água en las cañerías es potable y perfecta para consumo."
 
-#: .\website\templates\index.html:216
+#: .\website\templates\index.html:225
 #: .\website\templates\volunteer-form.html:29
 msgid ""
 "Bring your meditation cushion (identified with your name), flashlight, rain "
@@ -766,29 +768,29 @@ msgstr ""
 "y zapatos para la lluvia, protector solar, sombrero o gorro, repelente de "
 "insectos, zapatos cómodos para caminar, abrigo para el frio."
 
-#: .\website\templates\index.html:217
+#: .\website\templates\index.html:226
 #: .\website\templates\volunteer-form.html:30
 msgid "Please bring small bank notes for business transactions."
 msgstr ""
 "Pedimos que traigan dinero cambiado, para que sea más fácil el uso en los "
 "comercios."
 
-#: .\website\templates\index.html:218
+#: .\website\templates\index.html:227
 #: .\website\templates\volunteer-form.html:31
 msgid ""
 "The weather conditions in this area vary. We suggest that everyone check the "
 "weather forecast before arrival."
 msgstr ""
-"El clima em Khadro Ling es muy inestable. Sugerimos a todos que "
-"averiguen el pronóstico del tiempo anticipadamente."
+"El clima em Khadro Ling es muy inestable. Sugerimos a todos que averiguen el "
+"pronóstico del tiempo anticipadamente."
 
-#: .\website\templates\index.html:219
+#: .\website\templates\index.html:228
 #: .\website\templates\volunteer-form.html:32
 msgid ""
 "At Khadro Ling we do not have computers available for event participant use."
 msgstr "No habrá computadoras disponibles para los participantes del evento."
 
-#: .\website\templates\index.html:220
+#: .\website\templates\index.html:229
 #: .\website\templates\volunteer-form.html:33
 msgid ""
 "Medications can be ordered for delivery from Três Coroas pharmacies. The "
@@ -798,7 +800,7 @@ msgstr ""
 "Três Coroas. Los contactos están disponibles en la cartelera de nuestra "
 "recepción."
 
-#: .\website\templates\index.html:221
+#: .\website\templates\index.html:230
 #: .\website\templates\volunteer-form.html:34
 msgid ""
 "The nearest banks are located in Três Coroas, Taquara, Gramado and São "
@@ -807,14 +809,13 @@ msgstr ""
 "Los bancos más próximos están ubicados em las ciudades de Três Coroas, São "
 "Francisco, Taquara y Gramado."
 
-#: .\website\templates\index.html:222
+#: .\website\templates\index.html:231
 #: .\website\templates\volunteer-form.html:35
 msgid "Our store accepts Visa, Mastercard and Cielo credit cards."
 msgstr ""
-"Nuestra tienda acepta las tarjetas Visa, Master y Cielo, débito o "
-"crédito."
+"Nuestra tienda acepta las tarjetas Visa, Master y Cielo, débito o crédito."
 
-#: .\website\templates\index.html:223
+#: .\website\templates\index.html:232
 #: .\website\templates\volunteer-form.html:36
 msgid ""
 "Please, do not take dinnerware from dining area to other locations such as "
@@ -823,29 +824,29 @@ msgstr ""
 "Por favor, no utilicen la vajilla del comedor colectivo en el lugar de la "
 "ceremonia."
 
-#: .\website\templates\index.html:224
+#: .\website\templates\index.html:233
 #: .\website\templates\volunteer-form.html:37
 msgid "We suggest bringing your own water bottle to avoid plastic waste."
 msgstr ""
-"Sugerimos que traigan sus propias botellas de agua, para disminuir la "
-"basura plástica."
+"Sugerimos que traigan sus propias botellas de agua, para disminuir la basura "
+"plástica."
 
-#: .\website\templates\index.html:225
+#: .\website\templates\index.html:234
 #: .\website\templates\volunteer-form.html:38
 msgid "Smoking is prohibited in all Khadro Ling areas."
 msgstr "Es prohibido fumar en cualquier área de Khadro Ling."
 
-#: .\website\templates\index.html:226
+#: .\website\templates\index.html:235
 #: .\website\templates\volunteer-form.html:39
 msgid ""
 "Keep personal objects and value items with you or appropriately stored. "
 "Khadro Ling is not responsible for any lost object during events."
 msgstr ""
-"Mantenga sus perteneces y objetos de valor guardados com de forma adecuada con usted. "
-"Khadro Ling no asume responsabilidad por pérdidas de objetos de "
+"Mantenga sus perteneces y objetos de valor guardados com de forma adecuada "
+"con usted. Khadro Ling no asume responsabilidad por pérdidas de objetos de "
 "lós participantes en los eventos."
 
-#: .\website\templates\index.html:227
+#: .\website\templates\index.html:236
 #: .\website\templates\volunteer-form.html:40
 msgid ""
 "Do not feed the animals. Some of them get very sick from receiving food that "
@@ -854,7 +855,7 @@ msgstr ""
 "No alimente los animales. Ellos pueden enfermarse por recibir alimentos no "
 "adecuados a su dieta específica."
 
-#: .\website\templates\index.html:228
+#: .\website\templates\index.html:237
 #: .\website\templates\volunteer-form.html:41
 msgid ""
 "Thrift shop: Khadro Ling has a thrift shop to raise funds for its projects. "
@@ -864,14 +865,14 @@ msgstr ""
 "ventas es destinado a mantener sus proyectos. Donaciones en buenas "
 "condiciones son bienvenidas!"
 
-#: .\website\templates\index.html:238
+#: .\website\templates\index.html:247
 msgid ""
 "Event and accommodation rates do not include daily transport/transfer fees."
 msgstr ""
 "El valor de traslado no está incluido en el valor del evento, tampoco en el "
 "valor de hospedaje de los hoteles y hostales."
 
-#: .\website\templates\index.html:239
+#: .\website\templates\index.html:248
 msgid ""
 "More information about transportation to the event will be posted closer to "
 "the event."
@@ -879,19 +880,25 @@ msgstr ""
 "A la brevidad tendremos más informaciones respeto a posibilidades de "
 "traslados para el evento."
 
-#: .\website\templates\index.html:386
+#: .\website\templates\index.html:259
+msgid ""
+"Registration will be open until the 11th of November 2018, as long as there "
+"is still spaces available."
+msgstr "Las inscripciones para el evento estarán abiertas hasta el 11 de noviembre de 2018, o mientras existan lugares disponibles."
+
+#: .\website\templates\index.html:396
 #: .\website\templates\volunteer-form.html:189
 msgid "Accomodation"
 msgstr "Hospedaje"
 
-#: .\website\templates\index.html:387
+#: .\website\templates\index.html:397
 msgid ""
 "Due to the size of this special event, Khadro Ling will not be able to "
 "provide onsite accomodations. Please, refer to the list of Hotels and B&B's "
 "available under the <a href='#' id='accomodation-link'>accomodations</a> tab."
 msgstr ""
 
-#: .\website\templates\index.html:514 .\website\templates\sponsor-form.html:130
+#: .\website\templates\index.html:524 .\website\templates\sponsor-form.html:130
 msgid ""
 "If you are paying for someone else, please inform the name on 'Extra "
 "Information'."
@@ -999,6 +1006,9 @@ msgid ""
 msgstr ""
 "El precio del evento para voluntario cubre los costos de su comida durante "
 "el período del evento."
+
+#~ msgid "Accommodations / Transportation"
+#~ msgstr "Hospedaje/Traslados"
 
 #~ msgid ""
 #~ "Todos os voluntários ficarão hospedados nas casas de retiro. Lembre-se de "

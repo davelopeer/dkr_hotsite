@@ -70,7 +70,7 @@
 
         <!-- ACCOMMODATIONS -->
         <div class="tab-pane fade padding-sides" id="accommodation" role="tabpanel" aria-labelledby="profile-tab">
-          <h2 id="teste"  class="text-center section_title">{% trans "Accommodations / Transportation" %}</h2>
+          <h2 id="teste"  class="text-center section_title">{% trans "Accommodations" %}</h2>
           <h3 class="font-weight-bold text">{% trans "Accommodations" %}</h3>
           <p>{% trans "During this drubchen Khadro Ling will not provide accommodations for participants. However, to facilitate arrangements we have contacted hotels in the area so that everyone will be able to find a suitable place to stay. The hotels and hostels listed below have different rates to suit different needs. We recommend the Ibis Hotel or Ecoland for English speakers." %}</p>
           <h5>{% trans "Check-in" %}</h5>
@@ -88,6 +88,7 @@
           <p class="margin-bottom">{% trans "If you have any questions about this event or logistics, feel free to contact events manager Tsering at <span class='font-italic'>comunicacao@templobudista.org</span>" %}</p>
           {% endif %}
           <h4 class="underline">{% trans "Hotels and lodgings affiliated with the event:" %}</h4>
+          <p class="text-uppercase margin-top">{% trans "The block off of reservations for our event will close the end of September." %}</p>
           <h5>Três Coroas <a target='_blank' href='https://www.google.com.br/maps/dir/Tr%C3%AAs+Coroas+-+RS/Chagdud+Gonpa+Khadro+Ling+-+R.+%C3%81guas+Brancas+-+Zona+Rural,+Tr%C3%AAs+Coroas+-+RS/@-29.5051586,-50.7664256,15z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x951925e9f281b4ab:0x6c89883e237c5462!2m2!1d-50.779097!2d-29.5155878!1m5!1m1!1s0x951924e3e62ee177:0x2c76fe743d69fe51!2m2!1d-50.7406202!2d-29.4920421'>{% trans "(how to get to)" %}</a></h5>
           <ul>
             <li class="accommodation-li">
@@ -255,6 +256,7 @@
             {% csrf_token %}
             <div class="margin-bottom row justify-content-center">
               <div class=" col-md-9">
+                <p class="text-center">{% trans "Registration will be open until the 11th of November 2018, as long as there is still spaces available." %}</p>
                 <p class="text-center">{% trans "The registration form must be completed for each participant, including children of all ages." %}</p>
                 <p class="text-center">{% trans "Be sure to submit the registration form after payment tab is complete." %}</p>
               </div>
@@ -604,6 +606,7 @@
       </div>
     </main>
 
+    <!-- LOAD ACCOMMODATION TAB IN THE '/accommodation' URL -->
     {% if accommodation == True %}
     <script type="text/javascript">
       $(document).ready(function(){
@@ -611,7 +614,6 @@
         $('#accommodation').attr('class', 'tab-pane fade show active padding-sides')
         $('#home-tab').attr('class', 'nav-link')
         $('#accommodation-tab').attr('class', 'nav-link active')
-
     });
     </script>
     {% endif %}
