@@ -11,5 +11,6 @@ urlpatterns = [
     url(r'^cancellation-policy/$', views.cancellation_policy, name='cancellation-policy'),
     url(r'^sponsor/$', views.sponsor, name='sponsor'),
     url(r'^accommodation/$', views.accomodation, name='accomodation'),
+    url(r'^sponsored-form/$', views.sponsored_form, name='sponsored-form'),
 
 ]
