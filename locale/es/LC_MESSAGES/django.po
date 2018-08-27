@@ -315,7 +315,7 @@ msgstr ""
 "Para hacer la donación a través de PayPal, por favor comuníquese al correo "
 "electrónico adm@chagdud.org con el identificador de la donación. También es "
 "necesario describir cual es el destino de la donación. En ese caso, por "
-"favor marque Khadro Sangdu Drubchen. "
+"favor marque Khandro Sangdu Drubchen. "
 
 #: .\website\templates\guest-form.html:277 .\website\templates\index.html:523
 #: .\website\templates\sponsor-form.html:129
