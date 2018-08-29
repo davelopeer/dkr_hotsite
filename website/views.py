@@ -6,7 +6,7 @@ from django.template.loader import get_template
 from django.utils import translation
 from django.http import HttpResponseNotFound
 from website.forms import InscriptionForm, InscriptionFormEn, InscriptionFormEs, HealthForm, GuestForm, GuestFormEs, GuestFormEn, VolunteerForm, VolunteerFormEn, VolunteerFormEs, SponsorForm, SponsorFormEn, SponsoredForm, InscriptionSponsoredForm, InscriptionSponsoredFormEn, InscriptionSponsoredFormEs
-from website.sendgrid.sg_inscription import sendMail, sendMailHealth, sendMailVolunteer, sendMailError, sendMailHealthError, sendMailVolunteerError, sendMailSponsor, sendMailSponsored, sendMailSponsorError
+from website.sendgrid.sg_inscription import sendMail, sendMailHealth, sendMailVolunteer, sendMailError, sendMailHealthError, sendMailVolunteerError, sendMailSponsor, sendMailSponsored, sendMailSponsorError, sendMailSponsoredInscription, sendMailSponsoredInscriptionError
 
 def index(request):
     user_language = translation.get_language_from_request(request, check_path=True)
@@ -730,7 +730,7 @@ def sponsored_form(request):
 
 
         if form.is_valid():
-            sendMail(
+            sendMailSponsoredInscription(
                     name,
                     birthday,
                     adress,
@@ -754,7 +754,7 @@ def sponsored_form(request):
             return redirect('pay-success')
 
         else:
-            sendMailError(
+            sendMailSponsoredInscriptionError(
                     name,
                     birthday,
                     adress,
