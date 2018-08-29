@@ -708,8 +708,6 @@ def sponsored_form(request):
         else:
             form = InscriptionSponsoredFormEn(request.POST)
 
-        # if (form.fields['payment']) == 'Depósito bancário':
-        #     form.fields['deposit_day'].required = True
         name = request.POST.get('name', '')
         birthday = request.POST.get('birthday', '')
         adress = request.POST.get('adress', '')
@@ -728,26 +726,8 @@ def sponsored_form(request):
         observations = request.POST.get('observations', '')
         food_preferency = request.POST.get('food_preferency', '')
         seat = request.POST.get('seat', '')
-        payment = request.POST.get('payment', '')
-        payment_international = request.POST.get('payment_international', '')
-        deposit_day = request.POST.get('deposit_day', '')
-        deposit_name = request.POST.get('deposit_name', '')
-        deposit_value = request.POST.get('deposit_value', '')
-        deposit_agency = request.POST.get('deposit_agency', '')
-        deposit_account = request.POST.get('deposit_account', '')
-        deposit_envelop = request.POST.get('deposit_envelop', '')
-        credit_card_name = request.POST.get('credit_card_name', '')
-        paypal_name = request.POST.get('paypal_name', '')
         event_option = request.POST.get('event_option', '')
 
-        # SET THE PAYMENT_INFO
-        if user_language == 'pt-br':
-            if payment == 'Cartão de crédito':
-                payment_info = 'Nome do titular do cartão: ' + credit_card_name
-            else:
-                payment_info = "Depositado o valor de " + deposit_value + " no dia " + deposit_day + " por " + deposit_name + " com os dados: <br>" + "Número do envelope: " + deposit_envelop + "<br>ou<br>" + "Agência: " +  deposit_agency + " - Conta: " + deposit_account
-        else:
-            payment_info = 'Nome do usuário Paypal: ' + paypal_name
 
         if form.is_valid():
             sendMail(
@@ -769,9 +749,6 @@ def sponsored_form(request):
                     observations,
                     food_preferency,
                     seat,
-                    payment,
-                    payment_international,
-                    payment_info,
                     event_option,
                     )
             return redirect('pay-success')
@@ -796,9 +773,6 @@ def sponsored_form(request):
                     observations,
                     food_preferency,
                     seat,
-                    payment,
-                    payment_international,
-                    payment_info,
                     event_option,
                     )
             if user_language == 'pt-br':
