@@ -566,7 +566,7 @@ class InscriptionSponsoredFormEs(forms.Form):
         ('Não','No'),
     ))
     event_option = forms.ChoiceField(required=True, widget=forms.RadioSelect(attrs={'type':'radio', 'class':'form-check inline checkbox-option'}), choices=(
-        ('Patrocínio','Patrocínio'),
+        ('Patrocínio','Patrocinio'),
         ))
 
 class InscriptionSponsoredFormEn(forms.Form):
@@ -602,5 +602,5 @@ class InscriptionSponsoredFormEn(forms.Form):
         ('Não','No'),
     ))
     event_option = forms.ChoiceField(required=True, widget=forms.RadioSelect(attrs={'type':'radio', 'class':'form-check inline checkbox-option'}), choices=(
-        ('Patrocínio','Patrocínio'),
+        ('Patrocínio','Sponsorship'),
     ))

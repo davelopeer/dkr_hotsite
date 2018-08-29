@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-23 16:38-0300\n"
+"POT-Creation-Date: 2018-08-29 10:27-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -141,6 +141,7 @@ msgid "Registration form"
 msgstr "Formulario de inscripción"
 
 #: .\website\templates\guest-form.html:17 .\website\templates\index.html:260
+#: .\website\templates\sponsored-form.html:17
 msgid ""
 "The registration form must be completed for each participant, including "
 "children of all ages."
@@ -154,91 +155,109 @@ msgid "Be sure to submit the registration form after payment tab is complete."
 msgstr "Después del pago, fíjese si el formulario fue enviado correctamente."
 
 #: .\website\templates\guest-form.html:23 .\website\templates\index.html:266
+#: .\website\templates\sponsored-form.html:22
 #: .\website\templates\volunteer-form.html:59
 msgid "Full name"
 msgstr "Nombre completo"
 
 #: .\website\templates\guest-form.html:25 .\website\templates\index.html:268
+#: .\website\templates\sponsored-form.html:24
 #: .\website\templates\volunteer-form.html:61
 msgid "Without abbreviations"
 msgstr "Sin abreviaturas"
 
 #: .\website\templates\guest-form.html:28 .\website\templates\index.html:271
+#: .\website\templates\sponsored-form.html:27
 #: .\website\templates\volunteer-form.html:64
 msgid "Date of birth: "
 msgstr "Fecha de nacimiento:"
 
 #: .\website\templates\guest-form.html:34 .\website\templates\index.html:277
+#: .\website\templates\sponsored-form.html:33
 #: .\website\templates\volunteer-form.html:70
 msgid "Address"
 msgstr "Dirección"
 
 #: .\website\templates\guest-form.html:38 .\website\templates\index.html:281
+#: .\website\templates\sponsored-form.html:37
 #: .\website\templates\volunteer-form.html:74
 msgid "Number"
 msgstr "Número"
 
 #: .\website\templates\guest-form.html:42 .\website\templates\index.html:285
+#: .\website\templates\sponsored-form.html:41
 #: .\website\templates\volunteer-form.html:78
 msgid "Additional address info"
 msgstr "Apto"
 
 #: .\website\templates\guest-form.html:46 .\website\templates\index.html:289
+#: .\website\templates\sponsored-form.html:45
 #: .\website\templates\volunteer-form.html:82
 msgid "Zip code"
 msgstr "Código Postal"
 
 #: .\website\templates\guest-form.html:52 .\website\templates\index.html:295
+#: .\website\templates\sponsored-form.html:51
 #: .\website\templates\volunteer-form.html:88
 msgid "City"
 msgstr "Ciudad"
 
 #: .\website\templates\guest-form.html:56 .\website\templates\index.html:299
+#: .\website\templates\sponsored-form.html:55
 #: .\website\templates\volunteer-form.html:92
 msgid "State"
 msgstr "Departamento/ Región"
 
 #: .\website\templates\guest-form.html:60 .\website\templates\index.html:303
+#: .\website\templates\sponsored-form.html:59
 #: .\website\templates\volunteer-form.html:96
 msgid "Country"
 msgstr "País"
 
 #: .\website\templates\guest-form.html:71 .\website\templates\index.html:314
+#: .\website\templates\sponsored-form.html:70
 #: .\website\templates\volunteer-form.html:107
 msgid "Phone/Mobile"
 msgstr "Teléfono fijo/ Celular"
 
 #: .\website\templates\guest-form.html:77 .\website\templates\index.html:320
+#: .\website\templates\sponsored-form.html:76
 #: .\website\templates\volunteer-form.html:113
 msgid "Genre"
 msgstr "Género"
 
 #: .\website\templates\guest-form.html:88 .\website\templates\index.html:331
+#: .\website\templates\sponsored-form.html:87
 #: .\website\templates\volunteer-form.html:124
 msgid "Previous empowerments received:"
 msgstr "Cuáles son las iniciaciones más recientes que usted ha recibido?"
 
 #: .\website\templates\guest-form.html:92 .\website\templates\index.html:335
+#: .\website\templates\sponsored-form.html:91
 #: .\website\templates\volunteer-form.html:128
 msgid "Empowerment bestowed by:"
 msgstr "De cuál profesor?"
 
 #: .\website\templates\guest-form.html:98 .\website\templates\index.html:341
+#: .\website\templates\sponsored-form.html:97
 #: .\website\templates\volunteer-form.html:134
 msgid "Are you an ordained practitioner? (monastic or otherwise)"
 msgstr "Practicante con ordenación? (monástica u otra)"
 
 #: .\website\templates\guest-form.html:108 .\website\templates\index.html:351
+#: .\website\templates\sponsored-form.html:107
 #: .\website\templates\volunteer-form.html:144
 msgid "Food"
 msgstr "Alimentación"
 
 #: .\website\templates\guest-form.html:111 .\website\templates\index.html:354
+#: .\website\templates\sponsored-form.html:110
 #: .\website\templates\volunteer-form.html:147
 msgid "Food preference"
 msgstr "Preferencia alimenticia"
 
 #: .\website\templates\guest-form.html:120 .\website\templates\index.html:363
+#: .\website\templates\sponsored-form.html:119
 #: .\website\templates\volunteer-form.html:156
 msgid ""
 "Khadro Ling does not serve meals for special diets with ingredient "
@@ -250,36 +269,44 @@ msgstr ""
 #: .\website\templates\guest-form.html:127
 #: .\website\templates\guest-form.html:169 .\website\templates\index.html:370
 #: .\website\templates\index.html:415
+#: .\website\templates\sponsored-form.html:126
+#: .\website\templates\sponsored-form.html:168
 #: .\website\templates\volunteer-form.html:163
 #: .\website\templates\volunteer-form.html:228
 msgid "Please pay attention"
 msgstr "Atención"
 
 #: .\website\templates\guest-form.html:133 .\website\templates\index.html:376
+#: .\website\templates\sponsored-form.html:132
 #: .\website\templates\volunteer-form.html:169
 msgid "This option cannot be changed after the form submission."
 msgstr "Esta opción no podrá ser modificada después del envio del formulario."
 
 #: .\website\templates\guest-form.html:139 .\website\templates\index.html:382
+#: .\website\templates\sponsored-form.html:138
 #: .\website\templates\volunteer-form.html:175
 msgid "Sitting"
 msgstr "Asientos"
 
 #: .\website\templates\guest-form.html:142 .\website\templates\index.html:385
+#: .\website\templates\sponsored-form.html:141
 #: .\website\templates\volunteer-form.html:178
 msgid "Do you need a chair?"
 msgstr "Necesita silla?"
 
 #: .\website\templates\guest-form.html:151 .\website\templates\index.html:394
+#: .\website\templates\sponsored-form.html:150
 #: .\website\templates\volunteer-form.html:187
 msgid "Only for people with limitations and unable sit on the floor."
 msgstr "Solo para personas con limitaciones para sentarse en el suelo."
 
 #: .\website\templates\guest-form.html:153 .\website\templates\index.html:399
+#: .\website\templates\sponsored-form.html:152
 msgid "Event option"
 msgstr "Opción de evento"
 
 #: .\website\templates\guest-form.html:175 .\website\templates\index.html:421
+#: .\website\templates\sponsored-form.html:174
 #: .\website\templates\volunteer-form.html:234
 msgid ""
 "Notify in the field 'Extra information' the name of the adult responsible "
@@ -289,11 +316,13 @@ msgstr ""
 "participarán del evento."
 
 #: .\website\templates\guest-form.html:181 .\website\templates\index.html:427
+#: .\website\templates\sponsored-form.html:180
 #: .\website\templates\volunteer-form.html:240
 msgid "Partial participation is not possible in this retreat. "
 msgstr "No es posible participación parcial en ese retiro."
 
 #: .\website\templates\guest-form.html:185 .\website\templates\index.html:431
+#: .\website\templates\sponsored-form.html:184
 #: .\website\templates\volunteer-form.html:244
 msgid "Extra information"
 msgstr "Observaciones"
@@ -372,6 +401,7 @@ msgstr ""
 #: .\website\templates\health-form.html:106 .\website\templates\index.html:577
 #: .\website\templates\sponsor-form.html:163
 #: .\website\templates\sponsor-form.html:221
+#: .\website\templates\sponsored-form.html:194
 #: .\website\templates\volunteer-form.html:388
 msgid "Send"
 msgstr "Enviar"
@@ -884,7 +914,9 @@ msgstr ""
 msgid ""
 "Registration will be open until the 11th of November 2018, as long as there "
 "is still spaces available."
-msgstr "Las inscripciones para el evento estarán abiertas hasta el 11 de noviembre de 2018, o mientras existan lugares disponibles."
+msgstr ""
+"Las inscripciones para el evento estarán abiertas hasta el 11 de noviembre "
+"de 2018, o mientras existan lugares disponibles."
 
 #: .\website\templates\index.html:396
 #: .\website\templates\volunteer-form.html:189
@@ -932,10 +964,8 @@ msgid "We'll be contacting you soon, sponsered"
 msgstr ""
 
 #: .\website\templates\sponsor-form.html:25
-#, fuzzy
-#| msgid "General information"
 msgid "Invalid information."
-msgstr "Informaciones"
+msgstr "Información no válida"
 
 #: .\website\templates\sponsor-form.html:26
 msgid "Be shure that you correctly filled all fields."
@@ -952,6 +982,10 @@ msgstr ""
 #: .\website\templates\sponsor-form.html:215
 msgid "Sanga da qual frequenta"
 msgstr ""
+
+#: .\website\templates\sponsored-form.html:12
+msgid "Sponsored inscription form"
+msgstr "Formulario de patrocinio"
 
 #: .\website\templates\volunteer-form.html:48
 msgid "Volunteer application form"
