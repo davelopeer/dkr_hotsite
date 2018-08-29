@@ -15,7 +15,6 @@
     <div class="margin-bottom row justify-content-center">
       <div class=" col-md-9">
         <p class="text-center">{% trans "The registration form must be completed for each participant, including children of all ages." %}</p>
-        <p class="text-center">{% trans "Be sure to submit the registration form after payment tab is complete." %}</p>
       </div>
     </div>
     <div class="row">
@@ -188,143 +187,9 @@
     </div>
     <h3 class="form_section_title payment">{% trans "Payment" %}:</h3>
 
-    {% if user_language == 'pt-br' %}
-
-    <div class="row payment">
-      <div class="custom-controls-stacked col-md-12 checkbox-inline">
-        <p>Forma de pagamento</p>
-        {% for radio in form.payment %}
-          <div class="form-check-boxes">
-            {{radio.tag}}
-            <label class="form-check-label" for="radio_{{ radio.index}}">{{ radio.choice_label }}</label>
-          </div>
-        {% endfor %}
-      </div>
-      <small class="form-text text-muted padding"><p>O pagamento em cartão de crédito poderá ser parcelado em 12x sem juros.</p></small>
-    </div>
-    <div class="modal fade" id="cardModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title font-large" id="exampleModalCenterTitle">LEMBRE-SE</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <p class="font-large">Você será <span class="underline">redirecionado</span> para outra aba para realizar o pagamento. Após o fim da transação, <span class="underline">volte</span> para a ficha de inscrição para o envio.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row payment_form">
-      <div class="col-md-8 payment_section" id="payment1">
-        <h4 class="font-weight-light">Pagamento via Cielo</h4>
-        <p>Pague com seu cartão de crédito ou débito. O evento poderá ser parcelado em até 12x sem juros no cartão</p>
-        <div class="form-group">
-          <label class="col-form-label" for="formGroupExampleInput">Nome do titular igual ao que está no cartão:</label>
-          {{form.credit_card_name}}
-        </div>
-        <button data-toggle="modal" data-target="#paymentModal" type="button" name="button">Efetuar pagamento</button>
-      </div>
-      <div class="col-md-8 payment_section" id="payment2">
-        <h4 class="font-weight-light">Pagamento via Banco do Brasil:</h4>
-        <p>Dados para depósito ou transferência:<br>
-          <a target="_blank" href="http://www.bb.com.br/pbb/pagina-inicial#/">Banco do Brasil</a><br>
-          Titular: Chagdud Gonpa Brasil<br>
-          CNPJ: 00.990.708/0001-37<br>
-          Agência: 1380-3<br>
-          Conta: 5454-2<br>
-        </p>
-        <p>
-          Para garantir a sua inscrição, você deve depositar, pelo menos, 1/5 (um quinto) do valor do evento (R$ 610,00 para adultos e
-          R$ 195,00 para crianças de 4 a 12 anos) e dividir o restante do pagamento até 10 de dezembro de 2018.
-        </p>
-        <p class="underline">DADOS DO PAGAMENTO:</p>
-        <div class="form-group">
-          <label class="col-form-label" for="formGroupExampleInput">Data da transferência/depósito</label>
-          {{form.deposit_day}}
-        </div>
-        <div class="form-group">
-          <label class="col-form-label" for="formGroupExampleInput">Nome do titular da conta</label>
-          {{form.deposit_name}}
-        </div>
-        <div class="form-group">
-          <label class="col-form-label" for="formGroupExampleInput">Valor do depósito</label>
-          {{form.deposit_value}}
-        </div>
-        <div class="form-group">
-          <label class="col-form-label" for="formGroupExampleInput">Número da agência</label>
-          {{form.deposit_agency}}
-        </div>
-        <div class="form-group">
-          <label class="col-form-label" for="formGroupExampleInput">Número da conta</label>
-          {{form.deposit_account}}
-        </div>
-        <p class="text-center">ou</p>
-        <div class="form-group">
-          <label class="col-form-label" for="formGroupExampleInput">Número do envelope ou DOC </label>
-          {{form.deposit_envelop}}
-        </div>
-        <small id="phoneHelp" class="form-text text-muted margin-bottom-js">
-          Caso você efetue mais de um pagamento no mesmo depósito, por favor, informe no campo 'Observações'.
-        </small>
-      </div>
-    </div>
-
-    {% else %}
-    <p>{% trans "For PayPal donation/payment, please use the following email address for payment receiver: <strong>adm@chagdud.org</strong>. Also, in comment field inform that payment is for Khadro Sangdu Drubchen." %}</p>
-    <p class="underline">{% trans "Be sure to send the registration form after payment is completed." %}</p>
-      {% for radio in form.payment_international %}
-        <div class="form-check-boxes payment">
-          {{radio.tag}}
-          <label class="form-check-label " for="radio_{{ radio.index}}">{{ radio.choice_label }}</label>
-          <img class="logo-paypal" src="{% static 'images/paypal-logo.png' %}" alt="Paypal">
-        </div>
-      {% endfor %}
-      <div class="col-md-8">
-        <div class="form-group">
-          <label class="col-form-label" for="formGroupExampleInput">{% trans "Paypal username:" %}</label>
-          {{form.paypal_name}}
-        </div>
-      </div>
-      <div class="modal fade" id="paypalModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title font-large" id="exampleModalCenterTitle">{% trans "Please note:" %}</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <p>{% trans "A new tab will open for payment process. After the transaction is complete, return to registration page and submit form. Click on the image below." %}</p>
-              <a target="_blank" href="https://www.paypal.com/"><img class="logo-paypal" src="{% static 'images/paypal-logo.png' %}" alt="Paypal"></a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    {% endif %}
 
 
-    <div class="row cancel_terms_area">
-      <div class="custom-controls-stacked col-md-12 checkbox-inline">
-        {% for checkbox in form.cancel_terms %}
-          <div class="form-check-boxes">
-            {{checkbox.tag}}
-            <label class="form-check-label" for="checkbox{{ checkbox.index}}">{{ checkbox.choice_label }}</label>
-          </div>
-        {% endfor %}
 
-        <p class="cancel_terms">{% trans "I have read and I accept the <a target='_blank' href='http://www.ks-drubchen.com/cancellation-policy/'>cancellation policy of participation in Khadro Ling events.</a>" %}</p>
-        <br>
-        <small >{% trans "Before clicking send, make sure that all data is correctly filled in and that you have completed the payment." %}</small>
-      </div>
-    </div>
-
-    <!-- <div class="g-recaptcha" data-sitekey="6LfZM2YUAAAAAAFnDJz-B_eevQVB_nWGk60IXSy9"></div> -->
-    <!-- {{form.captcha}} -->
 
     <div class="btn-holder">
       <button type="submit" class="btn btn-outline-primary">{% trans "Send" %}</button>

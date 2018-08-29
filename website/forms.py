@@ -530,24 +530,8 @@ class InscriptionSponsoredForm(forms.Form):
         ('Não','Não'),
     ))
     event_option = forms.ChoiceField(required=True, widget=forms.RadioSelect(attrs={'type':'radio', 'class':'form-check inline checkbox-option'}), choices=(
-        ('Adulto','Evento completo com as três refeições incluídas e sem hospedagem: R$ 3.042,00'),
-        ('Criança 4-12 anos','Participação infantil (de 4 a 12 anos) com as três refeições incluídas e sem hospedagem: R$ 972,00'),
-        ('Criança 0-3 anos','Crianças (de 0 a 3 anos) com as três refeições incluídas e sem hospedagem: Isentas'),
-    ))
-    payment = forms.ChoiceField(required=False, widget=forms.RadioSelect(attrs={'type':'radio', 'class':'form-check'}), choices=(
-        ('Cartão de crédito','Cartão de crédito'),
-        ('Depósito bancário','Depósito bancário'),
-    ))
-    credit_card_name = forms.CharField(required=False,max_length=200, widget=forms.TextInput(attrs={'class': 'form-control', }))
-    deposit_day = forms.CharField(required=False, max_length=40, widget=forms.TextInput(attrs={'placeholder':'20/09/2018','class': 'form-control',  }))
-    deposit_name = forms.CharField(required=False, max_length=250, widget=forms.TextInput(attrs={'class': 'form-control'}))
-    deposit_value = forms.CharField(required=False, max_length=250, widget=forms.TextInput(attrs={'class': 'form-control' }))
-    deposit_agency = forms.CharField(required=False, widget=forms.TextInput(attrs={ 'class': 'form-control'}))
-    deposit_account = forms.CharField(required=False, widget=forms.TextInput(attrs={'class': 'form-control'}))
-    deposit_envelop = forms.CharField(required=False, widget=forms.TextInput(attrs={'class': 'form-control'}))
-    cancel_terms = forms.ChoiceField(required=True, widget=forms.RadioSelect(attrs={'type':'checkbox', 'class':'form-check'}), choices=(
-        ('Aceito',''),
-    ))
+        ('Patrocínio','Patrocínio'),
+        ))
 
 class InscriptionSponsoredFormEs(forms.Form):
     name = forms.CharField(required=True, max_length=150, widget=forms.TextInput(attrs={'placeholder': 'Nombre completo', 'class': 'form-control',  }))
@@ -582,17 +566,8 @@ class InscriptionSponsoredFormEs(forms.Form):
         ('Não','No'),
     ))
     event_option = forms.ChoiceField(required=True, widget=forms.RadioSelect(attrs={'type':'radio', 'class':'form-check inline checkbox-option'}), choices=(
-        ('Adulto','Evento completo, incluye tres comidas al día, sin hospedaje: US$ 809.05'),
-        ('Criança 4-12 anos','Participación infantil (4 a 12 años) incluye tres comidas al día, sin hospedaje: US$ 258.52'),
-        ('Criança 0-3 anos','Participación infantil (de 0 a 3 ãnos) incluye tres comidas al día, sin hospedaje: Isentas'),
-    ))
-    payment_international = forms.ChoiceField(required=False, widget=forms.RadioSelect(attrs={'type':'radio', 'class':'form-check inline'}), choices=(
-        ('PayPal',''),
-    ))
-    paypal_name = forms.CharField(required=True, widget=forms.TextInput(attrs={'class': 'form-control',  }))
-    cancel_terms = forms.ChoiceField(required=True, widget=forms.RadioSelect(attrs={'type':'checkbox', 'class':'form-check'}), choices=(
-        ('Aceito',''),
-    ))
+        ('Patrocínio','Patrocínio'),
+        ))
 
 class InscriptionSponsoredFormEn(forms.Form):
     name = forms.CharField(required=True, max_length=150, widget=forms.TextInput(attrs={'placeholder': 'Full name', 'class': 'form-control',  }))
@@ -627,14 +602,5 @@ class InscriptionSponsoredFormEn(forms.Form):
         ('Não','No'),
     ))
     event_option = forms.ChoiceField(required=True, widget=forms.RadioSelect(attrs={'type':'radio', 'class':'form-check inline checkbox-option'}), choices=(
-        ('Adulto','Adult full event with three meals and no lodging: US$ 809.05'),
-        ('Criança 4-12 anos','Children from 4 to 12 years old with three meals and no lodging: US$ 258.52'),
-        ('Criança 0-3 anos','Children from 0 to 3 years old with three meals and no lodging: Free'),
-    ))
-    payment_international = forms.ChoiceField(required=False, widget=forms.RadioSelect(attrs={'type':'radio', 'class':'form-check inline'}), choices=(
-        ('PayPal',''),
-    ))
-    paypal_name = forms.CharField(required=True, widget=forms.TextInput(attrs={'class': 'form-control',  }))
-    cancel_terms = forms.ChoiceField(required=True, widget=forms.RadioSelect(attrs={'type':'checkbox', 'class':'form-check'}), choices=(
-        ('Aceito',''),
+        ('Patrocínio','Patrocínio'),
     ))
