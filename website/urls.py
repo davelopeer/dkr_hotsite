@@ -12,5 +12,5 @@ urlpatterns = [
     url(r'^sponsor/$', views.sponsor, name='sponsor'),
     url(r'^accommodation/$', views.accomodation, name='accomodation'),
     url(r'^sponsored-form/$', views.sponsored_form, name='sponsored-form'),
-
+    url(r'^special-guest-form/$', views.special_guest_form, name='special-guest-form'),
 ]
