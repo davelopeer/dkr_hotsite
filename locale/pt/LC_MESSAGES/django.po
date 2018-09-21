@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-12 14:05-0300\n"
+"POT-Creation-Date: 2018-09-21 09:15-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -138,11 +138,11 @@ msgstr ""
 
 #: .\website\templates\guest-form.html:12 .\website\templates\index.html:255
 #: .\website\templates\special-guest-form.html:13
+#: .\website\templates\sponsored-form.html:12
 msgid "Registration form"
 msgstr "Inscrição"
 
 #: .\website\templates\guest-form.html:17 .\website\templates\index.html:261
-#: .\website\templates\sponsored-form.html:17
 msgid ""
 "The registration form must be completed for each participant, including "
 "children of all ages."
@@ -1017,9 +1017,9 @@ msgstr ""
 msgid "Sanga da qual frequenta"
 msgstr ""
 
-#: .\website\templates\sponsored-form.html:12
-msgid "Sponsored inscription form"
-msgstr "Formulário de patrocínio"
+#: .\website\templates\sponsored-form.html:17
+msgid "Please complete for each individual sponsorship."
+msgstr "O formulário é individual e deve ser preenchido completamente."
 
 #: .\website\templates\volunteer-form.html:48
 msgid "Volunteer application form"
@@ -1070,6 +1070,9 @@ msgid ""
 msgstr ""
 "O preço do evento para voluntário cobre os custos de sua refeição durante o "
 "período do evento."
+
+#~ msgid "Sponsored inscription form"
+#~ msgstr "Formulário de patrocínio"
 
 #~ msgid "Guest form"
 #~ msgstr "Formulário para convidados"

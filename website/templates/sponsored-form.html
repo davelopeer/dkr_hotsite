@@ -9,12 +9,12 @@
   {% endblock %}
 
   {% block body_block %}
-  <h2 class="text-center section_title">{% trans "Sponsored inscription form" %}</h2>
+  <h2 class="text-center section_title">{% trans "Registration form" %}</h2>
   <form class="form" role="form" action="" method="post" enctype="multipart/form-data">
     {% csrf_token %}
     <div class="margin-bottom row justify-content-center">
       <div class=" col-md-9">
-        <p class="text-center">{% trans "The registration form must be completed for each participant, including children of all ages." %}</p>
+        <p class="text-center">{% trans "Please complete for each individual sponsorship." %}</p>
       </div>
     </div>
     <div class="row">
