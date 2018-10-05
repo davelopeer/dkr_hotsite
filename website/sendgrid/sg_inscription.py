@@ -232,7 +232,7 @@ def sendMailVolunteerError(name, birthday, adress, adress_num, adress_comp,city,
 def sendMailSponsor(name, email, phone, payment, payment_international, payment_info):
         sg = sendgrid.SendGridAPIClient(apikey=os.environ.get('DKR_SG_API_KEY'))
         from_email = Email(email)
-        to_email = Email(os.environ.get('DEFAULT_TO_EMAIL'))
+        to_email = Email("dados@templobudista.org")
         subject = "Patrocínio - Drubchen de Khadro Sangdu"
         sendgrid_content = Content("text/html", '<!DOCTYPE html><html lang="en" dir="ltr"><head><meta charset="utf-8"><title></title><style media="screen">ul {font-size: 1.3em;}li {margin-bottom: 20px;}</style></head><body><h2>Dados Pessoais</h2><ul><li>Nome: ' + name +
                                         '</li><li>E-mail: ' + email +
