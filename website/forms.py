@@ -470,7 +470,6 @@ class SponsorForm(forms.Form):
     email = forms.EmailField(required=True, max_length=100, widget=forms.EmailInput(attrs={'type':'email', 'class':'form-control', 'id':'formGroupExampleInput'}))
     phone = forms.IntegerField(required=True, widget=forms.NumberInput(attrs={'type':'number', 'class': 'form-control'}))
     payment = forms.ChoiceField(required=False, widget=forms.RadioSelect(attrs={'type':'radio', 'class':'form-check'}), choices=(
-        ('Cartão de crédito','Cartão de crédito'),
         ('Depósito bancário','Depósito bancário'),
     ))
     credit_card_name = forms.CharField(required=False,max_length=200, widget=forms.TextInput(attrs={'class': 'form-control', }))
