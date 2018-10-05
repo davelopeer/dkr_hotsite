@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-05 12:16-0300\n"
+"POT-Creation-Date: 2018-10-05 16:05-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -358,14 +358,14 @@ msgstr "Observaciones"
 
 #: .\website\templates\guest-form.html:189 .\website\templates\index.html:439
 #: .\website\templates\special-guest-form.html:191
-#: .\website\templates\sponsor-form.html:51
+#: .\website\templates\sponsor-form.html:52
 #: .\website\templates\volunteer-form.html:248
 msgid "Payment"
 msgstr "Condiciones de pago"
 
 #: .\website\templates\guest-form.html:276 .\website\templates\index.html:526
 #: .\website\templates\special-guest-form.html:277
-#: .\website\templates\sponsor-form.html:128
+#: .\website\templates\sponsor-form.html:105
 #: .\website\templates\volunteer-form.html:334
 msgid ""
 "For PayPal donation/payment, please use the following email address for "
@@ -379,7 +379,7 @@ msgstr ""
 
 #: .\website\templates\guest-form.html:277 .\website\templates\index.html:527
 #: .\website\templates\special-guest-form.html:278
-#: .\website\templates\sponsor-form.html:129
+#: .\website\templates\sponsor-form.html:106
 #: .\website\templates\volunteer-form.html:335
 msgid "Be sure to send the registration form after payment is completed."
 msgstr ""
@@ -388,7 +388,7 @@ msgstr ""
 
 #: .\website\templates\guest-form.html:287 .\website\templates\index.html:538
 #: .\website\templates\special-guest-form.html:288
-#: .\website\templates\sponsor-form.html:140
+#: .\website\templates\sponsor-form.html:117
 #: .\website\templates\volunteer-form.html:345
 msgid "Paypal username:"
 msgstr "Nombre del responsable por la transacción PayPal"
@@ -396,14 +396,14 @@ msgstr "Nombre del responsable por la transacción PayPal"
 #: .\website\templates\guest-form.html:295 .\website\templates\index.html:85
 #: .\website\templates\index.html:546
 #: .\website\templates\special-guest-form.html:296
-#: .\website\templates\sponsor-form.html:148
+#: .\website\templates\sponsor-form.html:125
 #: .\website\templates\volunteer-form.html:353
 msgid "Please note:"
 msgstr "Acuerdese:"
 
 #: .\website\templates\guest-form.html:301 .\website\templates\index.html:552
 #: .\website\templates\special-guest-form.html:302
-#: .\website\templates\sponsor-form.html:154
+#: .\website\templates\sponsor-form.html:131
 #: .\website\templates\volunteer-form.html:359
 msgid ""
 "A new tab will open for payment process. After the transaction is complete, "
@@ -438,8 +438,7 @@ msgstr ""
 #: .\website\templates\guest-form.html:330
 #: .\website\templates\health-form.html:106 .\website\templates\index.html:581
 #: .\website\templates\special-guest-form.html:331
-#: .\website\templates\sponsor-form.html:163
-#: .\website\templates\sponsor-form.html:221
+#: .\website\templates\sponsor-form.html:140
 #: .\website\templates\sponsored-form.html:194
 #: .\website\templates\volunteer-form.html:388
 msgid "Send"
@@ -456,14 +455,12 @@ msgstr "Datos Personales"
 #: .\website\templates\health-form.html:18
 #: .\website\templates\health-form.html:48
 #: .\website\templates\health-form.html:93
-#: .\website\templates\sponsor-form.html:34
-#: .\website\templates\sponsor-form.html:197
+#: .\website\templates\sponsor-form.html:35
 msgid "Name"
 msgstr "Nombre"
 
 #: .\website\templates\health-form.html:22
-#: .\website\templates\sponsor-form.html:40
-#: .\website\templates\sponsor-form.html:203
+#: .\website\templates\sponsor-form.html:41
 msgid "E-mail"
 msgstr "E-mail"
 
@@ -481,8 +478,7 @@ msgstr "Parentesco"
 
 #: .\website\templates\health-form.html:56
 #: .\website\templates\health-form.html:97
-#: .\website\templates\sponsor-form.html:46
-#: .\website\templates\sponsor-form.html:209
+#: .\website\templates\sponsor-form.html:47
 msgid "Phone"
 msgstr "Teléfono"
 
@@ -978,13 +974,13 @@ msgid ""
 "available under the <a href='#' id='accomodation-link'>accomodations</a> tab."
 msgstr ""
 
-#: .\website\templates\index.html:528 .\website\templates\sponsor-form.html:130
+#: .\website\templates\index.html:528 .\website\templates\sponsor-form.html:107
 msgid ""
 "If you are paying for someone else, please inform the name on 'Extra "
 "Information'."
 msgstr ""
 
-#: .\website\templates\index.html:612
+#: .\website\templates\index.html:612 .\website\templates\sponsor-form.html:25
 msgid ""
 "As many of you know, Dzongsar Khyentse Rinpoche will lead the Khandro Sangdü "
 "Drubchen at Chagdud Gonpa Brasil/Khadro Ling at the end of December. This "
@@ -1000,7 +996,7 @@ msgstr ""
 "como la sadhana de todos los dakas y dakinis del los veinticuatro lugares "
 "sagrados y las treinta y dos tierras sagradas."
 
-#: .\website\templates\index.html:613
+#: .\website\templates\index.html:613 .\website\templates\sponsor-form.html:26
 msgid ""
 "The Khandro Sangdu is a primary practice for purifying our samayas--our "
 "sacred commitments on the path to enlightenment. When samayas are purified, "
@@ -1013,7 +1009,7 @@ msgstr ""
 "guardianas de los logros comunes y supremos fluyen fácilmente, los logros "
 "viene inmediatamente."
 
-#: .\website\templates\index.html:614
+#: .\website\templates\index.html:614 .\website\templates\sponsor-form.html:27
 msgid ""
 "Because the drubchen is part of a much longer teaching tour in South "
 "America, it could only be scheduled in the Christmas-New Year holidays when "
@@ -1062,7 +1058,6 @@ msgid "Event price"
 msgstr "Opción de evento"
 
 #: .\website\templates\sponsor-form.html:15
-#: .\website\templates\sponsor-form.html:20
 msgid "Form successfully send."
 msgstr ""
 
@@ -1070,29 +1065,21 @@ msgstr ""
 msgid "We'll be contacting you soon, sponser."
 msgstr ""
 
-#: .\website\templates\sponsor-form.html:21
-msgid "We'll be contacting you soon, sponsered"
-msgstr ""
-
-#: .\website\templates\sponsor-form.html:25
+#: .\website\templates\sponsor-form.html:20
 msgid "Invalid information."
 msgstr "Información no válida"
 
-#: .\website\templates\sponsor-form.html:26
+#: .\website\templates\sponsor-form.html:21
 msgid "Be shure that you correctly filled all fields."
 msgstr ""
 
-#: .\website\templates\sponsor-form.html:31
-msgid "Sponsor Form"
+#: .\website\templates\sponsor-form.html:24
+msgid "Sponsorship"
+msgstr "Patrocinio"
+
+#: .\website\templates\sponsor-form.html:32
+msgid "Sponsorship Form"
 msgstr "Formulario de patrocinio"
-
-#: .\website\templates\sponsor-form.html:194
-msgid "Sponsored Form"
-msgstr ""
-
-#: .\website\templates\sponsor-form.html:215
-msgid "Sanga da qual frequenta"
-msgstr ""
 
 #: .\website\templates\sponsored-form.html:17
 msgid "Please complete for each individual sponsorship."
