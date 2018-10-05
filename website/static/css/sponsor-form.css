@@ -1,6 +1,7 @@
-.divisioner {
-  margin: 60px auto;
-  width: 84%;
+.section_title {
+  color: #36382e;
+  margin-bottom: 50px;
+  font-size: 2.5em;
 }
 
 .form-sent-header {
@@ -28,6 +29,16 @@
 
 .inline {
   display: inline;
+}
+
+.indent {
+  text-indent: 28px;
+}
+
+.quote-right {
+  font-size: 1.3;
+  text-align: right;
+  margin-right: 10%;
 }
 
 .form-check-boxes {
