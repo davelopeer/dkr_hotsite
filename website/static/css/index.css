@@ -26,6 +26,12 @@
   margin-bottom: 8px;
 }
 
+.quote-right {
+  font-size: 1.3;
+  text-align: right;
+  margin-right: 10%;
+}
+
 .indent {
   text-indent: 28px;
 }
