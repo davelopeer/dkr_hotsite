@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-05 11:52-0300\n"
+"POT-Creation-Date: 2018-10-05 12:16-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -556,7 +556,7 @@ msgstr "Formulario de inscripción"
 
 #: .\website\templates\index.html:31 .\website\templates\index.html:611
 msgid "Sponsor"
-msgstr ""
+msgstr "Patrocinio"
 
 #: .\website\templates\index.html:39
 msgid ""
@@ -992,7 +992,13 @@ msgid ""
 "enlightened body, speech and mind of Vajravarahi, as well as a sadhana of "
 "all the dakas and dakinis of the twenty-four sacred places and thirty-two "
 "holy lands."
-msgstr "Como muchos de ustedes sabrán, Dzongsar Khyentse Rinpoche estará conduciendo el Drubchen de Khandro Sangdü en Khadro Ling/ Chagdud Gonpa Brasil a fines de Diciembre. Este ciclo conocido como ‘Reunión Secreta de las Dakinis’ contiene prácticas de cuerpo, habla y mente iluminada de Vajravarahi, así como la sadhana de todos los dakas y dakinis del los veinticuatro lugares sagrados y las treinta y dos tierras sagradas."
+msgstr ""
+"Como muchos de ustedes sabrán, Dzongsar Khyentse Rinpoche estará conduciendo "
+"el Drubchen de Khandro Sangdü en Khadro Ling/ Chagdud Gonpa Brasil a fines "
+"de Diciembre. Este ciclo conocido como ‘Reunión Secreta de las Dakinis’ "
+"contiene prácticas de cuerpo, habla y mente iluminada de Vajravarahi, así "
+"como la sadhana de todos los dakas y dakinis del los veinticuatro lugares "
+"sagrados y las treinta y dos tierras sagradas."
 
 #: .\website\templates\index.html:613
 msgid ""
@@ -1000,7 +1006,12 @@ msgid ""
 "sacred commitments on the path to enlightenment. When samayas are purified, "
 "and the blessings of the dakinis who guard ordinary and supreme attainments "
 "flow easily and the accomplishments come immediately."
-msgstr "El Khandro Sangdü es la práctica primaria para la purificación de nuestros samayas, nuestros compromiso sagrados en el camino a la iluminación. Cuando nuestros samayas son purificados, y las bendiciones de las dakinis, guardianas de los logros comunes y supremos fluyen fácilmente, los logros viene inmediatamente."
+msgstr ""
+"El Khandro Sangdü es la práctica primaria para la purificación de nuestros "
+"samayas, nuestros compromiso sagrados en el camino a la iluminación. Cuando "
+"nuestros samayas son purificados, y las bendiciones de las dakinis, "
+"guardianas de los logros comunes y supremos fluyen fácilmente, los logros "
+"viene inmediatamente."
 
 #: .\website\templates\index.html:614
 msgid ""
@@ -1010,13 +1021,22 @@ msgid ""
 "practice is so beneficial that people have requested a link so they may "
 "contribute to the tsok offerings, to butter lamps, to sponsorships for "
 "practitioners, or to offerings for the visiting lamas and monks."
-msgstr "Ya qué el Drubchen es parte de un tur de enseñanzas más extenso en Sud América, solo podía ser calendarizado durante las fiestas de Navidad-Año Nuevo cuando muchos practicantes tiene compromisos familiares. No obstante, la interdependencia con esta práctica es tan beneficiosa que algunas personas han solicitado una forma para poder contribuir a ofrendas de tsok, lámparitas, auspicio para practicantes, o para las ofrendas para monjes y lamas visitantes."
+msgstr ""
+"Ya qué el Drubchen es parte de un tur de enseñanzas más extenso en Sud "
+"América, solo podía ser calendarizado durante las fiestas de Navidad-Año "
+"Nuevo cuando muchos practicantes tiene compromisos familiares. No obstante, "
+"la interdependencia con esta práctica es tan beneficiosa que algunas "
+"personas han solicitado una forma para poder contribuir a ofrendas de tsok, "
+"lámparitas, auspicio para practicantes, o para las ofrendas para monjes y "
+"lamas visitantes."
 
 #: .\website\templates\index.html:615
 msgid ""
 "If you wish to make a financial contribution to support this event, you may "
-"do so by <a href='#'>here</a>."
-msgstr "Si desea hacer una contribución financiera para apoyar este evento, <a href='sponsor'>haga aquí</a>."
+"do so by <a href='sponsor'>here</a>."
+msgstr ""
+"Si desea hacer una contribución financiera para apoyar este evento, <a "
+"href='sponsor'>haga aquí</a>."
 
 #: .\website\templates\pay-success.html:14
 msgid "Your entry form for the event has been successfully sent."
@@ -1038,8 +1058,6 @@ msgid "The registration form must be completed for each participant."
 msgstr "El formulario es individual y se debe llenarlo completamente."
 
 #: .\website\templates\special-guest-form.html:155
-#, fuzzy
-#| msgid "Event option"
 msgid "Event price"
 msgstr "Opción de evento"
 
@@ -1066,7 +1084,7 @@ msgstr ""
 
 #: .\website\templates\sponsor-form.html:31
 msgid "Sponsor Form"
-msgstr ""
+msgstr "Formulario de patrocinio"
 
 #: .\website\templates\sponsor-form.html:194
 msgid "Sponsored Form"
