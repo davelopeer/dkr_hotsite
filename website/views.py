@@ -6,7 +6,7 @@ from django.template.loader import get_template
 from django.utils import translation
 from django.http import HttpResponseNotFound
 from website.forms import InscriptionForm, InscriptionFormEn, InscriptionFormEs, HealthForm, GuestForm, GuestFormEs, GuestFormEn, VolunteerForm, VolunteerFormEn, VolunteerFormEs, SponsorForm, SponsorFormEn, SponsoredForm, InscriptionSponsoredForm, InscriptionSponsoredFormEn, InscriptionSponsoredFormEs, SpecialGuestForm, SpecialGuestFormEn
-from website.sendgrid.sg_inscription import sendMail, sendMailHealth, sendMailVolunteer, sendMailError, sendMailHealthError, sendMailVolunteerError, sendMailSponsor, sendMailSponsored, sendMailSponsorError, sendMailSponsoredInscription, sendMailSponsoredInscriptionError
+from website.sendgrid.sg_inscription import sendMail, sendMailHealth, sendMailVolunteer, sendMailError, sendMailHealthError, sendMailVolunteerError, sendMailSponsor, sendMailSponsorError, sendMailSponsoredInscription, sendMailSponsoredInscriptionError
 
 def index(request):
     user_language = translation.get_language_from_request(request, check_path=True)
@@ -481,14 +481,10 @@ def sponsor(request):
 
     if request.method == 'POST':
 
-        sponsored_form = SponsoredForm(request.POST)
         if user_language == 'pt-br':
             sponsor_form = SponsorForm(request.POST)
         else:
             sponsor_form = SponsorFormEn(request.POST)
-
-        # if (form.fields['payment']) == 'Depósito bancário':
-        #     form.fields['deposit_day'].required = True
 
         name = request.POST.get('name', '')
         email = request.POST.get('email', '')
@@ -514,23 +510,7 @@ def sponsor(request):
         else:
             payment_info = 'Nome do usuário Paypal: ' + paypal_name
 
-
-        if sponsored_form.is_valid():
-            sendMailSponsored(
-                    name,
-                    email,
-                    phone,
-                    sangha,
-                    )
-            sponsered_send_success = True
-            return render(request, 'sponsor-form.html',  {
-                'sponsored_form': sponsored_form,
-                'sponsor_form': sponsor_form,
-                'user_language': user_language,
-                'sponsered_send_success': sponsered_send_success,
-            })
-
-        elif sponsor_form.is_valid():
+        if sponsor_form.is_valid():
             sendMailSponsor(
                     name,
                     email,
@@ -541,7 +521,6 @@ def sponsor(request):
                     )
             sponser_send_success = True
             return render(request, 'sponsor-form.html',  {
-                'sponsored_form': sponsored_form,
                 'sponsor_form': sponsor_form,
                 'user_language': user_language,
                 'sponser_send_success': sponser_send_success,
@@ -549,7 +528,6 @@ def sponsor(request):
         else:
             invalid_data = True
             return render(request, 'sponsor-form.html',  {
-                'sponsored_form': sponsored_form,
                 'sponsor_form': sponsor_form,
                 'user_language': user_language,
                 'invalid_data': invalid_data,
@@ -557,7 +535,6 @@ def sponsor(request):
 
 
     else:
-        sponsored_form = SponsoredForm()
         if user_language == 'pt-br':
             sponsor_form = SponsorForm()
         else:
