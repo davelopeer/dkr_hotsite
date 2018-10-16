@@ -20,125 +20,125 @@
     <p class="form-sent-header">{% trans "Invalid information." %}</p>
     <p class="form-sent-body margin-bottom">{% trans "Be shure that you correctly filled all fields." %}</p>
   {% endif %}
+  <div class="padding-sides">
+    <h2 class="text-center section_title">{% trans "Sponsorship" %}</h2>
+    <p class="indent">{% trans "As many of you know, Dzongsar Khyentse Rinpoche will lead the Khandro Sangdü Drubchen at Chagdud Gonpa Brasil/Khadro Ling at the end of December. This cycle, Gathering of the Dakini’s Secrets, contains practices of the enlightened body, speech and mind of Vajravarahi, as well as a sadhana of all the dakas and dakinis of the twenty-four sacred places and thirty-two holy lands." %}</p>
+    <p class="indent">{% trans "The Khandro Sangdu is a primary practice for purifying our samayas―our sacred commitments on the path to enlightenment. When samayas are purified, the blessings of the dakinis who guard ordinary and supreme attainments flow easily and the accomplishments come immediately." %}</p>
+    <p class="indent">{% trans "Because the drubchen is part of a much longer teaching tour in South America, it could only be scheduled in the Christmas-New Year holidays when many practitioners have family commitments. Yet interdependence with this practice is so beneficial that people have requested a link so they may contribute to the tsok offerings, to butter lamps, to sponsorships for practitioners, or to offerings for the visiting lamas and monks." %}</p>
+    <p class="font-weight-light font-italic quote-right">Chagdud Khadro</p>
 
-  <h2 class="text-center section_title">{% trans "Sponsorship" %}</h2>
-  <p class="indent">{% trans "As many of you know, Dzongsar Khyentse Rinpoche will lead the Khandro Sangdü Drubchen at Chagdud Gonpa Brasil/Khadro Ling at the end of December. This ‘Secret Gathering of the Dakinis’ cycle contains practices of the enlightened body, speech and mind of Vajravarahi, as well as a sadhana of all the dakas and dakinis of the twenty-four sacred places and thirty-two holy lands." %}</p>
-  <p class="indent">{% trans "The Khandro Sangdu is a primary practice for purifying our samayas--our sacred commitments on the path to enlightenment. When samayas are purified, and the blessings of the dakinis who guard ordinary and supreme attainments flow easily and the accomplishments come immediately." %}</p>
-  <p class="indent">{% trans "Because the drubchen is part of a much longer teaching tour in South America, it could only be scheduled in the Christmas-New Year holidays when many practitioners have family commitments. Yet interdependence with this practice is so beneficial that people have requested a link so they may contribute to the tsok offerings, to butter lamps, to sponsorships for practitioners, or to offerings for the visiting lamas and monks." %}</p>
-  <p class="font-weight-light font-italic quote-right">Chagdud Khadro</p>
+    <form class="" method="post" name="sponsor">
+      {% csrf_token %}
+      <h2>{% trans "Sponsorship Form" %}</h2>
+      <div class="row">
+        <div class="form-group col-md-8">
+          <label class="col-form-label" for="formGroupExampleInput">{% trans "Name" %}:</label>
+          {{sponsor_form.name}}
+        </div>
+      </div>
+      <div class="row">
+        <div class="form-group col-md-8">
+          <label class="col-form-label" for="formGroupExampleInput">{% trans "E-mail" %}:</label>
+          {{sponsor_form.email}}
+        </div>
+      </div>
+      <div class="row">
+        <div class="form-group col-md-8">
+          <label class="col-form-label" for="formGroupExampleInput">{% trans "Phone" %}:</label>
+          {{sponsor_form.phone}}
+        </div>
+      </div>
 
-  <form class="" method="post" name="sponsor">
-    {% csrf_token %}
-    <h2>{% trans "Sponsorship Form" %}</h2>
-    <div class="row">
-      <div class="form-group col-md-8">
-        <label class="col-form-label" for="formGroupExampleInput">{% trans "Name" %}:</label>
-        {{sponsor_form.name}}
+      <h3 class="form_section_title payment">{% trans "Payment" %}:</h3>
+      {% if user_language == 'pt-br' %}
+      <div class="row payment">
+        <div class="custom-controls-stacked col-md-12 checkbox-inline">
+          <p>Forma de pagamento</p>
+          {% for radio in sponsor_form.payment %}
+            <div class="form-check-boxes">
+              {{radio.tag}}
+              <label class="form-check-label" for="radio_{{ radio.index}}">{{ radio.choice_label }}</label>
+            </div>
+          {% endfor %}
+        </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="form-group col-md-8">
-        <label class="col-form-label" for="formGroupExampleInput">{% trans "E-mail" %}:</label>
-        {{sponsor_form.email}}
+      <div class="row payment_form">
+        <div class="col-md-8 payment_section" id="payment1">
+          <h4 class="font-weight-light">Pagamento via Banco do Brasil:</h4>
+          <p>Dados para depósito ou transferência:<br>
+            <a target="_blank" href="http://www.bb.com.br/pbb/pagina-inicial#/">Banco do Brasil</a><br>
+            Titular: Chagdud Gonpa Brasil<br>
+            CNPJ: 00.990.708/0001-37<br>
+            Agência: 1380-3<br>
+            Conta: 5454-2<br>
+          </p>
+          <p class="underline">DADOS DO PAGAMENTO:</p>
+          <div class="form-group">
+            <label class="col-form-label" for="formGroupExampleInput">Data da transferência/depósito</label>
+            {{sponsor_form.deposit_day}}
+          </div>
+          <div class="form-group">
+            <label class="col-form-label" for="formGroupExampleInput">Nome do titular da conta</label>
+            {{sponsor_form.deposit_name}}
+          </div>
+          <div class="form-group">
+            <label class="col-form-label" for="formGroupExampleInput">Valor do depósito</label>
+            {{sponsor_form.deposit_value}}
+          </div>
+          <div class="form-group">
+            <label class="col-form-label" for="formGroupExampleInput">Número da agência</label>
+            {{sponsor_form.deposit_agency}}
+          </div>
+          <div class="form-group">
+            <label class="col-form-label" for="formGroupExampleInput">Número da conta</label>
+            {{sponsor_form.deposit_account}}
+          </div>
+          <p class="text-center">ou</p>
+          <div class="form-group">
+            <label class="col-form-label" for="formGroupExampleInput">Número do envelope ou DOC </label>
+            {{sponsor_form.deposit_envelop}}
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="form-group col-md-8">
-        <label class="col-form-label" for="formGroupExampleInput">{% trans "Phone" %}:</label>
-        {{sponsor_form.phone}}
-      </div>
-    </div>
 
-    <h3 class="form_section_title payment">{% trans "Payment" %}:</h3>
-    {% if user_language == 'pt-br' %}
-    <div class="row payment">
-      <div class="custom-controls-stacked col-md-12 checkbox-inline">
-        <p>Forma de pagamento</p>
-        {% for radio in sponsor_form.payment %}
-          <div class="form-check-boxes">
+      {% else %}
+      <p>{% trans "For PayPal donation/payment, please use the following email address for payment receiver: <strong>adm@chagdud.org</strong>. Also, in comment field inform that payment is for Khadro Sangdu Drubchen." %}</p>
+      <p class="underline">{% trans "Be sure to send the registration form after payment is completed." %}</p>
+      <p>{% trans "If you are paying for someone else, please inform the name on 'Extra Information'." %}</p>
+        {% for radio in sponsor_form.payment_international %}
+          <div class="form-check-boxes payment">
             {{radio.tag}}
-            <label class="form-check-label" for="radio_{{ radio.index}}">{{ radio.choice_label }}</label>
+            <label class="form-check-label " for="radio_{{ radio.index}}">{{ radio.choice_label }}</label>
+            <img class="logo-paypal" src="{% static 'images/paypal-logo.png' %}" alt="Paypal">
           </div>
         {% endfor %}
-      </div>
-    </div>
-    <div class="row payment_form">
-      <div class="col-md-8 payment_section" id="payment1">
-        <h4 class="font-weight-light">Pagamento via Banco do Brasil:</h4>
-        <p>Dados para depósito ou transferência:<br>
-          <a target="_blank" href="http://www.bb.com.br/pbb/pagina-inicial#/">Banco do Brasil</a><br>
-          Titular: Chagdud Gonpa Brasil<br>
-          CNPJ: 00.990.708/0001-37<br>
-          Agência: 1380-3<br>
-          Conta: 5454-2<br>
-        </p>
-        <p class="underline">DADOS DO PAGAMENTO:</p>
-        <div class="form-group">
-          <label class="col-form-label" for="formGroupExampleInput">Data da transferência/depósito</label>
-          {{sponsor_form.deposit_day}}
+        <div class="col-md-8">
+          <div class="form-group">
+            <label class="col-form-label" for="formGroupExampleInput">{% trans "Paypal username:" %}</label>
+            {{sponsor_form.paypal_name}}
+          </div>
         </div>
-        <div class="form-group">
-          <label class="col-form-label" for="formGroupExampleInput">Nome do titular da conta</label>
-          {{sponsor_form.deposit_name}}
-        </div>
-        <div class="form-group">
-          <label class="col-form-label" for="formGroupExampleInput">Valor do depósito</label>
-          {{sponsor_form.deposit_value}}
-        </div>
-        <div class="form-group">
-          <label class="col-form-label" for="formGroupExampleInput">Número da agência</label>
-          {{sponsor_form.deposit_agency}}
-        </div>
-        <div class="form-group">
-          <label class="col-form-label" for="formGroupExampleInput">Número da conta</label>
-          {{sponsor_form.deposit_account}}
-        </div>
-        <p class="text-center">ou</p>
-        <div class="form-group">
-          <label class="col-form-label" for="formGroupExampleInput">Número do envelope ou DOC </label>
-          {{sponsor_form.deposit_envelop}}
-        </div>
-      </div>
-    </div>
-
-    {% else %}
-    <p>{% trans "For PayPal donation/payment, please use the following email address for payment receiver: <strong>adm@chagdud.org</strong>. Also, in comment field inform that payment is for Khadro Sangdu Drubchen." %}</p>
-    <p class="underline">{% trans "Be sure to send the registration form after payment is completed." %}</p>
-    <p>{% trans "If you are paying for someone else, please inform the name on 'Extra Information'." %}</p>
-      {% for radio in sponsor_form.payment_international %}
-        <div class="form-check-boxes payment">
-          {{radio.tag}}
-          <label class="form-check-label " for="radio_{{ radio.index}}">{{ radio.choice_label }}</label>
-          <img class="logo-paypal" src="{% static 'images/paypal-logo.png' %}" alt="Paypal">
-        </div>
-      {% endfor %}
-      <div class="col-md-8">
-        <div class="form-group">
-          <label class="col-form-label" for="formGroupExampleInput">{% trans "Paypal username:" %}</label>
-          {{sponsor_form.paypal_name}}
-        </div>
-      </div>
-      <div class="modal fade" id="paypalModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title font-large" id="exampleModalCenterTitle">{% trans "Please note:" %}</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <p>{% trans "A new tab will open for payment process. After the transaction is complete, return to registration page and submit form. Click on the image below." %}</p>
-              <a target="_blank" href="https://www.paypal.com/"><img class="logo-paypal" src="{% static 'images/paypal-logo.png' %}" alt="Paypal"></a>
+        <div class="modal fade" id="paypalModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title font-large" id="exampleModalCenterTitle">{% trans "Please note:" %}</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p>{% trans "A new tab will open for payment process. After the transaction is complete, return to registration page and submit form. Click on the image below." %}</p>
+                <a target="_blank" href="https://www.paypal.com/"><img class="logo-paypal" src="{% static 'images/paypal-logo.png' %}" alt="Paypal"></a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-    {% endif %}
+      {% endif %}
 
-    <button type="submit" class="btn btn-outline-primary">{% trans "Send" %}</button>
-  </form>
+      <button type="submit" class="btn btn-outline-primary">{% trans "Send" %}</button>
+    </form>
 
   </div>
 
