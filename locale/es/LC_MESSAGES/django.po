@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-05 16:05-0300\n"
+"POT-Creation-Date: 2018-10-16 09:53-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -551,7 +551,8 @@ msgid "Registration"
 msgstr "Formulario de inscripción"
 
 #: .\website\templates\index.html:31 .\website\templates\index.html:611
-msgid "Sponsor"
+#: .\website\templates\sponsor-form.html:24
+msgid "Sponsorship"
 msgstr "Patrocinio"
 
 #: .\website\templates\index.html:39
@@ -984,7 +985,7 @@ msgstr ""
 msgid ""
 "As many of you know, Dzongsar Khyentse Rinpoche will lead the Khandro Sangdü "
 "Drubchen at Chagdud Gonpa Brasil/Khadro Ling at the end of December. This "
-"‘Secret Gathering of the Dakinis’ cycle contains practices of the "
+"cycle, Gathering of the Dakini’s Secrets, contains practices of the "
 "enlightened body, speech and mind of Vajravarahi, as well as a sadhana of "
 "all the dakas and dakinis of the twenty-four sacred places and thirty-two "
 "holy lands."
@@ -998,10 +999,10 @@ msgstr ""
 
 #: .\website\templates\index.html:613 .\website\templates\sponsor-form.html:26
 msgid ""
-"The Khandro Sangdu is a primary practice for purifying our samayas--our "
+"The Khandro Sangdu is a primary practice for purifying our samayas―our "
 "sacred commitments on the path to enlightenment. When samayas are purified, "
-"and the blessings of the dakinis who guard ordinary and supreme attainments "
-"flow easily and the accomplishments come immediately."
+"the blessings of the dakinis who guard ordinary and supreme attainments flow "
+"easily and the accomplishments come immediately."
 msgstr ""
 "El Khandro Sangdü es la práctica primaria para la purificación de nuestros "
 "samayas, nuestros compromiso sagrados en el camino a la iluminación. Cuando "
@@ -1029,7 +1030,7 @@ msgstr ""
 #: .\website\templates\index.html:615
 msgid ""
 "If you wish to make a financial contribution to support this event, you may "
-"do so by <a href='sponsor'>here</a>."
+"do so by <a href='sponsor'>clicking here</a>."
 msgstr ""
 "Si desea hacer una contribución financiera para apoyar este evento, <a "
 "href='sponsor'>haga aquí</a>."
@@ -1072,10 +1073,6 @@ msgstr "Información no válida"
 #: .\website\templates\sponsor-form.html:21
 msgid "Be shure that you correctly filled all fields."
 msgstr ""
-
-#: .\website\templates\sponsor-form.html:24
-msgid "Sponsorship"
-msgstr "Patrocinio"
 
 #: .\website\templates\sponsor-form.html:32
 msgid "Sponsorship Form"
@@ -1134,6 +1131,9 @@ msgid ""
 msgstr ""
 "El precio del evento para voluntario cubre los costos de su comida durante "
 "el período del evento."
+
+#~ msgid "Sponsor"
+#~ msgstr "Patrocinio"
 
 #~ msgid "Sponsored inscription form"
 #~ msgstr "Formulario de patrocinio"
