@@ -191,25 +191,29 @@
           <h3 class="form_section_title">{% trans "Additional information"%}</h3>
           <div class="row">
             <div class="form-group col-md-10">
-              <label class="col-form-label" for="formGroupExampleInput">{% trans "Possui algum problema físico que impeça de carregar peso? Se sim, descreva:" %}</label>
+              <label class="col-form-label" for="formGroupExampleInput">{% trans "Do you have any health problem that would prevent you from carrying weight? If so, let us know below:" %}</label>
+              <!-- <label class="col-form-label" for="formGroupExampleInput">{% trans "Possui algum problema físico que impeça de carregar peso? Se sim, descreva:" %}</label> -->
               {{form.physical_problems}}
             </div>
           </div>
           <div class="row">
             <div class="form-group col-md-10">
-              <label class="col-form-label" for="formGroupExampleInput">{% trans "Possui algum tipo de problema articular (tendinite, artrite e outros)? Se sim, por favor, descreva:" %}</label>
+              <label class="col-form-label" for="formGroupExampleInput">{% trans "Do you have any type of joint problem (tendonitis, arthritis and others)? If yes, please describe:" %}</label>
+              <!-- <label class="col-form-label" for="formGroupExampleInput">{% trans "Possui algum tipo de problema articular (tendinite, artrite e outros)? Se sim, por favor, descreva:" %}</label> -->
               {{form.joint_problems}}
             </div>
           </div>
           <div class="row">
             <div class="form-group col-md-10">
-              <label class="col-form-label" for="formGroupExampleInput">{% trans "Você possui algum problema de saúde que cause limitação para atividades físicas ou para algum função? Se sim, quais?" %}</label>
+              <label class="col-form-label" for="formGroupExampleInput">{% trans "Do you have any health problems that limit your physical activities? If so, which ones?" %}</label>
+              <!-- <label class="col-form-label" for="formGroupExampleInput">{% trans "Você possui algum problema de saúde que cause limitação para atividades físicas ou para algum função? Se sim, quais?" %}</label> -->
               {{form.health_problems}}
             </div>
           </div>
 
           <h3 class="form_section_title">{% trans "Preço do evento" %}:</h3>
-          <p>{% trans "O preço do evento para voluntário cobre os custos de sua refeição durante o período do evento." %}</p>
+          <p>{% trans "The price for volunteers is a contribution towards the costs of your meal during the event." %}</p>
+          <!-- <p>{% trans "O preço do evento para voluntário cobre os custos de sua refeição durante o período do evento." %}</p> -->
           <div class="row">
             <div class="custom-controls-stacked col-md-12">
               {% for radio in form.event_option %}
@@ -313,7 +317,7 @@
               </div>
               <div class="form-group">
                 <label class="col-form-label" for="formGroupExampleInput">Número da agência</label>
-                {{form.deposit_agency}}
+                {{form. }}
               </div>
               <div class="form-group">
                 <label class="col-form-label" for="formGroupExampleInput">Número da conta</label>
@@ -380,9 +384,6 @@
               <small >{% trans "Before clicking send, make sure that all data is correctly filled in and that you have completed the payment." %}</small>
             </div>
           </div>
-
-          <!-- <div class="g-recaptcha" data-sitekey="6LfZM2YUAAAAAAFnDJz-B_eevQVB_nWGk60IXSy9"></div> -->
-          <!-- {{form.captcha}} -->
 
           <div class="btn-holder">
             <button type="submit" class="btn btn-outline-primary">{% trans "Send" %}</button>

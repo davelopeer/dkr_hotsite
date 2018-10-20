@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-16 09:53-0300\n"
+"POT-Creation-Date: 2018-10-20 09:35-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -296,7 +296,7 @@ msgstr ""
 #: .\website\templates\sponsored-form.html:126
 #: .\website\templates\sponsored-form.html:168
 #: .\website\templates\volunteer-form.html:163
-#: .\website\templates\volunteer-form.html:228
+#: .\website\templates\volunteer-form.html:232
 msgid "Please pay attention"
 msgstr "Atenção"
 
@@ -338,7 +338,7 @@ msgstr "Opção de evento"
 #: .\website\templates\guest-form.html:175 .\website\templates\index.html:425
 #: .\website\templates\special-guest-form.html:177
 #: .\website\templates\sponsored-form.html:174
-#: .\website\templates\volunteer-form.html:234
+#: .\website\templates\volunteer-form.html:238
 msgid ""
 "Notify in the field 'Extra information' the name of the adult responsible "
 "that will be participating in the event."
@@ -349,28 +349,28 @@ msgstr ""
 #: .\website\templates\guest-form.html:181 .\website\templates\index.html:431
 #: .\website\templates\special-guest-form.html:183
 #: .\website\templates\sponsored-form.html:180
-#: .\website\templates\volunteer-form.html:240
+#: .\website\templates\volunteer-form.html:244
 msgid "Partial participation is not possible in this retreat. "
 msgstr "Não é possível a participação parcial neste retiro."
 
 #: .\website\templates\guest-form.html:185 .\website\templates\index.html:435
 #: .\website\templates\special-guest-form.html:187
 #: .\website\templates\sponsored-form.html:184
-#: .\website\templates\volunteer-form.html:244
+#: .\website\templates\volunteer-form.html:248
 msgid "Extra information"
 msgstr "Observações"
 
 #: .\website\templates\guest-form.html:189 .\website\templates\index.html:439
 #: .\website\templates\special-guest-form.html:191
 #: .\website\templates\sponsor-form.html:52
-#: .\website\templates\volunteer-form.html:248
+#: .\website\templates\volunteer-form.html:252
 msgid "Payment"
 msgstr "Forma de pagamento"
 
 #: .\website\templates\guest-form.html:276 .\website\templates\index.html:526
 #: .\website\templates\special-guest-form.html:277
 #: .\website\templates\sponsor-form.html:105
-#: .\website\templates\volunteer-form.html:334
+#: .\website\templates\volunteer-form.html:338
 msgid ""
 "For PayPal donation/payment, please use the following email address for "
 "payment receiver: <strong>adm@chagdud.org</strong>. Also, in comment field "
@@ -380,14 +380,14 @@ msgstr ""
 #: .\website\templates\guest-form.html:277 .\website\templates\index.html:527
 #: .\website\templates\special-guest-form.html:278
 #: .\website\templates\sponsor-form.html:106
-#: .\website\templates\volunteer-form.html:335
+#: .\website\templates\volunteer-form.html:339
 msgid "Be sure to send the registration form after payment is completed."
 msgstr "Certifique-se de enviar o formulário após o pagamento."
 
 #: .\website\templates\guest-form.html:287 .\website\templates\index.html:538
 #: .\website\templates\special-guest-form.html:288
 #: .\website\templates\sponsor-form.html:117
-#: .\website\templates\volunteer-form.html:345
+#: .\website\templates\volunteer-form.html:349
 msgid "Paypal username:"
 msgstr ""
 
@@ -395,14 +395,14 @@ msgstr ""
 #: .\website\templates\index.html:546
 #: .\website\templates\special-guest-form.html:296
 #: .\website\templates\sponsor-form.html:125
-#: .\website\templates\volunteer-form.html:353
+#: .\website\templates\volunteer-form.html:357
 msgid "Please note:"
 msgstr "Importante:"
 
 #: .\website\templates\guest-form.html:301 .\website\templates\index.html:552
 #: .\website\templates\special-guest-form.html:302
 #: .\website\templates\sponsor-form.html:131
-#: .\website\templates\volunteer-form.html:359
+#: .\website\templates\volunteer-form.html:363
 msgid ""
 "A new tab will open for payment process. After the transaction is complete, "
 "return to registration page and submit form. Click on the image below."
@@ -410,7 +410,7 @@ msgstr ""
 
 #: .\website\templates\guest-form.html:320 .\website\templates\index.html:571
 #: .\website\templates\special-guest-form.html:321
-#: .\website\templates\volunteer-form.html:378
+#: .\website\templates\volunteer-form.html:382
 msgid ""
 "I have read and I accept the <a target='_blank' href='http://www.ks-drubchen."
 "com/cancellation-policy/'>cancellation policy of participation in Khadro "
@@ -422,7 +422,7 @@ msgstr ""
 
 #: .\website\templates\guest-form.html:322 .\website\templates\index.html:573
 #: .\website\templates\special-guest-form.html:323
-#: .\website\templates\volunteer-form.html:380
+#: .\website\templates\volunteer-form.html:384
 msgid ""
 "Before clicking send, make sure that all data is correctly filled in and "
 "that you have completed the payment."
@@ -435,7 +435,7 @@ msgstr ""
 #: .\website\templates\special-guest-form.html:331
 #: .\website\templates\sponsor-form.html:140
 #: .\website\templates\sponsored-form.html:194
-#: .\website\templates\volunteer-form.html:388
+#: .\website\templates\volunteer-form.html:389
 msgid "Send"
 msgstr "Enviar"
 
@@ -971,7 +971,11 @@ msgid ""
 "all the dakas and dakinis of the twenty-four sacred places and thirty-two "
 "holy lands."
 msgstr ""
-"Como é do conhecimento de muitos, Dzongsar Khyentse Rinpoche conduzirá o Drubchen de Khandro Sangdü no Khadro Ling, Chagdud Gonpa Brasil, no final de dezembro. Este ciclo, “Reunião dos Segredos da Dakini”, contém práticas de corpo, fala e mente iluminados de Vajravarahi, bem como a sadhana de todos os dakas e dakinis dos 24 lugares sagrados e das 32 terras puras."
+"Como é do conhecimento de muitos, Dzongsar Khyentse Rinpoche conduzirá o "
+"Drubchen de Khandro Sangdü no Khadro Ling, Chagdud Gonpa Brasil, no final de "
+"dezembro. Este ciclo, “Reunião dos Segredos da Dakini”, contém práticas de "
+"corpo, fala e mente iluminados de Vajravarahi, bem como a sadhana de todos "
+"os dakas e dakinis dos 24 lugares sagrados e das 32 terras puras."
 
 #: .\website\templates\index.html:613 .\website\templates\sponsor-form.html:26
 msgid ""
@@ -980,7 +984,11 @@ msgid ""
 "the blessings of the dakinis who guard ordinary and supreme attainments flow "
 "easily and the accomplishments come immediately."
 msgstr ""
-"Khandro Sangdu é uma das principais práticas para purificar samayas, nossos compromissos sagrados no caminho da iluminação. Quando purificamos os samayas, as bênçãos das dakinis que guardam as realizações comuns e a extraordinária fluem com facilidade e a realização autêntica surge imediatamente."
+"Khandro Sangdu é uma das principais práticas para purificar samayas, nossos "
+"compromissos sagrados no caminho da iluminação. Quando purificamos os "
+"samayas, as bênçãos das dakinis que guardam as realizações comuns e a "
+"extraordinária fluem com facilidade e a realização autêntica surge "
+"imediatamente."
 
 #: .\website\templates\index.html:614 .\website\templates\sponsor-form.html:27
 msgid ""
@@ -991,7 +999,13 @@ msgid ""
 "contribute to the tsok offerings, to butter lamps, to sponsorships for "
 "practitioners, or to offerings for the visiting lamas and monks."
 msgstr ""
-"Uma vez que o drubchen faz parte de uma longa série de ensinamentos na América do Sul, a única data possível para o evento foi nos feriados de Natal e Ano Novo, quando muitos praticantes têm compromissos familiares. Ainda assim, a interdependência com essa prática é tão benéfica que muitas pessoas pediram que fosse criado um link para que também possam participar contribuindo com oferendas de tsog e de lamparinas, patrocinando praticantes e fazendo oferendas aos lamas e monges visitantes."
+"Uma vez que o drubchen faz parte de uma longa série de ensinamentos na "
+"América do Sul, a única data possível para o evento foi nos feriados de "
+"Natal e Ano Novo, quando muitos praticantes têm compromissos familiares. "
+"Ainda assim, a interdependência com essa prática é tão benéfica que muitas "
+"pessoas pediram que fosse criado um link para que também possam participar "
+"contribuindo com oferendas de tsog e de lamparinas, patrocinando praticantes "
+"e fazendo oferendas aos lamas e monges visitantes."
 
 #: .\website\templates\index.html:615
 msgid ""
@@ -1066,11 +1080,23 @@ msgstr "Informações extras"
 
 #: .\website\templates\volunteer-form.html:194
 msgid ""
+"Do you have any health problem that would prevent you from carrying weight? "
+"If so, let us know below:"
+msgstr "Possui algum problema físico que impeça de carregar peso? Se sim, descreva:"
+
+#: .\website\templates\volunteer-form.html:195
+msgid ""
 "Possui algum problema físico que impeça de carregar peso? Se sim, descreva:"
 msgstr ""
 "Possui algum problema físico que impeça de carregar peso? Se sim, descreva:"
 
-#: .\website\templates\volunteer-form.html:200
+#: .\website\templates\volunteer-form.html:201
+msgid ""
+"Do you have any type of joint problem (tendonitis, arthritis and others)? If "
+"yes, please describe:"
+msgstr "Possui algum tipo de problema articular (tendinite, artrite e outros)? Se sim, por favor, descreva:"
+
+#: .\website\templates\volunteer-form.html:202
 msgid ""
 "Possui algum tipo de problema articular (tendinite, artrite e outros)? Se "
 "sim, por favor, descreva:"
@@ -1078,7 +1104,13 @@ msgstr ""
 "Possui algum tipo de problema articular (tendinite, artrite e outros)? Se "
 "sim, por favor, descreva:"
 
-#: .\website\templates\volunteer-form.html:206
+#: .\website\templates\volunteer-form.html:208
+msgid ""
+"Do you have any health problems that limit your physical activities? If so, "
+"which ones?"
+msgstr "Você possui algum problema de saúde que cause limitação para atividades físicas ou para algum função? Se sim, quais?"
+
+#: .\website\templates\volunteer-form.html:209
 msgid ""
 "Você possui algum problema de saúde que cause limitação para atividades "
 "físicas ou para algum função? Se sim, quais?"
@@ -1086,11 +1118,17 @@ msgstr ""
 "Você possui algum problema de saúde que cause limitação para atividades "
 "físicas ou para algum função? Se sim, quais?"
 
-#: .\website\templates\volunteer-form.html:211
+#: .\website\templates\volunteer-form.html:214
 msgid "Preço do evento"
 msgstr "Preço do evento"
 
-#: .\website\templates\volunteer-form.html:212
+#: .\website\templates\volunteer-form.html:215
+msgid ""
+"The price for volunteers is a contribution towards the costs of your meal "
+"during the event."
+msgstr "O preço do evento para voluntário cobre os custos de sua refeição durante o período do evento."
+
+#: .\website\templates\volunteer-form.html:216
 msgid ""
 "O preço do evento para voluntário cobre os custos de sua refeição durante o "
 "período do evento."
