@@ -782,7 +782,7 @@ def special_guest_form(request):
         elif user_language == 'es':
             form = SpecialGuestForm(request.POST)
         else:
-            form = SpecialGuestForm(request.POST)
+            form = SpecialGuestFormEn(request.POST)
 
         # if (form.fields['payment']) == 'Depósito bancário':
         #     form.fields['deposit_day'].required = True
