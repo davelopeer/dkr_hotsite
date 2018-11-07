@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-20 09:35-0300\n"
+"POT-Creation-Date: 2018-11-07 09:56-0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -957,10 +957,10 @@ msgstr ""
 #: .\website\templates\index.html:263
 #: .\website\templates\special-guest-form.html:20
 msgid ""
-"Registration will be open until the 11th of November 2018, as long as there "
+"Registration will be open until the 15th of November 2018, as long as there "
 "is still spaces available."
 msgstr ""
-"Las inscripciones para el evento estarán abiertas hasta el 11 de noviembre "
+"Las inscripciones para el evento estarán abiertas hasta el 15 de noviembre "
 "de 2018, o mientras existan lugares disponibles."
 
 #: .\website\templates\index.html:400
@@ -1111,8 +1111,6 @@ msgstr ""
 "¿Tiene algún problema físico que impida cargar peso? Si es así, describa:"
 
 #: .\website\templates\volunteer-form.html:201
-#, fuzzy
-#| msgid "Do you take any medication regularly? If yes, please describe."
 msgid ""
 "Do you have any type of joint problem (tendonitis, arthritis and others)? If "
 "yes, please describe:"
