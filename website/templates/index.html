@@ -255,8 +255,9 @@
 
         <!-- INSCRIPTION -->
         <div class="tab-pane fade" id="form" role="tabpanel" aria-labelledby="contact-tab">
-          <h2 class="text-center section_title">{% trans "Registration form" %}</h2>
-          <form class="form" role="form" action="" method="post" enctype="multipart/form-data">
+          <h2 class="text-center section_title">{% trans "Warning" %}</h2>
+          <p class="text-center">{% trans "Registration for Khandro Sangdu Drubchen has been closed." %}</p>
+          <!-- <form class="form" role="form" action="" method="post" enctype="multipart/form-data">
             {% csrf_token %}
             <div class="margin-bottom row justify-content-center">
               <div class=" col-md-9">
@@ -364,10 +365,10 @@
                 {% endfor %}
               </div>
             </div>
-            <small id="phoneHelp" class="form-text text-muted">{% trans "Khadro Ling does not serve meals for special diets with ingredient restrictions." %}</small>
+            <small id="phoneHelp" class="form-text text-muted">{% trans "Khadro Ling does not serve meals for special diets with ingredient restrictions." %}</small> -->
 
             <!-- ALERT FOR THE INALTERABILITY OF THE FOOD PREFERENCY AND SEAT -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <!-- <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
               <div class="modal-dialog" role="document">
                 <div class="modal-content">
                   <div class="modal-header">
@@ -574,16 +575,14 @@
               </div>
             </div>
 
-            <!-- <div class="g-recaptcha" data-sitekey="6LfZM2YUAAAAAAFnDJz-B_eevQVB_nWGk60IXSy9"></div> -->
-            <!-- {{form.captcha}} -->
 
             <div class="btn-holder">
               <button type="submit" class="btn btn-outline-primary">{% trans "Send" %}</button>
             </div>
-          </form>
+          </form> -->
 
           <!-- CIELO PAYMENT MODAL (REQUIREDLY OUTSIDE THE FORM) -->
-          <div class="modal fade" id="paymentModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <!-- <div class="modal fade" id="paymentModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
                 <div class="modal-header">
@@ -604,7 +603,7 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
 
         </div>
         <div class="tab-pane fade padding-sides" id="sponsor" role="tabpanel" aria-labelledby="sponsor-tab">

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-07 09:56-0200\n"
+"POT-Creation-Date: 2018-11-15 23:19-0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -136,13 +136,13 @@ msgstr ""
 "Assim, é muito importante que você nos avise o mais rápido possível, se "
 "precisar cancelar sua participação."
 
-#: .\website\templates\guest-form.html:12 .\website\templates\index.html:258
+#: .\website\templates\guest-form.html:12
 #: .\website\templates\special-guest-form.html:13
 #: .\website\templates\sponsored-form.html:12
 msgid "Registration form"
 msgstr "Inscrição"
 
-#: .\website\templates\guest-form.html:17 .\website\templates\index.html:264
+#: .\website\templates\guest-form.html:17 .\website\templates\index.html:265
 msgid ""
 "The registration form must be completed for each participant, including "
 "children of all ages."
@@ -150,7 +150,7 @@ msgstr ""
 "O formulário é individual e deve ser preenchido completamente. Crianças, "
 "independente da idade, devem estar inscritas no evento.  "
 
-#: .\website\templates\guest-form.html:18 .\website\templates\index.html:265
+#: .\website\templates\guest-form.html:18 .\website\templates\index.html:266
 #: .\website\templates\special-guest-form.html:19
 #: .\website\templates\volunteer-form.html:54
 msgid "Be sure to submit the registration form after payment tab is complete."
@@ -158,126 +158,126 @@ msgstr ""
 "Certifique-se de enviar o formulário após o pagamento. Sua inscrição somente "
 "será confirmada após a identificação do pagamento do evento."
 
-#: .\website\templates\guest-form.html:23 .\website\templates\index.html:270
+#: .\website\templates\guest-form.html:23 .\website\templates\index.html:271
 #: .\website\templates\special-guest-form.html:25
 #: .\website\templates\sponsored-form.html:22
 #: .\website\templates\volunteer-form.html:59
 msgid "Full name"
 msgstr "Nome completo"
 
-#: .\website\templates\guest-form.html:25 .\website\templates\index.html:272
+#: .\website\templates\guest-form.html:25 .\website\templates\index.html:273
 #: .\website\templates\special-guest-form.html:27
 #: .\website\templates\sponsored-form.html:24
 #: .\website\templates\volunteer-form.html:61
 msgid "Without abbreviations"
 msgstr "Sem abreviações"
 
-#: .\website\templates\guest-form.html:28 .\website\templates\index.html:275
+#: .\website\templates\guest-form.html:28 .\website\templates\index.html:276
 #: .\website\templates\special-guest-form.html:30
 #: .\website\templates\sponsored-form.html:27
 #: .\website\templates\volunteer-form.html:64
 msgid "Date of birth: "
 msgstr "Data de nascimento"
 
-#: .\website\templates\guest-form.html:34 .\website\templates\index.html:281
+#: .\website\templates\guest-form.html:34 .\website\templates\index.html:282
 #: .\website\templates\special-guest-form.html:36
 #: .\website\templates\sponsored-form.html:33
 #: .\website\templates\volunteer-form.html:70
 msgid "Address"
 msgstr "Endereço"
 
-#: .\website\templates\guest-form.html:38 .\website\templates\index.html:285
+#: .\website\templates\guest-form.html:38 .\website\templates\index.html:286
 #: .\website\templates\special-guest-form.html:40
 #: .\website\templates\sponsored-form.html:37
 #: .\website\templates\volunteer-form.html:74
 msgid "Number"
 msgstr "Número"
 
-#: .\website\templates\guest-form.html:42 .\website\templates\index.html:289
+#: .\website\templates\guest-form.html:42 .\website\templates\index.html:290
 #: .\website\templates\special-guest-form.html:44
 #: .\website\templates\sponsored-form.html:41
 #: .\website\templates\volunteer-form.html:78
 msgid "Additional address info"
 msgstr "Complemento"
 
-#: .\website\templates\guest-form.html:46 .\website\templates\index.html:293
+#: .\website\templates\guest-form.html:46 .\website\templates\index.html:294
 #: .\website\templates\special-guest-form.html:48
 #: .\website\templates\sponsored-form.html:45
 #: .\website\templates\volunteer-form.html:82
 msgid "Zip code"
 msgstr "CEP"
 
-#: .\website\templates\guest-form.html:52 .\website\templates\index.html:299
+#: .\website\templates\guest-form.html:52 .\website\templates\index.html:300
 #: .\website\templates\special-guest-form.html:54
 #: .\website\templates\sponsored-form.html:51
 #: .\website\templates\volunteer-form.html:88
 msgid "City"
 msgstr "Cidade"
 
-#: .\website\templates\guest-form.html:56 .\website\templates\index.html:303
+#: .\website\templates\guest-form.html:56 .\website\templates\index.html:304
 #: .\website\templates\special-guest-form.html:58
 #: .\website\templates\sponsored-form.html:55
 #: .\website\templates\volunteer-form.html:92
 msgid "State"
 msgstr "Estado"
 
-#: .\website\templates\guest-form.html:60 .\website\templates\index.html:307
+#: .\website\templates\guest-form.html:60 .\website\templates\index.html:308
 #: .\website\templates\special-guest-form.html:62
 #: .\website\templates\sponsored-form.html:59
 #: .\website\templates\volunteer-form.html:96
 msgid "Country"
 msgstr "País"
 
-#: .\website\templates\guest-form.html:71 .\website\templates\index.html:318
+#: .\website\templates\guest-form.html:71 .\website\templates\index.html:319
 #: .\website\templates\special-guest-form.html:73
 #: .\website\templates\sponsored-form.html:70
 #: .\website\templates\volunteer-form.html:107
 msgid "Phone/Mobile"
 msgstr "Número de telefone"
 
-#: .\website\templates\guest-form.html:77 .\website\templates\index.html:324
+#: .\website\templates\guest-form.html:77 .\website\templates\index.html:325
 #: .\website\templates\special-guest-form.html:79
 #: .\website\templates\sponsored-form.html:76
 #: .\website\templates\volunteer-form.html:113
 msgid "Genre"
 msgstr "Gênero"
 
-#: .\website\templates\guest-form.html:88 .\website\templates\index.html:335
+#: .\website\templates\guest-form.html:88 .\website\templates\index.html:336
 #: .\website\templates\special-guest-form.html:90
 #: .\website\templates\sponsored-form.html:87
 #: .\website\templates\volunteer-form.html:124
 msgid "Previous empowerments received:"
 msgstr "Descreva as últimas iniciações que você recebeu"
 
-#: .\website\templates\guest-form.html:92 .\website\templates\index.html:339
+#: .\website\templates\guest-form.html:92 .\website\templates\index.html:340
 #: .\website\templates\special-guest-form.html:94
 #: .\website\templates\sponsored-form.html:91
 #: .\website\templates\volunteer-form.html:128
 msgid "Empowerment bestowed by:"
 msgstr "De qual professor?"
 
-#: .\website\templates\guest-form.html:98 .\website\templates\index.html:345
+#: .\website\templates\guest-form.html:98 .\website\templates\index.html:346
 #: .\website\templates\special-guest-form.html:100
 #: .\website\templates\sponsored-form.html:97
 #: .\website\templates\volunteer-form.html:134
 msgid "Are you an ordained practitioner? (monastic or otherwise)"
 msgstr "Praticante com ordenação? (monástica ou outra)"
 
-#: .\website\templates\guest-form.html:108 .\website\templates\index.html:355
+#: .\website\templates\guest-form.html:108 .\website\templates\index.html:356
 #: .\website\templates\special-guest-form.html:110
 #: .\website\templates\sponsored-form.html:107
 #: .\website\templates\volunteer-form.html:144
 msgid "Food"
 msgstr "Alimentação"
 
-#: .\website\templates\guest-form.html:111 .\website\templates\index.html:358
+#: .\website\templates\guest-form.html:111 .\website\templates\index.html:359
 #: .\website\templates\special-guest-form.html:113
 #: .\website\templates\sponsored-form.html:110
 #: .\website\templates\volunteer-form.html:147
 msgid "Food preference"
 msgstr "Preferência alimentar"
 
-#: .\website\templates\guest-form.html:120 .\website\templates\index.html:367
+#: .\website\templates\guest-form.html:120 .\website\templates\index.html:368
 #: .\website\templates\special-guest-form.html:122
 #: .\website\templates\sponsored-form.html:119
 #: .\website\templates\volunteer-form.html:156
@@ -289,8 +289,8 @@ msgstr ""
 "ingredientes."
 
 #: .\website\templates\guest-form.html:127
-#: .\website\templates\guest-form.html:169 .\website\templates\index.html:374
-#: .\website\templates\index.html:419
+#: .\website\templates\guest-form.html:169 .\website\templates\index.html:375
+#: .\website\templates\index.html:420
 #: .\website\templates\special-guest-form.html:129
 #: .\website\templates\special-guest-form.html:171
 #: .\website\templates\sponsored-form.html:126
@@ -300,7 +300,7 @@ msgstr ""
 msgid "Please pay attention"
 msgstr "Atenção"
 
-#: .\website\templates\guest-form.html:133 .\website\templates\index.html:380
+#: .\website\templates\guest-form.html:133 .\website\templates\index.html:381
 #: .\website\templates\special-guest-form.html:135
 #: .\website\templates\sponsored-form.html:132
 #: .\website\templates\volunteer-form.html:169
@@ -309,33 +309,33 @@ msgstr ""
 "Ao escolher essa opção, você não poderá mudá-la após o envio deste "
 "formulário."
 
-#: .\website\templates\guest-form.html:139 .\website\templates\index.html:386
+#: .\website\templates\guest-form.html:139 .\website\templates\index.html:387
 #: .\website\templates\special-guest-form.html:141
 #: .\website\templates\sponsored-form.html:138
 #: .\website\templates\volunteer-form.html:175
 msgid "Sitting"
 msgstr "Assentos"
 
-#: .\website\templates\guest-form.html:142 .\website\templates\index.html:389
+#: .\website\templates\guest-form.html:142 .\website\templates\index.html:390
 #: .\website\templates\special-guest-form.html:144
 #: .\website\templates\sponsored-form.html:141
 #: .\website\templates\volunteer-form.html:178
 msgid "Do you need a chair?"
 msgstr "Necessita de cadeira? "
 
-#: .\website\templates\guest-form.html:151 .\website\templates\index.html:398
+#: .\website\templates\guest-form.html:151 .\website\templates\index.html:399
 #: .\website\templates\special-guest-form.html:153
 #: .\website\templates\sponsored-form.html:150
 #: .\website\templates\volunteer-form.html:187
 msgid "Only for people with limitations and unable sit on the floor."
 msgstr "Apenas para pessoas com limitações para sentar no chão."
 
-#: .\website\templates\guest-form.html:153 .\website\templates\index.html:403
+#: .\website\templates\guest-form.html:153 .\website\templates\index.html:404
 #: .\website\templates\sponsored-form.html:152
 msgid "Event option"
 msgstr "Opção de evento"
 
-#: .\website\templates\guest-form.html:175 .\website\templates\index.html:425
+#: .\website\templates\guest-form.html:175 .\website\templates\index.html:426
 #: .\website\templates\special-guest-form.html:177
 #: .\website\templates\sponsored-form.html:174
 #: .\website\templates\volunteer-form.html:238
@@ -346,28 +346,28 @@ msgstr ""
 "Em caso de participação de crianças, informe no campo 'Observações' o nome "
 "dos responsáveis que estarão participando do evento."
 
-#: .\website\templates\guest-form.html:181 .\website\templates\index.html:431
+#: .\website\templates\guest-form.html:181 .\website\templates\index.html:432
 #: .\website\templates\special-guest-form.html:183
 #: .\website\templates\sponsored-form.html:180
 #: .\website\templates\volunteer-form.html:244
 msgid "Partial participation is not possible in this retreat. "
 msgstr "Não é possível a participação parcial neste retiro."
 
-#: .\website\templates\guest-form.html:185 .\website\templates\index.html:435
+#: .\website\templates\guest-form.html:185 .\website\templates\index.html:436
 #: .\website\templates\special-guest-form.html:187
 #: .\website\templates\sponsored-form.html:184
 #: .\website\templates\volunteer-form.html:248
 msgid "Extra information"
 msgstr "Observações"
 
-#: .\website\templates\guest-form.html:189 .\website\templates\index.html:439
+#: .\website\templates\guest-form.html:189 .\website\templates\index.html:440
 #: .\website\templates\special-guest-form.html:191
 #: .\website\templates\sponsor-form.html:52
 #: .\website\templates\volunteer-form.html:252
 msgid "Payment"
 msgstr "Forma de pagamento"
 
-#: .\website\templates\guest-form.html:276 .\website\templates\index.html:526
+#: .\website\templates\guest-form.html:276 .\website\templates\index.html:527
 #: .\website\templates\special-guest-form.html:277
 #: .\website\templates\sponsor-form.html:105
 #: .\website\templates\volunteer-form.html:338
@@ -377,14 +377,14 @@ msgid ""
 "inform that payment is for Khadro Sangdu Drubchen."
 msgstr ""
 
-#: .\website\templates\guest-form.html:277 .\website\templates\index.html:527
+#: .\website\templates\guest-form.html:277 .\website\templates\index.html:528
 #: .\website\templates\special-guest-form.html:278
 #: .\website\templates\sponsor-form.html:106
 #: .\website\templates\volunteer-form.html:339
 msgid "Be sure to send the registration form after payment is completed."
 msgstr "Certifique-se de enviar o formulário após o pagamento."
 
-#: .\website\templates\guest-form.html:287 .\website\templates\index.html:538
+#: .\website\templates\guest-form.html:287 .\website\templates\index.html:539
 #: .\website\templates\special-guest-form.html:288
 #: .\website\templates\sponsor-form.html:117
 #: .\website\templates\volunteer-form.html:349
@@ -392,14 +392,14 @@ msgid "Paypal username:"
 msgstr ""
 
 #: .\website\templates\guest-form.html:295 .\website\templates\index.html:85
-#: .\website\templates\index.html:546
+#: .\website\templates\index.html:547
 #: .\website\templates\special-guest-form.html:296
 #: .\website\templates\sponsor-form.html:125
 #: .\website\templates\volunteer-form.html:357
 msgid "Please note:"
 msgstr "Importante:"
 
-#: .\website\templates\guest-form.html:301 .\website\templates\index.html:552
+#: .\website\templates\guest-form.html:301 .\website\templates\index.html:553
 #: .\website\templates\special-guest-form.html:302
 #: .\website\templates\sponsor-form.html:131
 #: .\website\templates\volunteer-form.html:363
@@ -408,7 +408,7 @@ msgid ""
 "return to registration page and submit form. Click on the image below."
 msgstr ""
 
-#: .\website\templates\guest-form.html:320 .\website\templates\index.html:571
+#: .\website\templates\guest-form.html:320 .\website\templates\index.html:572
 #: .\website\templates\special-guest-form.html:321
 #: .\website\templates\volunteer-form.html:382
 msgid ""
@@ -420,7 +420,7 @@ msgstr ""
 "politica-de-cancelamento-de-participacao-em-eventos/'>cancelamento de "
 "participação em eventos no Khadro Ling.</a> "
 
-#: .\website\templates\guest-form.html:322 .\website\templates\index.html:573
+#: .\website\templates\guest-form.html:322 .\website\templates\index.html:574
 #: .\website\templates\special-guest-form.html:323
 #: .\website\templates\volunteer-form.html:384
 msgid ""
@@ -431,7 +431,7 @@ msgstr ""
 "corretamente e concluiu o pagamento."
 
 #: .\website\templates\guest-form.html:330
-#: .\website\templates\health-form.html:106 .\website\templates\index.html:581
+#: .\website\templates\health-form.html:106 .\website\templates\index.html:580
 #: .\website\templates\special-guest-form.html:331
 #: .\website\templates\sponsor-form.html:140
 #: .\website\templates\sponsored-form.html:194
@@ -542,7 +542,7 @@ msgstr "Informações gerais"
 msgid "Registration"
 msgstr "Inscrição"
 
-#: .\website\templates\index.html:31 .\website\templates\index.html:611
+#: .\website\templates\index.html:31 .\website\templates\index.html:610
 #: .\website\templates\sponsor-form.html:24
 msgid "Sponsorship"
 msgstr "Patrocínio"
@@ -932,7 +932,15 @@ msgid ""
 "the event."
 msgstr "Mais informações sobre transporte para o evento em breve."
 
-#: .\website\templates\index.html:263
+#: .\website\templates\index.html:258
+msgid "Warning"
+msgstr "Aviso"
+
+#: .\website\templates\index.html:259
+msgid "Registration for Khandro Sangdu Drubchen has been closed."
+msgstr "As inscrições para o drubchen de Khandro Sangdu foram encerradas."
+
+#: .\website\templates\index.html:264
 #: .\website\templates\special-guest-form.html:20
 msgid ""
 "Registration will be open until the 15th of November 2018, as long as there "
@@ -941,12 +949,12 @@ msgstr ""
 "As inscrições para o evento estarão abertas até a data de 15 de novembro de "
 "2018, ou enquanto houver vagas disponíveis."
 
-#: .\website\templates\index.html:400
+#: .\website\templates\index.html:401
 #: .\website\templates\volunteer-form.html:189
 msgid "Accomodation"
 msgstr "Acomodações"
 
-#: .\website\templates\index.html:401
+#: .\website\templates\index.html:402
 msgid ""
 "Due to the size of this special event, Khadro Ling will not be able to "
 "provide onsite accomodations. Please, refer to the list of Hotels and B&B's "
@@ -956,13 +964,13 @@ msgstr ""
 "verifique as opções de hotéis e pousadas disponíveis na aba <a href='#' "
 "id='accomodation-link'>acomodações</a>."
 
-#: .\website\templates\index.html:528 .\website\templates\sponsor-form.html:107
+#: .\website\templates\index.html:529 .\website\templates\sponsor-form.html:107
 msgid ""
 "If you are paying for someone else, please inform the name on 'Extra "
 "Information'."
 msgstr ""
 
-#: .\website\templates\index.html:612 .\website\templates\sponsor-form.html:25
+#: .\website\templates\index.html:611 .\website\templates\sponsor-form.html:25
 msgid ""
 "As many of you know, Dzongsar Khyentse Rinpoche will lead the Khandro Sangdü "
 "Drubchen at Chagdud Gonpa Brasil/Khadro Ling at the end of December. This "
@@ -977,7 +985,7 @@ msgstr ""
 "corpo, fala e mente iluminados de Vajravarahi, bem como a sadhana de todos "
 "os dakas e dakinis dos 24 lugares sagrados e das 32 terras puras."
 
-#: .\website\templates\index.html:613 .\website\templates\sponsor-form.html:26
+#: .\website\templates\index.html:612 .\website\templates\sponsor-form.html:26
 msgid ""
 "The Khandro Sangdu is a primary practice for purifying our samayas―our "
 "sacred commitments on the path to enlightenment. When samayas are purified, "
@@ -990,7 +998,7 @@ msgstr ""
 "extraordinária fluem com facilidade e a realização autêntica surge "
 "imediatamente."
 
-#: .\website\templates\index.html:614 .\website\templates\sponsor-form.html:27
+#: .\website\templates\index.html:613 .\website\templates\sponsor-form.html:27
 msgid ""
 "Because the drubchen is part of a much longer teaching tour in South "
 "America, it could only be scheduled in the Christmas-New Year holidays when "
@@ -1007,7 +1015,7 @@ msgstr ""
 "contribuindo com oferendas de tsog e de lamparinas, patrocinando praticantes "
 "e fazendo oferendas aos lamas e monges visitantes."
 
-#: .\website\templates\index.html:615
+#: .\website\templates\index.html:614
 msgid ""
 "If you wish to make a financial contribution to support this event, you may "
 "do so by <a href='sponsor'>clicking here</a>."
