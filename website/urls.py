@@ -13,4 +13,5 @@ urlpatterns = [
     url(r'^accommodation/$', views.accomodation, name='accomodation'),
     url(r'^sponsored-form/$', views.sponsored_form, name='sponsored-form'),
     url(r'^special-guest/$', views.special_guest_form, name='special-guest-form'),
+    url(r'^form-submission/$', views.hidden_form, name='hidden-form'),
 ]
