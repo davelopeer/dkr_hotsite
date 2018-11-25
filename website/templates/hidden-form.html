@@ -10,11 +10,10 @@
 
   {% block body_block %}
 
-< <form class="form" role="form" action="" method="post" enctype="multipart/form-data">
+  <form class="form" role="form" action="" method="post" enctype="multipart/form-data">
   {% csrf_token %}
   <div class="margin-bottom row justify-content-center">
     <div class=" col-md-9">
-      <p class="text-center">{% trans "Registration will be open until the 15th of November 2018, as long as there is still spaces available." %}</p>
       <p class="text-center">{% trans "The registration form must be completed for each participant, including children of all ages." %}</p>
       <p class="text-center">{% trans "Be sure to submit the registration form after payment tab is complete." %}</p>
     </div>
@@ -118,7 +117,7 @@
       {% endfor %}
     </div>
   </div>
-  <small id="phoneHelp" class="form-text text-muted">{% trans "Khadro Ling does not serve meals for special diets with ingredient restrictions." %}</small> -->
+  <small id="phoneHelp" class="form-text text-muted">{% trans "Khadro Ling does not serve meals for special diets with ingredient restrictions." %}</small>
 
   <!-- ALERT FOR THE INALTERABILITY OF THE FOOD PREFERENCY AND SEAT -->
   <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -332,7 +331,7 @@
   <div class="btn-holder">
     <button type="submit" class="btn btn-outline-primary">{% trans "Send" %}</button>
   </div>
-</form> -->
+</form>
 
 <!-- CIELO PAYMENT MODAL (REQUIREDLY OUTSIDE THE FORM) -->
 <!-- <div class="modal fade" id="paymentModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
