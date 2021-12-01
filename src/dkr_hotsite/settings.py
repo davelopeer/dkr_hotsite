@@ -20,7 +20,15 @@ DEBUG = True
 
 # SECURE_SSL_REDIRECT = True
 
-ALLOWED_HOSTS = ['https://127.0.0.1:8000', '127.0.0.1', 'dkr.pythonanywhere.com', 'www.ks-drubchen.com', 'ks-drubchen.com']
+ALLOWED_HOSTS = [
+  'localhost:8000',
+  'localhost',
+  'https://127.0.0.1:8000',
+  '127.0.0.1',
+  'dkr.pythonanywhere.com',
+  'www.ks-drubchen.com',
+  'ks-drubchen.com'
+]
 
 
 # Application definition
